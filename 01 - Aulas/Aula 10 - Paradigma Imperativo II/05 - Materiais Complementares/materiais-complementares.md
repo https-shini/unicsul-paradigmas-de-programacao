@@ -1,5 +1,7 @@
 # Aula 10 — Materiais complementares
 
+> Referências completas (ABNT, forma de acesso, links atualizados e BibTeX): [`08 - Referências e Fontes`](../../../08%20-%20Referências%20e%20Fontes/README.md#referências-por-aula).
+
 ## Indicados pelo professor
 
 **[Material original]** A aula não traz slide de bibliografia, mas cita **Sebesta (2010)**, para a definição de tipo abstrato de dados, e **Tucker e Noonan (2008)**, para a definição de encapsulamento (p.17).

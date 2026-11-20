@@ -1,5 +1,7 @@
 # Aula 03 — Materiais complementares
 
+> Referências completas (ABNT, forma de acesso, links atualizados e BibTeX): [`08 - Referências e Fontes`](../../../08%20-%20Referências%20e%20Fontes/README.md#referências-por-aula).
+
 ## Indicados pelo professor
 
 **[Material original]** As figuras da aula vêm de Sebesta, *Conceitos de Linguagens de Programação* (9ª ed.), cap. 1: Fig. 1.2 (computadores virtuais em camadas) e as figuras dos processos de compilação, interpretação pura e implementação híbrida. A aula não traz slide de bibliografia.

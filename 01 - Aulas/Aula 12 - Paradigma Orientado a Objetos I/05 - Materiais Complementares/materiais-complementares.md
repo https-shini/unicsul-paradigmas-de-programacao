@@ -1,5 +1,7 @@
 # Aula 12 — Materiais complementares
 
+> Referências completas (ABNT, forma de acesso, links atualizados e BibTeX): [`08 - Referências e Fontes`](../../../08%20-%20Referências%20e%20Fontes/README.md#referências-por-aula).
+
 ## Indicados pelo professor
 
 **[Material original]** (p.31)

@@ -14,6 +14,8 @@
 
 **[Material original]** (p.9). Os acessos registrados no slide são de 21/04/2022.
 
+> **[Atenção]** A tabela reproduz os links **como estão no slide**. Alguns mudaram ou têm versão mais nova (o livro de Eck está na versão 9, de 2022; as notas de Nørmark mudaram para o domínio `homes.cs.aau.dk`). Os endereços atualizados estão no [catálogo de referências](../08%20-%20Referências%20e%20Fontes/livros.md#3-bibliografia-complementar-do-plano-de-ensino).
+
 | Obra | Tema | Acesso | Usada em |
 | --- | --- | --- | --- |
 | DIJKSTRA, Edgar. *Go To statement considered harmful*. Communications of the ACM, 11(3), 1968. | Programação estruturada | [PDF](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf) · [cópia no repositório](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf) | Aula 09 |
@@ -51,4 +53,4 @@ Referências usadas nos slides:
 
 ## Leituras de aprofundamento
 
-**[Complemento]** — sugestões do repositório, não indicadas pelo professor. O catálogo comentado está em [`05 - Materiais Complementares`](../05%20-%20Materiais%20Complementares/README.md), e as indicações específicas de cada aula, em `05 - Materiais Complementares/materiais-complementares.md` dentro da pasta da aula.
+**[Complemento]** — sugestões do repositório, não indicadas pelo professor. O catálogo completo, com referência ABNT, forma de acesso e BibTeX, está em [`08 - Referências e Fontes`](../08%20-%20Referências%20e%20Fontes/README.md); o roteiro de leitura por unidade, em [`05 - Materiais Complementares`](../05%20-%20Materiais%20Complementares/README.md); e as indicações específicas de cada aula, em `05 - Materiais Complementares/materiais-complementares.md` dentro da pasta da aula.

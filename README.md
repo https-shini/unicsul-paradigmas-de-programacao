@@ -47,9 +47,10 @@ Detalhes em [`00 - Planejamento e Organização`](00%20-%20Planejamento%20e%20Or
 ├── 02 - Listas de Exercícios/          listas de revisão do professor + resoluções
 ├── 03 - Trabalhos e Projetos/          atividades propostas nos slides + modelo para trabalhos
 ├── 04 - Provas e Avaliações/           regras de avaliação + simulado autoral
-├── 05 - Materiais Complementares/      catálogo geral de leituras e ferramentas
+├── 05 - Materiais Complementares/      roteiro de leitura por unidade e ferramentas
 ├── 06 - Revisões e Sínteses/           resumo geral, revisões por unidade, mapas, quadros, erratas
-└── 07 - Glossário/                     glossário alfabético
+├── 07 - Glossário/                     glossário alfabético
+└── 08 - Referências e Fontes/          livros, artigos e documentação oficial (ABNT + BibTeX)
 ```
 
 | Pasta | Conteúdo |
@@ -59,9 +60,10 @@ Detalhes em [`00 - Planejamento e Organização`](00%20-%20Planejamento%20e%20Or
 | [02 - Listas de Exercícios](02%20-%20Listas%20de%20Exercícios/README.md) | Lista 01 (Revisão I) e Lista 02 (Revisão II), originais do professor |
 | [03 - Trabalhos e Projetos](03%20-%20Trabalhos%20e%20Projetos/README.md) | Não há trabalhos oficiais no material; reúne as 14 atividades das aulas |
 | [04 - Provas e Avaliações](04%20-%20Provas%20e%20Avaliações/README.md) | Não há provas oficiais no material; inclui um simulado autoral |
-| [05 - Materiais Complementares](05%20-%20Materiais%20Complementares/README.md) | Bibliografia complementar do professor e sugestões do repositório |
+| [05 - Materiais Complementares](05%20-%20Materiais%20Complementares/README.md) | Roteiro de leitura por unidade, ferramentas para praticar e indicações comentadas de cada aula |
 | [06 - Revisões e Sínteses](06%20-%20Revisões%20e%20Sínteses/README.md) | Resumo geral, unidades, mapas conceituais, quadros, guia de estudo, questões integradoras, erratas |
 | [07 - Glossário](07%20-%20Glossário/glossario.md) | 95 termos em ordem alfabética, com referência às aulas |
+| [08 - Referências e Fontes](08%20-%20Referências%20e%20Fontes/README.md) | 26 livros e 19 artigos (todos os indicados pelo professor + complementos), documentação oficial de 10 linguagens, índice por aula e arquivo BibTeX |
 
 ## Aulas
 
@@ -93,6 +95,7 @@ A numeração segue o **nome dos arquivos** do professor. A partir de `Aula09`, 
   - [Resumo geral](06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Revisões por unidade](06%20-%20Revisões%20e%20Sínteses/README.md#revisões-por-unidade) · [Mapas conceituais](06%20-%20Revisões%20e%20Sínteses/mapas-conceituais.md)
   - [Quadros comparativos](06%20-%20Revisões%20e%20Sínteses/quadros-comparativos.md) · [Guia de estudo](06%20-%20Revisões%20e%20Sínteses/guia-de-estudo-para-provas.md) · [Questões integradoras](06%20-%20Revisões%20e%20Sínteses/questoes-integradoras.md)
   - [Erratas do material](06%20-%20Revisões%20e%20Sínteses/erratas-e-inconsistencias.md) · [Glossário](07%20-%20Glossário/glossario.md)
+- **Fontes:** [livros](08%20-%20Referências%20e%20Fontes/livros.md) · [artigos](08%20-%20Referências%20e%20Fontes/artigos.md) · [documentação oficial](08%20-%20Referências%20e%20Fontes/documentacao-oficial.md) · [referências por aula](08%20-%20Referências%20e%20Fontes/README.md#referências-por-aula)
 
 ## Como usar este repositório
 
@@ -145,5 +148,5 @@ Os diagramas são escritos em [Mermaid](https://mermaid.js.org/), que o GitHub r
 
 ## Direitos e licença
 
-- Os **materiais originais** (pastas `01 - Slides Originais` e `01 - Enunciado Original`) são de autoria do professor da disciplina, e o artigo de Dijkstra pertence aos seus detentores. Estão aqui **apenas para estudo**, sem alteração, e **não** são cobertos pela licença deste repositório.
+- Os **materiais originais** (pastas `01 - Slides Originais` e `01 - Enunciado Original`) são de autoria do professor da disciplina, e o artigo de Dijkstra pertence aos seus detentores. Livros e artigos de terceiros **não** são copiados: o catálogo em `08 - Referências e Fontes` traz apenas as referências e links para versões distribuídas legalmente. Estão aqui **apenas para estudo**, sem alteração, e **não** são cobertos pela licença deste repositório.
 - O **conteúdo elaborado** (resumos, exercícios, resoluções, revisões, glossário) é distribuído sob a [licença MIT](LICENSE).

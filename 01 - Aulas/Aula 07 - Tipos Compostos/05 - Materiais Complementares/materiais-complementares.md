@@ -1,5 +1,7 @@
 # Aula 07 — Materiais complementares
 
+> Referências completas (ABNT, forma de acesso, links atualizados e BibTeX): [`08 - Referências e Fontes`](../../../08%20-%20Referências%20e%20Fontes/README.md#referências-por-aula).
+
 ## Indicados pelo professor
 
 **[Material original]** A aula não traz slide de bibliografia. Pela sequência do curso, valem as referências das aulas vizinhas (Sebesta, caps. 5–6; Tucker & Noonan, cap. 5).

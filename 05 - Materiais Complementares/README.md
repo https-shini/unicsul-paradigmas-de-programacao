@@ -1,63 +1,56 @@
 # 05 — Materiais Complementares
 
-Catálogo geral das leituras e ferramentas de apoio. As indicações específicas de cada aula, com comentários mais detalhados, estão em `05 - Materiais Complementares/materiais-complementares.md` dentro da pasta da aula.
+Material de **apoio prático** ao estudo: um roteiro de leitura por unidade, as ferramentas para executar os exemplos e as indicações comentadas de cada aula.
 
-> **Política:** o repositório **não copia** livros ou materiais de terceiros. O único PDF externo incluído é o artigo de Dijkstra, distribuído pelo professor como material da Aula 09 ([`Aula09a_ArtigoDijkstra68.pdf`](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf)). Os demais itens são referências ou links.
+> O **catálogo completo de fontes** — livros, artigos e documentação oficial, com referência ABNT, forma de acesso e BibTeX — fica em [`08 - Referências e Fontes`](../08%20-%20Referências%20e%20Fontes/README.md). Esta pasta aponta para ele, sem repetir os dados bibliográficos.
 
-## A. Indicados pelo professor
+## Roteiro de leitura por unidade
 
-**[Material original]** — bibliografia complementar do plano de ensino (Aula01 p.9). Detalhes em [bibliografia.md](../00%20-%20Planejamento%20e%20Organização/bibliografia.md).
+**[Explicação elaborada]** O que ler primeiro (🥇) e o que ler para aprofundar (🥈). Os códigos `L` e `A` remetem ao catálogo; 🎓 = indicado pelo professor.
 
-| Título | Autor | Tipo | Acesso | Assunto (aulas) | Por que ler |
-| --- | --- | --- | --- | --- | --- |
-| *Go To Statement Considered Harmful* (1968) | E. W. Dijkstra | Artigo | [PDF no repositório](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf) · [resumo](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md) | Programação estruturada (09) | Texto fundador da programação estruturada; é cobrado nas listas de revisão |
-| *The Scheme Programming Language*, 4. ed. | K. Dybvig | Livro on-line | <https://www.scheme.com/tspl4/> | Funcional (14) | Scheme é da família LISP, como o Clojure; mostra a sintaxe prefixa e a recursão com mais profundidade |
-| *Introduction to Programming Using Java*, v. 6 | D. J. Eck | Livro on-line | [PDF](http://math.hws.edu/eck/cs124/downloads/javanotes6-linked.pdf) | OO em Java (12–13) | Caps. sobre classes, herança e interfaces, na linguagem usada nas aulas |
-| *An Introduction to Prolog Programming* | U. Endriss | Apostila | [PDF](https://staff.fnwi.uva.nl/u.endriss/teaching/pss/prolog.pdf) | Lógico (15) | Explica unificação, recursão e *backtracking*, que a aula apresenta só em parte |
-| *Functional Programming in Scheme* | K. Normark | Apostila | [PDF](http://people.cs.aau.dk/~normark/prog3-03/pdf/all.pdf) | Funcional (14) | Funções de ordem superior e composição, que aprofundam a p.22 da Aula 14 |
-
-## B. Complementos do repositório
-
-**[Complemento]** — sugestões deste repositório, **não indicadas pelo professor**.
-
-### Livros
-
-| Título | Autor | Assunto (aulas) | Por que ler |
-| --- | --- | --- | --- |
-| *Conceitos de Linguagens de Programação* (capítulos não citados nos slides) | R. W. Sebesta | Todas | Caps. 3–4 (sintaxe e análise léxica), 6 (tipos e ponteiros), 8 (estruturas de controle), 16 (cálculo de predicados): fundamentam pontos que os slides tratam rapidamente |
-| *Compiladores: princípios, técnicas e ferramentas* | Aho, Lam, Sethi, Ullman | Implementação, sintaxe (03–04) | Referência clássica para as fases de compilação e a análise léxica |
-| *Padrões de Projeto* | Gamma, Helm, Johnson, Vlissides | OO (13) | Origem dos padrões citados na Aula 13 |
-| *Programming in Prolog* | Clocksin, Mellish | Lógico (15) | Introdução clássica ao Prolog |
-| *Algoritmos: Teoria e Prática*, cap. 10 | Cormen et al. | Estruturas dinâmicas (08, 12) | Pilhas, filas e listas encadeadas, usadas nos exemplos de ponteiros e OO |
-| *Engenharia de Software* (conceitos de projeto) | R. Pressman | Acoplamento e coesão (10) | Independência funcional, base das limitações da abstração procedural |
-
-### Artigos clássicos
-
-| Referência | Assunto (aulas) | Por que ler |
+| Unidade | 🥇 Primeiro | 🥈 Para aprofundar |
 | --- | --- | --- |
-| Böhm, C.; Jacopini, G. "Flow diagrams, Turing machines and languages with only two formation rules". *Comm. ACM* 9(5), 1966 | Programação estruturada (09) | Prova de que sequência, seleção e repetição bastam; é a referência que Dijkstra cita |
-| Wirth, N. "Program Development by Stepwise Refinement". *Comm. ACM* 14(4), 1971 | Abstração procedural (10) | Apresenta o refinamento sucessivo usado no exemplo de ordenação |
-| Backus, J. "Can Programming Be Liberated from the von Neumann Style?". *Comm. ACM* 21(8), 1978 | Funcional (09, 14) | Palestra do Prêmio Turing citada na Aula 14; crítica ao "gargalo de von Neumann" |
-| E. W. Dijkstra Archive | Programação estruturada (09) | <https://www.cs.utexas.edu/~EWD/>: manuscritos originais de Dijkstra |
+| 1. Fundamentos (Aulas 01–08) | [L02](../08%20-%20Referências%20e%20Fontes/livros.md#l02--sebesta-2018) 🎓 caps. 1–7 · [L03](../08%20-%20Referências%20e%20Fontes/livros.md#l03--silva-2019) 🎓 | [L18](../08%20-%20Referências%20e%20Fontes/livros.md#l18--nystrom-2021) (interpretador passo a passo) · [L11](../08%20-%20Referências%20e%20Fontes/livros.md#l11--varejão-2004) · [A04](../08%20-%20Referências%20e%20Fontes/artigos.md#a04--backus-1960) (BNF) · [A12](../08%20-%20Referências%20e%20Fontes/artigos.md#a12--cardelli-1985) (tipos) |
+| 2. Imperativo (Aulas 09–11) | [A01](../08%20-%20Referências%20e%20Fontes/artigos.md#a01--dijkstra-1968) 🎓 · [L02](../08%20-%20Referências%20e%20Fontes/livros.md#l02--sebesta-2018) 🎓 caps. 8–9 | [A05](../08%20-%20Referências%20e%20Fontes/artigos.md#a05--böhm-1966) · [A06](../08%20-%20Referências%20e%20Fontes/artigos.md#a06--knuth-1974) · [A08](../08%20-%20Referências%20e%20Fontes/artigos.md#a08--wirth-1971) · [A09](../08%20-%20Referências%20e%20Fontes/artigos.md#a09--parnas-1972) · [A10](../08%20-%20Referências%20e%20Fontes/artigos.md#a10--stevens-1974) |
+| 3. Orientação a objetos (Aulas 12–13) | [L07](../08%20-%20Referências%20e%20Fontes/livros.md#l07--eck-2022) 🎓 · [L02](../08%20-%20Referências%20e%20Fontes/livros.md#l02--sebesta-2018) 🎓 caps. 11–12 | [A11](../08%20-%20Referências%20e%20Fontes/artigos.md#a11--liskov-1974) (TDA) · [L14](../08%20-%20Referências%20e%20Fontes/livros.md#l14--gamma-2000) (padrões de projeto) |
+| 4. Funcional e lógico (Aulas 14–15) | [L06](../08%20-%20Referências%20e%20Fontes/livros.md#l06--dybvig-2009) 🎓 · [L08](../08%20-%20Referências%20e%20Fontes/livros.md#l08--endriss-2018) 🎓 · [L12](../08%20-%20Referências%20e%20Fontes/livros.md#l12--melo-2019) (Clojure em português) | [A15](../08%20-%20Referências%20e%20Fontes/artigos.md#a15--backus-1978) · [A16](../08%20-%20Referências%20e%20Fontes/artigos.md#a16--hughes-1989) · [A18](../08%20-%20Referências%20e%20Fontes/artigos.md#a18--kowalski-1979) · [L17](../08%20-%20Referências%20e%20Fontes/livros.md#l17--abelson-1996) · [L19](../08%20-%20Referências%20e%20Fontes/livros.md#l19--blackburn-2006) |
+| Visão de conjunto | [A13](../08%20-%20Referências%20e%20Fontes/artigos.md#a13--floyd-1979) (o que são paradigmas) | [L22](../08%20-%20Referências%20e%20Fontes/livros.md#l22--van-roy-2004) · [L21](../08%20-%20Referências%20e%20Fontes/livros.md#l21--scott-2016) |
 
-### Documentação oficial
+## Ferramentas para praticar
 
-| Documento | Assunto (aulas) |
-| --- | --- |
-| [Java Tutorials — Classes and Objects](https://docs.oracle.com/javase/tutorial/java/javaOO/) · [Interfaces and Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/) · [Enum Types](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html) · [Arrays](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html) | OO, tipos compostos (07, 12–13) |
-| [Java Language Specification e JVM Specification](https://docs.oracle.com/javase/specs/) | Tipos, conversões, bytecode (03, 06) |
-| [cppreference — `new`](https://en.cppreference.com/w/cpp/language/new) · [destrutores](https://en.cppreference.com/w/cpp/language/destructor) · [classes derivadas](https://en.cppreference.com/w/cpp/language/derived_class) | Ponteiros e OO em C++ (08, 12–13) |
-| [Microsoft Learn — parâmetros de método em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/method-parameters) | `ref`, `out`, `in` (11) |
-| [Perl — `perlsub`](https://perldoc.perl.org/perlsub) | `my` × `local`, escopo estático × dinâmico (05) |
-| [Learn Clojure](https://clojure.org/guides/learn/clojure) · [números em Clojure](https://clojure.org/reference/data_structures#Numbers) | Funcional (14) |
-| [Manual do SWI-Prolog](https://www.swi-prolog.org/pldoc/) | Lógico (15) |
-
-### Ferramentas para praticar
+**[Complemento]**
 
 | Ferramenta | Uso | Aulas |
 | --- | --- | --- |
 | OneCompiler | Compilador on-line usado nas aulas para Clojure e Prolog | 14–15 |
 | [SWISH](https://swish.swi-prolog.org/) | SWI-Prolog no navegador, usado na Aula 15 | 15 |
+| [Learn Prolog Now! on-line](https://lpn.swi-prolog.org/) | Livro com exemplos executáveis no próprio navegador | 15 |
 | [nbb](https://github.com/babashka/nbb) | ClojureScript no Node.js; usado para validar o código deste repositório | 14 |
 | [Tau-Prolog](http://tau-prolog.org/) | Prolog em JavaScript; usado para validar o código deste repositório | 15 |
 | GCC / G++ / JDK | Compiladores de C, C++ e Java para os exemplos das Aulas 04–13 | 04–13 |
+
+A documentação oficial de cada linguagem está em [documentacao-oficial.md](../08%20-%20Referências%20e%20Fontes/documentacao-oficial.md).
+
+## Indicações comentadas por aula
+
+Cada aula tem um arquivo `05 - Materiais Complementares/materiais-complementares.md` que explica **o que ler e por quê**, seção por seção:
+
+| Aula | Arquivo |
+| --- | --- |
+| 01 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 02 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 03 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 04 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 05 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2005%20-%20Semântica/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 06 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 07 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 08 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 09 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 10 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 11 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 12 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 13 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 14 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+| 15 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
+
+> **Política de direitos:** o repositório não copia livros ou materiais de terceiros. O único PDF externo é o artigo de Dijkstra, distribuído pelo professor como material da Aula 09.

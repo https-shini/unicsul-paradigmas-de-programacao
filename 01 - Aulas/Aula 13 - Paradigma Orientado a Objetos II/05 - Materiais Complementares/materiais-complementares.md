@@ -1,5 +1,7 @@
 # Aula 13 — Materiais complementares
 
+> Referências completas (ABNT, forma de acesso, links atualizados e BibTeX): [`08 - Referências e Fontes`](../../../08%20-%20Referências%20e%20Fontes/README.md#referências-por-aula).
+
 ## Indicados pelo professor
 
 **[Material original]** A aula não traz slide de bibliografia. As referências da Aula 12 cobrem o tema: Sebesta (9ª ed.), **cap. 12** — suporte à programação orientada a objetos, com herança, vinculação dinâmica e herança múltipla —, e Tucker & Noonan, **cap. 13**.
