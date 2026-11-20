@@ -47,7 +47,7 @@ Rastreamento:
 
 **Saída:** `1 2 4 8 16 FIM`, cada valor numa linha.
 
-## E7 — Atividade 1 (original)
+## E7 — Atividade 1 (original, p.21–22)
 
 **Descrição:** imprime os inteiros de 0 a 9. O rótulo `repete` marca o início do corpo; depois de imprimir e incrementar, o `if` volta ao rótulo enquanto `x < 10`. É um laço **pós-testado**: executa e depois testa.
 
@@ -80,7 +80,7 @@ repete: printf("goto: %d\n", x);
 }
 ```
 
-## E8 — Atividade 2 (original)
+## E8 — Atividade 2 (original, p.24)
 
 <!-- teste: entrada="5 -3 8 -1 2 7 -6 4 9 -2" saida-contem="Positivos: 6|Negativos: 4" -->
 ```c
