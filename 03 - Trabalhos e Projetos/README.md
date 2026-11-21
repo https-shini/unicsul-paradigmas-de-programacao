@@ -2,6 +2,8 @@
 
 > **[Atenção]** O material fornecido **não contém trabalhos ou projetos** com enunciado, requisitos ou critérios definidos pelo professor. Esta pasta **não inventa** nenhum. Ela reúne (1) as atividades práticas propostas nos slides, que podem compor a nota de **Exercícios** (2,0 pontos da A2, ver [ementa](../00%20-%20Planejamento%20e%20Organização/ementa.md#avaliação)), e (2) um modelo para organizar trabalhos que venham a ser passados.
 
+> **Projetos para praticar:** seis projetos autorais, com esqueleto, testes automáticos e resolução de referência, estão em [09 - Projetos Práticos](../09%20-%20Projetos%20Práticos/README.md). Eles não são trabalhos do professor.
+
 ## Atividades propostas nas aulas
 
 **[Material original]** — enunciados resumidos; o texto completo está no resumo da aula.

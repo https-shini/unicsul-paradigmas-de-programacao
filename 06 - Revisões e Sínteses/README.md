@@ -11,6 +11,7 @@ Materiais que **integram** várias aulas. Todos são **[Explicação elaborada]*
 | [Guia de estudo para as avaliações](guia-de-estudo-para-provas.md) | Estilo das listas do professor, roteiro de revisão em sessões, armadilhas |
 | [Questões integradoras](questoes-integradoras.md) · [resolução](resolucao-questoes-integradoras.md) | Oito questões que combinam várias aulas, com resolução separada |
 | [Erratas e inconsistências](erratas-e-inconsistencias.md) | Os 40 pontos em que os slides têm erro ou divergem da literatura |
+| [Apostila em PDF](Apostila/README.md) | Teoria (~150 p.) e caderno de exercícios com resoluções no fim (~155 p.), gerados dos Markdown |
 | [Flashcards (Anki)](Flashcards/README.md) | 143 cartões de repetição espaçada: glossário, comparações e leitura de código |
 
 ## Revisões por unidade

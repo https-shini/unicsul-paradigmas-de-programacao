@@ -2,7 +2,7 @@
 
 Repositório de estudo da disciplina **Paradigmas de Linguagens de Programação** do curso de Ciência da Computação da Universidade Cruzeiro do Sul (2º semestre de 2026, Prof. Álvaro A. Colombero Prado).
 
-Reúne os **materiais originais** da disciplina, preservados sem alteração, e, para cada aula, um **resumo teórico** aprofundado, **exercícios** em quatro níveis, **resoluções comentadas** com código testado e **materiais complementares**. Inclui também revisões integradas, glossário, simulado e quadros comparativos.
+Reúne os **materiais originais** da disciplina, preservados sem alteração, e, para cada aula, um **resumo teórico** aprofundado, **exercícios** em quatro níveis, **resoluções comentadas** com código testado e **materiais complementares**. Inclui também revisões integradas, glossário, três simulados, quadros comparativos, flashcards, apostila em PDF e **seis projetos práticos** com testes automáticos. Todo o código é executado no CI a cada alteração.
 
 > **Importante:** resumos, exercícios e resoluções foram **elaborados para este repositório** e não substituem as aulas nem são material oficial do professor. As resoluções **não são gabaritos oficiais**. Ver [Convenções de marcação](#convenções-de-marcação).
 
@@ -14,6 +14,7 @@ Reúne os **materiais originais** da disciplina, preservados sem alteração, e,
 - [Listas, avaliações e revisão](#listas-avaliações-e-revisão)
 - [Como usar este repositório](#como-usar-este-repositório)
 - [Convenções de marcação](#convenções-de-marcação)
+- [Projetos práticos](#projetos-práticos)
 - [Código e validação](#código-e-validação)
 - [Direitos e licença](#direitos-e-licença)
 
@@ -46,11 +47,16 @@ Detalhes em [`00 - Planejamento e Organização`](00%20-%20Planejamento%20e%20Or
 │       └── 05 - Materiais Complementares/
 ├── 02 - Listas de Exercícios/          listas de revisão do professor + resoluções
 ├── 03 - Trabalhos e Projetos/          atividades propostas nos slides + modelo para trabalhos
-├── 04 - Provas e Avaliações/           regras de avaliação + simulado autoral
+├── 04 - Provas e Avaliações/           regras de avaliação + três simulados autorais
 ├── 05 - Materiais Complementares/      roteiro de leitura por unidade e ferramentas
-├── 06 - Revisões e Sínteses/           resumo geral, revisões por unidade, mapas, quadros, erratas
+├── 06 - Revisões e Sínteses/           resumo geral, unidades, mapas, quadros, erratas, flashcards, apostila PDF
 ├── 07 - Glossário/                     glossário alfabético
-└── 08 - Referências e Fontes/          livros, artigos e documentação oficial (ABNT + BibTeX)
+├── 08 - Referências e Fontes/          livros, artigos e documentação oficial (ABNT + BibTeX)
+├── 09 - Projetos Práticos/             seis projetos com esqueleto, testes e resolução de referência
+├── codigo/                             todos os programas dos Markdown, um por arquivo (gerado)
+├── ferramentas/                        testes, autocorreção, geradores e instalação do ambiente
+├── .devcontainer/                      ambiente do Codespaces com todas as linguagens
+└── .github/workflows/                  CI: executa todo o código e valida links e diagramas
 ```
 
 | Pasta | Conteúdo |
@@ -59,11 +65,13 @@ Detalhes em [`00 - Planejamento e Organização`](00%20-%20Planejamento%20e%20Or
 | [01 - Aulas](#aulas) | As 15 aulas, cada uma com as cinco subpastas padronizadas |
 | [02 - Listas de Exercícios](02%20-%20Listas%20de%20Exercícios/README.md) | Lista 01 (Revisão I) e Lista 02 (Revisão II), originais do professor |
 | [03 - Trabalhos e Projetos](03%20-%20Trabalhos%20e%20Projetos/README.md) | Não há trabalhos oficiais no material; reúne as 14 atividades das aulas |
-| [04 - Provas e Avaliações](04%20-%20Provas%20e%20Avaliações/README.md) | Não há provas oficiais no material; inclui um simulado autoral |
+| [04 - Provas e Avaliações](04%20-%20Provas%20e%20Avaliações/README.md) | Não há provas oficiais no material; inclui três simulados autorais com resolução |
 | [05 - Materiais Complementares](05%20-%20Materiais%20Complementares/README.md) | Roteiro de leitura por unidade, ferramentas para praticar e indicações comentadas de cada aula |
-| [06 - Revisões e Sínteses](06%20-%20Revisões%20e%20Sínteses/README.md) | Resumo geral, unidades, mapas conceituais, quadros, guia de estudo, questões integradoras, erratas |
+| [06 - Revisões e Sínteses](06%20-%20Revisões%20e%20Sínteses/README.md) | Resumo geral, unidades, mapas conceituais, quadros, guia de estudo, questões integradoras, erratas (40 pontos), [flashcards Anki](06%20-%20Revisões%20e%20Sínteses/Flashcards/README.md) e [apostila em PDF](06%20-%20Revisões%20e%20Sínteses/Apostila/README.md) |
 | [07 - Glossário](07%20-%20Glossário/glossario.md) | 95 termos em ordem alfabética, com referência às aulas |
 | [08 - Referências e Fontes](08%20-%20Referências%20e%20Fontes/README.md) | 26 livros e 19 artigos (todos os indicados pelo professor + complementos), documentação oficial de 10 linguagens, índice por aula e arquivo BibTeX |
+| [09 - Projetos Práticos](09%20-%20Projetos%20Práticos/README.md) | Seis projetos autorais (Python, C++, Java, Clojure, Prolog e um em quatro linguagens), com testes automáticos |
+| [codigo/](codigo/README.md) | Os programas dos resumos e resoluções, um por arquivo, prontos para executar |
 
 ## Aulas
 
@@ -90,7 +98,8 @@ A numeração segue o **nome dos arquivos** do professor. A partir de `Aula09`, 
 ## Listas, avaliações e revisão
 
 - **Listas do professor:** [Lista 01 — Revisão I](02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) (11 questões, foco em funcional e lógico) · [Lista 02 — Revisão II](02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) (12 questões, disciplina inteira).
-- **Simulado autoral:** [Simulado 01](04%20-%20Provas%20e%20Avaliações/Simulados/simulado-01.md), com [resolução separada](04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md).
+- **Simulados autorais**, cada um com resolução separada: [01](04%20-%20Provas%20e%20Avaliações/Simulados/simulado-01.md) (disciplina inteira) · [02](04%20-%20Provas%20e%20Avaliações/Simulados/simulado-02.md) (Aulas 02–11) · [03](04%20-%20Provas%20e%20Avaliações/Simulados/simulado-03.md) (Aulas 12–15).
+- **Para estudar em qualquer lugar:** [flashcards Anki](06%20-%20Revisões%20e%20Sínteses/Flashcards/README.md) (143 cartões) · [apostila e caderno de exercícios em PDF](06%20-%20Revisões%20e%20Sínteses/Apostila/README.md).
 - **Revisão:**
   - [Resumo geral](06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Revisões por unidade](06%20-%20Revisões%20e%20Sínteses/README.md#revisões-por-unidade) · [Mapas conceituais](06%20-%20Revisões%20e%20Sínteses/mapas-conceituais.md)
   - [Quadros comparativos](06%20-%20Revisões%20e%20Sínteses/quadros-comparativos.md) · [Guia de estudo](06%20-%20Revisões%20e%20Sínteses/guia-de-estudo-para-provas.md) · [Questões integradoras](06%20-%20Revisões%20e%20Sínteses/questoes-integradoras.md)
@@ -105,9 +114,10 @@ A numeração segue o **nome dos arquivos** do professor. A partir de `Aula09`, 
    - faça os exercícios **sem** consultar as resoluções;
    - só então confira.
    Registre o progresso em [acompanhamento.md](00%20-%20Planejamento%20e%20Organização/acompanhamento.md).
-2. **Antes das avaliações**, siga o [guia de estudo](06%20-%20Revisões%20e%20Sínteses/guia-de-estudo-para-provas.md): resumo geral → revisões por unidade → listas do professor → simulado.
-3. **Em caso de dúvida conceitual**, consulte o [glossário](07%20-%20Glossário/glossario.md) e as [erratas](06%20-%20Revisões%20e%20Sínteses/erratas-e-inconsistencias.md). Os slides têm alguns erros e divergências, todos apontados.
-4. **Para incluir material novo:**
+2. **Para praticar**, faça os [projetos práticos](09%20-%20Projetos%20Práticos/README.md) à medida que as aulas avançam, e confira suas soluções dos exercícios com `python3 ferramentas/verificar.py` (ver [Código e validação](#código-e-validação)).
+3. **Antes das avaliações**, siga o [guia de estudo](06%20-%20Revisões%20e%20Sínteses/guia-de-estudo-para-provas.md): resumo geral → revisões por unidade → flashcards → listas do professor → simulados.
+4. **Em caso de dúvida conceitual**, consulte o [glossário](07%20-%20Glossário/glossario.md) e as [erratas](06%20-%20Revisões%20e%20Sínteses/erratas-e-inconsistencias.md). Os slides têm alguns erros e divergências, todos apontados.
+5. **Para incluir material novo:**
    - coloque o original, sem renomear, na pasta `01 - Slides Originais` (ou `01 - Enunciado Original`);
    - registre-o no [inventário](00%20-%20Planejamento%20e%20Organização/inventario-dos-materiais.md);
    - siga a mesma estrutura de cinco subpastas.
@@ -131,20 +141,46 @@ Todo conteúdo produzido para o repositório indica sua origem com uma das marca
 - Os exercícios de cada aula seguem quatro níveis: **Básico**, **Intermediário**, **Avançado/Prática** e **Aprofundamento**. As atividades propostas pelo professor aparecem identificadas como "(original)".
 - As resoluções ficam **sempre** em arquivo separado dos enunciados.
 
+## Projetos práticos
+
+Seis projetos autorais aplicam o conteúdo em programas completos. Cada um tem enunciado com requisitos, esqueleto em `inicial/`, testes automáticos e resolução de referência em `solucao/` — ver [09 - Projetos Práticos](09%20-%20Projetos%20Práticos/README.md).
+
+| Projeto | Linguagem | Aulas |
+| --- | --- | --- |
+| P1 · Interpretador de expressões (léxico, BNF, interpretador, bytecode e VM) | Python | 03–06 |
+| P2 · Pilha e fila encadeadas, sem vazamento de memória | C++ | 07, 08, 12 |
+| P3 · Acervo da biblioteca: classe abstrata, interface, polimorfismo | Java | 12, 13 |
+| P4 · Estatísticas de texto com funções puras | Clojure | 14 |
+| P5 · Grade curricular e pré-requisitos | Prolog | 15 |
+| P6 · A regra de aprovação da UNICSUL em quatro paradigmas | C, Java, Clojure, Prolog | 01, 09–15 |
+
 ## Código e validação
 
-Os trechos de código das resoluções e dos resumos foram **compilados e executados**. Um comentário HTML invisível antes de cada bloco (`<!-- teste: ... -->`) registra a entrada usada e a saída esperada.
+Todo programa dos resumos, resoluções, listas, simulados e revisões é **compilado e executado automaticamente**. Um comentário HTML invisível antes de cada bloco (`<!-- teste: ... -->`) registra a entrada usada e a saída esperada; os mesmos programas estão em [`codigo/`](codigo/README.md), um por arquivo.
 
-| Linguagem | Ferramenta usada na validação |
+**Ambiente pronto:** abra o repositório no **GitHub Codespaces** (botão *Code › Codespaces*). O contêiner de [`.devcontainer/`](.devcontainer/devcontainer.json) instala as nove linguagens com o mesmo script do CI, [`ferramentas/instalar-ambiente.sh`](ferramentas/instalar-ambiente.sh), que também funciona num Ubuntu/WSL.
+
+| Linguagem | No CI e no Codespaces | Sem a ferramenta oficial |
+| --- | --- | --- |
+| C / C++ | GCC / G++ (`-std=c11` / `-std=c++17`) | — |
+| Java | OpenJDK 21 | — |
+| C# | .NET SDK 10 | o teste é pulado |
+| Python, PHP, Perl | interpretadores oficiais | — |
+| Clojure | Clojure CLI (JVM) | [nbb](https://github.com/babashka/nbb) (ClojureScript); diferenças como o tipo `Ratio` estão anotadas |
+| Prolog | SWI-Prolog | [Tau-Prolog](http://tau-prolog.org/) |
+
+**Ferramentas** (pasta [`ferramentas/`](ferramentas/)):
+
+| Comando | Para quê |
 | --- | --- |
-| C / C++ | GCC / G++ (`-std=c11` / `-std=c++17`) |
-| Java | OpenJDK (`javac`/`java`) |
-| Python, PHP, Perl | Interpretadores oficiais |
-| Clojure | [nbb](https://github.com/babashka/nbb) (ClojureScript). Diferenças em relação ao Clojure da JVM, como o tipo `Ratio`, estão anotadas nos arquivos |
-| Prolog | [Tau-Prolog](http://tau-prolog.org/). As aulas usam SWI-Prolog/OneCompiler, e as diferenças estão anotadas |
-| C# | **Não executado**: não havia compilador disponível no ambiente. Os trechos foram revisados manualmente e estão sinalizados nos arquivos |
+| `python3 ferramentas/verificar.py 14 E8 minha.clj` | **Autocorreção:** roda a sua solução de um exercício contra os casos da resolução (`--listar` mostra todos) |
+| `python3 ferramentas/testar_projetos.py P1` | Testes dos projetos práticos (sobre `inicial/`; `--alvo` para outra pasta) |
+| `python3 ferramentas/rodar.py codigo/aula-14/...` | Executa qualquer programa de `codigo/` |
+| `python3 ferramentas/testar_codigo.py` | Executa e confere todos os blocos de código do repositório |
+| `python3 ferramentas/verificar_links.py` · `node ferramentas/verificar_mermaid.mjs` · `python3 ferramentas/verificar_bib.py` | Links e âncoras internos, sintaxe dos diagramas Mermaid, BibTeX × catálogo |
+| `python3 ferramentas/gerar_codigo.py` · `ferramentas/geradores/*.py` | Regeneram `codigo/`, glossário, flashcards, referências e apostila a partir dos Markdown |
 
-Os diagramas são escritos em [Mermaid](https://mermaid.js.org/), que o GitHub renderiza nativamente; a sintaxe de todos foi validada.
+O [workflow de validação](.github/workflows/validacao.yml) roda tudo isso a cada *push* e *pull request*. Os diagramas são escritos em [Mermaid](https://mermaid.js.org/), que o GitHub renderiza nativamente.
 
 ## Direitos e licença
 

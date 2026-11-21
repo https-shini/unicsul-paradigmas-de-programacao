@@ -1,0 +1,6 @@
+{
+  "titulo": "P5 — Grade curricular e pré-requisitos (Prolog)",
+  "suites": [
+    {"nome": "Prolog", "tipo": "prolog", "fontes": ["base.pl", "regras.pl"], "testes": "testes/testes.pl"}
+  ]
+}

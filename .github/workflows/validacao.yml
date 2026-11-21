@@ -38,8 +38,10 @@ jobs:
         run: bash ferramentas/instalar-ambiente.sh
       - name: Exemplos dos resumos, resoluções, listas e simulados
         run: python3 ferramentas/testar_codigo.py --exigir-todos
-      - name: Projetos práticos (soluções de referência)
-        run: python3 ferramentas/testar_projetos.py --exigir-todos
+      - name: Projetos práticos — soluções de referência passam em todos os testes
+        run: python3 ferramentas/testar_projetos.py --alvo solucao --exigir-todos
+      - name: Projetos práticos — esqueletos de inicial/ compilam e rodam os testes
+        run: python3 ferramentas/testar_projetos.py --alvo inicial --exigir-todos --aceitar-falhas
 
   documentos:
     name: Links, diagramas, referências e arquivos gerados
@@ -62,3 +64,7 @@ jobs:
         run: python3 ferramentas/verificar_bib.py
       - name: Pasta codigo/ sincronizada com os Markdown
         run: python3 ferramentas/gerar_codigo.py --verificar
+      - name: Testes do P6 sincronizados com casos.csv
+        run: |
+          python3 "09 - Projetos Práticos/P6 - Situação Acadêmica em Quatro Paradigmas/testes/gerar_testes.py"
+          git diff --exit-code -- "09 - Projetos Práticos"

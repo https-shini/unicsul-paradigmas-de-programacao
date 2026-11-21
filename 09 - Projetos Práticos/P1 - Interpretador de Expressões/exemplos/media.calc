@@ -1,0 +1,7 @@
+# média ponderada das notas (Aula 01: A1 vale 5, A2 = AP 3 + Ex 2)
+a1 = 3.5
+ap = 2
+ex = 1.5
+a2 = ap + ex
+print a1 + a2
+print (a1 + a2) / 2

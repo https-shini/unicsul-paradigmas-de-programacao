@@ -1,0 +1,9 @@
+{
+  "titulo": "P6 — Situação acadêmica em quatro paradigmas (C, Java, Clojure, Prolog)",
+  "suites": [
+    {"nome": "C (imperativo)", "tipo": "c", "pasta": "c", "fontes": ["*.c"], "excluir": ["main.c"], "testes": ["testes/testes.c"]},
+    {"nome": "Java (orientado a objetos)", "tipo": "java", "pasta": "java", "fontes": ["*.java"], "testes": ["testes/TestesSituacao.java"], "principal": "TestesSituacao"},
+    {"nome": "Clojure (funcional)", "tipo": "clojure", "pasta": "clojure", "fontes": ["situacao.clj"], "testes": "testes/situacao_test.clj"},
+    {"nome": "Prolog (lógico)", "tipo": "prolog", "pasta": "prolog", "fontes": ["situacao.pl"], "testes": "testes/testes.pl"}
+  ]
+}

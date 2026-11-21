@@ -7,6 +7,7 @@ Uso:
     python3 ferramentas/verificar.py lista-01 Q7 q7.clj     # Lista 01, questão 7
     python3 ferramentas/verificar.py 15 E9 base.pl          # Prolog: roda as mesmas consultas
     python3 ferramentas/verificar.py 11 E8 Atividade.cs --estrito
+    python3 ferramentas/verificar.py projeto P1             # projetos práticos (09): o mesmo que testar_projetos.py P1
 
 Os casos de teste são os mesmos usados para validar a resolução comentada (entrada + o que a
 saída deve conter). A comparação padrão é TOLERANTE: ignora maiúsculas, acentos, pontuação e
@@ -98,6 +99,10 @@ def listar():
 
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "projeto":          # atalho para os projetos práticos
+        import subprocess
+        return subprocess.call([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "testar_projetos.py")]
+                               + sys.argv[2:])
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("alvo", nargs="?", help="número da aula (14), lista-01 ou simulado-02")
     ap.add_argument("exercicio", nargs="?", help="E8, Q7, QI3...")
@@ -150,4 +155,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

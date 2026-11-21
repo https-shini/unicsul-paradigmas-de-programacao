@@ -1,0 +1,19 @@
+a1;a2;af;freq;esperado;comentario
+3.5;4.0;-;80;APROVADO;soma 7,5
+3.0;3.0;-;75;APROVADO;limites: soma 6,0 e frequência 75%
+2.1;3.9;-;80;APROVADO;soma 6,0 com decimais
+5.0;5.0;-;74.9;REPROVADO POR FALTA;nota máxima não salva a frequência
+0.0;0.0;-;0;REPROVADO POR FALTA;a frequência é verificada primeiro
+2.0;3.0;5.0;70;REPROVADO POR FALTA;AF não salva a frequência
+0.5;5.0;-;100;REPROVADO;menos de 1 ponto na A1: sem direito à AF
+5.0;0.9;-;100;REPROVADO;menos de 1 ponto na A2: sem direito à AF
+0.5;5.0;5.0;80;REPROVADO;a nota de AF é ignorada
+2.0;3.0;-;90;AF;soma 5,0: precisa de 3,0 na AF
+1.0;1.0;-;80;AF;exatamente 1 ponto: tem direito à AF
+2.0;3.0;3.5;90;APROVADO NA AF;3,5 substitui o 2,0: 6,5
+1.0;1.0;5.0;80;APROVADO NA AF;5,0 + 1,0 = 6,0
+2.9;3.0;3.0;80;APROVADO NA AF;3,0 + 3,0 = 6,0
+4.5;1.4;2.0;76;APROVADO NA AF;2,0 substitui o 1,4: 6,5
+2.0;3.0;2.5;90;REPROVADO NA AF;2,5 + 3,0 = 5,5
+4.0;1.9;1.9;80;REPROVADO NA AF;1,9 + 4,0 = 5,9
+4.0;4.0;3.0;80;APROVADO;já aprovado: a AF não muda nada

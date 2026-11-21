@@ -1,0 +1,6 @@
+{
+  "titulo": "P4 — Estatísticas de texto com funções puras (Clojure)",
+  "suites": [
+    {"nome": "Clojure (clojure.test)", "tipo": "clojure", "fontes": ["estatisticas.clj"], "testes": "testes/estatisticas_test.clj"}
+  ]
+}
