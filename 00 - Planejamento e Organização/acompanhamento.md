@@ -40,11 +40,25 @@ As atividades propostas nos próprios slides costumam compor a nota de **Exercí
 
 Lista com links para enunciados e resoluções: [`03 - Trabalhos e Projetos`](../03%20-%20Trabalhos%20e%20Projetos/README.md#atividades-propostas-nas-aulas).
 
+## Projetos práticos
+
+Projetos autorais de [09 - Projetos Práticos](../09%20-%20Projetos%20Práticos/README.md); confira cada um com `python3 ferramentas/testar_projetos.py Pn`.
+
+- [ ] P1 — Interpretador de expressões (Python) · depois da Aula 05
+- [ ] P2 — Pilha e fila encadeadas (C++) · depois da Aula 08
+- [ ] P3 — Acervo da biblioteca (Java) · depois da Aula 13
+- [ ] P4 — Estatísticas de texto (Clojure) · depois da Aula 14
+- [ ] P5 — Grade curricular (Prolog) · depois da Aula 15
+- [ ] P6 — Situação acadêmica em quatro paradigmas · revisão final
+
 ## Revisão para as avaliações
 
 - [ ] Lista 01 — Revisão I feita **sem consultar** a resolução
 - [ ] Lista 02 — Revisão II feita **sem consultar** a resolução
-- [ ] Simulado 01 feito com tempo marcado
+- [ ] Simulado 02 (Aulas 02–11) feito com tempo marcado
+- [ ] Simulado 03 (Aulas 12–15) feito com tempo marcado
+- [ ] Simulado 01 (disciplina inteira) feito com tempo marcado
+- [ ] Flashcards em dia no Anki na semana da prova
 - [ ] Glossário revisado (sei definir cada termo em uma frase)
 - [ ] Quadros comparativos refeitos de memória
 - [ ] Erratas lidas (sei onde o slide diverge do conceito correto)
