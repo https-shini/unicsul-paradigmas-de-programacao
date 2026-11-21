@@ -82,7 +82,7 @@ int main(void) {
 
 ## E8 — Atividade 2 (original, p.20)
 
-<!-- teste: entrada="2 3" saida-contem="-5\n8\n12\n0.12\n76" -->
+<!-- teste: entrada="2 3" saida-contem="-5\n8\n12\n3/25\n76.0" saida-contem-cljs="-5\n8\n12\n0.12\n76" -->
 ```clojure
 (println "Digite os valores de x e y:")
 (def x (read))

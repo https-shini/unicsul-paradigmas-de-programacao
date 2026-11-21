@@ -92,7 +92,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 **Assunto:** programa Clojure com `def`. **Fonte:** Aula14 p.16, p.18–20.
 
-<!-- teste: entrada="2 3" saida-contem="0.12\n76" -->
+<!-- teste: entrada="2 3" saida-contem="3/25\n76.0" saida-contem-cljs="0.12\n76" -->
 ```clojure
 (println "Digite os valores de x e y:")
 (def x (read))                                 ; vincula o 1º valor lido ao símbolo x

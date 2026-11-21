@@ -84,6 +84,7 @@ int main() {
 
 ## E8 — Atividade 1 (original, p.21)
 
+<!-- teste: entrada="3\n7" saida-contem="a = 3, b = 7|a = 7, b = 3" -->
 ```csharp
 using System;
 

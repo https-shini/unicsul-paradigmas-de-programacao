@@ -70,6 +70,7 @@ Os modelos são aprofundados na [Aula 11](../../Aula%2011%20-%20Paradigma%20Impe
 
 ### Exemplo 1 — C#, `ref` (p.9)
 
+<!-- teste: saida-contem="0\n1\n0\n1\n1" -->
 ```csharp
 using System;
 
