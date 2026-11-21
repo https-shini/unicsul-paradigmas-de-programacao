@@ -1,0 +1,12 @@
+{
+  "name": "plp-ferramentas",
+  "private": true,
+  "description": "Dependências Node das ferramentas de validação do repositório (Mermaid, Tau-Prolog, nbb).",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^25.0.0",
+    "mermaid": "^11.4.0",
+    "nbb": "^1.3.0",
+    "tau-prolog": "^0.3.4"
+  }
+}

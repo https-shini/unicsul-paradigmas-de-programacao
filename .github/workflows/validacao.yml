@@ -1,0 +1,70 @@
+name: Validação
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validacao-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  codigo:
+    name: Código (C, C++, Java, C#, Python, PHP, Perl, Clojure, Prolog)
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+      DOTNET_NOLOGO: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ferramentas/package-lock.json
+      - name: Instalar linguagens (mesmo script do Codespaces)
+        run: bash ferramentas/instalar-ambiente.sh
+      - name: Exemplos dos resumos, resoluções, listas e simulados
+        run: python3 ferramentas/testar_codigo.py --exigir-todos
+      - name: Projetos práticos — soluções de referência passam em todos os testes
+        run: python3 ferramentas/testar_projetos.py --alvo solucao --exigir-todos
+      - name: Projetos práticos — esqueletos de inicial/ compilam e rodam os testes
+        run: python3 ferramentas/testar_projetos.py --alvo inicial --exigir-todos --aceitar-falhas
+
+  documentos:
+    name: Links, diagramas, referências e arquivos gerados
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ferramentas/package-lock.json
+      - run: npm ci --prefix ferramentas --no-audit --no-fund
+      - run: python3 -m pip install --quiet --break-system-packages "bibtexparser<2"
+      - name: Links internos e âncoras
+        run: python3 ferramentas/verificar_links.py
+      - name: Diagramas Mermaid
+        run: node ferramentas/verificar_mermaid.mjs
+      - name: BibTeX × catálogo de referências
+        run: python3 ferramentas/verificar_bib.py
+      - name: Pasta codigo/ sincronizada com os Markdown
+        run: python3 ferramentas/gerar_codigo.py --verificar
+      - name: Testes do P6 sincronizados com casos.csv
+        run: |
+          python3 "09 - Projetos Práticos/P6 - Situação Acadêmica em Quatro Paradigmas/testes/gerar_testes.py"
+          git diff --exit-code -- "09 - Projetos Práticos"

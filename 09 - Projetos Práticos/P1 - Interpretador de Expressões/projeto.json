@@ -1,0 +1,6 @@
+{
+  "titulo": "P1 — Interpretador de expressões (Python)",
+  "suites": [
+    {"nome": "Python (unittest)", "tipo": "python", "testes": "testes"}
+  ]
+}

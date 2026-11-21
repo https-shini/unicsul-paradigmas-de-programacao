@@ -1,0 +1,6 @@
+{
+  "titulo": "P3 — Acervo da biblioteca: herança, interface e polimorfismo (Java)",
+  "suites": [
+    {"nome": "Java", "tipo": "java", "fontes": ["*.java"], "testes": ["testes/TestesAcervo.java"], "principal": "TestesAcervo"}
+  ]
+}

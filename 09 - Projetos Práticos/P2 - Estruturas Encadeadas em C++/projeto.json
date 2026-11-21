@@ -1,0 +1,6 @@
+{
+  "titulo": "P2 — Estruturas encadeadas: pilha e fila (C++)",
+  "suites": [
+    {"nome": "C++ (com AddressSanitizer)", "tipo": "cpp", "fontes": ["*.cpp"], "excluir": ["main.cpp"], "testes": ["testes/testes.cpp"]}
+  ]
+}

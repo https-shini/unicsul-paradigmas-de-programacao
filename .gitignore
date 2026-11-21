@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+/codigo/**/bin/
+/codigo/**/obj/
+/09 - Projetos Práticos/**/bin/
+/09 - Projetos Práticos/**/obj/
+/09 - Projetos Práticos/**/*.class
+/09 - Projetos Práticos/**/a.out
