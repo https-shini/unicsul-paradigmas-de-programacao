@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › **02 - Listas de Exercícios** · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # 02 — Listas de Exercícios
 
 Listas que cobrem **mais de uma aula**. Os exercícios específicos de cada aula ficam na pasta `03 - Exercícios` da própria aula ([índice no README principal](../README.md#aulas)).
@@ -12,3 +16,14 @@ Listas que cobrem **mais de uma aula**. Os exercícios específicos de cada aula
 **Para praticar mais:** as [questões integradoras](../06%20-%20Revisões%20e%20Sínteses/questoes-integradoras.md) combinam várias aulas, e o [simulado](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-01.md) reproduz o formato discursivo das listas.
 
 **Para adicionar uma lista nova:** crie `Lista NN - Nome/` com as mesmas três partes e acrescente uma linha na tabela acima.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [01 - Aulas](../01%20-%20Aulas/README.md) · [03 — Trabalhos e Projetos](../03%20-%20Trabalhos%20e%20Projetos/README.md) →
+
+**Links para esta página (4):** [Aula 01 · Resoluções](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/04%20-%20Resoluções/resolucoes-aula-01.md) · [06 — Revisões e Sínteses](../06%20-%20Revisões%20e%20Sínteses/README.md) · [Resumo geral da disciplina](../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

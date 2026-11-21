@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 14](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 14 — Paradigma Funcional · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-14.md`](../03%20-%20Exercícios/exercicios-aula-14.md).
@@ -5,12 +9,12 @@
 
 ## E1
 
-Nos **anos 1960**, motivada pelas necessidades da **Inteligência Artificial**: computação simbólica, prova de teoremas, sistemas baseados em regras e processamento de linguagem natural. A primeira linguagem funcional foi o **LISP** (p.7).
+Nos **anos 1960**, motivada pelas necessidades da **Inteligência Artificial**: computação simbólica, prova de teoremas, sistemas baseados em regras e processamento de linguagem natural. A primeira linguagem funcional foi o **LISP** ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)).
 
 ## E2
 
 - **Puras:** não aceitam variáveis (estado), atribuição nem laços, e portanto não têm efeitos colaterais. Exemplos: **Haskell** e **Miranda**.
-- **Impuras:** aceitam esses recursos. Exemplos: **LISP, Scheme, Clojure, Elixir, Erlang** (p.9).
+- **Impuras:** aceitam esses recursos. Exemplos: **LISP, Scheme, Clojure, Elixir, Erlang** ([p.9](../01%20-%20Slides%20Originais/README.md#página-9)).
 
 ## E3
 
@@ -21,7 +25,7 @@ Nos **anos 1960**, motivada pelas necessidades da **Inteligência Artificial**: 
 1. Um conjunto de funções primitivas.
 2. Uma operação de aplicação de função.
 3. Formas funcionais para criar funções complexas a partir das primitivas.
-4. Estruturas para representar os dados usados como parâmetros e resultados (p.12).
+4. Estruturas para representar os dados usados como parâmetros e resultados ([p.12](../01%20-%20Slides%20Originais/README.md#página-12)).
 
 ## E5
 
@@ -104,7 +108,7 @@ int main(void) {
 | (x + 2)·y / [10·(x + 8)] | 12/100 | **`3/25`** (razão simplificada); com `float`, `0.12` |
 | (3y)² − (x + y) | 81 − 5 | `76.0` (`Math/pow` devolve `double`) |
 
-**Por que `def`:** x e y aparecem em várias expressões. Com `(read)` embutido em cada uma, o usuário teria de digitar os valores de novo a cada linha (p.19).
+**Por que `def`:** x e y aparecem em várias expressões. Com `(read)` embutido em cada uma, o usuário teria de digitar os valores de novo a cada linha ([p.19](../01%20-%20Slides%20Originais/README.md#página-19)).
 
 **Erro comum:** escrever `(* 3 y 2)` para (3y)², o que dá 6y, não 9y². O quadrado exige `(Math/pow (* 3 y) 2)` ou `(* (* 3 y) (* 3 y))`.
 
@@ -149,8 +153,21 @@ int main(void) {
 | Uma variável `f` muda de valor a cada iteração | Nenhum valor muda; cada chamada produz um novo valor |
 | Precisa de laço e atribuição | Usa recursão ou uma forma funcional |
 
-Isso materializa o "modelo puro sem variável, atribuição e laço" (p.8). **[Complemento]** Para n grandes, a recursão direta pode estourar a pilha; Clojure oferece `recur` para recursão de cauda.
+Isso materializa o "modelo puro sem variável, atribuição e laço" ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)). **[Complemento]** Para n grandes, a recursão direta pode estourar a pilha; Clojure oferece `recur` para recursão de cauda.
 
 ## E11
 
-A OO usa o **mesmo modelo de execução** do imperativo: dentro dos métodos há variáveis mutáveis, atribuições, decisões e laços — a OO muda **onde** o código fica (classes) e **quem** acessa os dados (encapsulamento). O funcional muda o **próprio modelo de computação**: em vez de uma sequência de comandos que altera o estado da memória (von Neumann), o programa é uma **composição de funções** que produzem valores, sem estado mutável no modelo puro. Por isso o slide diz que o funcional parte de "outra base, diferente da arquitetura de von Neumann" (p.6).
+A OO usa o **mesmo modelo de execução** do imperativo: dentro dos métodos há variáveis mutáveis, atribuições, decisões e laços — a OO muda **onde** o código fica (classes) e **quem** acessa os dados (encapsulamento). O funcional muda o **próprio modelo de computação**: em vez de uma sequência de comandos que altera o estado da memória (von Neumann), o programa é uma **composição de funções** que produzem valores, sem estado mutável no modelo puro. Por isso o slide diz que o funcional parte de "outra base, diferente da arquitetura de von Neumann" ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 14:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-14.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 13 · Resoluções](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/04%20-%20Resoluções/resolucoes-aula-13.md) · [Aula 15 · Resoluções](../../Aula%2015%20-%20Paradigma%20Lógico/04%20-%20Resoluções/resolucoes-aula-15.md) →
+
+**Links para esta página (5):** [Aula 14 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Aula 14 · Exercícios](../03%20-%20Exercícios/exercicios-aula-14.md) · [Aula 14 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

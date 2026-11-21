@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 15](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 15 — Paradigma Lógico · Resumo teórico
 
-> **Fonte:** [`Aula15_Paradigma Lógico.pdf`](../01%20-%20Slides%20Originais/Aula15_Paradigma%20Lógico.pdf) (25 páginas). Título interno: "Aula 16 – Paradigma Lógico". Apoio indicado: Sebesta (9ª ed.), seções 16.6 a 16.6.5; Tucker & Noonan, cap. 15 (p.24).
+> **Fonte:** [`Aula15_Paradigma Lógico.pdf`](../01%20-%20Slides%20Originais/Aula15_Paradigma%20Lógico.pdf) (25 páginas). Título interno: "Aula 16 – Paradigma Lógico". Apoio indicado: Sebesta (9ª ed.), seções 16.6 a 16.6.5; Tucker & Noonan, cap. 15 ([p.24](../01%20-%20Slides%20Originais/README.md#página-24)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF.
 > **Validação:** os programas Prolog foram executados com o **Tau-Prolog** (implementação em JavaScript), em lugar do SWI-Prolog usado em aula. O comportamento de fatos, consultas, `findall` e `( -> ; )` é o mesmo. A saída do Tau-Prolog termina com `false.` quando não há mais soluções.
 
@@ -10,7 +14,7 @@
 
 **[Material original]** Diferenciar programação procedural e declarativa; revisar conceitos básicos e a representação de sentenças lógicas usando lógica proposicional e cálculo de predicados; representar proposições atômicas em Prolog.
 
-> **[Atenção]** A p.25 é uma cópia solta deste slide de objetivos, colocada depois da bibliografia.
+> **[Atenção]** A [p.25](../01%20-%20Slides%20Originais/README.md#página-25) é uma cópia solta deste slide de objetivos, colocada depois da bibliografia.
 
 ## 2. Procedural × declarativa (p.3–5)
 
@@ -20,7 +24,7 @@
 - **Abordagens de programação:** procedural e declarativa.
 - Na abordagem **declarativa**, especificam-se **os resultados desejados (o que deve ser feito)**, e não os procedimentos para produzi-los (como deve ser feito).
 
-**Classificação do professor (p.5):**
+**Classificação do professor ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)):**
 
 | Paradigma | Abordagem |
 | --- | --- |
@@ -62,7 +66,7 @@ Outras linguagens declarativas conhecidas: **HTML, CSS e SQL** — "nenhuma dela
 - **Constantes:** símbolos que representam as proposições.
 - **Conectivos lógicos:** operadores que combinam proposições e permitem calcular o resultado do sistema formal.
 
-**Operadores (p.9):**
+**Operadores ([p.9](../01%20-%20Slides%20Originais/README.md#página-9)):**
 
 | Operador | Símbolo | Leitura |
 | --- | --- | --- |
@@ -72,7 +76,7 @@ Outras linguagens declarativas conhecidas: **HTML, CSS e SQL** — "nenhuma dela
 | Equivalência | a ↔ b | a é equivalente a b |
 | Implicação | a → b | a implica b |
 
-**Tabela-verdade (p.10):**
+**Tabela-verdade ([p.10](../01%20-%20Slides%20Originais/README.md#página-10)):**
 
 | P | Q | ¬P | P∧Q | P∨Q | P⇒Q | P⇔Q |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -85,7 +89,7 @@ Outras linguagens declarativas conhecidas: **HTML, CSS e SQL** — "nenhuma dela
 
 - A **implicação** P ⇒ Q só é **falsa** quando P é verdadeira e Q é falsa. O asterisco do slide marca um caso contraintuitivo (F ⇒ V = V): de uma premissa falsa, qualquer conclusão é "verdadeira" — **verdade por vacuidade**. Exemplo: "se chover, levo guarda-chuva" não é desmentido num dia sem chuva, leve eu guarda-chuva ou não.
 - A **equivalência** P ⇔ Q é verdadeira quando P e Q têm o **mesmo** valor.
-- Os símbolos variam entre slides (`^ v ↔ →` na p.9; `∧ ∨ ⇔ ⇒` na p.10), mas significam o mesmo.
+- Os símbolos variam entre slides (`^ v ↔ →` na [p.9](../01%20-%20Slides%20Originais/README.md#página-9); `∧ ∨ ⇔ ⇒` na [p.10](../01%20-%20Slides%20Originais/README.md#página-10)), mas significam o mesmo.
 
 ## 5. Lógica de predicados de primeira ordem (p.11–12)
 
@@ -95,7 +99,7 @@ Outras linguagens declarativas conhecidas: **HTML, CSS e SQL** — "nenhuma dela
 - **Variáveis:** permitem construir **regras que enunciam princípios gerais** — uma variável pode ser substituída por diferentes constantes.
 - **Quantificadores:** símbolos associados às variáveis que indicam **quantas constantes** podem ser associadas a elas.
 
-Variáveis só aparecem nas proposições **precedidas por quantificadores** (p.12):
+Variáveis só aparecem nas proposições **precedidas por quantificadores** ([p.12](../01%20-%20Slides%20Originais/README.md#página-12)):
 
 | Quantificador | Notação | Leitura | Exemplo do slide |
 | --- | --- | --- | --- |
@@ -129,16 +133,16 @@ Variáveis só aparecem nas proposições **precedidas por quantificadores** (p.
 
 **[Explicação elaborada]** Em `gosta(joao, maria)`, o functor é `gosta`, e os parâmetros são `joao` e `maria`. "Não há semântica intrínseca" significa que o Prolog **não sabe** o que "gosta" quer dizer, nem se `gosta(joao, maria)` significa "João gosta de Maria" ou o contrário. O **programador** define o significado e deve usá-lo de forma consistente. Convenções de Prolog: **constantes** (átomos) começam com **minúscula** (`joao`); **variáveis**, com **maiúscula** (`X`, `Pai`).
 
-**Fatos e consultas (p.16–17)** — as proposições atômicas servem a dois papéis:
+**Fatos e consultas ([p.16–17](../01%20-%20Slides%20Originais/README.md#página-16))** — as proposições atômicas servem a dois papéis:
 
 | Papel | Definição | Exemplos |
 | --- | --- | --- |
 | **Fato** | Proposição **assumida como verdadeira** | `homem(joao).` — João é homem; `pai(joao, maria).` — João é pai de Maria |
 | **Consulta** (objetivo) | Proposição cuja **verdade deve ser verificada** | `homem(joao).` → true/false; `pai(joao, maria).` → true/false; `pai(X, maria).` → **por unificação**, encontra X que torna a proposição verdadeira |
 
-> **[Atenção]** Nos slides (p.16–17), alguns fatos aparecem com espaço entre o nome e o parêntese, como `pai (joao, maria).`. Em Prolog isso é **erro de sintaxe**: o functor deve vir colado ao `(`. Escreva `pai(joao, maria).`
+> **[Atenção]** Nos slides ([p.16–17](../01%20-%20Slides%20Originais/README.md#página-16)), alguns fatos aparecem com espaço entre o nome e o parêntese, como `pai (joao, maria).`. Em Prolog isso é **erro de sintaxe**: o functor deve vir colado ao `(`. Escreva `pai(joao, maria).`
 
-**Interação (p.18):** depois de definir fatos e regras, pode-se interagir com o programa **digitando consultas no prompt** do interpretador ou **criando um programa** que faz consultas pré-determinadas.
+**Interação ([p.18](../01%20-%20Slides%20Originais/README.md#página-18)):** depois de definir fatos e regras, pode-se interagir com o programa **digitando consultas no prompt** do interpretador ou **criando um programa** que faz consultas pré-determinadas.
 
 **[Explicação elaborada] — unificação:** é o processo de tornar dois termos **iguais** atribuindo valores às variáveis. Para responder `pai(X, maria)`, o Prolog percorre os fatos **na ordem** e tenta casar `pai(X, maria)` com cada um. `pai(joao, maria)` casa se **X = joao**, então essa é a resposta. Se o usuário pedir mais soluções (`;`), o Prolog **volta** e continua procurando — é o *backtracking*. **[Complemento]** O mecanismo completo de execução de Prolog combina unificação, **resolução** (a regra de inferência) e **backtracking** (busca em profundidade com retrocesso). O material cita só a unificação.
 
@@ -295,3 +299,16 @@ main :-
 ---
 
 **Anterior:** [Aula 14](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · **Revisão:** [Lista 01](../../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 15:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-15.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-15.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 14 · Resumo](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md)
+
+**Links para esta página (13):** [Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 14 · Resumo](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Aula 15 · visão geral](../README.md) · [Lista 01](../../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 03 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md) · [Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P5 — Grade curricular em Prolog](../../../09%20-%20Projetos%20Práticos/P5%20-%20Grade%20Curricular%20em%20Prolog/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

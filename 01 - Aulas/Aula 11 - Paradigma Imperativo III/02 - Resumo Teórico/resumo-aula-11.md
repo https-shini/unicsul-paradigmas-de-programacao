@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 11](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 11 — Paradigma Imperativo III (Subprogramas e Parâmetros) · Resumo teórico
 
-> **Fonte:** [`Aula11_ParadigmaImperativo3.pdf`](../01%20-%20Slides%20Originais/Aula11_ParadigmaImperativo3.pdf) (22 páginas). Título interno: "Aula 12 – Paradigma Imperativo – Parte 3". Apoio indicado: Tucker & Noonan, seções 9.1 a 9.4; Sebesta (9ª ed.), cap. 9 (p.22).
+> **Fonte:** [`Aula11_ParadigmaImperativo3.pdf`](../01%20-%20Slides%20Originais/Aula11_ParadigmaImperativo3.pdf) (22 páginas). Título interno: "Aula 12 – Paradigma Imperativo – Parte 3". Apoio indicado: Tucker & Noonan, seções 9.1 a 9.4; Sebesta (9ª ed.), cap. 9 ([p.22](../01%20-%20Slides%20Originais/README.md#página-22)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF. Os exemplos C++ e Python foram executados; os de C# e Pascal foram analisados sem execução.
 
 ---
@@ -18,14 +22,14 @@
 - O **cabeçalho** define o tipo do subprograma, seu nome e a lista de parâmetros.
 - **Tipos:** **procedimentos**, que não retornam valores, e **funções**, que retornam valores.
 
-**Características (p.4):**
+**Características ([p.4](../01%20-%20Slides%20Originais/README.md#página-4)):**
 
 1. Têm um **único ponto de entrada**.
 2. A unidade chamadora fica **suspensa** durante a execução do subprograma.
 3. O controle **retorna** à unidade chamadora quando o subprograma termina.
 4. A **chamada** é a requisição para que o subprograma seja executado.
 
-**Exemplo — hipotenusa (p.5–6):**
+**Exemplo — hipotenusa ([p.5–6](../01%20-%20Slides%20Originais/README.md#página-5)):**
 
 | | Procedimento (não retorna) | Função (retorna) |
 | --- | --- | --- |
@@ -53,7 +57,7 @@
 - Em geral, a associação entre eles é feita pela **posição**.
 - Algumas linguagens permitem **valores padrão**, que devem ser os **últimos** da lista.
 
-**Valor padrão em C++ (p.9):**
+**Valor padrão em C++ ([p.9](../01%20-%20Slides%20Originais/README.md#página-9)):**
 
 <!-- teste: entrada="2 5" saida-contem="2 elevado a 5: 32|2 elevado ao quadrado: 4" -->
 ```cpp
@@ -83,7 +87,7 @@ int main() {
 
 **[Explicação elaborada]** Os padrões ficam no fim porque a associação é posicional. Em `f(int a = 1, int b)`, a chamada `f(5)` seria ambígua: o 5 é `a` ou `b`?
 
-**Parâmetros nomeados (p.10–12):** em algumas linguagens, o valor de cada parâmetro é definido pelo **nome**, não pela posição.
+**Parâmetros nomeados ([p.10–12](../01%20-%20Slides%20Originais/README.md#página-10)):** em algumas linguagens, o valor de cada parâmetro é definido pelo **nome**, não pela posição.
 
 - **Vantagens:** manutenção e legibilidade, principalmente em funções com **muitos parâmetros** ou com **parâmetros opcionais**, porque fica claro o que é passado para cada um.
 - **Exemplos de linguagens:** Python, C#, Kotlin, Ruby e Swift.
@@ -105,7 +109,7 @@ mostrar_usuario(nome="João", idade=30, cidade="Florianópolis")
 mostrar_usuario(cidade="Florianópolis", nome="João", idade=30)
 ```
 
-**Motivação real (p.12):** **[Explicação elaborada]** a assinatura de `sklearn.neural_network.MLPClassifier` tem mais de 20 parâmetros, todos com valor padrão (`hidden_layer_sizes=(100,)`, `activation='relu'`, `solver='adam'`, `alpha=0.0001`, `max_iter=200`…). Com parâmetros nomeados, escreve-se `MLPClassifier(max_iter=500, solver='sgd')` e mudam-se só os necessários, sem contar posições. Na assinatura do slide, o `*` depois de `activation` torna todos os parâmetros seguintes **somente nomeados** (*keyword-only*): passá-los por posição dá `TypeError`.
+**Motivação real ([p.12](../01%20-%20Slides%20Originais/README.md#página-12)):** **[Explicação elaborada]** a assinatura de `sklearn.neural_network.MLPClassifier` tem mais de 20 parâmetros, todos com valor padrão (`hidden_layer_sizes=(100,)`, `activation='relu'`, `solver='adam'`, `alpha=0.0001`, `max_iter=200`…). Com parâmetros nomeados, escreve-se `MLPClassifier(max_iter=500, solver='sgd')` e mudam-se só os necessários, sem contar posições. Na assinatura do slide, o `*` depois de `activation` torna todos os parâmetros seguintes **somente nomeados** (*keyword-only*): passá-los por posição dá `TypeError`.
 
 ## 5. Modelos de passagem de parâmetros: semânticos e de implementação (p.13–18)
 
@@ -129,18 +133,21 @@ flowchart LR
     z -- "retorno (modo de entrada e saída)" --> c
 ```
 
+<!-- figura: aula11 página 13 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-13"><img src="../01%20-%20Slides%20Originais/paginas/aula11-p13.webp" width="640" alt="Slide da página 13: os três modelos semânticos de passagem (Sebesta, Figura 9.1)"></a><br><sub>Slide original, página 13: os três modelos semânticos de passagem (Sebesta, Figura 9.1). Clique para abrir na galeria.</sub></p>
+
 **[Material original] — os modelos de implementação:**
 
 | Modelo | Direção | O formal se comporta como… | Custo e riscos |
 | --- | --- | --- | --- |
-| **Por valor** (p.14) | Entrada | Variável local **inicializada** com o valor do real; não há retorno do formal para o real | Cópia: mais espaço; rápido para dados pequenos, lento para matrizes. "**Java suporta apenas passagem por valor para tipos primitivos.**" |
-| **Por resultado** (p.15) | Saída | Variável local **não inicializada**; no fim, seu valor é copiado para o real | Cópia; rápido para dados pequenos, lento para matrizes. "C# implementa com o modificador `out`, porém usa referência." |
-| **Por valor-resultado** (p.16) | Entrada e saída | Local inicializada com o real; no fim, copiada de volta para o real | Duas cópias; rápido para dados pequenos, lento para matrizes |
-| **Por referência** (p.17) | Entrada e saída | Caminho (endereço) até o dado do real | **Não consome memória extra** e a passagem é rápida; o **acesso** é mais lento (indireção); mudanças **inadvertidas** podem comprometer outras partes do programa |
+| **Por valor** ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)) | Entrada | Variável local **inicializada** com o valor do real; não há retorno do formal para o real | Cópia: mais espaço; rápido para dados pequenos, lento para matrizes. "**Java suporta apenas passagem por valor para tipos primitivos.**" |
+| **Por resultado** ([p.15](../01%20-%20Slides%20Originais/README.md#página-15)) | Saída | Variável local **não inicializada**; no fim, seu valor é copiado para o real | Cópia; rápido para dados pequenos, lento para matrizes. "C# implementa com o modificador `out`, porém usa referência." |
+| **Por valor-resultado** ([p.16](../01%20-%20Slides%20Originais/README.md#página-16)) | Entrada e saída | Local inicializada com o real; no fim, copiada de volta para o real | Duas cópias; rápido para dados pequenos, lento para matrizes |
+| **Por referência** ([p.17](../01%20-%20Slides%20Originais/README.md#página-17)) | Entrada e saída | Caminho (endereço) até o dado do real | **Não consome memória extra** e a passagem é rápida; o **acesso** é mais lento (indireção); mudanças **inadvertidas** podem comprometer outras partes do programa |
 
-> **[Atenção]** A frase da p.14 pode sugerir que Java passa objetos por referência. Formalmente, **Java sempre passa por valor**: para objetos e vetores, o valor copiado é a referência. Por isso o método consegue alterar o conteúdo do objeto, mas reatribuir o parâmetro não afeta a variável do chamador ([Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#exemplo-2--java-vetor-e-inteiro-como-parâmetros-p10)).
+> **[Atenção]** A frase da [p.14](../01%20-%20Slides%20Originais/README.md#página-14) pode sugerir que Java passa objetos por referência. Formalmente, **Java sempre passa por valor**: para objetos e vetores, o valor copiado é a referência. Por isso o método consegue alterar o conteúdo do objeto, mas reatribuir o parâmetro não afeta a variável do chamador ([Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#exemplo-2--java-vetor-e-inteiro-como-parâmetros-p10)).
 
-**[Material original] (p.18):** "A maioria das linguagens realiza, por padrão, a **passagem por valor** e possui mecanismos que permitem a passagem por referência" — com uma versão reduzida do exemplo C# `Metodo1(int x)` × `Metodo2(ref int x)` da [Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#exemplo-1--c-ref-p9), sem `Console.WriteLine` dentro dos métodos (saída: `0`, `0`, `1`).
+**[Material original] ([p.18](../01%20-%20Slides%20Originais/README.md#página-18)):** "A maioria das linguagens realiza, por padrão, a **passagem por valor** e possui mecanismos que permitem a passagem por referência" — com uma versão reduzida do exemplo C# `Metodo1(int x)` × `Metodo2(ref int x)` da [Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#exemplo-1--c-ref-p9), sem `Console.WriteLine` dentro dos métodos (saída: `0`, `0`, `1`).
 
 **[Explicação elaborada] — valor-resultado × referência.** Os dois são de "entrada e saída", mas diferem quando há *aliasing*. Considere:
 
@@ -198,3 +205,16 @@ Detalhes: <https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/ke
 ---
 
 **Anterior:** [Aula 10](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) · **Próxima:** [Aula 12 — Paradigma Orientado a Objetos I](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 11:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-11.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-11.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 10 · Resumo](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Aula 12 · Resumo](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) →
+
+**Links para esta página (13):** [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 10 · Resumo](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Aula 11 · visão geral](../README.md) · [Aula 12 · Resumo](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 01 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

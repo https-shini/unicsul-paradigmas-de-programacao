@@ -1,13 +1,17 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 03](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 03 — Implementação das Linguagens · Resumo teórico
 
-> **Fonte:** [`Aula03_Implementacao_LinguagensDeProgramacao.pdf`](../01%20-%20Slides%20Originais/Aula03_Implementacao_LinguagensDeProgramacao.pdf) (17 páginas). As figuras das p.9, 11, 13 e 15 são de Sebesta (9ª ed.), cap. 1.
+> **Fonte:** [`Aula03_Implementacao_LinguagensDeProgramacao.pdf`](../01%20-%20Slides%20Originais/Aula03_Implementacao_LinguagensDeProgramacao.pdf) (17 páginas). As figuras das [p.9](../01%20-%20Slides%20Originais/README.md#página-9), 11, 13 e 15 são de Sebesta (9ª ed.), cap. 1.
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF.
 
 ---
 
 ## 1. Revisão (p.2–6)
 
-**[Material original]** A aula abre com "Na aula passada…" e repete as três figuras de gerações e a linha do tempo (as quatro figuras das p.19–22 da Aula 02) da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#8-evolução-das-linguagens-p1822).
+**[Material original]** A aula abre com "Na aula passada…" e repete as três figuras de gerações e a linha do tempo (as quatro figuras das [p.19–22](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-19) da Aula 02) da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#8-evolução-das-linguagens-p1822).
 
 ## 2. A tese da aula (p.7)
 
@@ -23,7 +27,7 @@
 
 **[Material original]** Traduz o programa-fonte para **código de máquina de uma plataforma específica** e salva o resultado em um **arquivo executável**. Exemplos: Fortran, C, C++, Pascal.
 
-**Fases do compilador (figura da p.9, Sebesta):**
+**Fases do compilador (figura da [p.9](../01%20-%20Slides%20Originais/README.md#página-9), Sebesta):**
 
 ```mermaid
 flowchart TD
@@ -42,11 +46,14 @@ flowchart TD
     T -.- C
 ```
 
+<!-- figura: aula03 página 9 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-9"><img src="../01%20-%20Slides%20Originais/paginas/aula03-p09.webp" width="640" alt="Slide da página 9: o processo de compilação (Sebesta)"></a><br><sub>Slide original, página 9: o processo de compilação (Sebesta). Clique para abrir na galeria.</sub></p>
+
 **[Explicação elaborada] — o que cada fase faz:**
 
 | Fase | Entrada → saída | Exemplo com `soma = x + 10;` | Aula |
 | --- | --- | --- | --- |
-| Léxica | Caracteres → tokens | `soma` (identificador), `=` (símbolo especial na classificação da Aula 04, p.9; em C é o operador de atribuição), `x`, `+` (operador), `10` (constante), `;` | 04 |
+| Léxica | Caracteres → tokens | `soma` (identificador), `=` (símbolo especial na classificação da Aula 04, [p.9](../../Aula%2004%20-%20Sintaxe/01%20-%20Slides%20Originais/README.md#página-9); em C é o operador de atribuição), `x`, `+` (operador), `10` (constante), `;` | 04 |
 | Sintática | Tokens → árvore sintática | Atribuição cujo lado direito é a soma de `x` e `10` | 04 |
 | Semântica / código intermediário | Árvore → código intermediário verificado | Verifica se `soma` e `x` foram declaradas e se os tipos são compatíveis; gera `t1 = x + 10; soma = t1` | 05, 06 |
 | Otimização (opcional) | Intermediário → intermediário melhor | Remove temporários desnecessários | — |
@@ -58,13 +65,19 @@ A **tabela de símbolos** guarda nomes, tipos e endereços e é consultada por t
 
 **[Material original]** Um programa **interpretador** simula em software uma máquina, **traduzindo e executando as instruções simultaneamente** na máquina-alvo. Exemplos: Lisp, JavaScript, PHP, Python.
 
-Figura (p.11): o programa-fonte e os dados de entrada vão direto ao interpretador, que produz o resultado — sem arquivo executável intermediário.
+Figura ([p.11](../01%20-%20Slides%20Originais/README.md#página-11)): o programa-fonte e os dados de entrada vão direto ao interpretador, que produz o resultado — sem arquivo executável intermediário.
+
+<!-- figura: aula03 página 11 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-11"><img src="../01%20-%20Slides%20Originais/paginas/aula03-p11.webp" width="640" alt="Slide da página 11: interpretação pura (Sebesta)"></a><br><sub>Slide original, página 11: interpretação pura (Sebesta). Clique para abrir na galeria.</sub></p>
 
 ## 5. Sistema híbrido (p.12–13)
 
 **[Material original]** Um compilador traduz o programa-fonte para um **código intermediário**, que é executado por um **interpretador**. Exemplos: linguagens da plataforma .NET (VB.NET, C#) e Java.
 
-Figura (p.13): analisador léxico → analisador sintático → gerador de código intermediário → código intermediário → interpretador (com os dados de entrada) → resultado.
+Figura ([p.13](../01%20-%20Slides%20Originais/README.md#página-13)): analisador léxico → analisador sintático → gerador de código intermediário → código intermediário → interpretador (com os dados de entrada) → resultado.
+
+<!-- figura: aula03 página 13 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-13"><img src="../01%20-%20Slides%20Originais/paginas/aula03-p13.webp" width="640" alt="Slide da página 13: implementação híbrida (Sebesta)"></a><br><sub>Slide original, página 13: implementação híbrida (Sebesta). Clique para abrir na galeria.</sub></p>
 
 **[Complemento]** Em Java, `javac` gera **bytecode** (`.class`), executado pela **JVM**. Em .NET, o compilador gera **CIL**, executado pelo **CLR**. JVM e CLR modernas também usam **compilação JIT** (*just-in-time*), que converte trechos frequentes do código intermediário em código de máquina durante a execução.
 
@@ -78,7 +91,7 @@ Figura (p.13): analisador léxico → analisador sintático → gerador de códi
 | --- | --- | --- | --- |
 | Velocidade de execução | **Alta**: código nativo, traduzido uma vez | **Baixa**: decodifica cada instrução a cada execução (Sebesta cita lentidão de 10 a 100 vezes) | Intermediária: o código intermediário é mais simples de interpretar que o fonte |
 | Portabilidade | Baixa: um executável por plataforma | Alta: basta haver interpretador | Alta: "escreva uma vez, rode em qualquer VM" |
-| Erros detectados antes de executar | Muitos (sintaxe e semântica estática) | Poucos: "por definição, não há verificação estática" (Aula 05, p.17) | Os da etapa de compilação |
+| Erros detectados antes de executar | Muitos (sintaxe e semântica estática) | Poucos: "por definição, não há verificação estática" (Aula 05, [p.17](../../Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-17)) | Os da etapa de compilação |
 | Depuração | Mais difícil de relacionar com o fonte | Fácil: erro aponta a linha do fonte | Intermediária |
 | Espaço | Executável independente | Precisa do fonte e do interpretador | Precisa da VM |
 
@@ -95,6 +108,9 @@ Soluções comentadas em C, Python e Java estão em [resolucoes-aula-03.md](../0
 ## 8. Computadores virtuais em camadas (p.15)
 
 **[Material original]** Figura 1.2 de Sebesta: no núcleo, a **máquina pura**; em volta, o **interpretador de macroinstruções** e o **sistema operacional**. Na camada externa ficam compiladores e interpretadores — C, Ada, Java (máquina virtual Java), .NET Common Language Runtime (VB.NET, C#), Scheme, montador e interpretador de comandos do sistema operacional. Cada um cria um **computador virtual** da sua linguagem.
+
+<!-- figura: aula03 página 15 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-15"><img src="../01%20-%20Slides%20Originais/paginas/aula03-p15.webp" width="640" alt="Slide da página 15: visão em camadas do computador (Sebesta, Figura 1.2)"></a><br><sub>Slide original, página 15: visão em camadas do computador (Sebesta, Figura 1.2). Clique para abrir na galeria.</sub></p>
 
 **[Explicação elaborada]** Para quem programa em C, o computador "parece" executar C; para quem programa em Scheme, parece executar Scheme. Cada camada esconde a de baixo — mais um exemplo de **abstração** (tema da [Aula 10](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md)).
 
@@ -127,3 +143,16 @@ Soluções comentadas em C, Python e Java estão em [resolucoes-aula-03.md](../0
 ---
 
 **Anterior:** [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · **Próxima:** [Aula 04 — Sintaxe](../../Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 03:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-03.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-03.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Aula 04 · Resumo](../../Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md) →
+
+**Links para esta página (14):** [Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Aula 02 · Complementos](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 03 · visão geral](../README.md) · [Aula 04 · Resumo](../../Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md) · [Aula 06 · Resumo](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 01 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P1 — Interpretador de expressões](../../../09%20-%20Projetos%20Práticos/P1%20-%20Interpretador%20de%20Expressões/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

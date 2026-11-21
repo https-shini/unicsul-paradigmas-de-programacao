@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 12](../README.md) › [03 - Exercícios](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 12 — Paradigma Orientado a Objetos I · Exercícios
 
-> **[Exercício autoral]**, exceto o E7, que reúne as perguntas originais dos Exemplos 1a–1d (p.8–14). Base: [`Aula12_ParadigmaOrientadoObjetos1.pdf`](../01%20-%20Slides%20Originais/Aula12_ParadigmaOrientadoObjetos1.pdf). Resoluções: [`resolucoes-aula-12.md`](../04%20-%20Resoluções/resolucoes-aula-12.md)
+> **[Exercício autoral]**, exceto o E7, que reúne as perguntas originais dos Exemplos 1a–1d ([p.8–14](../01%20-%20Slides%20Originais/README.md#página-8)). Base: [`Aula12_ParadigmaOrientadoObjetos1.pdf`](../01%20-%20Slides%20Originais/Aula12_ParadigmaOrientadoObjetos1.pdf). Resoluções: [`resolucoes-aula-12.md`](../04%20-%20Resoluções/resolucoes-aula-12.md)
 
 ## Básico
 
@@ -36,3 +40,16 @@ d) (1d) A troca para alocação encadeada exigiu mudanças no `main`? O que isso
 **E10.** As versões da pilha devolvem −1 quando ela está vazia. Que problema isso causa? Reescreva o `pop` da versão 1c usando exceção e ajuste o `main`.
 
 **E11.** Explique por que a ausência de "mecanismos automáticos de inicialização e finalização" nos pacotes dos anos 1980 foi um problema e como construtores e destrutores o resolvem.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 12:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-12.md) · **Exercícios** · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-12.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 11 · Exercícios](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/03%20-%20Exercícios/exercicios-aula-11.md) · [Aula 13 · Exercícios](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/03%20-%20Exercícios/exercicios-aula-13.md) →
+
+**Links para esta página (4):** [Aula 12 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-12.md) · [Aula 12 · visão geral](../README.md) · [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-3-orientacao-a-objetos.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

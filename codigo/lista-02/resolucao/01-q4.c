@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 02 - Listas de Exercícios/Lista 02 - Revisão II/02 - Resolução/resolucao-lista-02.md (linha 59).
+// Gerado automaticamente a partir de 02 - Listas de Exercícios/Lista 02 - Revisão II/02 - Resolução/resolucao-lista-02.md (linha 63).
 // Seção: Q4
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/lista-02/resolucao/01-q4.c

@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [09 - Projetos Práticos](../README.md) › **P3** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # P3 — Acervo da biblioteca em Java
 
 > **[Exercício autoral]** Projeto prático elaborado para este repositório. **Não é trabalho do professor** e não vale nota. A pasta `solucao/` é uma **[Resolução elaborada]**, não gabarito oficial.
@@ -97,10 +101,21 @@ javac *.java && java Main                                       # a demonstraç�
 1. **Novo tipo** `DVD` (prazo de 3 dias, multa de 2,00): quantas linhas do `Acervo` precisam mudar? (Resposta esperada: nenhuma.)
 2. **Usuário como classe**, com limite de empréstimos simultâneos.
 3. **Datas reais** com `java.time.LocalDate`: data de devolução prevista e multa calculada a partir dela.
-4. **Versão em C++**: reescreva `Item` com função virtual pura e compare com o exemplo de herança múltipla da Aula 13 (p.7–9).
+4. **Versão em C++**: reescreva `Item` com função virtual pura e compare com o exemplo de herança múltipla da Aula 13 ([p.7–9](../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-7)).
 
 ## Para refletir
 
 - Por que `ObraDeReferencia` não implementa `Emprestavel`, em vez de implementar e devolver sempre `false`? O que isso tem a ver com o contrato de uma interface?
 - `buscar("L1")` e `buscar(2011)`: em que momento o Java escolhe qual método chamar? E em `item.multa(3)`, qual `multaPorDia()` é usada?
 - Por que `ItemCirculante` é uma classe abstrata, e não uma interface? (Dica: o atributo `usuario`; ver o [Atenção] sobre interfaces no resumo da Aula 13.)
+
+
+<!-- nav:rodape -->
+
+---
+
+← [P2 — Estruturas encadeadas em C++: pilha e fila](../P2%20-%20Estruturas%20Encadeadas%20em%20C++/README.md) · [P4 — Estatísticas de texto em Clojure](../P4%20-%20Estatísticas%20de%20Texto%20em%20Clojure/README.md) →
+
+**Links para esta página (1):** [09 — Projetos Práticos](../README.md)
+
+<!-- /nav:rodape -->

@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 13 - Paradigma Orientado a Objetos II/02 - Resumo Teórico/resumo-aula-13.md (linha 64).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 13 - Paradigma Orientado a Objetos II/02 - Resumo Teórico/resumo-aula-13.md (linha 68).
 // Seção: 3. Exemplo: impressora multifuncional (p.7–9)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-13/resumo/01-3-exemplo-impressora-multifuncional-p-7-9.cpp

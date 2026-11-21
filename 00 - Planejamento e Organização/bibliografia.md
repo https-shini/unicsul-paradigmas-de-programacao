@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [00 - Planejamento e Organização](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Bibliografia
 
 > **Fonte:** [`Aula01_Intro.pdf`](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/Aula01_Intro.pdf), p.8–9, e slides de bibliografia de cada aula. Legenda: [Convenções](../README.md#convenções-de-marcação).
@@ -54,3 +58,12 @@ Referências usadas nos slides:
 ## Leituras de aprofundamento
 
 **[Complemento]** — sugestões do repositório, não indicadas pelo professor. O catálogo completo, com referência ABNT, forma de acesso e BibTeX, está em [`08 - Referências e Fontes`](../08%20-%20Referências%20e%20Fontes/README.md); o roteiro de leitura por unidade, em [`05 - Materiais Complementares`](../05%20-%20Materiais%20Complementares/README.md); e as indicações específicas de cada aula, em `05 - Materiais Complementares/materiais-complementares.md` dentro da pasta da aula.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (6):** [00 — Planejamento e Organização](README.md) · [Ementa, conteúdo e avaliação](ementa.md) · [Aula 01 · Resumo](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/02%20-%20Resumo%20Teórico/resumo-aula-01.md) · [Aula 01 · Complementos](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [08 — Referências e Fontes](../08%20-%20Referências%20e%20Fontes/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

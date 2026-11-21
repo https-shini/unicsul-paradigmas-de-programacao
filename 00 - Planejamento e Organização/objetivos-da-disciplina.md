@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [00 - Planejamento e Organização](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Objetivos da disciplina
 
 > **Fonte:** [`Aula01_Intro.pdf`](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/Aula01_Intro.pdf), p.4. Legenda: [Convenções](../README.md#convenções-de-marcação).
@@ -26,3 +30,12 @@
 ## Objetivos por aula
 
 Cada resumo teórico começa com os objetivos declarados no slide da aula. Índice: [README principal](../README.md#aulas).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (4):** [00 — Planejamento e Organização](README.md) · [Ementa, conteúdo e avaliação](ementa.md) · [Resumo geral da disciplina](../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

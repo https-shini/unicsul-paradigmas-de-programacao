@@ -1,4 +1,4 @@
-# Gerado automaticamente a partir de 01 - Aulas/Aula 03 - Implementação das Linguagens/04 - Resoluções/resolucoes-aula-03.md (linha 83).
+# Gerado automaticamente a partir de 01 - Aulas/Aula 03 - Implementação das Linguagens/04 - Resoluções/resolucoes-aula-03.md (linha 87).
 # Seção: Python (Grupo 1, interpretada)
 # Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 # Como executar:  python3 ferramentas/rodar.py codigo/aula-03/resolucoes/02-python-grupo-1-interpretada.py

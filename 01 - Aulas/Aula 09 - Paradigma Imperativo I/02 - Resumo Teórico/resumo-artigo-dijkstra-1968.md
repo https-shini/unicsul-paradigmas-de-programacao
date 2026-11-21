@@ -1,9 +1,13 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 09](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 09a — "Go To Statement Considered Harmful" (Dijkstra, 1968) · Resumo e análise
 
 > **Fonte:** [`Aula09a_ArtigoDijkstra68.pdf`](../01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf) (2 páginas). Edsger W. Dijkstra, Technological University Eindhoven. Publicado como carta ao editor em *Communications of the ACM*, v. 11, n. 3, p. 147–148, mar. 1968.
 > **Sobre o arquivo:** o corpo do artigo é uma **digitalização (imagem) sem texto pesquisável**; só o cabeçalho, o rodapé e a linha de fonte acrescentados ao PDF são texto. Para este resumo, o texto foi extraído por OCR e conferido visualmente na imagem; a digitalização está legível, sem trechos perdidos.
 >
-> **[Atenção]** O cabeçalho do PDF e a bibliografia da Aula 01 (p.9) escrevem "Edgar Dijkstra"; o nome correto é **Edsger** W. Dijkstra, como na assinatura do artigo.
+> **[Atenção]** O cabeçalho do PDF e a bibliografia da Aula 01 ([p.9](../../Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-9)) escrevem "Edgar Dijkstra"; o nome correto é **Edsger** W. Dijkstra, como na assinatura do artigo.
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). O artigo está em inglês; as passagens abaixo são **paráfrases** em português. Os termos técnicos originais aparecem entre parênteses.
 
 ---
@@ -88,13 +92,13 @@ Palavras-chave do artigo: *go to statement, jump instruction, branch instruction
 2. **Solução:** usar só construções cujo progresso é descritível por coordenadas automáticas — sequência, seleção (`if`/`case`), repetição (`while`/`repeat`) e procedimentos. São as **estruturas de controle** da programação estruturada ([Aula 09, p.10 e p.17](resumo-aula-09.md#7-não-estruturado--estruturado-p1618)).
 3. **Teoria × prática:** Böhm e Jacopini provaram que o `go to` é dispensável; Dijkstra explicou **por que** dispensá-lo, um argumento cognitivo e de legibilidade.
 4. **Legado:** o artigo é considerado o marco da **programação estruturada**. As linguagens projetadas depois (Pascal, 1970; C, 1972) mantêm o `goto` só como exceção, e Java nem o implementa (`goto` é palavra reservada sem uso). O título — com o padrão "*X considered harmful*" — virou expressão idiomática na computação.
-5. **Ponte para as próximas aulas:** a ideia de aproximar o texto do processo combina com a **abstração procedural** (Aula 10) e com os subprogramas, que têm um **único ponto de entrada** e devolvem o controle ao chamador ao terminar (Aula 11, p.4). O encapsulamento de dados leva à OO (Aula 12).
+5. **Ponte para as próximas aulas:** a ideia de aproximar o texto do processo combina com a **abstração procedural** (Aula 10) e com os subprogramas, que têm um **único ponto de entrada** e devolvem o controle ao chamador ao terminar (Aula 11, [p.4](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-4)). O encapsulamento de dados leva à OO (Aula 12).
 
 > **[Complemento]** Segundo relatos posteriores do próprio Dijkstra, o título original da carta era "A case against the GO TO statement"; o título publicado foi escolhido pelo editor, Niklaus Wirth. Essa informação **não consta** no PDF da disciplina.
 
 ## 6. Comparação com o slide da Aula 09 (p.18)
 
-| Slide (Aula 09, p.18) | Artigo |
+| Slide (Aula 09, [p.18](../01%20-%20Slides%20Originais/README.md#página-18)) | Artigo |
 | --- | --- |
 | "O uso **excessivo** de `goto` era prejudicial" | Defende a **abolição** do `go to` nas linguagens de alto nível |
 | "Qualquer sequência com `goto` poderia ser escrita com laços condicionais" — atribuído a Dijkstra | Essa prova é atribuída a **Jacopini** (Böhm & Jacopini, 1966) |
@@ -108,3 +112,14 @@ Palavras-chave do artigo: *go to statement, jump instruction, branch instruction
 4. Qual é a diferença entre a contribuição de Böhm e Jacopini e a de Dijkstra?
 
 Respostas em [resolucoes-aula-09.md](../04%20-%20Resoluções/resolucoes-aula-09.md#e10--perguntas-sobre-o-artigo-de-dijkstra).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 09:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](resumo-aula-09.md) · **Artigo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-09.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-09.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+**Links para esta página (13):** [Aula 09 · Resumo](resumo-aula-09.md) · [Aula 09 · Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 09 · visão geral](../README.md) · [Aula 14 · Resumo](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 01 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Erratas e inconsistências do material](../../../06%20-%20Revisões%20e%20Sínteses/erratas-e-inconsistencias.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [Artigos clássicos](../../../08%20-%20Referências%20e%20Fontes/artigos.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

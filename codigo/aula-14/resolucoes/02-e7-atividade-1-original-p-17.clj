@@ -1,4 +1,4 @@
-;; Gerado automaticamente a partir de 01 - Aulas/Aula 14 - Paradigma Funcional/04 - Resoluções/resolucoes-aula-14.md (linha 71).
+;; Gerado automaticamente a partir de 01 - Aulas/Aula 14 - Paradigma Funcional/04 - Resoluções/resolucoes-aula-14.md (linha 75).
 ;; Seção: E7 — Atividade 1 (original, p.17)
 ;; Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 ;; Como executar:  python3 ferramentas/rodar.py codigo/aula-14/resolucoes/02-e7-atividade-1-original-p-17.clj

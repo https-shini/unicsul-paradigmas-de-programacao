@@ -1,10 +1,14 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 08](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 08 — Ponteiros · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-08.md`](../03%20-%20Exercícios/exercicios-aula-08.md). Os programas C e Java foram compilados e executados; o C# foi analisado sem execução (não há compilador C# no ambiente de validação).
 
 ## E1
 
-Ponteiro é um valor que representa um endereço de memória (p.3). **Explícitos:** C, C++, Pascal, Ada (e Perl). **Implícitos:** Java e C# — referências a objetos gerenciadas pela máquina virtual.
+Ponteiro é um valor que representa um endereço de memória ([p.3](../01%20-%20Slides%20Originais/README.md#página-3)). **Explícitos:** C, C++, Pascal, Ada (e Perl). **Implícitos:** Java e C# — referências a objetos gerenciadas pela máquina virtual.
 
 ## E2
 
@@ -139,3 +143,16 @@ int main(void) {
 Passar uma estrutura grande **por valor** copia todos os seus bytes a cada chamada — gasta tempo e espaço na pilha. Passar um **ponteiro** copia só o endereço (8 bytes num sistema de 64 bits), qualquer que seja o tamanho da estrutura.
 
 Exemplo: `struct Imagem { unsigned char pixels[1920*1080*3]; }` tem cerca de 6 MB. `processa(struct Imagem img)` copiaria 6 MB por chamada e provavelmente estouraria a pilha; `processa(struct Imagem *img)` copia 8 bytes. A Aula 11 retoma esse custo: a passagem por valor é "rápida para parâmetros pequenos, mas pode ser lenta em dados como matrizes".
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 08:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-08.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 07 · Resoluções](../../Aula%2007%20-%20Tipos%20Compostos/04%20-%20Resoluções/resolucoes-aula-07.md) · [Aula 09 · Resoluções](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/04%20-%20Resoluções/resolucoes-aula-09.md) →
+
+**Links para esta página (3):** [Aula 08 · Exercícios](../03%20-%20Exercícios/exercicios-aula-08.md) · [Aula 08 · visão geral](../README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

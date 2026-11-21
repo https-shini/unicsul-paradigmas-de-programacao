@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [00 - Planejamento e Organização](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Inventário dos materiais originais
 
 > Materiais fornecidos pelo professor, todos preservados **sem alteração** no repositório. Os MD5 foram calculados no momento da importação e servem para verificar a integridade (`md5sum <arquivo>`).
@@ -45,3 +49,12 @@
 1. Coloque o arquivo original, sem renomear, na pasta `01 - Slides Originais` (ou `01 - Enunciado Original`) correspondente.
 2. Acrescente uma linha na tabela acima com o MD5 (`md5sum arquivo.pdf`).
 3. Atualize o resumo, os exercícios e o [índice principal](../README.md#aulas).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (2):** [00 — Planejamento e Organização](README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

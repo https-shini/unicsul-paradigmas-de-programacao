@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [08 - Referências e Fontes](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Artigos clássicos
 
 > Legenda: 🎓 indicado pelo professor · ➕ complemento do repositório. Formato das referências: ABNT NBR 6023:2018. Links conferidos em 19/11/2026. Marcações: [Convenções](../README.md#convenções-de-marcação).
@@ -17,7 +21,7 @@
 
 ## 1. Artigo indicado pelo professor
 
-**[Material original]** Aula01 p.9 e Aula 09.
+**[Material original]** Aula01 [p.9](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-9) e Aula 09.
 
 ### A01 — Dijkstra (1968)
 
@@ -233,3 +237,12 @@ COLMERAUER, Alain; ROUSSEL, Philippe. The birth of Prolog. **ACM SIGPLAN Notices
 - **Aulas:** [15](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/README.md)
 - **Por que ler:** História do Prolog contada pelos criadores (Marselha, 1972): processamento de linguagem natural, demonstração automática de teoremas e resolução.
 - **Observação:** Apresentado na conferência HOPL-II.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (3):** [05 — Materiais Complementares](../05%20-%20Materiais%20Complementares/README.md) · [08 — Referências e Fontes](README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

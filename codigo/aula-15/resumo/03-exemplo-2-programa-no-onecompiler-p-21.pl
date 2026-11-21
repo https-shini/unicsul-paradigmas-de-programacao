@@ -1,4 +1,4 @@
-% Gerado automaticamente a partir de 01 - Aulas/Aula 15 - Paradigma Lógico/02 - Resumo Teórico/resumo-aula-15.md (linha 196).
+% Gerado automaticamente a partir de 01 - Aulas/Aula 15 - Paradigma Lógico/02 - Resumo Teórico/resumo-aula-15.md (linha 200).
 % Seção: Exemplo 2 — programa no OneCompiler (p.21)
 % Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 % Como executar:  python3 ferramentas/rodar.py codigo/aula-15/resumo/03-exemplo-2-programa-no-onecompiler-p-21.pl

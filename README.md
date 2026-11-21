@@ -6,8 +6,22 @@ Reúne os **materiais originais** da disciplina, preservados sem alteração, e,
 
 > **Importante:** resumos, exercícios e resoluções foram **elaborados para este repositório** e não substituem as aulas nem são material oficial do professor. As resoluções **não são gabaritos oficiais**. Ver [Convenções de marcação](#convenções-de-marcação).
 
+## Como navegar
+
+Este repositório é uma **base de conhecimento navegável no próprio GitHub**, como um caderno do Notion ou um cofre do Obsidian: tudo é Markdown, toda pasta tem uma página de índice e as notas se ligam umas às outras.
+
+| Comece por | Para |
+| --- | --- |
+| [**Índice das aulas**](01%20-%20Aulas/README.md) | Tabela com slides, resumo, exercícios e resoluções de cada aula |
+| [**Mapa do repositório**](MAPA.md) | Todas as notas numa só página, em árvore |
+| [**Guia da base de conhecimento**](00%20-%20Planejamento%20e%20Organização/guia-da-base-de-conhecimento.md) | Como a base funciona, como navegar e como acrescentar notas, fotos e PDFs |
+| [**Caderno de anotações**](10%20-%20Caderno%20de%20Anotações/README.md) | O espaço para as suas próprias anotações e fotos |
+
+Em cada nota: a **trilha** no topo leva a qualquer nível acima; o **rodapé** traz as outras partes da aula, a nota anterior e a próxima e a lista de **notas que apontam para ela**. Citações como `p.12` ou `Aula08 p.13` abrem a página exata do slide, e os slides de cada aula podem ser lidos [página por página](01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md), em imagem, com o texto pesquisável pela busca do GitHub (tecla `/`).
+
 ## Sumário
 
+- [Como navegar](#como-navegar)
 - [Sobre a disciplina](#sobre-a-disciplina)
 - [Estrutura do repositório](#estrutura-do-repositório)
 - [Aulas](#aulas)
@@ -37,10 +51,11 @@ Detalhes em [`00 - Planejamento e Organização`](00%20-%20Planejamento%20e%20Or
 
 ```text
 .
-├── 00 - Planejamento e Organização/   ementa, objetivos, cronograma, bibliografia, acompanhamento, inventário
-├── 01 - Aulas/
+├── README.md · MAPA.md                 página inicial · mapa de todas as notas
+├── 00 - Planejamento e Organização/   ementa, cronograma, acompanhamento, guia da base, modelos de nota
+├── 01 - Aulas/                        índice das 15 aulas
 │   └── Aula NN - Tema/
-│       ├── 01 - Slides Originais/      PDF do professor, sem alterações
+│       ├── 01 - Slides Originais/      PDF do professor (sem alterações) + galeria página por página
 │       ├── 02 - Resumo Teórico/        resumo didático com referências às páginas
 │       ├── 03 - Exercícios/            básico, intermediário, avançado, aprofundamento
 │       ├── 04 - Resoluções/            resoluções comentadas, separadas dos exercícios
@@ -53,10 +68,11 @@ Detalhes em [`00 - Planejamento e Organização`](00%20-%20Planejamento%20e%20Or
 ├── 07 - Glossário/                     glossário alfabético
 ├── 08 - Referências e Fontes/          livros, artigos e documentação oficial (ABNT + BibTeX)
 ├── 09 - Projetos Práticos/             seis projetos com esqueleto, testes e resolução de referência
+├── 10 - Caderno de Anotações/          suas anotações, fotos e PDFs anexados
 ├── codigo/                             todos os programas dos Markdown, um por arquivo (gerado)
 ├── ferramentas/                        testes, autocorreção, geradores e instalação do ambiente
 ├── .devcontainer/                      ambiente do Codespaces com todas as linguagens
-└── .github/workflows/                  CI: executa todo o código e valida links e diagramas
+└── .github/workflows/                  CI (executa o código, valida links) e atualização automática da navegação
 ```
 
 | Pasta | Conteúdo |
@@ -71,6 +87,7 @@ Detalhes em [`00 - Planejamento e Organização`](00%20-%20Planejamento%20e%20Or
 | [07 - Glossário](07%20-%20Glossário/glossario.md) | 95 termos em ordem alfabética, com referência às aulas |
 | [08 - Referências e Fontes](08%20-%20Referências%20e%20Fontes/README.md) | 26 livros e 19 artigos (todos os indicados pelo professor + complementos), documentação oficial de 10 linguagens, índice por aula e arquivo BibTeX |
 | [09 - Projetos Práticos](09%20-%20Projetos%20Práticos/README.md) | Seis projetos autorais (Python, C++, Java, Clojure, Prolog e um em quatro linguagens), com testes automáticos |
+| [10 - Caderno de Anotações](10%20-%20Caderno%20de%20Anotações/README.md) | Espaço para as suas anotações, fotos e PDFs, com [modelo de nota](00%20-%20Planejamento%20e%20Organização/Modelos/modelo-de-nota.md) |
 | [codigo/](codigo/README.md) | Os programas dos resumos e resoluções, um por arquivo, prontos para executar |
 
 ## Aulas

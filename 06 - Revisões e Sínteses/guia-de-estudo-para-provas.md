@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [06 - Revisões e Sínteses](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Guia de estudo para as avaliações
 
 > **[Explicação elaborada]** Roteiro de revisão montado a partir do plano de ensino e das duas listas de revisão do professor. **Não antecipa o conteúdo das provas.** Confirme sempre com o professor o que será cobrado em cada avaliação. Legenda: [Convenções](../README.md#convenções-de-marcação).
@@ -76,3 +80,12 @@ Os quadros estão em [quadros-comparativos.md](quadros-comparativos.md).
 - [ ] Refazer de memória os quadros 1, 6, 8 e 13.
 - [ ] Revisar o [glossário](../07%20-%20Glossário/glossario.md).
 - [ ] Conferir as regras de avaliação na [ementa](../00%20-%20Planejamento%20e%20Organização/ementa.md#avaliação).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (4):** [Objetivos da disciplina](../00%20-%20Planejamento%20e%20Organização/objetivos-da-disciplina.md) · [04 — Provas e Avaliações](../04%20-%20Provas%20e%20Avaliações/README.md) · [06 — Revisões e Sínteses](README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

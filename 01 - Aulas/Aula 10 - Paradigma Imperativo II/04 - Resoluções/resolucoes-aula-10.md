@@ -1,21 +1,25 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 10](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 10 — Paradigma Imperativo II · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-10.md`](../03%20-%20Exercícios/exercicios-aula-10.md). Os programas foram compilados e executados com gcc.
 
 ## E1
 
-- **Abstração:** habilidade de concentrar-se nos aspectos essenciais de um contexto, ignorando os menos importantes, para simplificar a construção da solução (p.4).
-- **Abstração procedural:** processo que permite ao programador se preocupar com a **interface** da função e com o **que** ela calcula, ignorando **como** o cálculo é feito (p.6).
+- **Abstração:** habilidade de concentrar-se nos aspectos essenciais de um contexto, ignorando os menos importantes, para simplificar a construção da solução ([p.4](../01%20-%20Slides%20Originais/README.md#página-4)).
+- **Abstração procedural:** processo que permite ao programador se preocupar com a **interface** da função e com o **que** ela calcula, ignorando **como** o cálculo é feito ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)).
 
 ## E2
 
 1. Descrever sucintamente a função, com entrada e saída.
 2. Dividi-la em funções mais primitivas, cada uma com entrada e saída.
-3. Repetir até que tudo seja executável com os comandos e tipos primitivos da linguagem (p.7).
+3. Repetir até que tudo seja executável com os comandos e tipos primitivos da linguagem ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)).
 
 ## E3
 
-**Resposta: b.** Abstração de processos → imperativo; abstração de dados → orientado a objetos (p.5).
+**Resposta: b.** Abstração de processos → imperativo; abstração de dados → orientado a objetos ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)).
 
 ## E4
 
@@ -129,7 +133,7 @@ int main(void) {
 }
 ```
 
-**Hierarquia:** `main` → `lerDados`, `arranjo`, `combinacao` → `fatorial`. A função `fatorial` é **reutilizada** pelas duas fórmulas — um dos benefícios citados na p.15.
+**Hierarquia:** `main` → `lerDados`, `arranjo`, `combinacao` → `fatorial`. A função `fatorial` é **reutilizada** pelas duas fórmulas — um dos benefícios citados na [p.15](../01%20-%20Slides%20Originais/README.md#página-15).
 
 **Teste:** n = 5, p = 2 → A = 5!/3! = 120/6 = **20**; C = 5!/(2!·3!) = 120/12 = **10**.
 
@@ -188,3 +192,16 @@ int main(void) {
 ```
 
 O valor intermediário nunca passa muito de C(n, p) × n, enquanto 30! ≈ 2,6 × 10³² não caberia nem em 64 bits. É o problema de estouro da [Aula 06](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md#4-tipos-básicos-e-seus-tamanhos-p68).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 10:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-10.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 09 · Resoluções](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/04%20-%20Resoluções/resolucoes-aula-09.md) · [Aula 11 · Resoluções](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/04%20-%20Resoluções/resolucoes-aula-11.md) →
+
+**Links para esta página (5):** [Aula 10 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Aula 10 · Exercícios](../03%20-%20Exercícios/exercicios-aula-10.md) · [Aula 10 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

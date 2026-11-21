@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › **09 - Projetos Práticos** · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # 09 — Projetos Práticos
 
 > **[Exercício autoral]** Projetos elaborados para este repositório, para aplicar o conteúdo da disciplina em programas de verdade. **Não são trabalhos do professor** e não valem nota. Trabalhos oficiais, quando houver, ficam em [03 - Trabalhos e Projetos](../03%20-%20Trabalhos%20e%20Projetos/README.md). As pastas `solucao/` são **[Resolução elaborada]**, não gabarito.
@@ -60,3 +64,14 @@ Os projetos não substituem as listas do professor, mas treinam exatamente o que
 | Funções puras, imutabilidade, recursão, ordem superior | P4 |
 | Fatos, regras, consultas, unificação, recursão em Prolog | P5 |
 | Diferencie os paradigmas imperativo, OO, funcional e lógico | P6 |
+
+
+<!-- nav:rodape -->
+
+---
+
+← [08 — Referências e Fontes](../08%20-%20Referências%20e%20Fontes/README.md) · [10 - Caderno de Anotações](../10%20-%20Caderno%20de%20Anotações/README.md) →
+
+**Links para esta página (3):** [Acompanhamento de estudo](../00%20-%20Planejamento%20e%20Organização/acompanhamento.md) · [03 — Trabalhos e Projetos](../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

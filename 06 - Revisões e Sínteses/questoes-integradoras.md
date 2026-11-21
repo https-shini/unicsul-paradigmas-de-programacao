@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [06 - Revisões e Sínteses](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Questões integradoras
 
 > **[Exercício autoral]** Questões que combinam conteúdos de **várias aulas**. Não são do professor. Resolução comentada em [resolucao-questoes-integradoras.md](resolucao-questoes-integradoras.md); tente responder antes de consultá-la.
@@ -45,3 +49,12 @@ fim:
 **QI7 🔴 (Aulas 02, 14, 15)** Calcule a soma dos quadrados dos números de 1 a 4 em três paradigmas: **imperativo** (C, com laço), **funcional** (Clojure, sem atribuição) e **lógico** (Prolog, com regra recursiva). Compare como cada versão trata o **estado**.
 
 **QI8 🔴 (Aulas 02, 09, 12, 14, 15)** "O paradigma imperativo é o mais natural, porque corresponde ao modo como o computador funciona." Discuta a afirmação, considerando os critérios de avaliação da Aula 02 e os argumentos dos paradigmas funcional e lógico. Conclua indicando um tipo de problema em que **cada um** dos quatro paradigmas seria a escolha mais adequada.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (7):** [Objetivos da disciplina](../00%20-%20Planejamento%20e%20Organização/objetivos-da-disciplina.md) · [02 — Listas de Exercícios](../02%20-%20Listas%20de%20Exercícios/README.md) · [06 — Revisões e Sínteses](README.md) · [Guia de estudo para as avaliações](guia-de-estudo-para-provas.md) · [Questões integradoras · Resolução comentada](resolucao-questoes-integradoras.md) · [Resumo geral da disciplina](resumo-geral-da-disciplina.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

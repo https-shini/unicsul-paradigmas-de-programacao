@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 03](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 03 — Implementação das Linguagens · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-03.md`](../03%20-%20Exercícios/exercicios-aula-03.md). Os códigos do E9 foram compilados e executados durante a elaboração deste repositório (C com gcc, Java com javac/java, Python 3).
@@ -6,9 +10,9 @@
 
 | Forma | Definição (slides) | Exemplos |
 | --- | --- | --- |
-| Compilação | Fonte → código de máquina de uma plataforma, salvo em executável (p.8) | Fortran, C, C++, Pascal |
-| Interpretação | Interpretador simula a máquina, traduz e executa ao mesmo tempo (p.10) | Lisp, JavaScript, PHP, Python |
-| Híbrida | Compilador gera código intermediário, executado por um interpretador (p.12) | Java, C#, VB.NET |
+| Compilação | Fonte → código de máquina de uma plataforma, salvo em executável ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)) | Fortran, C, C++, Pascal |
+| Interpretação | Interpretador simula a máquina, traduz e executa ao mesmo tempo ([p.10](../01%20-%20Slides%20Originais/README.md#página-10)) | Lisp, JavaScript, PHP, Python |
+| Híbrida | Compilador gera código intermediário, executado por um interpretador ([p.12](../01%20-%20Slides%20Originais/README.md#página-12)) | Java, C#, VB.NET |
 
 ## E2
 
@@ -16,7 +20,7 @@
 
 ## E3
 
-A **linguagem** é o conjunto de termos e regras sintáticas e semânticas (Aula 02). O **ambiente** é o conjunto de ferramentas que apoia o desenvolvimento — editor, compilador, ligador, bibliotecas, modelos (p.16). Exemplo: Java é linguagem; IntelliJ e VS Code são ambientes.
+A **linguagem** é o conjunto de termos e regras sintáticas e semânticas (Aula 02). O **ambiente** é o conjunto de ferramentas que apoia o desenvolvimento — editor, compilador, ligador, bibliotecas, modelos ([p.16](../01%20-%20Slides%20Originais/README.md#página-16)). Exemplo: Java é linguagem; IntelliJ e VS Code são ambientes.
 
 ## E4
 
@@ -30,7 +34,7 @@ A **linguagem** é o conjunto de termos e regras sintáticas e semânticas (Aula
 
 ## E5
 
-A tabela de símbolos guarda os atributos dos identificadores: nome, tipo, escopo, endereço. O léxico a alimenta com os nomes encontrados; a análise semântica a consulta para saber se um nome foi declarado e qual é seu tipo; o gerador de código, para saber onde cada variável está na memória. Por isso aparece ligada a várias fases na figura da p.9.
+A tabela de símbolos guarda os atributos dos identificadores: nome, tipo, escopo, endereço. O léxico a alimenta com os nomes encontrados; a análise semântica a consulta para saber se um nome foi declarado e qual é seu tipo; o gerador de código, para saber onde cada variável está na memória. Por isso aparece ligada a várias fases na figura da [p.9](../01%20-%20Slides%20Originais/README.md#página-9).
 
 ## E6
 
@@ -42,12 +46,12 @@ O compilador Java (`javac`) gera **bytecode**, independente de processador e sis
 | --- | --- | --- | --- |
 | Velocidade | Alta: tradução feita uma vez, executa código nativo | Baixa: decodifica cada instrução sempre que executa | Média: interpreta um código já simplificado, e com JIT se aproxima do nativo |
 | Portabilidade | Baixa: executável preso à plataforma | Alta: basta o interpretador | Alta: basta a VM |
-| Erros antes de executar | Muitos: sintaxe e semântica estática | Quase nenhum (Aula 05, p.17) | Os da etapa de compilação |
+| Erros antes de executar | Muitos: sintaxe e semântica estática | Quase nenhum (Aula 05, [p.17](../../Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-17)) | Os da etapa de compilação |
 | Depuração | Mais difícil: o executável não é o fonte | Fácil: o erro aponta a linha do fonte | Intermediária |
 
 ## E8
 
-**Segundo o slide (p.10):** Python é exemplo de linguagem **interpretada** — é a resposta esperada na disciplina.
+**Segundo o slide ([p.10](../01%20-%20Slides%20Originais/README.md#página-10)):** Python é exemplo de linguagem **interpretada** — é a resposta esperada na disciplina.
 
 **[Complemento]** Na implementação CPython, o fonte é compilado internamente para **bytecode** (arquivos `.pyc` em `__pycache__`), executado pela máquina virtual do CPython. Tecnicamente, isso é um esquema híbrido. A afirmação "nunca gera código intermediário" está, portanto, **incorreta** para o CPython, embora a classificação didática como "interpretada" se mantenha, porque o processo é transparente para o programador.
 
@@ -142,3 +146,16 @@ printf "Media: %.2f\nMaior: %.2f\nMenor: %.2f\n", $soma / 10, $maior, $menor;
 ## E10
 
 O programador Scheme "enxerga" uma **máquina Scheme**: escreve expressões e vê os resultados, como se o hardware avaliasse Scheme diretamente. Na verdade, o **interpretador Scheme** é um programa que roda sobre o **sistema operacional**, que por sua vez usa o **interpretador de macroinstruções** (microcódigo) para chegar à **máquina pura**. Cada camada oferece à de cima um "computador virtual" mais conveniente — abstração em camadas.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 03:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-03.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-03.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 02 · Resoluções](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/04%20-%20Resoluções/resolucoes-aula-02.md) · [Aula 04 · Resoluções](../../Aula%2004%20-%20Sintaxe/04%20-%20Resoluções/resolucoes-aula-04.md) →
+
+**Links para esta página (5):** [Aula 03 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-03.md) · [Aula 03 · Exercícios](../03%20-%20Exercícios/exercicios-aula-03.md) · [Aula 03 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

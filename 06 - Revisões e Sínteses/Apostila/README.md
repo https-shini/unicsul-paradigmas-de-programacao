@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [06 - Revisões e Sínteses](../README.md) › **Apostila** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Apostila em PDF
 
 > **[Explicação elaborada]** Versões em PDF do conteúdo deste repositório, para ler offline, imprimir ou anotar no tablet. **Não são material oficial do professor** e não substituem os slides originais.
@@ -25,3 +29,12 @@ python3 ferramentas/geradores/gerar_apostila.py     # gera os dois PDFs
 ```
 
 Requer **pandoc** e **Google Chrome ou Chromium** (usado em modo *headless* para imprimir o PDF). Opções: `--so teoria` ou `--so exercicios` gera um volume só; `--html` guarda também o HTML intermediário.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (2):** [06 — Revisões e Sínteses](../README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../README.md)
+
+<!-- /nav:rodape -->

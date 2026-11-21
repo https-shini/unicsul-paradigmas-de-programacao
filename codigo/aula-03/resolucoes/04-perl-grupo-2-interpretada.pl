@@ -1,4 +1,4 @@
-# Gerado automaticamente a partir de 01 - Aulas/Aula 03 - Implementação das Linguagens/04 - Resoluções/resolucoes-aula-03.md (linha 115).
+# Gerado automaticamente a partir de 01 - Aulas/Aula 03 - Implementação das Linguagens/04 - Resoluções/resolucoes-aula-03.md (linha 119).
 # Seção: Perl (Grupo 2, interpretada)
 # Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 # Como executar:  python3 ferramentas/rodar.py codigo/aula-03/resolucoes/04-perl-grupo-2-interpretada.pl

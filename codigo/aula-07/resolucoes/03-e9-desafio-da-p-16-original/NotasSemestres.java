@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/04 - Resoluções/resolucoes-aula-07.md (linha 134).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/04 - Resoluções/resolucoes-aula-07.md (linha 138).
 // Seção: E9 — Desafio da p.16 (original)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-07/resolucoes/03-e9-desafio-da-p-16-original/NotasSemestres.java

@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 02 - Evolução das Linguagens e Paradigmas/02 - Resumo Teórico/resumo-aula-02.md (linha 49).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 02 - Evolução das Linguagens e Paradigmas/02 - Resumo Teórico/resumo-aula-02.md (linha 53).
 // Seção: Java (p.6)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-02/resumo/01-java-p-6/Main.java

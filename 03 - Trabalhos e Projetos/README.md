@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › **03 - Trabalhos e Projetos** · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # 03 — Trabalhos e Projetos
 
 > **[Atenção]** O material fornecido **não contém trabalhos ou projetos** com enunciado, requisitos ou critérios definidos pelo professor. Esta pasta **não inventa** nenhum. Ela reúne (1) as atividades práticas propostas nos slides, que podem compor a nota de **Exercícios** (2,0 pontos da A2, ver [ementa](../00%20-%20Planejamento%20e%20Organização/ementa.md#avaliação)), e (2) um modelo para organizar trabalhos que venham a ser passados.
@@ -47,3 +51,14 @@ Checklist sugerido para `02 - Planejamento.md`:
 - [ ] Critérios de avaliação informados pelo professor
 - [ ] Prazo e forma de entrega
 - [ ] Relação de cada requisito com os conceitos da disciplina (com links para os resumos)
+
+
+<!-- nav:rodape -->
+
+---
+
+← [02 — Listas de Exercícios](../02%20-%20Listas%20de%20Exercícios/README.md) · [04 — Provas e Avaliações](../04%20-%20Provas%20e%20Avaliações/README.md) →
+
+**Links para esta página (4):** [Acompanhamento de estudo](../00%20-%20Planejamento%20e%20Organização/acompanhamento.md) · [Inventário dos materiais originais](../00%20-%20Planejamento%20e%20Organização/inventario-dos-materiais.md) · [09 — Projetos Práticos](../09%20-%20Projetos%20Práticos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

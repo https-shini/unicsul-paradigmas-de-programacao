@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 08](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 08 — Ponteiros · Resumo teórico
 
 > **Fonte:** [`Aula08_Ponteiros.pdf`](../01%20-%20Slides%20Originais/Aula08_Ponteiros.pdf) (14 páginas). Os Exemplos 1–4 aparecem só como imagem no PDF; foram transcritos e conferidos com ampliação. A aula não tem slide de bibliografia.
@@ -53,6 +57,12 @@ int main(void) {
 ## 3. Organização da memória (p.4–6)
 
 **[Material original]** A aula retoma o programa da Aula 04 (`printf("%d", x)` × `printf("%ld", &x)`) e pergunta o que representam os valores. Duas figuras explicam:
+
+<!-- figura: aula08 página 5 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-5"><img src="../01%20-%20Slides%20Originais/paginas/aula08-p05.webp" width="640" alt="Slide da página 5: organização da memória em bytes e endereços"></a><br><sub>Slide original, página 5: organização da memória em bytes e endereços. Clique para abrir na galeria.</sub></p>
+
+<!-- figura: aula08 página 6 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-6"><img src="../01%20-%20Slides%20Originais/paginas/aula08-p06.webp" width="640" alt="Slide da página 6: um byte tem 8 bits"></a><br><sub>Slide original, página 6: um byte tem 8 bits. Clique para abrir na galeria.</sub></p>
 
 - A memória é uma sequência de **bytes**, cada um com seu **endereço** (0xFF00, 0xFF01, …), e cada byte tem **8 bits** (ex.: `00010100`).
 - Um `char` ocupa **1 byte**; um `int` ou `float`, **4 bytes** consecutivos; um `double`, **8 bytes** (figura com endereços de 1000 a 1039).
@@ -183,9 +193,12 @@ class Pessoa {
   - **Estática:** realizada em **tempo de compilação**; o tamanho **não pode ser alterado**.
   - **Dinâmica:** realizada em **tempo de execução**; o tamanho **pode ser alterado**.
 
-> **[Atenção]** A Aula 07 (p.11) diz que, depois de criado, o vetor "não pode" mudar de tamanho; aqui (p.13), a alocação dinâmica tem tamanho que "pode ser alterado". As duas frases se conciliam assim: a alocação dinâmica permite **escolher** o tamanho em execução; para "alterá-lo", reserva-se um novo bloco e copiam-se os dados (é o que `realloc` faz em C, podendo mover o bloco; ver E10). Um `new int[n]` em C++ ou um array Java não mudam de tamanho.
+> **[Atenção]** A Aula 07 ([p.11](../../Aula%2007%20-%20Tipos%20Compostos/01%20-%20Slides%20Originais/README.md#página-11)) diz que, depois de criado, o vetor "não pode" mudar de tamanho; aqui ([p.13](../01%20-%20Slides%20Originais/README.md#página-13)), a alocação dinâmica tem tamanho que "pode ser alterado". As duas frases se conciliam assim: a alocação dinâmica permite **escolher** o tamanho em execução; para "alterá-lo", reserva-se um novo bloco e copiam-se os dados (é o que `realloc` faz em C, podendo mover o bloco; ver E10). Um `new int[n]` em C++ ou um array Java não mudam de tamanho.
 
-- **Regiões da memória (figura da p.13, de cima para baixo):** **Código**, **Estático**, **Heap**, **Memória livre**, **Pilha**. Heap e pilha crescem em direção à memória livre.
+- **Regiões da memória (figura da [p.13](../01%20-%20Slides%20Originais/README.md#página-13), de cima para baixo):** **Código**, **Estático**, **Heap**, **Memória livre**, **Pilha**. Heap e pilha crescem em direção à memória livre.
+
+<!-- figura: aula08 página 13 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-13"><img src="../01%20-%20Slides%20Originais/paginas/aula08-p13.webp" width="640" alt="Slide da página 13: regiões da memória: código, estático, heap, pilha"></a><br><sub>Slide original, página 13: regiões da memória: código, estático, heap, pilha. Clique para abrir na galeria.</sub></p>
 
 **[Explicação elaborada] — o que vai em cada região:**
 
@@ -308,3 +321,16 @@ int main() {
 ---
 
 **Anterior:** [Aula 07](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md) · **Próxima:** [Aula 09 — Paradigma Imperativo I](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 08:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-08.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-08.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 07 · Resumo](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md) · [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) →
+
+**Links para esta página (20):** [Aula 04 · Resoluções](../../Aula%2004%20-%20Sintaxe/04%20-%20Resoluções/resolucoes-aula-04.md) · [Aula 05 · Resumo](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [Aula 06 · Resumo](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [Aula 07 · Resumo](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md) · [Aula 08 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-08.md) · [Aula 08 · visão geral](../README.md) · [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 10 · Resumo](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Aula 11 · Resumo](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md) · [Aula 12 · Resumo](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [Simulado 01 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Erratas e inconsistências do material](../../../06%20-%20Revisões%20e%20Sínteses/erratas-e-inconsistencias.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P2 — Estruturas encadeadas em C++: pilha e fila](../../../09%20-%20Projetos%20Práticos/P2%20-%20Estruturas%20Encadeadas%20em%20C++/README.md) · [Exemplo de anotação: pilha encadeada × pilha em vetor](../../../10%20-%20Caderno%20de%20Anotações/exemplo-de-anotacao.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

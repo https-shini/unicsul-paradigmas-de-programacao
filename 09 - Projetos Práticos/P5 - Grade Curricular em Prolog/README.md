@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [09 - Projetos Práticos](../README.md) › **P5** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # P5 — Grade curricular em Prolog
 
 > **[Exercício autoral]** Projeto prático elaborado para este repositório. **Não é trabalho do professor** e não vale nota. A pasta `solucao/` é uma **[Resolução elaborada]**, não gabarito oficial. A grade e os alunos são **fictícios**.
@@ -96,3 +100,14 @@ O resultado lista o nome de cada teste que falhou (por exemplo, `r3_ana_pode_poo
 - Por que `pode_cursar/2` precisa gerar `A` e `D` (com `aluno/1` e `disciplina/3`) **antes** de usar `\+`? O que acontece com `\+ aprovado(A, D)` se `A` estiver livre?
 - `\+ aprovado(davi, alg)` é verdadeiro. Isso quer dizer que o Davi foi reprovado? (Mundo fechado.)
 - Em `depende/2`, o que muda se a cláusula recursiva vier primeiro? E se a recursão for `depende(D, P) :- depende(D, X), prerequisito(X, P).`?
+
+
+<!-- nav:rodape -->
+
+---
+
+← [P4 — Estatísticas de texto em Clojure](../P4%20-%20Estatísticas%20de%20Texto%20em%20Clojure/README.md) · [P6 — Situação acadêmica em quatro paradigmas](../P6%20-%20Situação%20Acadêmica%20em%20Quatro%20Paradigmas/README.md) →
+
+**Links para esta página (1):** [09 — Projetos Práticos](../README.md)
+
+<!-- /nav:rodape -->

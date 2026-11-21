@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 08](../README.md) › [03 - Exercícios](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 08 — Ponteiros · Exercícios
 
-> **[Exercício autoral]**, exceto o E7, baseado no Exemplo 4 original (p.14). Base: [`Aula08_Ponteiros.pdf`](../01%20-%20Slides%20Originais/Aula08_Ponteiros.pdf). Resoluções: [`resolucoes-aula-08.md`](../04%20-%20Resoluções/resolucoes-aula-08.md)
+> **[Exercício autoral]**, exceto o E7, baseado no Exemplo 4 original ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)). Base: [`Aula08_Ponteiros.pdf`](../01%20-%20Slides%20Originais/Aula08_Ponteiros.pdf). Resoluções: [`resolucoes-aula-08.md`](../04%20-%20Resoluções/resolucoes-aula-08.md)
 
 ## Básico
 
@@ -44,4 +48,17 @@ int main(void) {
 
 **E10.** (Programação) Em C, aloque dinamicamente um vetor cujo tamanho é lido do teclado, preencha-o, aumente seu tamanho em 50% com `realloc` e imprima tudo. Relacione com a frase do slide "alocação dinâmica: tamanho pode ser alterado".
 
-**E11.** Por que "a utilização correta de ponteiros deixa o programa mais rápido" (p.3)? Dê um exemplo envolvendo a passagem de uma estrutura grande para uma função.
+**E11.** Por que "a utilização correta de ponteiros deixa o programa mais rápido" ([p.3](../01%20-%20Slides%20Originais/README.md#página-3))? Dê um exemplo envolvendo a passagem de uma estrutura grande para uma função.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 08:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-08.md) · **Exercícios** · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-08.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 07 · Exercícios](../../Aula%2007%20-%20Tipos%20Compostos/03%20-%20Exercícios/exercicios-aula-07.md) · [Aula 09 · Exercícios](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/03%20-%20Exercícios/exercicios-aula-09.md) →
+
+**Links para esta página (4):** [Aula 08 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-08.md) · [Aula 08 · visão geral](../README.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

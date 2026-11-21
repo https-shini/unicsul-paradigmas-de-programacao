@@ -1,14 +1,18 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 09](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 09 — Paradigma Imperativo I · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-09.md`](../03%20-%20Exercícios/exercicios-aula-09.md). Os programas C foram compilados e executados com gcc; o BASIC foi analisado sem execução.
 
 ## E1
 
-Variáveis, números inteiros, operações aritméticas, atribuição, sequenciamento de comandos baseado em memória, condições e comandos de ramificação (`goto`) (p.9).
+Variáveis, números inteiros, operações aritméticas, atribuição, sequenciamento de comandos baseado em memória, condições e comandos de ramificação (`goto`) ([p.9](../01%20-%20Slides%20Originais/README.md#página-9)).
 
 ## E2
 
-Quaisquer quatro de: expressões e atribuição; estruturas de controle (sequencial, seleção, repetição); entrada/saída; manipulação de exceções e erros; abstração procedural; suporte de biblioteca para estruturas de dados (p.10).
+Quaisquer quatro de: expressões e atribuição; estruturas de controle (sequencial, seleção, repetição); entrada/saída; manipulação de exceções e erros; abstração procedural; suporte de biblioteca para estruturas de dados ([p.10](../01%20-%20Slides%20Originais/README.md#página-10)).
 
 ## E3
 
@@ -155,3 +159,16 @@ A versão estruturada é mais curta e o fluxo é visível na indentação. O `re
 | — | A conversão **mecânica** não é recomendada |
 
 A frase do slide é um resumo didático aceitável, mas **suaviza** a posição de Dijkstra e **atribui a ele** um resultado de outros autores. Numa resposta discursiva sobre o artigo, convém usar a versão do artigo.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 09:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Artigo](../02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-09.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 08 · Resoluções](../../Aula%2008%20-%20Ponteiros/04%20-%20Resoluções/resolucoes-aula-08.md) · [Aula 10 · Resoluções](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/04%20-%20Resoluções/resolucoes-aula-10.md) →
+
+**Links para esta página (6):** [Aula 09 · Artigo de Dijkstra (resumo)](../02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md) · [Aula 09 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 09 · Exercícios](../03%20-%20Exercícios/exercicios-aula-09.md) · [Aula 09 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

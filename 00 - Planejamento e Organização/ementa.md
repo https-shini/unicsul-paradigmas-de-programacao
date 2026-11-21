@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [00 - Planejamento e Organização](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Ementa, conteúdo e avaliação
 
 > **Fonte:** [`Aula01_Intro.pdf`](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/Aula01_Intro.pdf) (plano de ensino), p.3–7. Legenda das marcações: [Convenções](../README.md#convenções-de-marcação).
@@ -32,7 +36,7 @@
 | Paradigma orientado a objetos | [12](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/README.md), [13](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/README.md) |
 | Paradigma funcional | [14](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/README.md) |
 | Paradigma de programação em lógica | [15](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/README.md) |
-| Tópicos adicionais | Não há aula específica. Linguagens que combinam paradigmas aparecem na Aula 02 (p.12: Java 8 na lista funcional) e na Aula 14 (p.10: Java 8, JavaScript, Python e C# com lambdas). A Aula 15 (p.5) cita linguagens declarativas que não são de programação (HTML, CSS, SQL). **[Atenção]** Na Aula 03 (p.12), "linguagem híbrida" significa **implementação** híbrida (compilação + interpretação), não linguagem multiparadigma. |
+| Tópicos adicionais | Não há aula específica. Linguagens que combinam paradigmas aparecem na Aula 02 ([p.12](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-12): Java 8 na lista funcional) e na Aula 14 ([p.10](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-10): Java 8, JavaScript, Python e C# com lambdas). A Aula 15 ([p.5](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-5)) cita linguagens declarativas que não são de programação (HTML, CSS, SQL). **[Atenção]** Na Aula 03 ([p.12](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-12)), "linguagem híbrida" significa **implementação** híbrida (compilação + interpretação), não linguagem multiparadigma. |
 
 ## Avaliação
 
@@ -60,3 +64,12 @@
 > **[Atenção]** O slide da p.6 indica os horários "08h30 às 09h45 / 09h55 às 11h10" sob o rótulo "Noite". Confirme o horário da sua turma no sistema acadêmico.
 
 Ver também: [objetivos](objetivos-da-disciplina.md) · [cronograma](cronograma.md) · [bibliografia](bibliografia.md).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (7):** [00 — Planejamento e Organização](README.md) · [Acompanhamento de estudo](acompanhamento.md) · [03 — Trabalhos e Projetos](../03%20-%20Trabalhos%20e%20Projetos/README.md) · [04 — Provas e Avaliações](../04%20-%20Provas%20e%20Avaliações/README.md) · [Guia de estudo para as avaliações](../06%20-%20Revisões%20e%20Sínteses/guia-de-estudo-para-provas.md) · [P6 — Situação acadêmica em quatro paradigmas](../09%20-%20Projetos%20Práticos/P6%20-%20Situação%20Acadêmica%20em%20Quatro%20Paradigmas/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

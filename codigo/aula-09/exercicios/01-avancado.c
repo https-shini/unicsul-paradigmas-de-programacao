@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 09 - Paradigma Imperativo I/03 - Exercícios/exercicios-aula-09.md (linha 34).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 09 - Paradigma Imperativo I/03 - Exercícios/exercicios-aula-09.md (linha 38).
 // Seção: Avançado
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-09/exercicios/01-avancado.c

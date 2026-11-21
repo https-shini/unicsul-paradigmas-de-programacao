@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [06 - Revisões e Sínteses](../README.md) › [Revisões por Unidade](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas 14–15)
 
 > **[Explicação elaborada]** Agrupamento organizacional deste repositório, **não** uma divisão oficial do professor. É a unidade mais cobrada nas listas: a Lista 01 é quase toda sobre ela. Legenda: [Convenções](../../README.md#convenções-de-marcação).
@@ -33,7 +37,7 @@
 | Em Prolog, `Joao` é uma constante | Iniciais **maiúsculas** são **variáveis**; constantes começam com minúscula: `joao`. |
 | `X = 2 + 3` faz `X` valer 5 | `=` **unifica**: `X` fica ligado ao termo `2+3`. Para calcular: `X is 2 + 3`. |
 | Prolog responde `false` = "é mentira" | `false` significa "**não foi possível provar** com a base atual" (mundo fechado). |
-| Funcional é declarativo para o professor | Na Aula15 p.3–5, o professor o classifica como **procedural**; a literatura diverge (ver [erratas](../erratas-e-inconsistencias.md)). |
+| Funcional é declarativo para o professor | Na Aula15 [p.3–5](../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3), o professor o classifica como **procedural**; a literatura diverge (ver [erratas](../erratas-e-inconsistencias.md)). |
 
 ## Autoteste
 
@@ -45,3 +49,14 @@
 **Questões do professor sobre esta unidade:** [Lista 01 inteira](../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) · [Lista 02, Q12](../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md).
 
 **Anterior:** [Unidade 3](unidade-3-orientacao-a-objetos.md) · **Visão geral:** [Resumo geral da disciplina](../resumo-geral-da-disciplina.md).
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](unidade-3-orientacao-a-objetos.md)
+
+**Links para esta página (4):** [Cronograma](../../00%20-%20Planejamento%20e%20Organização/cronograma.md) · [06 — Revisões e Sínteses](../README.md) · [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](unidade-3-orientacao-a-objetos.md) · [Guia de estudo para as avaliações](../guia-de-estudo-para-provas.md)
+
+<!-- /nav:rodape -->

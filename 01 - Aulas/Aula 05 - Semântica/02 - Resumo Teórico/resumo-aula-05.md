@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 05](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 05 — Semântica · Resumo teórico
 
-> **Fonte:** [`Aula05_Semantica.pdf`](../01%20-%20Slides%20Originais/Aula05_Semantica.pdf) (18 páginas) — "Introdução à Semântica das Linguagens de Programação". Apoio indicado: Tucker & Noonan, seção 4.3; Sebesta (9ª ed.), cap. 5 (p.18).
+> **Fonte:** [`Aula05_Semantica.pdf`](../01%20-%20Slides%20Originais/Aula05_Semantica.pdf) (18 páginas) — "Introdução à Semântica das Linguagens de Programação". Apoio indicado: Tucker & Noonan, seção 4.3; Sebesta (9ª ed.), cap. 5 ([p.18](../01%20-%20Slides%20Originais/README.md#página-18)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF.
 
 ---
@@ -40,7 +44,7 @@
 
 **[Material original]** A aula retoma o Exemplo 1 da Aula 04 (`printf("%d", x)` × `printf("%ld", &x)`) e define:
 
-> "Uma variável é uma abstração de uma ou mais células de memória que possui: **Nome**, **Endereço (l-value)**, **Valor (r-value)**, **Tipo**, **Escopo** e **Tempo de vida**." (p.6)
+> "Uma variável é uma abstração de uma ou mais células de memória que possui: **Nome**, **Endereço (l-value)**, **Valor (r-value)**, **Tipo**, **Escopo** e **Tempo de vida**." ([p.6](../01%20-%20Slides%20Originais/README.md#página-6))
 
 ### 4.1 Nome
 
@@ -180,7 +184,7 @@ Sem `static`, a função imprimiria "chamada 1" três vezes.
 - Pascal e Fortran aceitam só **valores constantes**; C++ e Ada aceitam **expressões**.
 - Palavras usadas: C/C++ `const`, Pascal `const`, Java `final`, C# `const` e `readonly`.
 
-**Exemplo em Java (p.16):**
+**Exemplo em Java ([p.16](../01%20-%20Slides%20Originais/README.md#página-16)):**
 
 <!-- teste: entrada="2" saida-contem="Area: 12.5664|Comprimento: 12.5664" -->
 ```java
@@ -240,3 +244,16 @@ class Main {
 ---
 
 **Anterior:** [Aula 04](../../Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md) · **Próxima:** [Aula 06 — Sistema de Tipos](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 05:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-05.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-05.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 04 · Resumo](../../Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md) · [Aula 06 · Resumo](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) →
+
+**Links para esta página (11):** [Aula 04 · Resumo](../../Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md) · [Aula 05 · visão geral](../README.md) · [Aula 06 · Resumo](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P1 — Interpretador de expressões](../../../09%20-%20Projetos%20Práticos/P1%20-%20Interpretador%20de%20Expressões/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

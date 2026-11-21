@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 06 - Revisões e Sínteses/questoes-integradoras.md (linha 12).
+// Gerado automaticamente a partir de 06 - Revisões e Sínteses/questoes-integradoras.md (linha 16).
 // Seção: Questões integradoras
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/revisoes/questoes-integradoras/01-questoes-integradoras.c

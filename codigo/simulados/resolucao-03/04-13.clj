@@ -1,4 +1,4 @@
-;; Gerado automaticamente a partir de 04 - Provas e Avaliações/Simulados/resolucao-simulado-03.md (linha 146).
+;; Gerado automaticamente a partir de 04 - Provas e Avaliações/Simulados/resolucao-simulado-03.md (linha 150).
 ;; Seção: 13
 ;; Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 ;; Como executar:  python3 ferramentas/rodar.py codigo/simulados/resolucao-03/04-13.clj

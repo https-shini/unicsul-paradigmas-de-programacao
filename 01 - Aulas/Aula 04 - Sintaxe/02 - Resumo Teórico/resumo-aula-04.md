@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 04](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 04 — Sintaxe · Resumo teórico
 
-> **Fonte:** [`Aula04_Sintaxe.pdf`](../01%20-%20Slides%20Originais/Aula04_Sintaxe.pdf) (21 páginas) — "Introdução à Sintaxe das Linguagens de Programação". Apoio indicado: Tucker & Noonan, seções 4.1 e 4.2; Sebesta (9ª ed.), seções 3.1, 3.2, 5.1 e 5.2 (p.21).
+> **Fonte:** [`Aula04_Sintaxe.pdf`](../01%20-%20Slides%20Originais/Aula04_Sintaxe.pdf) (21 páginas) — "Introdução à Sintaxe das Linguagens de Programação". Apoio indicado: Tucker & Noonan, seções 4.1 e 4.2; Sebesta (9ª ed.), seções 3.1, 3.2, 5.1 e 5.2 ([p.21](../01%20-%20Slides%20Originais/README.md#página-21)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF.
 
 ---
@@ -27,7 +31,7 @@ A sintaxe é descrita por um conjunto de regras que deve ser entendido por quatr
 
 **Gramática** é uma **metalinguagem** que define quais cadeias de caracteres formam um programa sintaticamente correto.
 
-**[Complemento] — como isso se divide:** expressões regulares e autômatos finitos descrevem a **sintaxe léxica** (como reconhecer um número ou um identificador). Gramáticas livres de contexto descrevem a **sintaxe concreta** (estrutura aninhada de expressões e comandos). A notação usual para gramáticas é a **BNF** (Backus-Naur Form), proposta por John Backus (1959) para descrever o ALGOL 58 e adotada, com ajustes de Peter Naur, no relatório do ALGOL 60. A Aula 05 (p.3) a chama de "notação universalmente aceita". Exemplo de gramática em BNF para expressões aritméticas:
+**[Complemento] — como isso se divide:** expressões regulares e autômatos finitos descrevem a **sintaxe léxica** (como reconhecer um número ou um identificador). Gramáticas livres de contexto descrevem a **sintaxe concreta** (estrutura aninhada de expressões e comandos). A notação usual para gramáticas é a **BNF** (Backus-Naur Form), proposta por John Backus (1959) para descrever o ALGOL 58 e adotada, com ajustes de Peter Naur, no relatório do ALGOL 60. A Aula 05 ([p.3](../../Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-3)) a chama de "notação universalmente aceita". Exemplo de gramática em BNF para expressões aritméticas:
 
 ```text
 <expr>   ::= <expr> + <termo> | <expr> - <termo> | <termo>
@@ -71,7 +75,7 @@ Cada regra diz como um símbolo **não terminal** (entre `< >`) pode ser substit
 - **Token:** classificação dos lexemas que se encaixam em determinado padrão.
 - **Padrão:** descrição da forma que os lexemas podem assumir.
 
-**Na linguagem C, os tokens se dividem em seis grupos (p.9):**
+**Na linguagem C, os tokens se dividem em seis grupos ([p.9](../01%20-%20Slides%20Originais/README.md#página-9)):**
 
 | Lexemas | Grupo do token |
 | --- | --- |
@@ -106,7 +110,7 @@ Cada regra diz como um símbolo **não terminal** (entre `< >`) pode ser substit
 
 ## 8. Nomes e identificadores (p.12–18)
 
-**[Material original]** Nomes (identificadores) identificam variáveis, tipos definidos pelo usuário, funções etc. No exemplo da p.13:
+**[Material original]** Nomes (identificadores) identificam variáveis, tipos definidos pelo usuário, funções etc. No exemplo da [p.13](../01%20-%20Slides%20Originais/README.md#página-13):
 
 ```c
 int quantidade;
@@ -117,20 +121,20 @@ int soma(int a, int b){
 
 **[Explicação elaborada]** Resposta à pergunta do slide: os identificadores são `quantidade`, `soma`, `a` e `b`; `int` e `return` são palavras reservadas.
 
-**Perguntas que toda linguagem precisa responder (p.14):**
+**Perguntas que toda linguagem precisa responder ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)):**
 
 1. Quais são as regras de formação dos nomes?
 2. Os nomes são sensíveis à capitalização (*case sensitive*)?
 3. Os termos especiais são palavras **reservadas** ou **palavras-chave**?
 
-| Conceito | Definição (p.14) |
+| Conceito | Definição ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)) |
 | --- | --- |
 | Palavra reservada | Tem significado especial e **não pode** ser usada como identificador. |
 | Palavra-chave | Tem significado especial **apenas em contextos específicos** e pode ser identificador em outros (Fortran). |
 
 **[Complemento]** Exemplo clássico em Fortran: `INTEGER REAL` declara uma variável chamada `REAL` do tipo inteiro, e `REAL INTEGER` declara uma variável `INTEGER` do tipo real. Isso é legal porque `REAL` e `INTEGER` são palavras-chave, não reservadas — e é péssimo para a legibilidade.
 
-**Regras léxicas de formação (p.15–16):**
+**Regras léxicas de formação ([p.15–16](../01%20-%20Slides%20Originais/README.md#página-15)):**
 
 - Em geral, o nome começa com letra e segue com letras ou dígitos; algumas linguagens aceitam `_`.
 - **PHP:** variáveis começam com `$` (`$nome = "IFSC"; echo $nome;`).
@@ -142,9 +146,9 @@ int soma(int a, int b){
   > **[Complemento]** Repare que, para acessar **um elemento** do vetor `@cidades`, usa-se `$cidades[0]`, porque o elemento é um escalar.
 - **Ruby:** `@` indica variável de instância; `@@`, variável de classe.
 
-**Tamanho dos nomes (p.17):** as primeiras linguagens usavam só maiúsculas e limitavam o tamanho — **6 caracteres** no FORTRAN. FORTRAN 95: 31. C: nomes internos sem limite, mas só os **63** primeiros caracteres são significativos; nomes externos, até 31. Java, C# e Ada: sem limite.
+**Tamanho dos nomes ([p.17](../01%20-%20Slides%20Originais/README.md#página-17)):** as primeiras linguagens usavam só maiúsculas e limitavam o tamanho — **6 caracteres** no FORTRAN. FORTRAN 95: 31. C: nomes internos sem limite, mas só os **63** primeiros caracteres são significativos; nomes externos, até 31. Java, C# e Ada: sem limite.
 
-**Case sensitivity (p.18):** Pascal e Ada **não** diferenciam maiúsculas de minúsculas; C, C++ e Java diferenciam. Prós e contras apresentados para debate:
+**Case sensitivity ([p.18](../01%20-%20Slides%20Originais/README.md#página-18)):** Pascal e Ada **não** diferenciam maiúsculas de minúsculas; C, C++ e Java diferenciam. Prós e contras apresentados para debate:
 
 | Argumento | Sinal (slide) |
 | --- | --- |
@@ -193,3 +197,16 @@ int main(void) {
 ---
 
 **Anterior:** [Aula 03](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md) · **Próxima:** [Aula 05 — Semântica](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 04:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-04.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-04.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 03 · Resumo](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md) · [Aula 05 · Resumo](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) →
+
+**Links para esta página (12):** [Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Aula 03 · Resumo](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md) · [Aula 04 · visão geral](../README.md) · [Aula 05 · Resumo](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [Simulado 01 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P1 — Interpretador de expressões](../../../09%20-%20Projetos%20Práticos/P1%20-%20Interpretador%20de%20Expressões/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

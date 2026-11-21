@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 15](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 15 — Paradigma Lógico · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-15.md`](../03%20-%20Exercícios/exercicios-aula-15.md). Os programas e as consultas foram executados no **Tau-Prolog**, que termina a lista de respostas com `false.` quando não há mais soluções. No SWI-Prolog, a última resposta aparece seguida de ponto final.
@@ -6,13 +10,13 @@
 
 - **Procedural:** especifica **os passos** (o como) para chegar à solução.
 - **Declarativa:** especifica **o resultado desejado** (o quê), e um mecanismo de inferência encontra a solução.
-- **Classificação do professor (p.5):** imperativo, OO e funcional são **procedurais**; o lógico é **declarativo**.
+- **Classificação do professor ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)):** imperativo, OO e funcional são **procedurais**; o lógico é **declarativo**.
 
 ## E2
 
 1. Expressar proposições.
 2. Expressar os relacionamentos entre proposições.
-3. Descrever como novas proposições podem ser inferidas a partir das assumidas como verdadeiras (p.6).
+3. Descrever como novas proposições podem ser inferidas a partir das assumidas como verdadeiras ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)).
 
 ## E3
 
@@ -166,9 +170,22 @@ irmao(X, Y) :- pai(P, X), pai(P, Y), X \== Y.
 - Uma **regra** `Cabeça :- Corpo.` diz que "a cabeça é verdadeira **se** o corpo for". As vírgulas são **e**.
 - Em `avo/2`, a variável `P` liga os dois fatos: o Prolog procura um `P` que seja filho de `A` e pai de `N`.
 - Em `irmao/2`, `X \== Y` impede que alguém seja considerado irmão de si mesmo.
-- **Aprofundamento:** regras que **inferem relações** (como `avo/2`) não aparecem nas aulas de Prolog. O `:-` surge na `verifica_dobro` da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#prolog-p7) e no `main :- …` dos Exemplos 2 e 3 (p.21–22), uma regra usada como procedimento. Regras são a forma de expressar a terceira necessidade da lógica formal: **inferir** proposições novas (`avo(joao, renata)`) a partir das existentes.
+- **Aprofundamento:** regras que **inferem relações** (como `avo/2`) não aparecem nas aulas de Prolog. O `:-` surge na `verifica_dobro` da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#prolog-p7) e no `main :- …` dos Exemplos 2 e 3 ([p.21–22](../01%20-%20Slides%20Originais/README.md#página-21)), uma regra usada como procedimento. Regras são a forma de expressar a terceira necessidade da lógica formal: **inferir** proposições novas (`avo(joao, renata)`) a partir das existentes.
 
 ## E11
 
 - **Mundo fechado:** o Prolog só considera verdadeiro o que consegue **provar** a partir da base. `homem(pedro)` não está na base nem pode ser deduzido, então a resposta é `false` — que significa "não demonstrável com o que sei", e não "falso no mundo real".
-- **Sem semântica intrínseca (p.15):** para o Prolog, `homem` e `pedro` são só símbolos. Ele não "sabe" o que é ser homem; só compara símbolos e unifica termos. O significado é dado pelo programador, que precisa manter consistência — por exemplo, sempre `pai(Pai, Filho)`, nunca às vezes `pai(Filho, Pai)`.
+- **Sem semântica intrínseca ([p.15](../01%20-%20Slides%20Originais/README.md#página-15)):** para o Prolog, `homem` e `pedro` são só símbolos. Ele não "sabe" o que é ser homem; só compara símbolos e unifica termos. O significado é dado pelo programador, que precisa manter consistência — por exemplo, sempre `pai(Pai, Filho)`, nunca às vezes `pai(Filho, Pai)`.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 15:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-15.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 14 · Resoluções](../../Aula%2014%20-%20Paradigma%20Funcional/04%20-%20Resoluções/resolucoes-aula-14.md)
+
+**Links para esta página (6):** [Aula 15 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Aula 15 · Exercícios](../03%20-%20Exercícios/exercicios-aula-15.md) · [Aula 15 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [P5 — Grade curricular em Prolog](../../../09%20-%20Projetos%20Práticos/P5%20-%20Grade%20Curricular%20em%20Prolog/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

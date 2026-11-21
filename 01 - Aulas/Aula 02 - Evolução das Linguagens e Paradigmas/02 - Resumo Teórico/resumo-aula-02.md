@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 02](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 02 — Evolução das Linguagens e Paradigmas · Resumo teórico
 
-> **Fonte:** [`Aula02_Evolução_LinguagensDeProgramacao.pdf`](../01%20-%20Slides%20Originais/Aula02_Evolução_LinguagensDeProgramacao.pdf) (23 páginas). Apoio indicado: Tucker & Noonan, seções 1.2 e 1.4; Sebesta (9ª ed.), seções 1.3, 1.4 e 1.5 (p.23).
+> **Fonte:** [`Aula02_Evolução_LinguagensDeProgramacao.pdf`](../01%20-%20Slides%20Originais/Aula02_Evolução_LinguagensDeProgramacao.pdf) (23 páginas). Apoio indicado: Tucker & Noonan, seções 1.2 e 1.4; Sebesta (9ª ed.), seções 1.3, 1.4 e 1.5 ([p.23](../01%20-%20Slides%20Originais/README.md#página-23)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF.
 
 ---
@@ -89,9 +93,9 @@ verifica_dobro :-
 | `( C -> A ; B )` | Se C, então A; senão, B. |
 | `Num1`, `Dobro` | Variáveis começam com **maiúscula** em Prolog. |
 
-**[Material original] — conclusão do professor (p.8):** as diferenças entre os códigos vêm da **sintaxe** de linguagens de um mesmo paradigma e/ou das **características gerais de paradigmas diferentes**.
+**[Material original] — conclusão do professor ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)):** as diferenças entre os códigos vêm da **sintaxe** de linguagens de um mesmo paradigma e/ou das **características gerais de paradigmas diferentes**.
 
-**[Explicação elaborada]** O slide não diz quais pares ilustram cada caso. Java é classificado como OO (p.11), mas neste exemplo o corpo do `main` é puramente imperativo; por isso, Pascal × Java ilustra sobretudo a diferença de sintaxe, e Pascal/Java × Prolog, a diferença de paradigma.
+**[Explicação elaborada]** O slide não diz quais pares ilustram cada caso. Java é classificado como OO ([p.11](../01%20-%20Slides%20Originais/README.md#página-11)), mas neste exemplo o corpo do `main` é puramente imperativo; por isso, Pascal × Java ilustra sobretudo a diferença de sintaxe, e Pascal/Java × Prolog, a diferença de paradigma.
 
 **[Explicação elaborada]** Compare:
 
@@ -120,7 +124,7 @@ verifica_dobro :-
 
 **[Explicação elaborada] — "objetos ativos × passivos":** no imperativo, um dado (por exemplo, um vetor) é passivo — funções externas o leem e alteram. Na OO, o objeto carrega o próprio comportamento: você **pede** ao objeto que faça algo (`pilha.push(5)`), e ele decide como alterar seu estado. Essa ideia é desenvolvida na [Aula 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md).
 
-**[Explicação elaborada] — "Java 8" na lista funcional:** o Java 8 introduziu expressões lambda e *streams*, recursos de estilo funcional. Isso não torna Java uma linguagem funcional; mostra que linguagens modernas são **multiparadigma** (Aula 14, p.10).
+**[Explicação elaborada] — "Java 8" na lista funcional:** o Java 8 introduziu expressões lambda e *streams*, recursos de estilo funcional. Isso não torna Java uma linguagem funcional; mostra que linguagens modernas são **multiparadigma** (Aula 14, [p.10](../../Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-10)).
 
 ## 6. Restrições de projeto de uma linguagem (p.14–16)
 
@@ -152,9 +156,15 @@ Esses critérios reaparecem ao longo do curso: o escopo dinâmico prejudica a **
 
 ## 8. Evolução das linguagens (p.18–22)
 
-**[Material original]** A p.18 pergunta como foram construídos os primeiros programas e a primeira linguagem, com uma foto do ENIAC. As p.19–22 trazem quatro figuras.
+**[Material original]** A [p.18](../01%20-%20Slides%20Originais/README.md#página-18) pergunta como foram construídos os primeiros programas e a primeira linguagem, com uma foto do ENIAC. As [p.19–22](../01%20-%20Slides%20Originais/README.md#página-19) trazem quatro figuras.
 
-**Figura 1 — árvore de gerações (p.19):**
+<!-- figura: aula02 página 18 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-18"><img src="../01%20-%20Slides%20Originais/paginas/aula02-p18.webp" width="640" alt="Slide da página 18: foto dos primeiros computadores"></a><br><sub>Slide original, página 18: foto dos primeiros computadores. Clique para abrir na galeria.</sub></p>
+
+**Figura 1 — árvore de gerações ([p.19](../01%20-%20Slides%20Originais/README.md#página-19)):**
+
+<!-- figura: aula02 página 19 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-19"><img src="../01%20-%20Slides%20Originais/paginas/aula02-p19.webp" width="640" alt="Slide da página 19: árvore de gerações das linguagens"></a><br><sub>Slide original, página 19: árvore de gerações das linguagens. Clique para abrir na galeria.</sub></p>
 
 | Nível | Geração | Conteúdo |
 | --- | --- | --- |
@@ -164,9 +174,15 @@ Esses critérios reaparecem ao longo do curso: o escopo dinâmico prejudica a **
 | Alto nível | 4ª | Linguagens OO ou aplicativas |
 | Alto nível | 5ª | Linguagens declarativas |
 
-**Figura 2 — "Generation of programming languages examples" (p.20):** 1ª máquina; 2ª Assembly; 3ª C, C#, C++, Fortran, Pascal, COBOL, Visual Basic, Java, JavaScript; 4ª SQL, Python, Perl, Ruby, MatLab; 5ª Prolog, Mercury, LISP, OPS5.
+**Figura 2 — "Generation of programming languages examples" ([p.20](../01%20-%20Slides%20Originais/README.md#página-20)):** 1ª máquina; 2ª Assembly; 3ª C, C#, C++, Fortran, Pascal, COBOL, Visual Basic, Java, JavaScript; 4ª SQL, Python, Perl, Ruby, MatLab; 5ª Prolog, Mercury, LISP, OPS5.
 
-**Figura 3 — mapa mental "15 – Gerações das linguagens" (p.21):**
+<!-- figura: aula02 página 20 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-20"><img src="../01%20-%20Slides%20Originais/paginas/aula02-p20.webp" width="640" alt="Slide da página 20: Generation of programming languages examples"></a><br><sub>Slide original, página 20: Generation of programming languages examples. Clique para abrir na galeria.</sub></p>
+
+**Figura 3 — mapa mental "15 – Gerações das linguagens" ([p.21](../01%20-%20Slides%20Originais/README.md#página-21)):**
+
+<!-- figura: aula02 página 21 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-21"><img src="../01%20-%20Slides%20Originais/paginas/aula02-p21.webp" width="640" alt="Slide da página 21: mapa mental das gerações"></a><br><sub>Slide original, página 21: mapa mental das gerações. Clique para abrir na galeria.</sub></p>
 
 - 1ª: 0 e 1, década de 1940, linguagem de máquina.
 - 2ª: Assembly, linguagem simbólica/montagem, 1ª metade dos anos 1950.
@@ -174,15 +190,18 @@ Esses critérios reaparecem ao longo do curso: o escopo dinâmico prejudica a **
 - 4ª: aplicações específicas (NOMAD, SQL, Postscript), para relatórios, bancos de dados e formatação de texto.
 - 5ª: lógica com restrição (Prolog, OPS5).
 
-**Figura 4 — linha do tempo 1950–2000 (p.22):** colunas *Imperative*, *Object Oriented*, *Functional* e *Logical*. Vai de A-0, FORTRAN, COBOL, ALGOL, LISP e PROLOG (anos 1950–70) até Java, Python, Haskell 98 e Visual Basic (anos 1990).
+**Figura 4 — linha do tempo 1950–2000 ([p.22](../01%20-%20Slides%20Originais/README.md#página-22)):** colunas *Imperative*, *Object Oriented*, *Functional* e *Logical*. Vai de A-0, FORTRAN, COBOL, ALGOL, LISP e PROLOG (anos 1950–70) até Java, Python, Haskell 98 e Visual Basic (anos 1990).
 
-> **[Atenção] — as classificações divergem.** As três primeiras figuras **não concordam** sobre a 4ª geração e só em parte sobre a 5ª. A árvore põe a OO na 4ª; a Figura 2 põe Java e C# na 3ª e LISP na 5ª; o mapa mental põe na 4ª linguagens de propósito específico (SQL), e não a OO. As figuras concordam na 1ª (máquina), na 2ª (Assembly) e, em linhas gerais, na 3ª (alto nível). Na 5ª, todas trazem a programação lógica (Prolog), mas a p.20 inclui também LISP. Numa prova, **diga qual classificação está usando**.
+<!-- figura: aula02 página 22 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-22"><img src="../01%20-%20Slides%20Originais/paginas/aula02-p22.webp" width="640" alt="Slide da página 22: linha do tempo dos paradigmas, 1950–2000"></a><br><sub>Slide original, página 22: linha do tempo dos paradigmas, 1950–2000. Clique para abrir na galeria.</sub></p>
+
+> **[Atenção] — as classificações divergem.** As três primeiras figuras **não concordam** sobre a 4ª geração e só em parte sobre a 5ª. A árvore põe a OO na 4ª; a Figura 2 põe Java e C# na 3ª e LISP na 5ª; o mapa mental põe na 4ª linguagens de propósito específico (SQL), e não a OO. As figuras concordam na 1ª (máquina), na 2ª (Assembly) e, em linhas gerais, na 3ª (alto nível). Na 5ª, todas trazem a programação lógica (Prolog), mas a [p.20](../01%20-%20Slides%20Originais/README.md#página-20) inclui também LISP. Numa prova, **diga qual classificação está usando**.
 
 **[Explicação elaborada] — a lógica da evolução:**
 
 1. **Máquina (anos 1940):** instruções em binário, específicas de cada computador.
 2. **Assembly:** mnemônicos (`ADD`, `MOV`) traduzidos 1:1 para binário por um montador.
-3. **Alto nível (Fortran, 1957):** uma instrução da linguagem vira várias de máquina, e o compilador otimizador se consolida. Já existiam tradutores anteriores, como o A-0 de Grace Hopper (1952), que abre a linha do tempo da p.22.
+3. **Alto nível (Fortran, 1957):** uma instrução da linguagem vira várias de máquina, e o compilador otimizador se consolida. Já existiam tradutores anteriores, como o A-0 de Grace Hopper (1952), que abre a linha do tempo da [p.22](../01%20-%20Slides%20Originais/README.md#página-22).
 4. **Estruturação e abstração:** Algol, Pascal e C (estruturas de controle e procedimentos); depois Simula, Smalltalk, C++ e Java (objetos).
 5. **Ramos não von Neumann:** LISP (1958) dá origem aos funcionais; Prolog (1972), aos lógicos.
 
@@ -203,3 +222,16 @@ Esses critérios reaparecem ao longo do curso: o escopo dinâmico prejudica a **
 ---
 
 **Anterior:** [Aula 01](../../Aula%2001%20-%20Apresentação%20da%20Disciplina/02%20-%20Resumo%20Teórico/resumo-aula-01.md) · **Próxima:** [Aula 03 — Implementação das Linguagens](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 02:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-02.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-02.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 01 · Resumo](../../Aula%2001%20-%20Apresentação%20da%20Disciplina/02%20-%20Resumo%20Teórico/resumo-aula-01.md) · [Aula 03 · Resumo](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md) →
+
+**Links para esta página (12):** [Aula 01 · Resumo](../../Aula%2001%20-%20Apresentação%20da%20Disciplina/02%20-%20Resumo%20Teórico/resumo-aula-01.md) · [Aula 02 · visão geral](../README.md) · [Aula 03 · Resumo](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md) · [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 15 · Resumo](../../Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Aula 15 · Resoluções](../../Aula%2015%20-%20Paradigma%20Lógico/04%20-%20Resoluções/resolucoes-aula-15.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

@@ -96,7 +96,45 @@ def gerar(destino):
                 '    <Nullable>disable</Nullable>\n  </PropertyGroup>\n</Project>\n')
         indice.append((g, o, rel, b))
     escrever_readme(destino, indice)
+    escrever_readmes_pastas(destino, indice)
     return indice
+
+
+def escrever_readmes_pastas(destino, indice):
+    """Um README.md em cada subpasta de codigo/, para navegar pelo GitHub como num caderno."""
+    from collections import defaultdict
+    progs = defaultdict(list)                      # pasta (relativa a codigo/) → [(arquivo, bloco)]
+    pastas = set()
+    for g, o, rel, b in indice:
+        d = os.path.dirname(rel)
+        progs[d].append((os.path.basename(rel), b))
+        while d:
+            pastas.add(d)
+            d = os.path.dirname(d)
+    for d in sorted(pastas):
+        nivel = d.count("/") + 2                   # codigo/<d> → profundidade até a raiz do repositório
+        ate_raiz = "../" * nivel
+        partes = d.split("/")
+        trilha = [f"[Início]({ate_raiz}README.md)", f"[codigo]({'../' * (nivel - 1)}README.md)"]
+        for i, nome in enumerate(partes):
+            trilha.append(f"**{nome}**" if i == len(partes) - 1 else f"[{nome}]({'../' * (len(partes) - 1 - i)}README.md)")
+        L = [" › ".join(trilha), "", f"# codigo/{d}", "",
+             "> **Gerado automaticamente** por `ferramentas/gerar_codigo.py`. A fonte de cada programa é o Markdown indicado em *Origem*: edite lá.", ""]
+        subs = sorted(x for x in pastas if os.path.dirname(x) == d)
+        if subs:
+            L += ["| Pasta | Programas |", "| --- | :-: |"]
+            for x in subs:
+                n = sum(len(v) for k, v in progs.items() if k == x or k.startswith(x + "/"))
+                L.append(f"| [{os.path.basename(x)}/]({os.path.basename(x).replace(' ', '%20')}/README.md) | {n} |")
+            L.append("")
+        if progs.get(d):
+            L += ["| Programa | Linguagem | Origem | Executar |", "| --- | --- | --- | --- |"]
+            for nome, b in sorted(progs[d], key=lambda t: t[0]):
+                src = ate_raiz + b.arquivo.replace(" ", "%20") + "#" + secao_ancora(b.titulo)
+                L.append(f"| [`{nome}`]({nome.replace(' ', '%20')}) | {NOME_LG[b.linguagem]} | "
+                         f"[{os.path.basename(b.arquivo)} — {b.titulo or 'início'}]({src}) | `python3 ferramentas/rodar.py codigo/{d}/{nome}` |")
+            L.append("")
+        open(os.path.join(destino, d, "README.md"), "w", encoding="utf-8").write("\n".join(L).rstrip() + "\n")
 
 
 def escrever_readme(destino, indice):
@@ -105,7 +143,7 @@ def escrever_readme(destino, indice):
     grupos = OrderedDict()
     for g, o, rel, b in indice:
         grupos.setdefault(g, []).append((o, rel, b))
-    L = ["# Código dos exemplos", "",
+    L = ["[Início](../README.md) › **codigo** · [Mapa](../MAPA.md)", "", "# Código dos exemplos", "",
          "Todos os programas dos resumos, resoluções, listas, simulados e revisões, um por arquivo, prontos para executar.",
          "", "> **Gerado automaticamente** por `ferramentas/gerar_codigo.py` a partir dos arquivos Markdown, que são a fonte. "
          "Para alterar um exemplo, edite o Markdown e gere de novo; os testes automáticos conferem se esta pasta está atualizada.",

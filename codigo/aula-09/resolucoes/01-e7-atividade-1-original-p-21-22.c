@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 09 - Paradigma Imperativo I/04 - Resoluções/resolucoes-aula-09.md (linha 62).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 09 - Paradigma Imperativo I/04 - Resoluções/resolucoes-aula-09.md (linha 66).
 // Seção: E7 — Atividade 1 (original, p.21–22)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-09/resolucoes/01-e7-atividade-1-original-p-21-22.c

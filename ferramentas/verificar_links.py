@@ -10,13 +10,15 @@ root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FENCE = re.compile(r'^(```|~~~)')
 LINK = re.compile(r'(?<!!)\[(?:[^\[\]]|\[[^\]]*\])*\]\(([^()\s]+(?:\([^()]*\))?[^()\s]*)\)')
 ANGLE = re.compile(r'<(https?://[^>]+)>')
+IMAGEM = re.compile(r'!\[[^\]]*\]\(([^()\s]+(?:\([^()]*\))?[^()\s]*)\)')   # ![alt](imagens/foto.jpg)
+HTML = re.compile(r'\b(?:src|href)="([^"]+)"')                                # <img src="..."> e <a href="...">
 
 def strip_code(text):
     out, infence = [], False
     for line in text.split('\n'):
         if FENCE.match(line.strip()):
             infence = not infence; out.append(''); continue
-        out.append('' if infence else re.sub(r'`[^`]*`', lambda m: ' ' * len(m.group(0)) if '](' in m.group(0) else m.group(0), line))
+        out.append('' if infence else re.sub(r'`[^`]*`', lambda m: ' ' * len(m.group(0)) if ('](' in m.group(0) or 'src=' in m.group(0) or 'href=' in m.group(0)) else m.group(0), line))
     return '\n'.join(out)
 
 def slug(h):
@@ -52,8 +54,8 @@ for dp, dn, fn in os.walk(root):
         text = strip_code(open(p, encoding='utf-8').read())
         for ln, line in enumerate(text.split('\n'), 1):
             for m in ANGLE.finditer(line): external.add(m.group(1))
-            for m in LINK.finditer(line):
-                tgt = m.group(1)
+            for tgt in [m.group(1) for m in LINK.finditer(line)] + [m.group(1) for m in IMAGEM.finditer(line)] + \
+                       [m.group(1) for m in HTML.finditer(line)]:
                 if re.match(r'^(https?|mailto):', tgt): external.add(tgt); continue
                 total += 1
                 path_part, _, frag = tgt.partition('#')

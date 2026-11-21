@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › **06 - Revisões e Sínteses** · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # 06 — Revisões e Sínteses
 
 Materiais que **integram** várias aulas. Todos são **[Explicação elaborada]** ou **[Exercício autoral]**, produzidos para este repositório a partir dos resumos das aulas, e nenhum é material oficial do professor.
@@ -30,3 +34,14 @@ As unidades são um agrupamento **deste repositório**, não uma divisão oficia
 2. Para cada unidade, faça o autoteste e os quadros correspondentes.
 3. Revise os termos com os [flashcards](Flashcards/README.md), um pouco por dia.
 4. Termine com as [listas do professor](../02%20-%20Listas%20de%20Exercícios/README.md) e os simulados: o [02](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-02.md) (Unidades 1–2), o [03](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-03.md) (Unidades 3–4) e o [01](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-01.md) (disciplina inteira).
+
+
+<!-- nav:rodape -->
+
+---
+
+← [05 — Materiais Complementares](../05%20-%20Materiais%20Complementares/README.md) · [07 - Glossário](../07%20-%20Glossário/README.md) →
+
+**Links para esta página (2):** [Cronograma](../00%20-%20Planejamento%20e%20Organização/cronograma.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

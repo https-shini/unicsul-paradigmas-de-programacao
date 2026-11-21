@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [02 - Listas de Exercícios](../../README.md) › [Lista 02](../README.md) › [02 - Resolução](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Lista 02 — Revisão II · Resolução comentada
 
 > **[Resolução elaborada]** Resolução produzida para estudo. **Não é gabarito oficial do professor.** Enunciados: [README da lista](../README.md) · original: [`Aula16b_ExRevisao2.pdf`](../01%20-%20Enunciado%20Original/Aula16b_ExRevisao2.pdf).
@@ -7,7 +11,7 @@
 
 ## Q1
 
-**Assunto:** os quatro paradigmas. **Conceitos:** abordagem procedural/declarativa, unidade de modelagem. **Fontes:** Aula02 p.8–13; Aula15 p.3–5.
+**Assunto:** os quatro paradigmas. **Conceitos:** abordagem procedural/declarativa, unidade de modelagem. **Fontes:** Aula02 [p.8–13](../../../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-8); Aula15 [p.3–5](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3).
 
 **Resposta-modelo:**
 
@@ -18,22 +22,22 @@
 | **Funcional** | **Funções matemáticas**, cada uma com domínio de entrada e resultado | **Composição** e aplicação de funções; no modelo puro, sem estado nem efeitos colaterais | Procedural (classificação do professor) |
 | **Lógico** | **Fatos e regras** em lógica de predicados | O programador descreve **o que** quer; um **algoritmo de inferência** busca a solução por unificação | **Declarativo** |
 
-Os três primeiros **especificam os passos** que levam à solução; o lógico especifica o resultado (Aula15 p.3).
+Os três primeiros **especificam os passos** que levam à solução; o lógico especifica o resultado (Aula15 [p.3](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3)).
 
 ## Q2
 
-**Assunto:** implementação de linguagens. **Conceitos:** tradução, código intermediário, máquina virtual. **Fonte:** Aula03 p.7–15.
+**Assunto:** implementação de linguagens. **Conceitos:** tradução, código intermediário, máquina virtual. **Fonte:** Aula03 [p.7–15](../../../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-7).
 
 **Resposta-modelo:**
 
 - **Compilação:** traduz **todo** o programa-fonte, antes da execução, para **código de máquina de uma plataforma específica**, salvo num executável (Fortran, C, C++, Pascal). Passa pelas fases léxica, sintática, semântica/código intermediário, otimização e geração de código. Execução **rápida**, mas o executável fica **preso à plataforma**.
 - **Interpretação pura:** um **interpretador** simula a máquina em software e **traduz e executa** cada instrução ao mesmo tempo (Lisp, JavaScript, PHP, Python). **Portável** — basta o interpretador —, mas mais **lento**, porque re-decodifica as instruções a cada execução, e sem verificação estática.
 - **Híbrida:** um compilador traduz o fonte para um **código intermediário** (bytecode Java, CIL do .NET), que é executado por um **interpretador** (Java, C#, VB.NET).
-- **Papel do código intermediário e da VM:** o código intermediário é **independente de plataforma** e mais simples de interpretar que o fonte. A **máquina virtual** (JVM, CLR) é o interpretador desse código, implementado para cada sistema. O mesmo `.class` roda em qualquer plataforma com JVM — **portabilidade** com desempenho melhor que a interpretação pura, ainda maior com compilação JIT **[Complemento]**. A VM é um dos "computadores virtuais" em camadas da Fig. 1.2 de Sebesta (Aula03 p.15).
+- **Papel do código intermediário e da VM:** o código intermediário é **independente de plataforma** e mais simples de interpretar que o fonte. A **máquina virtual** (JVM, CLR) é o interpretador desse código, implementado para cada sistema. O mesmo `.class` roda em qualquer plataforma com JVM — **portabilidade** com desempenho melhor que a interpretação pura, ainda maior com compilação JIT **[Complemento]**. A VM é um dos "computadores virtuais" em camadas da Fig. 1.2 de Sebesta (Aula03 [p.15](../../../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-15)).
 
 ## Q3
 
-**Assunto:** níveis de sintaxe. **Fonte:** Aula04 p.6–10.
+**Assunto:** níveis de sintaxe. **Fonte:** Aula04 [p.6–10](../../../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/01%20-%20Slides%20Originais/README.md#página-6).
 
 **Resposta-modelo:**
 
@@ -43,11 +47,11 @@ Os três primeiros **especificam os passos** que levam à solução; o lógico e
   - **Padrão:** descrição da forma dos lexemas. C tem seis grupos de token: identificador, palavra reservada, constante, string, símbolo especial e operador.
 - **Sintaxe concreta:** a representação **real** do programa, usando os tokens como alfabeto. Define como os tokens formam **comandos válidos** (`soma = x + 10;`). Exemplo-chave: `x = (y + 10 * z;` é **lexicamente válido**, porque todos os tokens existem, mas **sintaticamente inválido**, porque o parêntese não fecha.
 - **Sintaxe abstrata:** considera só a **informação essencial** — a estrutura da árvore —, sem pontuação e parênteses, já representados pela forma da árvore.
-- **Estruturação formal:** a léxica é descrita por expressões regulares/autômatos finitos, e a concreta, por **gramáticas livres de contexto** (BNF). O analisador léxico produz tokens, e o sintático os organiza em árvores (Aula03 p.9).
+- **Estruturação formal:** a léxica é descrita por expressões regulares/autômatos finitos, e a concreta, por **gramáticas livres de contexto** (BNF). O analisador léxico produz tokens, e o sintático os organiza em árvores (Aula03 [p.9](../../../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-9)).
 
 ## Q4
 
-**Assunto:** escopo. **Fonte:** Aula05 p.9–12.
+**Assunto:** escopo. **Fonte:** Aula05 [p.9–12](../../../01%20-%20Aulas/Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-9).
 
 **Resposta-modelo:**
 
@@ -66,7 +70,7 @@ int main(void) { g(); return 0; }   /* estático: imprime 10. Com escopo dinâmi
 
 ## Q5
 
-**Assunto:** tipagem. **Fonte:** Aula06 p.9–21.
+**Assunto:** tipagem. **Fonte:** Aula06 [p.9–21](../../../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-9).
 
 **Resposta-modelo:**
 
@@ -89,7 +93,7 @@ int main(void) {
 
 ## Q6
 
-**Assunto:** alocação de memória. **Fonte:** Aula08 p.3, p.12–14.
+**Assunto:** alocação de memória. **Fonte:** Aula08 [p.3](../../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-3), [p.12–14](../../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-12).
 
 **Resposta-modelo:**
 
@@ -100,14 +104,14 @@ int main(void) {
 | **Região** | **Segmento estático** (globais e `static`); locais e parâmetros na **pilha**, de tamanho conhecido | **Heap** |
 | **Liberação** | Fim do programa (estático); fim da função (pilha) | Explícita (`delete`/`free`) ou coleta de lixo |
 
-O slide (Aula08 p.13) trata a pilha junto com a alocação estática porque o **tamanho** de cada frame é conhecido na compilação, embora o frame só exista durante a chamada.
+O slide (Aula08 [p.13](../../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-13)) trata a pilha junto com a alocação estática porque o **tamanho** de cada frame é conhecido na compilação, embora o frame só exista durante a chamada.
 
-- **Regiões (Aula08 p.13):** código, estático, heap, memória livre e pilha. Heap e pilha crescem em direção à memória livre.
+- **Regiões (Aula08 [p.13](../../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-13)):** código, estático, heap, memória livre e pilha. Heap e pilha crescem em direção à memória livre.
 - **Relação com ponteiros:** a memória do heap **não tem nome**: `new`/`malloc` devolvem um **endereço**, que precisa ser guardado num **ponteiro**. Por isso estruturas dinâmicas — listas, pilhas, filas, árvores — são construídas com ponteiros, como a pilha encadeada com `Nodo* proximo` (Aula12). No Exemplo 4 da Aula08: `n`/`res` no segmento estático; `a`, `b`, `x`, `y` na pilha; a área criada com `new` (apontada por `vetor`) no heap — no slide, `new int(4)` cria um único `int`; o correto seria `new int[n]`.
 
 ## Q7
 
-**Assunto:** imperativo e programação estruturada. **Fontes:** Aula09 p.8–22; artigo de Dijkstra (Aula09a).
+**Assunto:** imperativo e programação estruturada. **Fontes:** Aula09 [p.8–22](../../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-8); artigo de Dijkstra (Aula09a).
 
 **Resposta-modelo:**
 
@@ -119,11 +123,11 @@ O slide (Aula08 p.13) trata a pilha junto com a alocação estática porque o **
 - Por isso defendeu **abolir** o `goto` das linguagens de alto nível. A prova de que ele é logicamente dispensável é de **Böhm e Jacopini** (1966), citada no artigo.
 - **Programação estruturada:** sequência, **seleção** e **repetição** em blocos, mais **subprogramas**. Facilita leitura e confiabilidade; a linguagem pode até suportar `goto`, mas o dispensa.
 
-> **[Atenção]** O slide (Aula09 p.18) diz que Dijkstra "mostrou" que todo programa com `goto` pode ser reescrito com laços. O artigo não traz essa prova: ele a atribui a **Böhm e Jacopini (1966)**. Na resposta, cite Dijkstra como quem defendeu **abolir** o `goto` e Böhm–Jacopini como autores da prova (ver a errata 17).
+> **[Atenção]** O slide (Aula09 [p.18](../../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-18)) diz que Dijkstra "mostrou" que todo programa com `goto` pode ser reescrito com laços. O artigo não traz essa prova: ele a atribui a **Böhm e Jacopini (1966)**. Na resposta, cite Dijkstra como quem defendeu **abolir** o `goto` e Böhm–Jacopini como autores da prova (ver a errata 17).
 
 ## Q8
 
-**Assunto:** abstração. **Fontes:** Aula10 p.4–18; Aula12 p.17–22.
+**Assunto:** abstração. **Fontes:** Aula10 [p.4–18](../../../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-4); Aula12 [p.17–22](../../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-17).
 
 **Resposta-modelo:**
 
@@ -131,12 +135,12 @@ O slide (Aula08 p.13) trata a pilha junto com a alocação estática porque o **
 - **Abstração de dados:** agrupa a **representação** de um tipo e as **operações** sobre ele, ocultando a representação. É a base da OO.
 - **Acoplamento:** grau de dependência entre módulos; o desejável é **baixo**. Variáveis globais o elevam.
 - **Coesão:** responsabilidade única de cada função ou classe; o desejável é **alta**.
-- A abstração procedural **não favorece** baixo acoplamento nem alta coesão. **[Atenção]** O slide (Aula10 p.16) escreve "baixa coesão"; o conceito correto é que ela não favorece a **alta** coesão.
+- A abstração procedural **não favorece** baixo acoplamento nem alta coesão. **[Atenção]** O slide (Aula10 [p.16](../../../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-16)) escreve "baixa coesão"; o conceito correto é que ela não favorece a **alta** coesão.
 - **Papel do TDA:** permite declarar variáveis do tipo, **oculta a representação** (encapsulamento) e expõe só operações. Assim, (1) os clientes não alteram o estado indevidamente; (2) a representação pode mudar sem afetar os clientes, o que é baixo acoplamento — na pilha da Aula12, trocar vetor por lista encadeada não mudou o `main`; (3) cada TDA reúne uma responsabilidade, o que é alta coesão. O resultado é software mais fácil de **organizar e manter**.
 
 ## Q9
 
-**Assunto:** passagem de parâmetros. **Fontes:** Aula11 p.13–19; Aula08 p.8–11.
+**Assunto:** passagem de parâmetros. **Fontes:** Aula11 [p.13–19](../../../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-13); Aula08 [p.8–11](../../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-8).
 
 **Resposta-modelo:**
 
@@ -151,7 +155,7 @@ O slide (Aula08 p.13) trata a pilha junto com a alocação estática porque o **
 
 ## Q10
 
-**Assunto:** encapsulamento e memória em OO. **Fonte:** Aula12 p.18–30.
+**Assunto:** encapsulamento e memória em OO. **Fonte:** Aula12 [p.18–30](../../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-18).
 
 **Resposta-modelo:**
 
@@ -167,7 +171,7 @@ O slide (Aula08 p.13) trata a pilha junto com a alocação estática porque o **
 
 ## Q11
 
-**Assunto:** herança e polimorfismo. **Fonte:** Aula13 p.4–13.
+**Assunto:** herança e polimorfismo. **Fonte:** Aula13 [p.4–13](../../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-4).
 
 **Resposta-modelo:**
 
@@ -221,4 +225,15 @@ public class Main {
 - **Formato:** 23 questões **discursivas**; 18 pedem **diferenciar, comparar ou relacionar** pares de conceitos. As tabelas de [`quadros-comparativos.md`](../../../06%20-%20Revisões%20e%20Sínteses/quadros-comparativos.md) são o material mais direto.
 - **Código:** só em Clojure (avaliar e escrever) e Prolog (consultas). Nos outros paradigmas, os exemplos das aulas servem para **sustentar** as respostas.
 - **Aulas mais presentes:** 14 e 15 (nas duas listas). Na Lista 02, as Aulas 02–06, 09–11 e 13 aparecem uma vez cada; a 08 e a 12, duas vezes (Q6/Q9 e Q8/Q10); a Aula 07 (tipos compostos) não é cobrada diretamente.
-- **Termos que aparecem nos enunciados sem estar nos slides** — imutabilidade e função pura: prepare definições curtas (ver o [glossário](../../../07%20-%20Glossário/glossario.md)). Outros termos aparecem com outro nome: "segmento estático" é o "Estático" da Aula08 p.13, e "vinculação tardia" é a "ligação tardia" da Aula13 p.12.
+- **Termos que aparecem nos enunciados sem estar nos slides** — imutabilidade e função pura: prepare definições curtas (ver o [glossário](../../../07%20-%20Glossário/glossario.md)). Outros termos aparecem com outro nome: "segmento estático" é o "Estático" da Aula08 [p.13](../../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-13), e "vinculação tardia" é a "ligação tardia" da Aula13 [p.12](../../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-12).
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Lista 01 · Resolução](../../Lista%2001%20-%20Revisão%20I/02%20-%20Resolução/resolucao-lista-01.md)
+
+**Links para esta página (14):** [Aula 03 · Resumo](../../../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md) · [Aula 04 · Resumo](../../../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md) · [Aula 05 · Resumo](../../../01%20-%20Aulas/Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [Aula 06 · Resumo](../../../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [Aula 08 · Resumo](../../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Aula 09 · Resumo](../../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 10 · Resumo](../../../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Aula 11 · Resumo](../../../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md) · [Aula 12 · Resumo](../../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [Aula 13 · Resumo](../../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Aula 14 · Resumo](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Aula 15 · Resumo](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Lista 02](../README.md) · [02 — Listas de Exercícios](../../README.md)
+
+<!-- /nav:rodape -->

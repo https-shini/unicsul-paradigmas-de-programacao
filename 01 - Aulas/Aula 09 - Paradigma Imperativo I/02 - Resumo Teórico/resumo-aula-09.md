@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 09](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 09 — Paradigma Imperativo I · Resumo teórico
 
-> **Fonte:** [`Aula09_ParadigmaImperativo1.pdf`](../01%20-%20Slides%20Originais/Aula09_ParadigmaImperativo1.pdf) (24 páginas). Apoio indicado: Tucker & Noonan, seções 12.1 a 12.4; Sebesta (9ª ed.), cap. 9 (p.23).
+> **Fonte:** [`Aula09_ParadigmaImperativo1.pdf`](../01%20-%20Slides%20Originais/Aula09_ParadigmaImperativo1.pdf) (24 páginas). Apoio indicado: Tucker & Noonan, seções 12.1 a 12.4; Sebesta (9ª ed.), cap. 9 ([p.23](../01%20-%20Slides%20Originais/README.md#página-23)).
 > **Leitura obrigatória da aula:** artigo de Dijkstra (1968), [`Aula09a_ArtigoDijkstra68.pdf`](../01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf), resumido em [**resumo-artigo-dijkstra-1968.md**](resumo-artigo-dijkstra-1968.md).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF.
 
@@ -14,7 +18,10 @@
 
 ## 2. Origem: os primeiros computadores (p.3–6)
 
-**[Material original]** "Os primeiros computadores armazenavam os dados na memória e o programa fora dela, geralmente em um painel de fios" (foto de operadoras do ENIAC). As p.4–6 repetem as figuras de gerações da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#8-evolução-das-linguagens-p1822).
+**[Material original]** "Os primeiros computadores armazenavam os dados na memória e o programa fora dela, geralmente em um painel de fios" (foto de operadoras do ENIAC). As [p.4–6](../01%20-%20Slides%20Originais/README.md#página-4) repetem as figuras de gerações da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#8-evolução-das-linguagens-p1822).
+
+<!-- figura: aula09 página 3 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-3"><img src="../01%20-%20Slides%20Originais/paginas/aula09-p03.webp" width="640" alt="Slide da página 3: foto do ENIAC"></a><br><sub>Slide original, página 3: foto do ENIAC. Clique para abrir na galeria.</sub></p>
 
 **[Explicação elaborada]** No ENIAC, "programar" era religar cabos. A grande virada foi o **programa armazenado**: guardar as instruções na mesma memória dos dados, o que permitiu trocar de programa sem mexer no hardware. É a arquitetura de von Neumann.
 
@@ -39,6 +46,9 @@ flowchart TB
     CPU <--> ES["Dispositivos de entrada e saída"]
 ```
 
+<!-- figura: aula09 página 7 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-7"><img src="../01%20-%20Slides%20Originais/paginas/aula09-p07.webp" width="640" alt="Slide da página 7: arquitetura de von Neumann (Sebesta, Figura 1.1)"></a><br><sub>Slide original, página 7: arquitetura de von Neumann (Sebesta, Figura 1.1). Clique para abrir na galeria.</sub></p>
+
 **[Explicação elaborada] — por que o imperativo "espelha" a máquina:**
 
 | Elemento da arquitetura | Construção da linguagem imperativa |
@@ -49,13 +59,13 @@ flowchart TB
 | Desvio do contador de programa (*jump*) | **`goto`**, seleção e repetição |
 | ULA | **Expressões** aritméticas e lógicas |
 
-**[Complemento]** O canal único entre CPU e memória, por onde passam instruções e dados, palavra por palavra, ficou conhecido como **gargalo de von Neumann**. A expressão é de John Backus, na palestra do Prêmio Turing de 1977, em que ele defendeu o estilo funcional. Os paradigmas funcional e lógico partem de **outras bases** — funções matemáticas e cálculo de predicados (Aula14 p.6) —, e não do hardware; o funcional surgiu nos anos 1960, por necessidades da Inteligência Artificial ([Aula 14](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md), p.7).
+**[Complemento]** O canal único entre CPU e memória, por onde passam instruções e dados, palavra por palavra, ficou conhecido como **gargalo de von Neumann**. A expressão é de John Backus, na palestra do Prêmio Turing de 1977, em que ele defendeu o estilo funcional. Os paradigmas funcional e lógico partem de **outras bases** — funções matemáticas e cálculo de predicados (Aula14 [p.6](../../Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-6)) —, e não do hardware; o funcional surgiu nos anos 1960, por necessidades da Inteligência Artificial ([Aula 14](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md), [p.7](../../Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-7)).
 
 ## 4. O que torna uma linguagem imperativa (p.8–10)
 
 **[Material original]** "Uma linguagem de programação é imperativa se for **completa quanto a Turing** e possuir algumas características que surgiram com a evolução das linguagens."
 
-**Completa quanto a Turing (p.9):** possui um conjunto mínimo de recursos capaz de expressar **todos os algoritmos** que possam ser concebidos. Linguagens imperativas são Turing-completas se possuírem:
+**Completa quanto a Turing ([p.9](../01%20-%20Slides%20Originais/README.md#página-9)):** possui um conjunto mínimo de recursos capaz de expressar **todos os algoritmos** que possam ser concebidos. Linguagens imperativas são Turing-completas se possuírem:
 
 1. variáveis;
 2. números inteiros;
@@ -65,7 +75,7 @@ flowchart TB
 6. condições;
 7. comandos de ramificação (`goto`).
 
-**Características que surgiram com a evolução (p.10):**
+**Características que surgiram com a evolução ([p.10](../01%20-%20Slides%20Originais/README.md#página-10)):**
 
 - expressões e atribuição;
 - estruturas de controle (sequencial, seleção e repetição);
@@ -94,11 +104,14 @@ flowchart TB
 
 ## 6. Linguagens imperativas (p.14–15)
 
-**[Material original]** Exemplos: FORTRAN, BASIC, COBOL, ALGOL, Pascal, C. A figura "Classificação das Linguagens: Paradigma" (p.15) organiza por década, dos anos 1950 aos 1990:
+**[Material original]** Exemplos: FORTRAN, BASIC, COBOL, ALGOL, Pascal, C. A figura "Classificação das Linguagens: Paradigma" ([p.15](../01%20-%20Slides%20Originais/README.md#página-15)) organiza por década, dos anos 1950 aos 1990:
+
+<!-- figura: aula09 página 15 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-15"><img src="../01%20-%20Slides%20Originais/paginas/aula09-p15.webp" width="640" alt="Slide da página 15: classificação das linguagens por paradigma e década"></a><br><sub>Slide original, página 15: classificação das linguagens por paradigma e década. Clique para abrir na galeria.</sub></p>
 
 - **Imperativo / OO:** Fortran → Algol 60 → Simula, Pascal, C → Smalltalk, Modula, Ada → Oberon, Eiffel, C++ → Java (com Cobol e PL/I nos anos 1950/60).
 - **Funcional:** Lisp → ML → Miranda → Haskell.
-- **Lógico:** Prolog. **[Atenção]** A figura posiciona o Prolog na faixa dos anos 1960; a Aula 15 (p.13) situa o início do seu desenvolvimento na década de 1970 (1972).
+- **Lógico:** Prolog. **[Atenção]** A figura posiciona o Prolog na faixa dos anos 1960; a Aula 15 ([p.13](../../Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-13)) situa o início do seu desenvolvimento na década de 1970 (1972).
 
 ## 7. Não estruturado × estruturado (p.16–18)
 
@@ -110,9 +123,9 @@ flowchart TB
 | Uso de `goto` | É o mecanismo principal | Não usa (suporta, mas oferece mecanismos que dispensam seu uso) |
 | Objetivo | — | Facilitar a leitura e a execução de algoritmos |
 | Subprogramas | — | Permite procedimentos e funções |
-| Exemplos | Assembly, BASIC (p.16) | *(não citados no slide; ex.: Pascal, C, Ada)* |
+| Exemplos | Assembly, BASIC ([p.16](../01%20-%20Slides%20Originais/README.md#página-16)) | *(não citados no slide; ex.: Pascal, C, Ada)* |
 
-**Dijkstra (p.18):** "mostrou que o uso excessivo de `goto` era prejudicial ao desenvolvimento de programas confiáveis e que qualquer sequência de comandos escrita com `goto` poderia ser escrita com laços condicionais."
+**Dijkstra ([p.18](../01%20-%20Slides%20Originais/README.md#página-18)):** "mostrou que o uso excessivo de `goto` era prejudicial ao desenvolvimento de programas confiáveis e que qualquer sequência de comandos escrita com `goto` poderia ser escrita com laços condicionais."
 
 > **[Atenção] — nuance em relação ao artigo.** No próprio artigo ([resumo](resumo-artigo-dijkstra-1968.md)), Dijkstra:
 > 1. defende **abolir** o `goto` das linguagens de alto nível, e não apenas evitar o "uso excessivo";
@@ -125,7 +138,7 @@ flowchart TB
 
 **[Material original]** O `goto` pode apontar para **números de linha** ou **labels** (rótulos).
 
-**BASIC, com número de linha (p.19):**
+**BASIC, com número de linha ([p.19](../01%20-%20Slides%20Originais/README.md#página-19)):**
 
 ```basic
 10 PRINT "Iniciando o programa"
@@ -136,7 +149,7 @@ flowchart TB
 
 Saída: "Iniciando o programa" e "Terminando o programa". A linha 30 **nunca executa**.
 
-**C, com label (p.20):**
+**C, com label ([p.20](../01%20-%20Slides%20Originais/README.md#página-20)):**
 
 <!-- teste: saida-contem="Iniciando o programa\nTerminando o programa" -->
 ```c
@@ -150,7 +163,7 @@ fim: printf("Terminando o programa\n");
 }
 ```
 
-**Atividade 1 (p.21–22):** descrever o programa e reescrevê-lo sem `goto`.
+**Atividade 1 ([p.21–22](../01%20-%20Slides%20Originais/README.md#página-21)):** descrever o programa e reescrevê-lo sem `goto`.
 
 <!-- teste: saida-contem="0\n1\n2\n3\n4\n5\n6\n7\n8\n9" -->
 ```c
@@ -165,7 +178,7 @@ repete: printf("%d\n", x);
 }
 ```
 
-O programa imprime de 0 a 9. É um **laço pós-testado**: o corpo executa antes do teste. A resposta do professor (p.22) usa `while`:
+O programa imprime de 0 a 9. É um **laço pós-testado**: o corpo executa antes do teste. A resposta do professor ([p.22](../01%20-%20Slides%20Originais/README.md#página-22)) usa `while`:
 
 <!-- teste: saida-contem="0\n1\n2\n3\n4\n5\n6\n7\n8\n9" -->
 ```c
@@ -182,9 +195,9 @@ int main() {
 
 **[Explicação elaborada]** A versão **mais fiel** ao `goto` é o `do { ... } while (x < 10);`, porque também testa **depois** de executar. O `while` testa **antes**. As duas dão o mesmo resultado aqui porque `x` começa em 0 e a condição é verdadeira na primeira vez. Com `x = 10` no início, a versão com `goto` imprimiria "10" e a com `while` não imprimiria nada.
 
-**Atividade 2 (p.24):** usando `goto` e **sem estruturas de repetição**, ler 10 inteiros e contar positivos e negativos; se o usuário digitar 0, encerrar sem mensagem. Solução testada em [resolucoes-aula-09.md](../04%20-%20Resoluções/resolucoes-aula-09.md#e8--atividade-2-original-p24).
+**Atividade 2 ([p.24](../01%20-%20Slides%20Originais/README.md#página-24)):** usando `goto` e **sem estruturas de repetição**, ler 10 inteiros e contar positivos e negativos; se o usuário digitar 0, encerrar sem mensagem. Solução testada em [resolucoes-aula-09.md](../04%20-%20Resoluções/resolucoes-aula-09.md#e8--atividade-2-original-p24).
 
-> **[Atenção]** O slide de bibliografia (p.23) aparece **antes** da Atividade 2 (p.24).
+> **[Atenção]** O slide de bibliografia ([p.23](../01%20-%20Slides%20Originais/README.md#página-23)) aparece **antes** da Atividade 2 ([p.24](../01%20-%20Slides%20Originais/README.md#página-24)).
 
 ## 9. Conexões e pontos para a prova
 
@@ -196,3 +209,16 @@ int main() {
 ---
 
 **Anterior:** [Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · **Próxima:** [Aula 10 — Paradigma Imperativo II](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 09:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Artigo](resumo-artigo-dijkstra-1968.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-09.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-09.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Aula 10 · Resumo](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) →
+
+**Links para esta página (13):** [Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Aula 09 · Artigo de Dijkstra (resumo)](resumo-artigo-dijkstra-1968.md) · [Aula 09 · visão geral](../README.md) · [Aula 10 · Resumo](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Aula 14 · Resumo](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Lista 01](../../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

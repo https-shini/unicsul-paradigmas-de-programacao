@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [08 - Referências e Fontes](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Documentação oficial das linguagens
 
 > **[Complemento]** Especificações e documentação oficial das linguagens usadas nos slides. Elas são a **fonte primária** para confirmar o comportamento de uma construção, especialmente quando o material didático simplifica ou diverge da norma (ver [erratas](../06%20-%20Revisões%20e%20Sínteses/erratas-e-inconsistencias.md)). Links conferidos em 19/11/2026. Marcações: [Convenções](../README.md#convenções-de-marcação).
@@ -23,3 +27,12 @@
 - **Os Java Tutorials da Oracle cobrem até o Java 8.** Para recursos mais novos (por exemplo, `record` e `sealed`), consulte a JLS da versão correspondente.
 - **ClojureScript × Clojure.** O código Clojure deste repositório foi testado com ClojureScript ([nbb](https://github.com/babashka/nbb)), que não tem o tipo `Ratio`. A página de diferenças explica esse e outros casos.
 - **Prolog.** As aulas usam SWI-Prolog (via SWISH e OneCompiler); este repositório validou o código com Tau-Prolog. Ambos seguem a norma ISO nos recursos usados na disciplina.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (3):** [05 — Materiais Complementares](../05%20-%20Materiais%20Complementares/README.md) · [08 — Referências e Fontes](README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

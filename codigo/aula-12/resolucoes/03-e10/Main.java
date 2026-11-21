@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 12 - Paradigma Orientado a Objetos I/04 - Resoluções/resolucoes-aula-12.md (linha 122).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 12 - Paradigma Orientado a Objetos I/04 - Resoluções/resolucoes-aula-12.md (linha 126).
 // Seção: E10
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-12/resolucoes/03-e10/Main.java

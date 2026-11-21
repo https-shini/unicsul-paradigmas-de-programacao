@@ -1,10 +1,14 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 04](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 04 — Sintaxe · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-04.md`](../03%20-%20Exercícios/exercicios-aula-04.md). O código do E10 foi executado com Python 3.
 
 ## E1
 
-Sintaxe é a **forma** das expressões, sentenças e unidades de programa; semântica é o **significado** delas (Sebesta, citado na p.4). Um programa pode estar sintaticamente correto e ainda ter significado errado — por exemplo, `dobro := n1 * n2` no exemplo Pascal da Aula 02.
+Sintaxe é a **forma** das expressões, sentenças e unidades de programa; semântica é o **significado** delas (Sebesta, citado na [p.4](../01%20-%20Slides%20Originais/README.md#página-4)). Um programa pode estar sintaticamente correto e ainda ter significado errado — por exemplo, `dobro := n1 * n2` no exemplo Pascal da Aula 02.
 
 ## E2
 
@@ -14,7 +18,7 @@ Sintaxe é a **forma** das expressões, sentenças e unidades de programa; semâ
 
 ## E3
 
-**Resposta: d.** Os métodos formais citados (p.6) são expressões regulares, autômatos finitos e gramáticas livres de contexto. Fluxogramas descrevem algoritmos, não a sintaxe de uma linguagem.
+**Resposta: d.** Os métodos formais citados ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)) são expressões regulares, autômatos finitos e gramáticas livres de contexto. Fluxogramas descrevem algoritmos, não a sintaxe de uma linguagem.
 
 ## E4
 
@@ -40,7 +44,7 @@ Sintaxe é a **forma** das expressões, sentenças e unidades de programa; semâ
 
 ## E6
 
-A **palavra reservada** nunca pode ser usada como identificador (`int`, `for` em C). A **palavra-chave** só é especial em certos contextos e pode virar identificador em outros (Fortran, p.14). Exemplo: em Fortran, `INTEGER REAL` declara uma variável chamada `REAL` do tipo inteiro. Quem lê precisa decidir pelo contexto se `REAL` é tipo ou variável, o que prejudica a legibilidade.
+A **palavra reservada** nunca pode ser usada como identificador (`int`, `for` em C). A **palavra-chave** só é especial em certos contextos e pode virar identificador em outros (Fortran, [p.14](../01%20-%20Slides%20Originais/README.md#página-14)). Exemplo: em Fortran, `INTEGER REAL` declara uma variável chamada `REAL` do tipo inteiro. Quem lê precisa decidir pelo contexto se `REAL` é tipo ou variável, o que prejudica a legibilidade.
 
 ## E7
 
@@ -58,13 +62,13 @@ A **palavra reservada** nunca pode ser usada como identificador (`int`, `for` em
       a  b c  d
 ```
 
-**c)** Na sintaxe **concreta**, os parênteses são necessários para forçar a soma e a subtração antes da multiplicação, já que, sem eles, `a + b * c - d` teria outro significado. Na sintaxe **abstrata**, a ordem de avaliação já está codificada na **estrutura da árvore**: os nós `+` e `-` estão abaixo do `*`. Os parênteses se tornam redundantes, e por isso a sintaxe abstrata "não se preocupa com pontuação e parênteses" (p.7).
+**c)** Na sintaxe **concreta**, os parênteses são necessários para forçar a soma e a subtração antes da multiplicação, já que, sem eles, `a + b * c - d` teria outro significado. Na sintaxe **abstrata**, a ordem de avaliação já está codificada na **estrutura da árvore**: os nós `+` e `-` estão abaixo do `*`. Os parênteses se tornam redundantes, e por isso a sintaxe abstrata "não se preocupa com pontuação e parênteses" ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)).
 
 ## E8
 
 - **1ª linha:** `2147483647`, sempre igual — é o **valor** (r-value) de `x`, o maior `int` de 32 bits.
 - **2ª linha:** um número grande (o **endereço** de `x`, l-value), que **muda** a cada execução. No Windows de 64 bits, `%ld` pode truncar o endereço (ver o resumo); o especificador correto é `%p`.
-- **Por que muda:** o sistema operacional sorteia a posição da pilha a cada execução (ASLR, **[Complemento]**). A variável `x` é uma abstração de células de memória (p.19): o nome é fixo, mas as células podem ser outras.
+- **Por que muda:** o sistema operacional sorteia a posição da pilha a cada execução (ASLR, **[Complemento]**). A variável `x` é uma abstração de células de memória ([p.19](../01%20-%20Slides%20Originais/README.md#página-19)): o nome é fixo, mas as células podem ser outras.
 - **Observação técnica:** o formato correto para endereços é `%p` (ver a [Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)).
 
 ## E9
@@ -137,3 +141,16 @@ x -> identificador
 ```
 
 **Por que `*` tem precedência:** para chegar a um `+`, a derivação passa por `<expr>`; os `*` são gerados mais abaixo, em `<termo>`. Assim, em `a + b * c`, o `b * c` vira uma subárvore de `<termo>` que é filha do `+`, e portanto é avaliada antes. A recursão à esquerda (`<expr> ::= <expr> + ...`) dá associatividade à esquerda: `a + b + c` = `(a + b) + c`.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 04:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-04.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-04.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 03 · Resoluções](../../Aula%2003%20-%20Implementação%20das%20Linguagens/04%20-%20Resoluções/resolucoes-aula-03.md) · [Aula 05 · Resoluções](../../Aula%2005%20-%20Semântica/04%20-%20Resoluções/resolucoes-aula-05.md) →
+
+**Links para esta página (3):** [Aula 04 · Exercícios](../03%20-%20Exercícios/exercicios-aula-04.md) · [Aula 04 · visão geral](../README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->
