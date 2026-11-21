@@ -10,7 +10,7 @@ Ponteiro é um valor que representa um endereço de memória (p.3). **Explícito
 
 | | Estática | Dinâmica |
 | --- | --- | --- |
-| Quando ocorre | Em tempo de compilação | Em tempo de execução |
+| Quando ocorre | Globais e `static`: antes da execução. Locais: a cada chamada, com tamanho fixado em compilação | Em execução, quando o programa pede (`new`/`malloc`) |
 | Tamanho | Fixo, não pode ser alterado | Pode ser alterado |
 | Onde (usual) | Segmento estático (globais); pilha (locais, de tamanho conhecido) | Heap, acessado por ponteiro |
 

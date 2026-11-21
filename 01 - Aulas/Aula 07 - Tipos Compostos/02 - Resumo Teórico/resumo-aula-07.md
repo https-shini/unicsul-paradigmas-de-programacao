@@ -13,6 +13,8 @@
 
 **[Material original]** Tipos formados a partir dos tipos básicos: **enumerações**, **estruturas ou registros**, **vetores e matrizes** e **objetos**.
 
+> **[Atenção]** A lista segue Tucker & Noonan, que põem as enumerações entre os tipos "não básicos". Sebesta (seção 6.4) e Scott classificam a enumeração como tipo **ordinal/escalar** definido pelo usuário, não como composto, porque seus valores não são formados a partir de outros tipos. Em prova, siga a lista do professor.
+
 **[Explicação elaborada]** Retomando a [Aula 06](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md#2-conceitos-fundamentais-p34): primitivos não são definidos a partir de outros; compostos são construídos a partir de primitivos ou de outros compostos. Uma matriz de registros, por exemplo, é um composto feito de compostos.
 
 | Tipo composto | Elementos | Acesso | Ideia central |
@@ -152,7 +154,7 @@ Aprofundado nas [Aulas 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Obj
 - Conjuntos de **dados homogêneos** armazenados em uma mesma variável, acessados por **índices**.
 - Uma dimensão (**vetores/arrays**) ou várias (matrizes bi, tri ou **n-dimensionais**).
 - **Indexação:** C/C++ e Java vão de **0 a N−1**; Fortran, de **1 a N**; em Pascal e Ada, **o programador define** os limites.
-- Java e C/C++ permitem definir o tamanho em **tempo de execução**, mas, uma vez criado, ele **não pode ser mudado**.
+- Java e C/C++ permitem definir o tamanho em **tempo de execução**, mas, uma vez criado, ele **não pode ser mudado**. (A Aula 08, p.13, diz que na alocação dinâmica o tamanho "pode ser alterado"; ver a conciliação no [resumo da Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#5-alocação-estática--dinâmica-p1213).)
 - Em C/C++, o vetor é acessível por **ponteiros**.
 
 **Declarações (p.12):**
@@ -167,7 +169,7 @@ Aprofundado nas [Aulas 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Obj
 | `int[] numeros = new int[qtd];` | Java | Vetor com tamanho definido em execução |
 | `x : array[1..100] of integer;` | Pascal | Vetor com índices de 1 a 100, escolhidos pelo programador |
 
-**[Explicação elaborada] — como uma matriz fica na memória:** a memória é linear. Em C e Java, as linhas são guardadas uma após a outra (*row-major*). Para `float x[10][20]`, o elemento `x[i][j]` fica na posição `i*20 + j` a partir do início. Generalizando para N dimensões `[d1][d2]...[dn]`, cada índice é multiplicado pelo produto das dimensões à sua direita. **[Complemento]** Em Java, uma "matriz" é na verdade um vetor de vetores: cada linha é um objeto separado, e as linhas podem ter tamanhos diferentes.
+**[Explicação elaborada] — como uma matriz fica na memória:** a memória é linear. Em C, uma matriz multidimensional ocupa um bloco contíguo, com as linhas guardadas uma após a outra (*row-major*). Para `float x[10][20]`, o elemento `x[i][j]` fica na posição `i*20 + j` a partir do início. Generalizando para N dimensões `[d1][d2]...[dn]`, cada índice é multiplicado pelo produto das dimensões à sua direita. **[Complemento]** Java não usa esse arranjo: uma "matriz" é um vetor de referências para vetores-linha. Cada linha é um objeto separado no heap, não necessariamente vizinho das outras, e as linhas podem ter tamanhos diferentes; por isso a fórmula não vale em Java. Fortran, ao contrário de C, guarda por colunas (*column-major*).
 
 ## 7. Strings (p.13)
 
@@ -178,7 +180,7 @@ Aprofundado nas [Aulas 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Obj
 - **Java:** classe `String`.
 - **C++:** classe `string`.
 
-**[Explicação elaborada]** Em C, a string é composta (vetor) e termina com o caractere nulo `'\0'`. Por isso `char nome[10]` guarda no máximo 9 caracteres úteis. Em Java e C++, a classe esconde esses detalhes e oferece métodos (`length()`, `substring()`) — é um **tipo abstrato de dados** (Aula 10).
+**[Explicação elaborada]** Em C, a string é composta (vetor) e termina com o caractere nulo `'\0'`. Por isso `char nome[10]` guarda no máximo 9 caracteres úteis. Em Java e C++, a classe esconde esses detalhes e oferece métodos (`length()` e `substring()` em Java; `length()` e `substr()` em C++) — é um **tipo abstrato de dados** (Aula 10).
 
 ## 8. Exercício e desafio (p.14–16)
 
@@ -203,7 +205,7 @@ Solução completa e testada em [resolucoes-aula-07.md](../04%20-%20Resoluções
 
 - Tipos compostos completam o sistema de tipos da [Aula 06](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md).
 - Vetores em C são acessados por ponteiros ([Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)).
-- Registros evoluem para classes ([Aula 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md)); Java e Smalltalk não têm registros.
+- Registros evoluem para classes ([Aula 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md)). Segundo a Aula 12 (p.22), Java e Smalltalk não têm registros. **[Complemento]** Desde o Java 16 existe `record`, mas ele é uma classe restrita (imutável, implicitamente `final`), o que mantém a ideia do slide de que em Java o registro é tratado como classe.
 - Saber: registro = **heterogêneo + nome**; matriz = **homogênea + índice**; indexação 0..N−1 × 1..N × definida pelo programador.
 
 ---

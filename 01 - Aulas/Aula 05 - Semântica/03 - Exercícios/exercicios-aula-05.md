@@ -47,7 +47,7 @@ int main(void) {
 **E8.** Suponha que a mesma estrutura do E7 fosse executada numa linguagem com **escopo dinâmico**. O que mudaria na saída? Justifique pela regra de busca.
 
 **E9.** Classifique cada verificação como semântica estática ou dinâmica, considerando Java:
-a) chamar um método inexistente; b) dividir por uma variável que vale zero; c) atribuir `3.5` a uma variável `int`; d) acessar `null.length()`; e) usar variável local não inicializada.
+a) chamar um método inexistente; b) dividir por uma variável que vale zero; c) atribuir `3.5` a uma variável `int`; d) chamar `s.length()` quando `String s = null;`; e) usar variável local não inicializada.
 
 ## Aprofundamento
 

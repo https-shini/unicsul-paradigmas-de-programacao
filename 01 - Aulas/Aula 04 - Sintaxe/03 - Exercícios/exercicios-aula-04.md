@@ -31,8 +31,8 @@ for (i = 0; i < 10; i++) printf("%d", vet[i]);
 ## Avançado
 
 **E7.** Para a expressão `r = (a + b) * (c - d);`:
-a) liste os tokens;
-b) desenhe a árvore sintática abstrata;
+a) liste os tokens;\
+b) desenhe a árvore sintática abstrata;\
 c) explique por que os parênteses aparecem na sintaxe concreta e não na abstrata.
 
 **E8 — Exemplo 1 (original, p.20).** Execute o programa três vezes e compare os resultados. O que cada linha imprime e por que uma delas muda?

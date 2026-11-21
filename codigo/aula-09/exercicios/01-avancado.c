@@ -3,6 +3,7 @@
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-09/exercicios/01-avancado.c
 
+#include <stdio.h>   /* acrescentado: o slide omite o cabeçalho */
 int main() {
     int x = 0;
 repete: printf("%d\n", x);

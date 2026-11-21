@@ -9,12 +9,13 @@ import re
 
 RESERVADAS = {"int", "float", "char", "double", "if", "else", "for", "while", "return", "void"}
 
-# Ordem importa: padrões mais longos primeiro (== antes de =, ++ antes de +).
+# Ordem importa: padrões mais longos primeiro (== antes de =, ++ antes de +, += antes de +).
 PADROES = [
     ("string",            r'"[^"]*"'),
+    ("constante",         r"'(?:\\.|[^'\\])'"),   # literal de caractere: 'c', '\n'
     ("constante",         r'\d+\.\d+|\d+'),
     ("nome",              r'[A-Za-z_]\w*'),
-    ("operador",          r'\+\+|--|==|!=|<=|>=|[+\-*/%<>]'),
+    ("operador",          r'->|\+\+|--|&&|\|\||<<=|>>=|<<|>>|[-+*/%&|^]=|==|!=|<=|>=|[-+*/%<>!~^|.?:]'),
     ("simbolo especial",  r'[=&()\[\]{};,]'),
     ("espaco",            r'\s+'),
 ]

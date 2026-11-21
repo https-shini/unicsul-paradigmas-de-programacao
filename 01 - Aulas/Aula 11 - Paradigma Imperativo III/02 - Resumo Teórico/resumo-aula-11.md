@@ -105,9 +105,9 @@ mostrar_usuario(nome="João", idade=30, cidade="Florianópolis")
 mostrar_usuario(cidade="Florianópolis", nome="João", idade=30)
 ```
 
-**Motivação real (p.12):** a assinatura de `sklearn.neural_network.MLPClassifier` tem mais de 20 parâmetros, todos com valor padrão (`hidden_layer_sizes=(100,)`, `activation='relu'`, `solver='adam'`, `alpha=0.0001`, `max_iter=200`…). Com parâmetros nomeados, escreve-se `MLPClassifier(max_iter=500, solver='sgd')` e mudam-se só os necessários, sem contar posições.
+**Motivação real (p.12):** **[Explicação elaborada]** a assinatura de `sklearn.neural_network.MLPClassifier` tem mais de 20 parâmetros, todos com valor padrão (`hidden_layer_sizes=(100,)`, `activation='relu'`, `solver='adam'`, `alpha=0.0001`, `max_iter=200`…). Com parâmetros nomeados, escreve-se `MLPClassifier(max_iter=500, solver='sgd')` e mudam-se só os necessários, sem contar posições. Na assinatura do slide, o `*` depois de `activation` torna todos os parâmetros seguintes **somente nomeados** (*keyword-only*): passá-los por posição dá `TypeError`.
 
-## 5. Os quatro modelos semânticos de passagem (p.13–18)
+## 5. Modelos de passagem de parâmetros: semânticos e de implementação (p.13–18)
 
 **[Material original]** Figura 9.1 de Sebesta — os três modelos semânticos, quando há movimentação física:
 
@@ -138,7 +138,9 @@ flowchart LR
 | **Por valor-resultado** (p.16) | Entrada e saída | Local inicializada com o real; no fim, copiada de volta para o real | Duas cópias; rápido para dados pequenos, lento para matrizes |
 | **Por referência** (p.17) | Entrada e saída | Caminho (endereço) até o dado do real | **Não consome memória extra** e a passagem é rápida; o **acesso** é mais lento (indireção); mudanças **inadvertidas** podem comprometer outras partes do programa |
 
-**[Material original] (p.18):** "A maioria das linguagens realiza, por padrão, a **passagem por valor** e possui mecanismos que permitem a passagem por referência" — com o exemplo C# `Metodo1(int x)` × `Metodo2(ref int x)` da [Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#exemplo-1--c-ref-p9).
+> **[Atenção]** A frase da p.14 pode sugerir que Java passa objetos por referência. Formalmente, **Java sempre passa por valor**: para objetos e vetores, o valor copiado é a referência. Por isso o método consegue alterar o conteúdo do objeto, mas reatribuir o parâmetro não afeta a variável do chamador ([Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#exemplo-2--java-vetor-e-inteiro-como-parâmetros-p10)).
+
+**[Material original] (p.18):** "A maioria das linguagens realiza, por padrão, a **passagem por valor** e possui mecanismos que permitem a passagem por referência" — com uma versão reduzida do exemplo C# `Metodo1(int x)` × `Metodo2(ref int x)` da [Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#exemplo-1--c-ref-p9), sem `Console.WriteLine` dentro dos métodos (saída: `0`, `0`, `1`).
 
 **[Explicação elaborada] — valor-resultado × referência.** Os dois são de "entrada e saída", mas diferem quando há *aliasing*. Considere:
 

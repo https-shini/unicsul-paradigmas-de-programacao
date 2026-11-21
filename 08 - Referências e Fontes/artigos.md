@@ -171,7 +171,7 @@ FLOYD, Robert W. The paradigms of programming. **Communications of the ACM**, Ne
 - **Aulas:** [02](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/README.md)
 - **Por que ler:** Palestra do Prêmio Turing que popularizou o termo "paradigmas de programação" e defende que o programador domine vários deles — o tema da Aula 02.
 
-### A14 — Mccarthy (1960)
+### A14 — McCarthy (1960)
 
 MCCARTHY, John. Recursive functions of symbolic expressions and their computation by machine, part I. **Communications of the ACM**, New York, v. 3, n. 4, p. 184-195, abr. 1960. DOI: [10.1145/367177.367199](https://doi.org/10.1145/367177.367199).
 

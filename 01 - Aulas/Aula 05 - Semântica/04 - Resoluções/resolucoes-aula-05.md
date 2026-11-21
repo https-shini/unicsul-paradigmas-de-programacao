@@ -93,9 +93,9 @@ Só a primeira linha muda. Isso ilustra por que o escopo dinâmico prejudica a l
 | Item | Classificação | Justificativa |
 | --- | --- | --- |
 | a) Método inexistente | Estática | O compilador consulta a classe e recusa |
-| b) Divisão por variável zero | Dinâmica | `ArithmeticException` em execução |
+| b) Divisão por variável zero | Dinâmica | Só se sabe em execução: com inteiros, `ArithmeticException`; com `double`, o resultado é `Infinity` ou `NaN`, sem exceção |
 | c) `int x = 3.5;` | Estática | Erro de compilação: perda de precisão |
-| d) `null.length()` | Dinâmica | `NullPointerException` em execução |
+| d) `s.length()` com `s` valendo `null` | Dinâmica | `NullPointerException` em execução. O literal `null.length()` nem compila (`<null> cannot be dereferenced`) |
 | e) Local não inicializada | Estática | Java exige atribuição definida antes do uso |
 
 ## E10
@@ -133,9 +133,10 @@ com_my();      # imprime: global
 
 ## E11
 
-**Resposta-modelo:** a afirmação vale no sentido estrito: um **interpretador puro** não tem fase de compilação, então nada é verificado antes de executar. Duas nuances, **[Complemento]**:
+**Resposta-modelo:** a afirmação vale no sentido estrito: um **interpretador puro** não tem fase de compilação, então nada é verificado antes de executar. Três nuances, **[Complemento]**:
 
 1. Linguagens **híbridas** (Java, C#) têm uma etapa de compilação para o código intermediário, e nela ocorre verificação estática.
-2. Mesmo em linguagens interpretadas existem **ferramentas externas** de análise estática — para Python, por exemplo, verificadores de tipo como o `mypy` e analisadores de estilo. Elas verificam o código sem executá-lo, mas não fazem parte da implementação da linguagem.
+2. Nem Python nem Perl são executados por interpretadores puros. O CPython compila o módulo inteiro para bytecode antes de rodar, e um `SyntaxError` na última linha impede a execução da primeira. O Perl compila o programa todo antes de executá-lo: com `use strict`, uma variável não declarada é recusada nessa fase ("Execution … aborted due to compilation errors"). Sebesta classifica a implementação do Perl como híbrida.
+3. Mesmo em linguagens interpretadas existem **ferramentas externas** de análise estática — para Python, por exemplo, verificadores de tipo como o `mypy` e analisadores de estilo. Elas verificam o código sem executá-lo, mas não fazem parte da implementação da linguagem.
 
-Na disciplina, prevalece a afirmação do slide: interpretada pura → verificação **dinâmica**.
+A afirmação vale para interpretadores puros; para as implementações reais de Python, Perl e PHP, ela é uma simplificação. Em prova, use a forma do professor (interpretada pura → verificação **dinâmica**) e, se houver espaço, acrescente a ressalva.

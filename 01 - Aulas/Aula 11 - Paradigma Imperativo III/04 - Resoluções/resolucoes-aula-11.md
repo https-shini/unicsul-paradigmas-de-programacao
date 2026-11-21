@@ -30,7 +30,7 @@
 ## E5
 
 - **Padrões no fim:** a associação é por posição. Se um parâmetro com padrão viesse antes de um sem padrão, não daria para omitir o primeiro sem ambiguidade. Em `f(int a = 1, int b)`, a chamada `f(5)` não diz se 5 é `a` ou `b`.
-- **Nomeados:** com mais de 20 parâmetros opcionais, como em `MLPClassifier`, a chamada posicional exigiria repetir todos os anteriores ao que se quer mudar. Com nomes, basta `MLPClassifier(max_iter=500)`. Além disso, a chamada se autodocumenta.
+- **Nomeados:** na assinatura da p.12, o `*` depois de `activation` torna todos os parâmetros seguintes **somente nomeados**: a própria biblioteca obriga a escrever `MLPClassifier(max_iter=500)`. Em funções sem esse `*`, a chamada posicional exigiria repetir todos os parâmetros anteriores ao que se quer mudar. Com nomes, basta `MLPClassifier(max_iter=500)`. Além disso, a chamada se autodocumenta.
 
 ## E6
 

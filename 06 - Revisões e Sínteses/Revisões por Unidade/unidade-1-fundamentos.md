@@ -52,6 +52,6 @@ Responda sem consultar; depois confira na seção indicada.
 5. Calcule o endereço de `m[1][3]` numa matriz `int m[4][5]` com base 2000 e `int` de 4 bytes. → [Aula 07, §6](../../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md#6-matrizes-p1012)
 6. No Exemplo 4 da Aula 08, em que região fica cada variável? → [Aula 08, §5](../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#5-alocação-estática--dinâmica-p1213)
 
-**Questões do professor sobre esta unidade:** [Lista 02, Q2–Q6](../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md).
+**Questões do professor sobre esta unidade:** [Lista 02, Q1–Q6](../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md).
 
 **Próxima unidade:** [Unidade 2 — Imperativo](unidade-2-imperativo.md).

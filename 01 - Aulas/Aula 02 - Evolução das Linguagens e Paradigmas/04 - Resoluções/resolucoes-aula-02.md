@@ -47,7 +47,7 @@
 
 **Fontes (p.8):** (1) a **sintaxe** de linguagens do mesmo paradigma e (2) as **características gerais** de paradigmas diferentes.
 
-- **Sintaxe, mesmo paradigma (Pascal × Java):** atribuição `:=` × `=`; comparação `=` × `==`; blocos `begin/end` × `{ }`; `readln` × `Scanner`.
+- **Sintaxe, mesmo paradigma (Pascal × Java)** — interpretação do repositório; o slide não diz quais pares ilustram cada caso, e Java é classificado como OO na p.11, mas aqui o corpo do `main` é puramente imperativo: atribuição `:=` × `=`; comparação `=` × `==`; blocos `begin/end` × `{ }`; `readln` × `Scanner`.
 - **Paradigma diferente (Pascal/Java × Prolog):** o Prolog não tem declaração de variáveis nem atribuição — o programa é uma **regra** (`:-`) com objetivos em conjunção, e `Dobro is Num1 * 2` vincula, não atribui.
 
 ## E7
@@ -56,11 +56,11 @@
 
 - **n1 = 3, n2 = 6:** dobro = 18; 6 ≠ 18 → imprime "...nao e igual...". **Errado**, pois 2 × 3 = 6.
 - **n1 = 2, n2 = 4:** dobro = 8; 4 ≠ 8 → "...nao e igual...". **Errado** de novo.
-- Só acerta por coincidência, quando n1 × n2 = n2 (por exemplo, n1 = 1) ou n2 = 0.
+- **Quando erra:** o programa responde "é igual" só quando `n2 = n1 * n2`, isto é, quando `n1 = 1` ou `n2 = 0`. Por isso, (a) erra em quase todos os casos em que de fato `n2 = 2 * n1` — acerta só (1, 2) e (0, 0) —, porque responde "não é igual"; (b) erra quando `n1 = 1` (com `n2 ≠ 2`) ou `n2 = 0` (com `n1 ≠ 0`), porque responde "é igual". Nos demais casos, a resposta "não é igual" está certa por coincidência.
 
 **Correção:** `dobro := 2 * n1;`. As versões em Java e Prolog já fazem isso.
 
-**Lição:** um programa sintaticamente correto pode estar **semanticamente** errado — ele compila, mas não faz o que se pretende. Esse é o tema da Aula 05.
+**Lição:** um programa sintaticamente correto pode conter um **erro de lógica**: compila e executa, mas não faz o que o enunciado pede. O significado de `n1 * n2` é bem definido (é o produto); o erro está na especificação. Erros de **semântica** no sentido da Aula 05 (p.17) seriam, por exemplo, usar variável não declarada (semântica estática) ou dividir por zero (semântica dinâmica).
 
 ## E8
 
@@ -81,8 +81,8 @@
 
 | Linguagem | Árvore (p.19) | "Generation…" (p.20) | Mapa mental (p.21) |
 | --- | --- | --- | --- |
-| LISP | Não é citada; por ser declarativa, ficaria na 5ª | 5ª | 3ª |
-| Java | 4ª (OO) | 3ª | 3ª |
+| LISP | Não é citada. Como a Aula 14 (p.10) diz que "aplicativa" é sinônimo de funcional, ficaria na **4ª** ("OO ou aplicativas") | 5ª | 3ª |
+| Java | Não é citada; por ser OO, ficaria na 4ª | 3ª | 3ª |
 | SQL | Não é citada | 4ª | 4ª (aplicações específicas) |
 
 ## E10

@@ -130,7 +130,7 @@ public class Multifuncional implements Impressora, Scanner {
 
 **[Explicação elaborada]** Java não tem herança múltipla de **classes**, mas uma classe pode **implementar várias interfaces**. A alteração estrutural é transformar as duas superclasses em interfaces. O custo é que `Multifuncional` herda só o **contrato** (os nomes dos métodos) e precisa **escrever as implementações** — perde-se parte do reuso. Programa completo e testado em [resolucoes-aula-13.md](../04%20-%20Resoluções/resolucoes-aula-13.md#e8--atividade-1-original-p1011).
 
-> **[Complemento]** Desde o Java 8, interfaces podem ter métodos `default`, com corpo, o que recupera parte do reuso. Cuidado também com o nome `Scanner`, que colide com `java.util.Scanner` se esse pacote for importado.
+> **[Complemento]** Desde o Java 8, interfaces podem ter métodos `default`, com corpo, o que recupera parte do reuso. Cuidado também com o nome `Scanner`: um `import java.util.Scanner;` no mesmo arquivo impede a compilação ("Scanner is already defined in this compilation unit"). Com `import java.util.*;`, o nome local prevalece, mas o código fica confuso.
 
 ## 5. Polimorfismo (p.12)
 
@@ -161,6 +161,8 @@ public class Multifuncional implements Impressora, Scanner {
 - **Não se pode criar instâncias** de classes abstratas.
 - As classes derivadas **devem implementar** os métodos abstratos.
 - **Interfaces em Java** são uma extensão desse conceito, mas **não podem incluir variáveis, construtores ou métodos não abstratos**.
+
+> **[Complemento]** Em Java, uma classe declarada `abstract` não pode ser instanciada mesmo sem nenhum método abstrato; e a subclasse só precisa implementar os métodos abstratos se ela própria não for abstrata. A definição do slide corresponde exatamente ao C++, em que a classe é abstrata quando tem ao menos uma função virtual pura.
 
 > **[Atenção]** Essa é a definição **clássica** (até o Java 7). Desde o Java 8, interfaces podem ter métodos `default` e `static`, com corpo, e desde o Java 9, métodos `private`. Interfaces sempre puderam ter **constantes** (`public static final`). Continua valendo que interfaces não têm variáveis de instância nem construtores.
 

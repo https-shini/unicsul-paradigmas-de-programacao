@@ -166,9 +166,9 @@ irmao(X, Y) :- pai(P, X), pai(P, Y), X \== Y.
 - Uma **regra** `Cabeça :- Corpo.` diz que "a cabeça é verdadeira **se** o corpo for". As vírgulas são **e**.
 - Em `avo/2`, a variável `P` liga os dois fatos: o Prolog procura um `P` que seja filho de `A` e pai de `N`.
 - Em `irmao/2`, `X \== Y` impede que alguém seja considerado irmão de si mesmo.
-- **Aprofundamento:** regras com `:-` só aparecem no material na [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#prolog-p7). Elas são a forma de expressar a terceira necessidade da lógica formal: **inferir** proposições novas (`avo(joao, renata)`) a partir das existentes.
+- **Aprofundamento:** regras que **inferem relações** (como `avo/2`) não aparecem nas aulas de Prolog. O `:-` surge na `verifica_dobro` da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#prolog-p7) e no `main :- …` dos Exemplos 2 e 3 (p.21–22), uma regra usada como procedimento. Regras são a forma de expressar a terceira necessidade da lógica formal: **inferir** proposições novas (`avo(joao, renata)`) a partir das existentes.
 
 ## E11
 
-- **Mundo fechado:** o Prolog só considera verdadeiro o que consegue **provar** a partir da base. `homem(pedro)` não está na base nem pode ser deduzido, então a resposta é `false` — que significa "não provável com o que sei", e não "falso no mundo real".
+- **Mundo fechado:** o Prolog só considera verdadeiro o que consegue **provar** a partir da base. `homem(pedro)` não está na base nem pode ser deduzido, então a resposta é `false` — que significa "não demonstrável com o que sei", e não "falso no mundo real".
 - **Sem semântica intrínseca (p.15):** para o Prolog, `homem` e `pedro` são só símbolos. Ele não "sabe" o que é ser homem; só compara símbolos e unifica termos. O significado é dado pelo programador, que precisa manter consistência — por exemplo, sempre `pai(Pai, Filho)`, nunca às vezes `pai(Filho, Pai)`.

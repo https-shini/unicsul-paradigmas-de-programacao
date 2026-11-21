@@ -19,7 +19,7 @@ int encontrarMenor(int *vetor, int inicio) {          /* devolve a POSIÇÃO do 
     return posMenor;
 }
 
-void trocarElementos(int *a, int *b) {                 /* [Complemento] não aparece no slide */
+void trocarElementos(int *a, int *b) {                 /* código do slide (p.14) */
     int temp = *a;     /* 1. salva um dos valores numa temporária   */
     *a = *b;           /* 2. substitui pelo outro valor              */
     *b = temp;         /* 3. copia o valor salvo                     */
@@ -40,6 +40,7 @@ void lerVetor(int *vetor) {
 }
 
 void mostrarVetor(int *vetor) {
+    /* simplificado: o slide (p.11) imprime "Elemento da posição %d: %d\n" */
     for (int i = 0; i < TAM; i++) printf("%d ", vetor[i]);
     printf("\n");
 }

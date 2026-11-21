@@ -53,6 +53,8 @@ O compilador Java (`javac`) gera **bytecode**, independente de processador e sis
 
 ## E9 — Atividade da p.17
 
+> O slide pede uma linguagem; o enunciado do repositório pede duas, de grupos diferentes. C, Python e Java são do Grupo 1; Perl é do Grupo 2.
+
 **Lógica comum:** ler o primeiro valor e usá-lo para inicializar `maior` e `menor` — evita inventar "infinitos" —, acumular a soma e, no fim, dividir por 10.
 
 ### C (Grupo 1, compilada)
@@ -107,17 +109,35 @@ public class Main {
 }
 ```
 
-**Teste:** com a entrada `5 3 9 1 7 2 8 6 4 10`, as três versões imprimem `Media: 5.50`, `Maior: 10.00`, `Menor: 1.00`.
+### Perl (Grupo 2, interpretada)
+
+<!-- teste: entrada="5\n3\n9\n1\n7\n2\n8\n6\n4\n10" saida-contem="Media: 5.50|Maior: 10.00|Menor: 1.00" -->
+```perl
+use strict;
+use warnings;
+
+my ($soma, $maior, $menor) = (0, undef, undef);
+for my $i (1 .. 10) {
+    my $x = <STDIN>;
+    chomp $x;
+    $maior = $x if !defined $maior || $x > $maior;
+    $menor = $x if !defined $menor || $x < $menor;
+    $soma += $x;
+}
+printf "Media: %.2f\nMaior: %.2f\nMenor: %.2f\n", $soma / 10, $maior, $menor;
+```
+
+**Teste:** com a entrada `5 3 9 1 7 2 8 6 4 10`, as quatro versões imprimem `Media: 5.50`, `Maior: 10.00`, `Menor: 1.00`.
 
 **Diferenças em relação ao Java:**
 
-| Aspecto | C | Python | Java |
-| --- | --- | --- | --- |
-| Estrutura mínima | Função `main` | Nenhuma: o script roda de cima para baixo | Classe com `public static void main` |
-| Declaração de tipos | Obrigatória (`double`) | Não há (tipagem dinâmica) | Obrigatória |
-| Leitura | `scanf` com especificador de formato | `input()` + conversão `float()` | Objeto `Scanner` |
-| Recursos prontos | Nenhum: laço manual | `sum`, `max`, `min` sobre listas | `Math.max`/`Math.min` |
-| Implementação | Compilada (`gcc` → executável nativo) | Interpretada (slide) | Híbrida (`javac` → bytecode → JVM) |
+| Aspecto | C | Python | Perl | Java |
+| --- | --- | --- | --- | --- |
+| Estrutura mínima | Função `main` | Nenhuma: o script roda de cima para baixo | Nenhuma (script) | Classe com `public static void main` |
+| Declaração de tipos | Obrigatória (`double`) | Não há (tipagem dinâmica) | Não há; sigilo `$` indica escalar | Obrigatória |
+| Leitura | `scanf` com especificador de formato | `input()` + conversão `float()` | `<STDIN>` + `chomp` | Objeto `Scanner` |
+| Recursos prontos | Nenhum: laço manual | `sum`, `max`, `min` sobre listas | Laço manual | `Math.max`/`Math.min` |
+| Implementação | Compilada (`gcc` → executável nativo) | Interpretada (slide) | Interpretada (o `perl` compila internamente para uma árvore de opcodes) | Híbrida (`javac` → bytecode → JVM) |
 
 ## E10
 

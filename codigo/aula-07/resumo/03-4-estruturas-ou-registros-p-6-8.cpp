@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/02 - Resumo Teórico/resumo-aula-07.md (linha 88).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/02 - Resumo Teórico/resumo-aula-07.md (linha 90).
 // Seção: 4. Estruturas ou registros (p.6–8)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-07/resumo/03-4-estruturas-ou-registros-p-6-8.cpp

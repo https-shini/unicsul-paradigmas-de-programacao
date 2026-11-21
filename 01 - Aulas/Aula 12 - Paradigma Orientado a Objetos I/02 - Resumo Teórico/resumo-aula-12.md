@@ -149,7 +149,7 @@ class Pilha {
     private int[] vetPilha = new int[5];   // representação OCULTA
     private int topo;
 
-    public Pilha() {                       // construtor: inicialização automática
+    public Pilha() {                       // construtor (no slide: "public void Pilha()", ver [Atenção])
         topo = 0;
     }
 
@@ -194,6 +194,8 @@ public class Main {
 }
 ```
 
+> **[Atenção]** No slide (p.13), o "construtor" está escrito `public void Pilha() { topo = 0; }`. Com o tipo de retorno `void`, isso **não é um construtor**, e sim um método comum chamado `Pilha`, que `new Pilha()` não executa. O programa funciona mesmo assim porque o Java inicializa `topo` com 0 por padrão. O mesmo acontece na versão 1d (p.15 e p.29, `public void Pilha() { this.topo = null; }`). Construtor não tem tipo de retorno: `public Pilha() { ... }`, como no código acima.
+
 **Resposta:** **não é possível** acessar `vetPilha`, que é `private` — `pilha.vetPilha[0] = 9` não compila. E **não** seria preciso mudar o `main` se a representação mudasse: ele só depende de `push` e `pop`. É a **abstração de dados** com **encapsulamento**, um TDA.
 
 ### Versão 1d — lista encadeada (p.14–16)
@@ -219,7 +221,7 @@ class Nodo {
 class Pilha {
     private Nodo topo;                 // a representação mudou...
 
-    public Pilha() {
+    public Pilha() {                   // no slide: "public void Pilha()" (ver [Atenção] da 1c)
         this.topo = null;
     }
 
@@ -398,9 +400,11 @@ int Pilha::pop() {
 - Em algumas linguagens, é **dever do programador** prever a liberação desses recursos e da memória durante a destruição do objeto.
 - Algumas linguagens fazem **coleta de lixo automática** (Java).
 
-**Pilha encadeada em C++ (p.29–30):** `main` com `Pilha *p1 = new Pilha();`, que empilha 3 números, desempilha e termina com `delete p1;`; `Pilha` com destrutor que percorre a lista e libera cada nó; `Nodo` com construtor, destrutor vazio, `getValor` e `getProximo`.
+A p.29 reúne numa só tela as três classes Java da versão 1d (`Nodo`, `Pilha`, `Main`).
 
-> **[Atenção]** O corpo de `Pilha::pop()` está **cortado na borda do slide** (p.30); só aparecem `int x = topo->getValor();` e `Nodo* temp = topo->getProximo();`. A versão abaixo completa o método **[Complemento]** de forma compatível com o restante.
+**Pilha encadeada em C++ (p.30):** `main` com `Pilha *p1 = new Pilha();`, que empilha 3 números, desempilha e termina com `delete p1;`; `Pilha` com destrutor que percorre a lista e libera cada nó; `Nodo` com construtor, destrutor vazio, `getValor` e `getProximo`.
+
+> **[Atenção]** O corpo de `Pilha::pop()` está **cortado na borda do slide** (p.30); só aparecem `int x = topo->getValor();` e `Nodo* temp = topo->getProximo();`. A versão abaixo completa o método e acrescenta uma quebra de linha entre os dois laços do `main` **[Complemento]**, de forma compatível com o restante.
 
 <!-- teste: entrada="5 10 15" saida-contem="15\n10\n5" -->
 ```cpp

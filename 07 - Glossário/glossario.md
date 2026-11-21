@@ -96,7 +96,7 @@ Notação formal para descrever a sintaxe concreta de linguagens por meio de reg
 
 ### Bytecode
 
-Código intermediário, independente de plataforma, gerado pelo compilador Java (`.class`) e executado pela JVM.
+Código intermediário, independente de plataforma, gerado pelo compilador Java (`.class`) e executado pela JVM. **[Complemento]**
 
 - **Exemplo:** Chave da implementação híbrida e da portabilidade de Java.
 - **Aulas:** [03](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md)
@@ -179,7 +179,7 @@ Pergunta feita à base de fatos e regras; o Prolog responde com `true`/`false` o
 
 Abordagem em que o programador especifica **o que** deseja obter, e não os passos para obtê-lo.
 
-- **Exemplo:** Paradigma lógico; SQL e HTML são linguagens declarativas que não são de programação.
+- **Exemplo:** Paradigma lógico; SQL e HTML são linguagens declarativas que, segundo a Aula15 p.5, não são linguagens de programação.
 - **Aulas:** [02](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [15](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md)
 
 ### Destrutor
@@ -316,7 +316,7 @@ Propriedade de um valor que não pode ser alterado depois de criado. **[Compleme
 Coordenadas que, segundo Dijkstra, descrevem o progresso de um processo: posição no texto e contagem de repetições/chamadas.
 
 - **Exemplo:** O `goto` livre impede definir essas coordenadas.
-- **Aulas:** [artigo de Dijkstra](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md) · [09](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md)
+- **Aulas:** [artigo de Dijkstra](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md)
 
 ### Interface (Java)
 
@@ -407,7 +407,7 @@ Instância de uma classe, com estado próprio, criada em tempo de execução.
 
 Resultado de uma operação que excede a faixa de valores representável pelo tipo.
 
-- **Exemplo:** `INT_MAX + 1` em C resulta em valor negativo.
+- **Exemplo:** Em Java, `Integer.MAX_VALUE + 1` dá a volta para `-2147483648`. Em C, `INT_MAX + 1` com `int` é comportamento indefinido; na prática, costuma dar a volta para um valor negativo.
 - **Aulas:** [06](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md)
 
 ## P
@@ -416,7 +416,7 @@ Resultado de uma operação que excede a faixa de valores representável pelo ti
 
 Palavra da linguagem que **não pode** ser usada como identificador.
 
-- **Exemplo:** `int`, `while`, `class` em C/Java.
+- **Exemplo:** `int`, `while`, `return` em C e em Java; `class` é reservada em Java e C++, mas não em C.
 - **Aulas:** [04](../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/02%20-%20Resumo%20Teórico/resumo-aula-04.md)
 
 ### Paradigma de programação
@@ -479,7 +479,7 @@ O formal é uma variável local não inicializada, cujo valor é copiado para o 
 
 O formal recebe uma **cópia** do valor do real (semântica de entrada); alterações não afetam o real.
 
-- **Exemplo:** Padrão em C e para primitivos em Java.
+- **Exemplo:** Padrão em C e em Java. Em Java, toda passagem é por valor; para objetos, o valor copiado é a referência.
 - **Aulas:** [08](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [11](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md)
 
 ### Passagem por valor-resultado
@@ -542,17 +542,17 @@ Principal linguagem do paradigma lógico, baseada em cláusulas de Horn e unific
 
 ### Ratio
 
-Tipo numérico de Clojure (na JVM) que representa frações exatas.
+Tipo numérico de Clojure (na JVM) que representa frações exatas. **[Complemento]**
 
 - **Exemplo:** `(/ 7 2)` → `7/2`; `(quot 7 2)` → 3.
 - **Aulas:** [14](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md)
 
 ### Recursão
 
-Definição de uma função em termos dela mesma; substitui os laços no funcional e no lógico.
+Definição de uma função em termos dela mesma; substitui os laços no funcional e no lógico. **[Complemento]**
 
 - **Exemplo:** `(defn fat [n] (if (<= n 1) 1 (* n (fat (- n 1)))))`.
-- **Aulas:** [14](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [15](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md)
+- **Aulas:** [14](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md)
 
 ### Registro (struct)
 
@@ -707,4 +707,4 @@ Abstração de uma célula de memória, caracterizada por seis atributos: nome, 
 Associação entre uma entidade e um atributo (nome–endereço, variável–tipo, chamada–método), em um momento determinado.
 
 - **Exemplo:** Em tempo de compilação (estática) ou de execução (dinâmica).
-- **Aulas:** [05](../01%20-%20Aulas/Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [06](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [13](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md)
+- **Aulas:** [05](../01%20-%20Aulas/Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [13](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md)

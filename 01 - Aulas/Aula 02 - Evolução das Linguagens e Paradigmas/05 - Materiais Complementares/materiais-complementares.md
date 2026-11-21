@@ -13,5 +13,5 @@
 
 **[Complemento]**
 
-- **Sebesta, cap. 2 — "Evolução das principais linguagens de programação".** Narra a história de Plankalkül, Fortran, LISP, Algol, Cobol, Simula, Smalltalk, C++, Java e Prolog, e explica a origem das figuras de linha do tempo usadas na aula.
+- **Sebesta, cap. 2 — "Evolução das principais linguagens de programação".** Narra a história de Plankalkül, Fortran, LISP, Algol, Cobol, Simula, Smalltalk, C++, Java e Prolog, e traz a sua própria genealogia das linguagens (Fig. 2.1), útil para comparar com a linha do tempo da p.22 (de Fotis Georgatos, 2002).
 - **Para praticar a comparação entre paradigmas:** reescreva o problema do dobro em uma linguagem de cada grupo da [atividade da Aula 03](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md#7-atividade-p17).

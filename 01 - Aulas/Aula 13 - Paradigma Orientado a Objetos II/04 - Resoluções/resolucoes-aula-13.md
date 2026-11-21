@@ -87,7 +87,7 @@ As duas primeiras linhas vêm das chamadas diretas aos métodos herdados. O bloc
 1. Java não permite herança múltipla de **classes**. `Impressora` e `Scanner` viram **interfaces**.
 2. `Multifuncional` passa a `implements Impressora, Scanner` em vez de herdar de duas classes.
 3. Como as interfaces só declaram os métodos, `Multifuncional` precisa **implementá-los**.
-4. **[Complemento]** Para não colidir com `java.util.Scanner`, convém não importar esse pacote ou renomear a interface.
+4. **[Complemento]** Não importe `java.util.Scanner` explicitamente no mesmo arquivo, porque é erro de compilação. Renomear a interface evita a confusão.
 
 <!-- teste: saida-contem="Estou imprimindo um documento.\nEstou digitalizando um documento.\nEstou copiando um documento\n******\nEstou digitalizando um documento.\nEstou imprimindo um documento.\n******" -->
 ```java

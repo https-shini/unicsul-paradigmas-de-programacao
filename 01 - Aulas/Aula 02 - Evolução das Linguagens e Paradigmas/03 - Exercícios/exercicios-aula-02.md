@@ -29,6 +29,6 @@ a) Passagem de mensagens  b) Abstração procedural  c) Composição funcional  
 
 ## Aprofundamento
 
-**E10.** O slide diz que tentativas de projetar máquinas para LISP e Prolog "não deram certo". Relacione essa afirmação com o motivo de linguagens funcionais e lógicas serem, em geral, interpretadas (tema da Aula 14) e com a ideia de "computador virtual" (Aula 03).
+**E10.** O slide diz que tentativas de projetar máquinas para LISP e Prolog "não deram certo". Relacione essa afirmação com o motivo de linguagens funcionais serem, em geral, interpretadas (Aula 14, p.10) — e avalie se isso vale também para as lógicas e com a ideia de "computador virtual" (Aula 03).
 
 **E11.** Avalie Pascal, C e Python segundo os critérios de legibilidade, facilidade de escrita e confiabilidade (Sebesta 1.3). Justifique cada avaliação com uma característica concreta da linguagem.

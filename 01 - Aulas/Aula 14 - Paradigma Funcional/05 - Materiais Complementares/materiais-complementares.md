@@ -16,6 +16,6 @@
 **[Complemento]**
 
 - **Site oficial de Clojure — "Learn Clojure":** <https://clojure.org/guides/learn/clojure>. Introdução à sintaxe, funções, `def` e estruturas de dados.
-- **Referência de números em Clojure:** <https://clojure.org/reference/data_structures#Numbers>. Explica `Ratio` (por que `(/ 10 3)` dá `10/3`) e a diferença entre `=` e `==`.
+- **Referência de números em Clojure:** <https://clojure.org/reference/data_structures#Numbers>. Explica `Ratio` (por que `(/ 10 3)` dá `10/3`). Para a diferença entre `=` e `==`, veja o guia de igualdade: <https://clojure.org/guides/equality>.
 - **Backus, J. "Can Programming Be Liberated from the von Neumann Style?"** Communications of the ACM, 21(8), 1978. A palestra do Prêmio Turing citada na p.8, com a crítica clássica ao estilo imperativo.
 - **nbb (ClojureScript para Node.js):** <https://github.com/babashka/nbb>. Ferramenta usada para validar os trechos deste repositório; útil para experimentar Clojure no terminal sem a JVM.

@@ -53,7 +53,7 @@
 
 **Estouro — overflow (p.8):** "Algumas linguagens geram uma **interrupção** e outras não, apenas **armazenam o resultado errado**." O problema se agrava em ponto flutuante, armazenado em notação científica (1432 = 1,432 × 10³). Os detalhes ficam para Cálculo Numérico.
 
-> **[Atenção]** O slide começa sem dizer qual é o problema (é o *overflow*, extrapolar a faixa do tipo), e o expoente aparece como "103" porque o sobrescrito se perdeu: 10³.
+> **[Atenção]** O slide começa sem dizer qual é o problema: é o *overflow*, quando o valor extrapola a faixa do tipo.
 
 **[Explicação elaborada] — o que acontece no overflow:**
 
@@ -224,7 +224,10 @@ Erro clássico de prova: achar que "dinâmica" significa "fraca". Python é din�
 
 **[Material original]** O código `int a; float b, c; c = a + b;` está correto? O que acontece quando o processador executa a operação?
 
-- O processador opera com **registradores**, e só valores de **representação compatível** podem participar de uma operação aritmética — inteiro em complemento de dois e real em ponto flutuante IEEE 754 têm bits completamente diferentes.
+- O processador opera com **registradores**, e só valores de **representação compatível** podem participar de uma operação aritmética.
+
+**[Explicação elaborada]** Inteiro em complemento de dois e real em ponto flutuante IEEE 754 têm bits completamente diferentes.
+
 - É **responsabilidade do compilador** converter o que o programador escreveu para algo executável.
 - **Verificação de tipos** = analisar se os tipos dos operandos são aceitos pelos operadores e **realizar as conversões necessárias**.
 
@@ -232,9 +235,9 @@ Erro clássico de prova: achar que "dinâmica" significa "fraca". Python é din�
 | --- | --- | --- |
 | `int a;` `float b, c;` `c = a + b;` | `t1 = float(a)` <br> `c = t1 + b;` | `ldr R0, a` <br> `cvtdq2ps R0, R0` <br> `ldr R1, b` <br> `add R2, R0, R1` <br> `str c, R2` |
 
-**[Explicação elaborada]** O compilador insere a conversão `float(a)` no código intermediário, que vira a instrução `cvtdq2ps` (*convert doubleword integers to packed single-precision floats*). Só depois a soma é feita entre dois reais. Essa conversão **implícita** é justamente a coerção da seção 6: conveniente, mas é ela que torna C mais fraca.
+**[Explicação elaborada]** O compilador insere a conversão `float(a)` no código intermediário, que vira a instrução `cvtdq2ps` (*convert doubleword integers to packed single-precision floats*). Só depois a soma é feita entre dois reais. Essa conversão **implícita** é uma coerção. Esta em particular, de alargamento (`int` → `float`), também é feita por Java. O que torna C mais fraca na seção 6 são as conversões implícitas que **perdem informação** (`double` → `int`, p.16 e p.18), o `union` e a exposição de ponteiros como números (p.17 e p.21).
 
-> **[Complemento]** O assembly do slide é ilustrativo: mistura mnemônicos estilo ARM (`ldr`, `str`) com uma instrução SSE de x86 (`cvtdq2ps`).
+> **[Atenção]** O assembly do slide é ilustrativo: mistura mnemônicos estilo ARM (`ldr`, `str`, `add`) com uma instrução SSE de x86 (`cvtdq2ps`). Numa máquina real, a soma de dois `float` usaria uma instrução de ponto flutuante (`fadd`/`vadd.f32` no ARM, `addss` no x86), e não o `add` inteiro.
 
 ## 8. Sobrecarga de operadores (p.25)
 

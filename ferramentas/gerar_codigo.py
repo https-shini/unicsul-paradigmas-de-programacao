@@ -38,7 +38,8 @@ def grupo(arquivo):
 def origem(arquivo):
     base = os.path.splitext(os.path.basename(arquivo))[0]
     base = re.sub(r"-aula-\d+$", "", base)
-    base = re.sub(r"-(lista|simulado)-\d+$", "", base)
+    base = re.sub(r"-lista-\d+$", "", base)
+    base = re.sub(r"-simulado-(\d+)$", r"-\1", base)   # vários simulados no mesmo grupo
     return ascii_slug(base, 30)
 
 

@@ -84,13 +84,13 @@ flowchart TB
     TIPO --> CAT["Categorias de tipos"]
     QUANDO --> SE["Estática: na compilação<br/>C, Java"]
     QUANDO --> DI["Dinâmica: na execução<br/>Python, PHP"]
-    FORCA --> FO["Forte: recusa operações entre tipos<br/>Java, Python"]
-    FORCA --> FR["Fraca: coerção implícita<br/>C, PHP"]
+    FORCA --> FO["Forte: detecta os erros de tipo; pouca coerção implícita<br/>Java, Python"]
+    FORCA --> FR["Fraca: muita coerção implícita<br/>C, PHP"]
     CAT --> PRIM["Primitivos<br/>int, float, char, boolean"]
     CAT --> COMP["Compostos (07)"]
     COMP --> ENUM["Enumeração"]
     COMP --> REG["Registro / struct"]
-    COMP --> MAT["Matriz<br/>row-major"]
+    COMP --> MAT["Matriz<br/>row-major em C"]
     COMP --> STR["String"]
 ```
 

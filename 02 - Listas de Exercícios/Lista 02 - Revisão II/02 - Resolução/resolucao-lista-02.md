@@ -95,13 +95,15 @@ int main(void) {
 
 | | Alocação estática | Alocação dinâmica |
 | --- | --- | --- |
-| **Momento** | Tempo de **compilação** | Tempo de **execução** |
+| **Momento** | Definido antes da execução: o segmento estático é reservado na compilação/carga; os frames da pilha são criados a cada chamada, com tamanho fixado na compilação | Em execução, quando o programa pede (`new`/`malloc`) |
 | **Tamanho** | Fixo, não pode ser alterado | Pode ser alterado |
 | **Região** | **Segmento estático** (globais e `static`); locais e parâmetros na **pilha**, de tamanho conhecido | **Heap** |
 | **Liberação** | Fim do programa (estático); fim da função (pilha) | Explícita (`delete`/`free`) ou coleta de lixo |
 
+O slide (Aula08 p.13) trata a pilha junto com a alocação estática porque o **tamanho** de cada frame é conhecido na compilação, embora o frame só exista durante a chamada.
+
 - **Regiões (Aula08 p.13):** código, estático, heap, memória livre e pilha. Heap e pilha crescem em direção à memória livre.
-- **Relação com ponteiros:** a memória do heap **não tem nome**: `new`/`malloc` devolvem um **endereço**, que precisa ser guardado num **ponteiro**. Por isso estruturas dinâmicas — listas, pilhas, filas, árvores — são construídas com ponteiros, como a pilha encadeada com `Nodo* proximo` (Aula12). No Exemplo 4 da Aula08: `n`/`res` no segmento estático; `a`, `b`, `x`, `y` na pilha; os inteiros apontados por `vetor` no heap.
+- **Relação com ponteiros:** a memória do heap **não tem nome**: `new`/`malloc` devolvem um **endereço**, que precisa ser guardado num **ponteiro**. Por isso estruturas dinâmicas — listas, pilhas, filas, árvores — são construídas com ponteiros, como a pilha encadeada com `Nodo* proximo` (Aula12). No Exemplo 4 da Aula08: `n`/`res` no segmento estático; `a`, `b`, `x`, `y` na pilha; a área criada com `new` (apontada por `vetor`) no heap — no slide, `new int(4)` cria um único `int`; o correto seria `new int[n]`.
 
 ## Q7
 
@@ -111,14 +113,13 @@ int main(void) {
 
 - **Completude de Turing:** uma linguagem é completa quanto a Turing se tem recursos mínimos para expressar **todos os algoritmos concebíveis**. Uma linguagem imperativa é Turing-completa se tem **variáveis, números inteiros, operações aritméticas, atribuição, sequenciamento baseado em memória, condições e comandos de ramificação (`goto`)**.
 - **Programação não estruturada:** controla o fluxo com `goto`/`jump` para números de linha ou rótulos (Assembly, BASIC). Repetição e seleção são construídas com saltos.
-- **Transição para a estruturada:** Dijkstra, em *Go To Statement Considered Harmful* (1968), argumentou que o `goto`:
-  - destrói a correspondência entre o **texto estático** do programa e o **processo dinâmico**;
-  - com sequência, condicionais, procedimentos e laços, o progresso é descrito por **índices textuais e dinâmicos**, coordenadas independentes do programador que permitem interpretar o valor das variáveis;
-  - com `goto` livre, resta só um contador de passos inútil.
+- **Transição para a estruturada:** Dijkstra, em *Go To Statement Considered Harmful* (1968), argumentou que:
+  - com sequência, condicionais, procedimentos e laços, o progresso do processo é descrito por **índices textuais e dinâmicos** — coordenadas independentes do programador que permitem interpretar o valor das variáveis;
+  - o `goto` livre **destrói** essa correspondência entre o **texto estático** do programa e o **processo dinâmico**, e resta só um contador de passos inútil.
 - Por isso defendeu **abolir** o `goto` das linguagens de alto nível. A prova de que ele é logicamente dispensável é de **Böhm e Jacopini** (1966), citada no artigo.
 - **Programação estruturada:** sequência, **seleção** e **repetição** em blocos, mais **subprogramas**. Facilita leitura e confiabilidade; a linguagem pode até suportar `goto`, mas o dispensa.
 
-**Erro comum:** dizer que Dijkstra provou matematicamente que o `goto` é dispensável — a prova é de Böhm e Jacopini.
+> **[Atenção]** O slide (Aula09 p.18) diz que Dijkstra "mostrou" que todo programa com `goto` pode ser reescrito com laços. O artigo não traz essa prova: ele a atribui a **Böhm e Jacopini (1966)**. Na resposta, cite Dijkstra como quem defendeu **abolir** o `goto` e Böhm–Jacopini como autores da prova (ver a errata 17).
 
 ## Q8
 
@@ -130,7 +131,7 @@ int main(void) {
 - **Abstração de dados:** agrupa a **representação** de um tipo e as **operações** sobre ele, ocultando a representação. É a base da OO.
 - **Acoplamento:** grau de dependência entre módulos; o desejável é **baixo**. Variáveis globais o elevam.
 - **Coesão:** responsabilidade única de cada função ou classe; o desejável é **alta**.
-- A abstração procedural **não favorece** baixo acoplamento nem alta coesão. O slide escreve "baixa coesão", mas o conceito correto é que ela não favorece a **alta** coesão.
+- A abstração procedural **não favorece** baixo acoplamento nem alta coesão. **[Atenção]** O slide (Aula10 p.16) escreve "baixa coesão"; o conceito correto é que ela não favorece a **alta** coesão.
 - **Papel do TDA:** permite declarar variáveis do tipo, **oculta a representação** (encapsulamento) e expõe só operações. Assim, (1) os clientes não alteram o estado indevidamente; (2) a representação pode mudar sem afetar os clientes, o que é baixo acoplamento — na pilha da Aula12, trocar vetor por lista encadeada não mudou o `main`; (3) cada TDA reúne uma responsabilidade, o que é alta coesão. O resultado é software mais fácil de **organizar e manter**.
 
 ## Q9
@@ -219,5 +220,5 @@ public class Main {
 
 - **Formato:** 23 questões **discursivas**; 18 pedem **diferenciar, comparar ou relacionar** pares de conceitos. As tabelas de [`quadros-comparativos.md`](../../../06%20-%20Revisões%20e%20Sínteses/quadros-comparativos.md) são o material mais direto.
 - **Código:** só em Clojure (avaliar e escrever) e Prolog (consultas). Nos outros paradigmas, os exemplos das aulas servem para **sustentar** as respostas.
-- **Aulas mais presentes:** 14 e 15 (nas duas listas); 03–11 aparecem uma vez cada, na Lista 02.
-- **Termos que aparecem nos enunciados sem estar nos slides** — imutabilidade, função pura, segmento estático/pilha/heap, vinculação tardia: prepare definições curtas (ver o [glossário](../../../07%20-%20Glossário/glossario.md)).
+- **Aulas mais presentes:** 14 e 15 (nas duas listas). Na Lista 02, as Aulas 02–06, 09–11 e 13 aparecem uma vez cada; a 08 e a 12, duas vezes (Q6/Q9 e Q8/Q10); a Aula 07 (tipos compostos) não é cobrada diretamente.
+- **Termos que aparecem nos enunciados sem estar nos slides** — imutabilidade e função pura: prepare definições curtas (ver o [glossário](../../../07%20-%20Glossário/glossario.md)). Outros termos aparecem com outro nome: "segmento estático" é o "Estático" da Aula08 p.13, e "vinculação tardia" é a "ligação tardia" da Aula13 p.12.

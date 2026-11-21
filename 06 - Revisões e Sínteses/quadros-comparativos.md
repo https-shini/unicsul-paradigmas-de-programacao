@@ -167,7 +167,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 | Modelo | Semântica | Mecanismo | Altera o argumento? | Exemplo |
 | --- | --- | --- | --- | --- |
-| Por valor | Entrada | Cópia do valor | Não | C (padrão), Java (primitivos), C# sem modificador |
+| Por valor | Entrada | Cópia do valor | Não | C (padrão), Java (sempre; para objetos, copia a referência), C# sem modificador |
 | Por resultado | Saída | Cópia no retorno | Sim, no retorno | C# `out` (implementado por referência) |
 | Por valor-resultado | Entrada e saída | Cópia na entrada e no retorno | Sim, no retorno | Ada `in out` para escalares |
 | Por referência | Entrada e saída | Endereço (caminho de acesso) | Sim, imediatamente | C++ `&`, C# `ref`, C com ponteiros |
@@ -224,7 +224,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 | --- | --- | --- |
 | Instanciável | Não | Não |
 | Atributos de instância | Sim | Não (só constantes) |
-| Métodos com corpo | Sim, misturados com abstratos | Não (desde o Java 8, `default`) |
+| Métodos com corpo | Sim, misturados com abstratos | Não no modelo clássico; desde o Java 8, sim (`default` e `static`) |
 | Quantas por classe | Uma (`extends`) | Várias (`implements`) |
 
 ## 12. Gerenciamento de objetos: C++ × Java

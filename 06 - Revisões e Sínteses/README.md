@@ -10,7 +10,8 @@ Materiais que **integram** várias aulas. Todos são **[Explicação elaborada]*
 | [Quadros comparativos](quadros-comparativos.md) | 13 tabelas de "diferencie/compare", incluindo o mesmo problema nos quatro paradigmas |
 | [Guia de estudo para as avaliações](guia-de-estudo-para-provas.md) | Estilo das listas do professor, roteiro de revisão em sessões, armadilhas |
 | [Questões integradoras](questoes-integradoras.md) · [resolução](resolucao-questoes-integradoras.md) | Oito questões que combinam várias aulas, com resolução separada |
-| [Erratas e inconsistências](erratas-e-inconsistencias.md) | Os 32 pontos em que os slides têm erro ou divergem da literatura |
+| [Erratas e inconsistências](erratas-e-inconsistencias.md) | Os 40 pontos em que os slides têm erro ou divergem da literatura |
+| [Flashcards (Anki)](Flashcards/README.md) | 143 cartões de repetição espaçada: glossário, comparações e leitura de código |
 
 ## Revisões por unidade
 
@@ -26,4 +27,5 @@ As unidades são um agrupamento **deste repositório**, não uma divisão oficia
 **Sugestão de uso:**
 1. Leia o resumo geral.
 2. Para cada unidade, faça o autoteste e os quadros correspondentes.
-3. Termine com as [listas do professor](../02%20-%20Listas%20de%20Exercícios/README.md) e o [simulado](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-01.md).
+3. Revise os termos com os [flashcards](Flashcards/README.md), um pouco por dia.
+4. Termine com as [listas do professor](../02%20-%20Listas%20de%20Exercícios/README.md) e os simulados: o [02](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-02.md) (Unidades 1–2), o [03](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-03.md) (Unidades 3–4) e o [01](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-01.md) (disciplina inteira).

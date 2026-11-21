@@ -22,9 +22,9 @@ a) `public`  b) `private`  c) `protected`  d) `static`
 ## Avançado
 
 **E7 — Perguntas originais dos Exemplos 1a–1d.**
-a) (1a) Há algum tipo de abstração no programa?
-b) (1b) A única forma de incluir e retirar elementos é por `push` e `pop`? O que isso significa em termos de abstração?
-c) (1c) É possível interagir com `vetPilha` no `main`? Se o armazenamento mudar para alocação encadeada, é preciso mudar o `main`?
+a) (1a) Há algum tipo de abstração no programa?\
+b) (1b) A única forma de incluir e retirar elementos é por `push` e `pop`? O que isso significa em termos de abstração?\
+c) (1c) É possível interagir com `vetPilha` no `main`? Se o armazenamento mudar para alocação encadeada, é preciso mudar o `main`?\
 d) (1d) A troca para alocação encadeada exigiu mudanças no `main`? O que isso significa?
 
 **E8.** (Programação) Implemente em Java uma classe `Fila` (o primeiro a entrar é o primeiro a sair) com `enfileirar(int)` e `desenfileirar()`, usando vetor circular e atributos privados. Escreva um `main` que funcione igual ao da pilha.

@@ -27,15 +27,15 @@ A sintaxe é descrita por um conjunto de regras que deve ser entendido por quatr
 
 **Gramática** é uma **metalinguagem** que define quais cadeias de caracteres formam um programa sintaticamente correto.
 
-**[Complemento] — como isso se divide:** expressões regulares e autômatos finitos descrevem a **sintaxe léxica** (como reconhecer um número ou um identificador). Gramáticas livres de contexto descrevem a **sintaxe concreta** (estrutura aninhada de expressões e comandos). A notação usual para gramáticas é a **BNF** (Backus-Naur Form), criada justamente para o Algol 60, como a Aula 05 (p.3) menciona. Exemplo de gramática em BNF para expressões aritméticas:
+**[Complemento] — como isso se divide:** expressões regulares e autômatos finitos descrevem a **sintaxe léxica** (como reconhecer um número ou um identificador). Gramáticas livres de contexto descrevem a **sintaxe concreta** (estrutura aninhada de expressões e comandos). A notação usual para gramáticas é a **BNF** (Backus-Naur Form), proposta por John Backus (1959) para descrever o ALGOL 58 e adotada, com ajustes de Peter Naur, no relatório do ALGOL 60. A Aula 05 (p.3) a chama de "notação universalmente aceita". Exemplo de gramática em BNF para expressões aritméticas:
 
 ```text
 <expr>   ::= <expr> + <termo> | <expr> - <termo> | <termo>
 <termo>  ::= <termo> * <fator> | <termo> / <fator> | <fator>
-<fator>  ::= ( <expr> ) | <id> | <num>
+<fator>  ::= ( <expr> ) | id | num
 ```
 
-Cada regra diz como um símbolo **não terminal** (entre `< >`) pode ser substituído. Os **terminais** (`+`, `(`, `id`) são os tokens produzidos pela análise léxica. A ordem das regras já codifica a **precedência**: `*` liga mais forte que `+` porque `<termo>` está "abaixo" de `<expr>`.
+Cada regra diz como um símbolo **não terminal** (entre `< >`) pode ser substituído. Os **terminais** (`+`, `*`, `(`, `)`, `id`, `num`) são tokens produzidos pela análise léxica. A **hierarquia** dos não terminais (não a ordem em que as regras são escritas) codifica a **precedência**: `*` liga mais forte que `+` porque `<termo>` está "abaixo" de `<expr>`.
 
 ## 4. Os três níveis de sintaxe (p.7)
 
@@ -115,7 +115,7 @@ int soma(int a, int b){
 }
 ```
 
-Os identificadores são `quantidade`, `soma`, `a` e `b`; `int` e `return` são palavras reservadas.
+**[Explicação elaborada]** Resposta à pergunta do slide: os identificadores são `quantidade`, `soma`, `a` e `b`; `int` e `return` são palavras reservadas.
 
 **Perguntas que toda linguagem precisa responder (p.14):**
 
@@ -180,7 +180,7 @@ int main(void) {
 - O segundo mostra o **endereço** de `x` (`&x`), que normalmente **muda a cada execução**.
 - A comparação revela que o nome `x` está ligado a dois atributos distintos — **endereço** e **valor** —, base da Aula 05 (l-value × r-value) e da Aula 08 (ponteiros).
 
-> **[Complemento]** O endereço muda porque os sistemas operacionais modernos usam ASLR (*Address Space Layout Randomization*), que sorteia onde a pilha do programa é carregada. O especificador correto para imprimir um ponteiro é `%p`; usar `%ld` com `&x` é comportamento indefinido pelo padrão C (o compilador emite aviso), embora funcione na maioria dos sistemas de 64 bits.
+> **[Complemento]** O endereço muda porque os sistemas operacionais modernos usam ASLR (*Address Space Layout Randomization*), que sorteia onde a pilha do programa é carregada. O especificador correto para imprimir um ponteiro é `%p`; usar `%ld` com `&x` é comportamento indefinido pelo padrão C (o gcc emite aviso). Em Linux e macOS de 64 bits (`long` com 64 bits), o endereço costuma sair inteiro; no Windows de 64 bits (`long` com 32 bits, inclusive com MinGW/Dev-C++), sai truncado e pode até aparecer negativo. Use `printf("%p\n", (void *)&x);`.
 
 ## 11. Conexões e pontos para a prova
 

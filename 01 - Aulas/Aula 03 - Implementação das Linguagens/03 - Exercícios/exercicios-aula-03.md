@@ -27,7 +27,7 @@ a) Compilação  b) Interpretação pura  c) Híbrida  d) Montagem
 
 ## Prática
 
-**E9 — Atividade da p.17 (original).** Implemente um programa que leia dez números e imprima a média, o maior e o menor. Faça em pelo menos duas linguagens de grupos diferentes, compare com Java e classifique cada linguagem quanto à forma de implementação.
+**E9 — Atividade da p.17 (original, ampliada).** Implemente um programa que leia dez números e imprima a média, o maior e o menor. O slide pede **uma** linguagem; aqui, faça em pelo menos duas, de grupos diferentes, compare com Java e classifique cada linguagem quanto à forma de implementação.
 
 ## Aprofundamento
 

@@ -16,7 +16,7 @@
 
 Pela classificação da disciplina, **imperativo, orientado a objetos e funcional são procedurais** — todos especificam os passos — e **o lógico é declarativo**. Exemplos de linguagens declarativas que **não** são linguagens de programação: **HTML, CSS e SQL**.
 
-**Atenção:** muitos autores classificam o funcional como declarativo. Siga o slide; se quiser, mencione a divergência numa frase.
+**[Atenção]** Muitos autores classificam o funcional como declarativo. Siga o slide; se quiser, mencione a divergência numa frase.
 
 ## Q2
 
@@ -30,7 +30,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
   - O **funcional** modela a computação como **funções matemáticas** que mapeiam entradas em saídas. No modelo puro, não há variável (estado), atribuição nem laço — justamente os elementos que espelham a memória de von Neumann.
   - O **lógico** baseia-se no **cálculo de predicados**: o programa é um conjunto de proposições, e o resultado vem de **inferência lógica**, não de uma sequência de alterações de memória.
 
-**Complemento:** como as máquinas especializadas para LISP e Prolog não deram certo (Aula02 p.15), essas linguagens rodam sobre hardware von Neumann por meio de interpretadores.
+**[Material original]** Segundo a Aula02 (p.15), as linguagens são projetadas para a arquitetura de von Neumann, e as tentativas inversas (LISP e PROLOG) não deram certo. Por isso, essas linguagens rodam sobre hardware von Neumann, por meio de interpretadores ou compiladores.
 
 ## Q3
 
@@ -166,4 +166,4 @@ pai(carlos, renata).
 
 **Explicação:** em (b) e (c), a variável ocupa posições diferentes: no 1º argumento, pergunta-se o **pai**; no 2º, o **filho**. O mesmo fato responde às duas perguntas por **unificação**, e as respostas sucessivas de (c) vêm do **retrocesso** (*backtracking*) sobre os fatos.
 
-**[Complemento]** Para obter todos os filhos de uma vez, como lista: `?- findall(X, pai(joao, X), L).` → `L = [ana, maria, carlos]` (Aula15 p.21).
+**[Explicação elaborada]** Para obter todos os filhos de uma vez, como lista, use `findall`, que aparece no Exemplo 2 da Aula15 (p.21): `?- findall(X, pai(joao, X), L).` → `L = [ana, maria, carlos]` (Aula15 p.21).

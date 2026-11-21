@@ -111,7 +111,7 @@ int main(void) {
 }
 ```
 
-(b) e (c) só dão resultados diferentes quando há *aliasing* — por exemplo, `troca(x, x)` — ou quando o subprograma acessa o argumento por outro caminho durante a execução.
+(b) e (c) só dão resultados diferentes quando há *aliasing* entre parâmetros, ou quando o subprograma acessa o argumento por outro caminho (por exemplo, como variável global). Na própria `troca`, `troca(x, x)` dá o mesmo resultado nos dois modelos. A diferença aparece, por exemplo, em `p(a, a)` com `x ← x + 1; y ← y * 10` e `a = 2`: 30 por referência e 20 (ou 3) por valor-resultado. Ver o [resumo da Aula 11, §5](../../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md#5-modelos-de-passagem-de-parâmetros-semânticos-e-de-implementação-p1318).
 
 ### 14
 

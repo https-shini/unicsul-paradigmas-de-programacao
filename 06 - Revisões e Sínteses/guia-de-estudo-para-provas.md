@@ -10,7 +10,7 @@ As duas listas de revisão (`Aula16a` e `Aula16b`) são o único indicativo do *
 | --- | --- | --- |
 | Questões | 11 discursivas | 12 discursivas |
 | Abrangência | Funcional e lógico (Aulas 09, 14, 15) | Disciplina inteira (Aulas 02–15) |
-| Verbos mais usados | explique, diferencie, escreva | diferencie, compare, explique, relacione |
+| Verbos mais usados | explique, diferencie, escreva | diferencie, compare, explique, conceitue |
 | Código | Clojure (avaliar e escrever) e Prolog (consultas) | Nenhum código exigido |
 
 **Conclusão prática:** treine **respostas discursivas comparativas**, com definição, diferença, exemplo e consequência. Saiba **ler e escrever** Clojure e Prolog em pequenos trechos.

@@ -47,15 +47,15 @@ A Aula 01 não traz conteúdo técnico. Ela apresenta o **contrato da disciplina
 
 | Item do conteúdo | Aulas |
 | --- | --- |
-| Introdução | [01](../../Aula%2001%20-%20Apresentação%20da%20Disciplina/), [02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/), [03](../../Aula%2003%20-%20Implementação%20das%20Linguagens/) |
-| Tipos e variáveis | [04](../../Aula%2004%20-%20Sintaxe/), [05](../../Aula%2005%20-%20Semântica/), [06](../../Aula%2006%20-%20Sistema%20de%20Tipos/), [07](../../Aula%2007%20-%20Tipos%20Compostos/), [08](../../Aula%2008%20-%20Ponteiros/) |
+| Introdução | [01](../../Aula%2001%20-%20Apresentação%20da%20Disciplina/), [02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/), [03](../../Aula%2003%20-%20Implementação%20das%20Linguagens/), [04](../../Aula%2004%20-%20Sintaxe/) |
+| Tipos e variáveis | [04](../../Aula%2004%20-%20Sintaxe/) (nomes, p.12–19), [05](../../Aula%2005%20-%20Semântica/), [06](../../Aula%2006%20-%20Sistema%20de%20Tipos/), [07](../../Aula%2007%20-%20Tipos%20Compostos/), [08](../../Aula%2008%20-%20Ponteiros/) |
 | Paradigma imperativo (estruturado) | [09](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/), [10](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/), [11](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/) |
 | Orientado a objetos | [12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/), [13](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/) |
 | Funcional | [14](../../Aula%2014%20-%20Paradigma%20Funcional/) |
 | Programação em lógica | [15](../../Aula%2015%20-%20Paradigma%20Lógico/) |
 | Revisão | [Lista 01](../../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/), [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/) |
 
-"Tópicos adicionais" e "linguagens híbridas" não têm aula própria no material disponível; aparecem de forma transversal (Java 8 com lambdas, linguagens multiparadigma, implementação híbrida na Aula 03).
+"Tópicos adicionais" e "linguagens híbridas": Não há aula específica. Linguagens que combinam paradigmas aparecem na Aula 02 (p.12: Java 8 na lista funcional) e na Aula 14 (p.10: Java 8, JavaScript, Python e C# com lambdas). A Aula 15 (p.5) cita linguagens declarativas que não são de programação (HTML, CSS, SQL). **[Atenção]** Na Aula 03 (p.12), "linguagem híbrida" significa **implementação** híbrida (compilação + interpretação), não linguagem multiparadigma.
 
 ## 6. Sistema de avaliação (p.6–7)
 

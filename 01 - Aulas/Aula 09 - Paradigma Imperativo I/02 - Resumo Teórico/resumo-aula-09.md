@@ -49,7 +49,7 @@ flowchart TB
 | Desvio do contador de programa (*jump*) | **`goto`**, seleção e repetição |
 | ULA | **Expressões** aritméticas e lógicas |
 
-Esse "gargalo" entre CPU e memória — tudo passa, palavra por palavra, pelo canal entre os dois — é a razão de existirem paradigmas que **não** partem desse modelo (funcional e lógico, [Aula 14](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md)).
+**[Complemento]** O canal único entre CPU e memória, por onde passam instruções e dados, palavra por palavra, ficou conhecido como **gargalo de von Neumann**. A expressão é de John Backus, na palestra do Prêmio Turing de 1977, em que ele defendeu o estilo funcional. Os paradigmas funcional e lógico partem de **outras bases** — funções matemáticas e cálculo de predicados (Aula14 p.6) —, e não do hardware; o funcional surgiu nos anos 1960, por necessidades da Inteligência Artificial ([Aula 14](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md), p.7).
 
 ## 4. O que torna uma linguagem imperativa (p.8–10)
 
@@ -90,7 +90,7 @@ Esse "gargalo" entre CPU e memória — tudo passa, palavra por palavra, pelo ca
 
 > **[Atenção]** O exemplo `int x = x + 20;` usa `x` antes de ele ter valor: em C, uma variável local não inicializada tem valor indeterminado. O slide quer mostrar só a **forma** `destino = expressão`. Um exemplo correto seria `int x = 10; x = x + 20;`.
 
-**[Explicação elaborada]** Por que `=` e `:=`? Em Fortran e C, `=` atribui e `==` compara — fonte do erro clássico `if (x = 0)`. Em Algol, Pascal e Ada, `:=` atribui e `=` compara, aproximando-se da notação matemática.
+**[Explicação elaborada]** Por que `=` e `:=`? Em C e derivadas, `=` atribui e `==` compara — fonte do erro clássico `if (x = 0)`, que compila porque a atribuição é uma expressão. Em Fortran, `=` também atribui, mas a comparação é `.EQ.` (ou `==` a partir do Fortran 90). Em Algol, Pascal e Ada, `:=` atribui e `=` compara, aproximando-se da notação matemática.
 
 ## 6. Linguagens imperativas (p.14–15)
 
@@ -98,7 +98,7 @@ Esse "gargalo" entre CPU e memória — tudo passa, palavra por palavra, pelo ca
 
 - **Imperativo / OO:** Fortran → Algol 60 → Simula, Pascal, C → Smalltalk, Modula, Ada → Oberon, Eiffel, C++ → Java (com Cobol e PL/I nos anos 1950/60).
 - **Funcional:** Lisp → ML → Miranda → Haskell.
-- **Lógico:** Prolog.
+- **Lógico:** Prolog. **[Atenção]** A figura posiciona o Prolog na faixa dos anos 1960; a Aula 15 (p.13) situa o início do seu desenvolvimento na década de 1970 (1972).
 
 ## 7. Não estruturado × estruturado (p.16–18)
 
@@ -110,7 +110,7 @@ Esse "gargalo" entre CPU e memória — tudo passa, palavra por palavra, pelo ca
 | Uso de `goto` | É o mecanismo principal | Não usa (suporta, mas oferece mecanismos que dispensam seu uso) |
 | Objetivo | — | Facilitar a leitura e a execução de algoritmos |
 | Subprogramas | — | Permite procedimentos e funções |
-| Exemplos | Assembly, BASIC | Pascal, C, Ada |
+| Exemplos | Assembly, BASIC (p.16) | *(não citados no slide; ex.: Pascal, C, Ada)* |
 
 **Dijkstra (p.18):** "mostrou que o uso excessivo de `goto` era prejudicial ao desenvolvimento de programas confiáveis e que qualquer sequência de comandos escrita com `goto` poderia ser escrita com laços condicionais."
 

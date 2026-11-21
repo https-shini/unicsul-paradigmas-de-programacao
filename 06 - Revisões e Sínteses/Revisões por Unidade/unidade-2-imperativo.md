@@ -38,7 +38,7 @@
 2. Explique, com suas palavras, os índices textuais e dinâmicos do artigo de Dijkstra. → [resumo do artigo](../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md)
 3. Decomponha "calcular a média das notas acima de 7" em três níveis de abstração procedural. → [Aula 10, §4](../../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md#4-exemplo-guiado-ordenar-dez-números-p814)
 4. Por que variáveis globais aumentam o acoplamento? → [Aula 10, §6](../../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md#6-limitações-acoplamento-e-coesão-p16)
-5. Que modelo de passagem é mais adequado para um vetor grande que a função só lê? Por quê? → [Aula 11, §5](../../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md#5-os-quatro-modelos-semânticos-de-passagem-p1318)
+5. Que modelo de passagem é mais adequado para um vetor grande que a função só lê? Por quê? → [Aula 11, §5](../../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md#5-modelos-de-passagem-de-parâmetros-semânticos-e-de-implementação-p1318)
 
 **Questões do professor sobre esta unidade:** [Lista 01, Q2](../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) · [Lista 02, Q7–Q9](../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md).
 

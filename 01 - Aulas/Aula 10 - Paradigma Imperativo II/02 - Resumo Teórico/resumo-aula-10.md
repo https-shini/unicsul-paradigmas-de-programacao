@@ -56,12 +56,12 @@ flowchart TD
 | Abstração 1 (p.9–11) | `main` | Ler os dez valores num vetor; imprimir o original; ordenar; imprimir o ordenado. Ler e imprimir são simples e codificados diretamente. | `int vetor[10]; lerVetor(vetor); mostrarVetor(vetor); ordenarVetor(vetor); mostrarVetor(vetor);` |
 | Abstração 2 (p.12) | `ordenarVetor` | Percorrer o vetor e encontrar o menor; trocar o menor com o primeiro; repetir a partir da posição seguinte até o fim. | `for (i=0;i<10;i++){ posMenor = encontrarMenor(vetor, i); trocarElementos(&vetor[i], &vetor[posMenor]); }` |
 | Abstração 3 (p.13) | `encontrarMenor` | Considerar o primeiro elemento como o menor e guardar sua posição; percorrer e comparar; quando um elemento for menor, atualizar. | `posMenor = inicio; for (j=inicio+1;j<10;j++) if (vetor[j]<vetor[posMenor]) posMenor = j; return posMenor;` |
-| Abstração 3 (p.14) | `trocarElementos` | Salvar um valor em uma temporária; substituir pelo outro; copiar a temporária de volta. | *Não mostrado no slide* |
+| Abstração 3 (p.14) | `trocarElementos` | Salvar um valor em uma temporária; substituir pelo outro; copiar a temporária de volta. | `int temp = *a; *a = *b; *b = temp;` |
 
 > **[Atenção]**
 > - O texto da p.13 diz "atualizar a variável **menor** com este **valor**", mas o código guarda a **posição** (`posMenor = j`). O código é o correto: a posição é necessária para fazer a troca depois.
 > - `encontrarMenor` e `trocarElementos` aparecem ambos como "Abstração 3" (mesmo nível de refinamento, abaixo de `ordenarVetor`).
-> - O código de `trocarElementos` não é mostrado; abaixo vai uma versão compatível com a chamada `trocarElementos(&vetor[i], &vetor[posMenor])`.
+> - O código de `trocarElementos` (p.14) recebe dois ponteiros, `void trocarElementos(int *a, int *b)`, e é compatível com a chamada `trocarElementos(&vetor[i], &vetor[posMenor])`.
 
 **Programa completo (versão montada a partir dos trechos do slide):**
 
@@ -81,7 +81,7 @@ int encontrarMenor(int *vetor, int inicio) {          /* devolve a POSIÇÃO do 
     return posMenor;
 }
 
-void trocarElementos(int *a, int *b) {                 /* [Complemento] não aparece no slide */
+void trocarElementos(int *a, int *b) {                 /* código do slide (p.14) */
     int temp = *a;     /* 1. salva um dos valores numa temporária   */
     *a = *b;           /* 2. substitui pelo outro valor              */
     *b = temp;         /* 3. copia o valor salvo                     */
@@ -102,6 +102,7 @@ void lerVetor(int *vetor) {
 }
 
 void mostrarVetor(int *vetor) {
+    /* simplificado: o slide (p.11) imprime "Elemento da posição %d: %d\n" */
     for (int i = 0; i < TAM; i++) printf("%d ", vetor[i]);
     printf("\n");
 }

@@ -1,7 +1,7 @@
 // Gerado automaticamente a partir de 04 - Provas e Avaliações/Simulados/resolucao-simulado-01.md (linha 102).
 // Seção: 13
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
-// Como executar:  python3 ferramentas/rodar.py codigo/simulados/resolucao/04-13.c
+// Como executar:  python3 ferramentas/rodar.py codigo/simulados/resolucao-01/04-13.c
 // A saída deve conter: valor: 1 2 | referencia: 2 1
 
 #include <stdio.h>

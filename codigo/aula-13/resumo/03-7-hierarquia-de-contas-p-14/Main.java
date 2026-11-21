@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 13 - Paradigma Orientado a Objetos II/02 - Resumo Teórico/resumo-aula-13.md (linha 188).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 13 - Paradigma Orientado a Objetos II/02 - Resumo Teórico/resumo-aula-13.md (linha 190).
 // Seção: 7. Hierarquia de contas (p.14)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-13/resumo/03-7-hierarquia-de-contas-p-14/Main.java

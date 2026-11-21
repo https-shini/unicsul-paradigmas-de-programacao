@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 12 - Paradigma Orientado a Objetos I/02 - Resumo Teórico/resumo-aula-12.md (linha 204).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 12 - Paradigma Orientado a Objetos I/02 - Resumo Teórico/resumo-aula-12.md (linha 206).
 // Seção: Versão 1d — lista encadeada (p.14–16)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-12/resumo/04-versao-1d-lista-encadeada-p-14-16/Main.java
@@ -22,7 +22,7 @@ class Nodo {
 class Pilha {
     private Nodo topo;                 // a representação mudou...
 
-    public Pilha() {
+    public Pilha() {                   // no slide: "public void Pilha()" (ver [Atenção] da 1c)
         this.topo = null;
     }
 

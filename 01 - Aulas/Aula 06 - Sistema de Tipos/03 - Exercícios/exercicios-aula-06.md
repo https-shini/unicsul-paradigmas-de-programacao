@@ -23,9 +23,9 @@ a) C  b) C++  c) Pascal  d) Java
 
 **E7.** (Interpretação de código) Qual é a saída de cada trecho? Algum não compila?
 
-a) C: `double y = 2.6; int x = y; printf("%d", x);`
-b) Java: `double y = 2.6; int x = y; System.out.println(x);`
-c) Java: `double y = 2.6; int x = (int) y; System.out.println(x);`
+a) C: `double y = 2.6; int x = y; printf("%d", x);`\
+b) Java: `double y = 2.6; int x = y; System.out.println(x);`\
+c) Java: `double y = 2.6; int x = (int) y; System.out.println(x);`\
 d) C: `printf("%d %f", 7 / 2, 7.0 / 2);`
 
 **E8.** "Python é dinamicamente tipada, logo é fracamente tipada." A afirmação está correta? Justifique com um exemplo e monte a tabela 2×2 estática/dinâmica × forte/fraca.

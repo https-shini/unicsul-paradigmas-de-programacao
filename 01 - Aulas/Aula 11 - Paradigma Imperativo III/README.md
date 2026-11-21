@@ -1,6 +1,6 @@
 # Aula 11 - Paradigma Imperativo III
 
-**Paradigma imperativo — parte 3.** Subprogramas; parâmetros formais e reais; os quatro modelos semânticos de passagem; modificadores ref, out, in e ref readonly do C#.
+**Paradigma imperativo — parte 3.** Subprogramas; parâmetros formais e reais; os três modelos semânticos de passagem (entrada, saída, entrada e saída) e os quatro modelos de implementação (valor, resultado, valor-resultado, referência); modificadores ref, out, in e ref readonly do C#.
 
 | Pasta | Conteúdo |
 | --- | --- |

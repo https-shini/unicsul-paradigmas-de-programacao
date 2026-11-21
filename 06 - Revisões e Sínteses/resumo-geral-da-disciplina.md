@@ -17,19 +17,19 @@ Um **paradigma** é um modelo de pensamento sobre como resolver problemas com co
 ## Unidade 1 — Fundamentos das linguagens (Aulas 01–08)
 
 **Evolução e paradigmas ([Aula 02](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md)).**
-- **Exemplo de abertura:** o mesmo problema (o dobro de um número) aparece em Pascal, Java e Prolog. Mostra que a mesma tarefa é expressa de formas muito diferentes.
+- **Exemplo de abertura:** o mesmo problema (ler dois números e verificar se o segundo é o dobro do primeiro) aparece em Pascal, Java e Prolog. Mostra que a mesma tarefa é expressa de formas muito diferentes.
 - **Os quatro paradigmas:**
   - imperativo: comandos que alteram o estado;
   - orientado a objetos: objetos que trocam mensagens;
   - funcional: composição de funções;
   - lógico: fatos, regras e inferência.
-- **Restrições de projeto:** arquitetura do computador, domínio de aplicação e custo.
+- **Restrições de projeto** (p.15–16): arquitetura (von Neumann); configuração técnica (área de aplicação, sistema operacional, IDE, preferências da comunidade); padrões; sistemas legados (exemplo: C++ em relação ao C; contraexemplo: Java em relação ao C++).
 - **Critérios de avaliação:** legibilidade, facilidade de escrita, confiabilidade e custo.
 - **Gerações de linguagens:** da linguagem de máquina às linguagens declarativas. As figuras do slide divergem sobre as últimas gerações.
 
 **Implementação ([Aula 03](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md)).** Um programa de alto nível precisa ser traduzido. Há três formas:
 - **Compilação** (C, C++): rápida, mas presa à plataforma.
-- **Interpretação pura** (Python, PHP, JavaScript): portável, mas lenta.
+- **Interpretação pura** (Python, PHP, JavaScript, na classificação do slide; o CPython, na verdade, compila para bytecode): portável, mas lenta.
 - **Híbrida** (Java, C#): o fonte vira um código intermediário (bytecode/CIL), executado por uma máquina virtual (JVM/CLR). Une portabilidade e bom desempenho.
 
 O computador é visto como camadas de **computadores virtuais** (Sebesta, Fig. 1.2).
@@ -58,7 +58,7 @@ Exemplos: C é estática e fraca; Java, estática e forte; PHP, dinâmica e frac
 Tipos compostos:
 - **enumerações**;
 - **registros** (`struct`);
-- **matrizes**, armazenadas por linhas e acessadas por fórmula de endereço;
+- **matrizes**: em C, armazenadas por linhas (*row-major*) e acessadas por fórmula de endereço (Fortran usa *column-major*; em Java, uma matriz é um vetor de vetores);
 - **strings**.
 
 **Ponteiros ([Aula 08](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)).**
@@ -85,7 +85,7 @@ Tipos compostos:
 
 **Subprogramas ([Aula 11](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md)).**
 - Os subprogramas são o mecanismo da abstração procedural, com parâmetros formais e reais.
-- Há quatro modelos de passagem: **valor**, **resultado**, **valor-resultado** e **referência**. Em C#, correspondem a: sem modificador, `out`, `ref` e `in`/`ref readonly`.
+- Há quatro modelos de passagem: **valor**, **resultado**, **valor-resultado** e **referência**. Em C#: sem modificador = valor; `out` = semântica de resultado (saída), implementada por referência; `ref` = referência (entrada e saída); `in`/`ref readonly` = referência só de leitura. C# não oferece valor-resultado; um exemplo é o `in out` de Ada para escalares.
 - Escolher o modelo é um compromisso entre segurança (cópia) e eficiência (referência).
 
 ---

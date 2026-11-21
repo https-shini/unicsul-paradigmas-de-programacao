@@ -1,14 +1,16 @@
 # Aula 09a — "Go To Statement Considered Harmful" (Dijkstra, 1968) · Resumo e análise
 
 > **Fonte:** [`Aula09a_ArtigoDijkstra68.pdf`](../01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf) (2 páginas). Edsger W. Dijkstra, Technological University Eindhoven. Publicado como carta ao editor em *Communications of the ACM*, v. 11, n. 3, p. 147–148, mar. 1968.
-> **Sobre o arquivo:** o PDF é uma **digitalização sem camada de texto**. Para este resumo, o texto foi extraído por OCR e conferido visualmente na imagem; a digitalização está legível, sem trechos perdidos.
+> **Sobre o arquivo:** o corpo do artigo é uma **digitalização (imagem) sem texto pesquisável**; só o cabeçalho, o rodapé e a linha de fonte acrescentados ao PDF são texto. Para este resumo, o texto foi extraído por OCR e conferido visualmente na imagem; a digitalização está legível, sem trechos perdidos.
+>
+> **[Atenção]** O cabeçalho do PDF e a bibliografia da Aula 01 (p.9) escrevem "Edgar Dijkstra"; o nome correto é **Edsger** W. Dijkstra, como na assinatura do artigo.
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). O artigo está em inglês; as passagens abaixo são **paráfrases** em português. Os termos técnicos originais aparecem entre parênteses.
 
 ---
 
 ## 1. Em uma frase
 
-Dijkstra argumenta que o `go to` deve ser **abolido** das linguagens de alto nível porque destrói a correspondência entre o **texto estático** do programa e o **processo dinâmico** que ele produz, tornando quase impossível raciocinar sobre o que o programa está fazendo em cada instante.
+**[Explicação elaborada]** Dijkstra argumenta que o `go to` deve ser **abolido** das linguagens de alto nível porque destrói a correspondência entre o **texto estático** do programa e o **processo dinâmico** que ele produz, tornando quase impossível raciocinar sobre o que o programa está fazendo em cada instante.
 
 ## 2. Contexto
 
@@ -86,7 +88,7 @@ Palavras-chave do artigo: *go to statement, jump instruction, branch instruction
 2. **Solução:** usar só construções cujo progresso é descritível por coordenadas automáticas — sequência, seleção (`if`/`case`), repetição (`while`/`repeat`) e procedimentos. São as **estruturas de controle** da programação estruturada ([Aula 09, p.10 e p.17](resumo-aula-09.md#7-não-estruturado--estruturado-p1618)).
 3. **Teoria × prática:** Böhm e Jacopini provaram que o `go to` é dispensável; Dijkstra explicou **por que** dispensá-lo, um argumento cognitivo e de legibilidade.
 4. **Legado:** o artigo é considerado o marco da **programação estruturada**. As linguagens projetadas depois (Pascal, 1970; C, 1972) mantêm o `goto` só como exceção, e Java nem o implementa (`goto` é palavra reservada sem uso). O título — com o padrão "*X considered harmful*" — virou expressão idiomática na computação.
-5. **Ponte para as próximas aulas:** a ideia de aproximar o texto do processo motiva a **abstração procedural** (Aula 10), em que cada procedimento tem um único ponto de entrada e de saída, e prepara o terreno para a OO (Aula 12).
+5. **Ponte para as próximas aulas:** a ideia de aproximar o texto do processo combina com a **abstração procedural** (Aula 10) e com os subprogramas, que têm um **único ponto de entrada** e devolvem o controle ao chamador ao terminar (Aula 11, p.4). O encapsulamento de dados leva à OO (Aula 12).
 
 > **[Complemento]** Segundo relatos posteriores do próprio Dijkstra, o título original da carta era "A case against the GO TO statement"; o título publicado foi escolhido pelo editor, Niklaus Wirth. Essa informação **não consta** no PDF da disciplina.
 

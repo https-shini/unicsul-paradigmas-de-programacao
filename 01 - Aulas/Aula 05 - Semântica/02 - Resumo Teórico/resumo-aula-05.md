@@ -9,7 +9,7 @@
 
 **[Material original]** Definir para que servem os nomes; identificar e explicar as **seis características de uma variável**; diferenciar análise semântica **estática** e **dinâmica**.
 
-> **[Atenção]** O primeiro objetivo ("para que servem os nomes") já foi tratado na Aula 04; aqui ele é retomado como primeiro atributo da variável.
+> **[Explicação elaborada]** O primeiro objetivo ("para que servem os nomes") já foi tratado na Aula 04; aqui ele é retomado como primeiro atributo da variável.
 
 ## 2. Sintaxe × semântica, de novo (p.3)
 
@@ -82,7 +82,10 @@ Segue as regras sintáticas vistas na [Aula 04](../../Aula%2004%20-%20Sintaxe/02
 **[Material original]**
 
 - Definido **estaticamente**, conforme a **posição da declaração no código**.
-- Algumas linguagens exigem declarar no início dos módulos (Pascal, por exemplo); C++, Java e C# não exigem.
+- Algumas linguagens exigem declarar no início dos módulos; C++, Java e C# não exigem.
+
+**[Complemento]** Pascal é um exemplo: as variáveis ficam na seção `var`, antes do `begin`.
+
 - Divide-se em **global** e **local**. A global é declarada fora de qualquer função e é acessível a todas, **exceto** às que declaram uma local com o mesmo nome.
 - **Regra de busca:** procura a declaração no bloco/função local. Se não encontrar, procura no **ancestral**, até o bloco mais abrangente. Se não encontrar em nenhum, é **erro**.
 - A busca nos ancestrais pode gerar confusão em linguagens com **funções aninhadas**.
@@ -204,7 +207,7 @@ class Main {
 - Para raio 2, área e comprimento valem ambos 12,5664, pois π·2² = 2·π·2.
 - Trocar a precisão de π exige mudar **uma linha** — essa é a vantagem de manutenção citada no slide.
 
-> **[Complemento]** Em C#, `const` exige valor conhecido em compilação; `readonly` permite atribuir uma única vez em tempo de execução, no construtor.
+> **[Complemento]** Em C#, `const` exige valor conhecido em compilação; `readonly` recebe o valor na declaração ou no construtor, em tempo de execução (pode vir de uma expressão calculada), e depois não pode mais ser alterado.
 
 ## 6. Semântica estática × dinâmica (p.17)
 
@@ -213,6 +216,9 @@ class Main {
 - **Estática:** o que pode ser verificado em **tempo de compilação**.
 - **Dinâmica:** o que só pode ser verificado em **tempo de execução**.
 - "Obs.: por definição, **não há verificação estática em linguagens interpretadas**!"
+
+> **[Atenção]** A observação vale para um interpretador puro, que executa sem tradução prévia. As implementações de Python (CPython) e Perl são, na prática, híbridas e fazem verificações antes de executar: um `SyntaxError` em Python ou uma variável não declarada em Perl com `use strict` impedem a execução da primeira linha. Em prova, use a forma do professor e, se houver espaço, acrescente a ressalva.
+
 
 **[Explicação elaborada]**
 

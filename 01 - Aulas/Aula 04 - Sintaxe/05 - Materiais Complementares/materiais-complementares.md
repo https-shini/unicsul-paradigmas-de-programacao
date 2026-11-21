@@ -7,7 +7,7 @@
 **[Material original]** (p.21)
 
 - Tucker & Noonan, *Linguagens de programação: princípios e paradigmas*, **seções 4.1 e 4.2**.
-- Sebesta, *Conceitos de linguagens de programação* (9ª ed.): **seções 3.1 e 3.2** (descrição de sintaxe, BNF) e **5.1 e 5.2** (nomes).
+- Sebesta, *Conceitos de linguagens de programação* (9ª ed.): **seções 3.1 e 3.2** e **5.1 e 5.2**. **[Complemento]** 3.1–3.2: introdução e o problema geral de descrever a sintaxe (a BNF fica na 3.3); 5.1–5.2: nomes.
 
 ## Selecionados para estudo
 

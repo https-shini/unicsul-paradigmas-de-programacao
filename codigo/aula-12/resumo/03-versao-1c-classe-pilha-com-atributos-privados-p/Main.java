@@ -11,7 +11,7 @@ class Pilha {
     private int[] vetPilha = new int[5];   // representação OCULTA
     private int topo;
 
-    public Pilha() {                       // construtor: inicialização automática
+    public Pilha() {                       // construtor (no slide: "public void Pilha()", ver [Atenção])
         topo = 0;
     }
 

@@ -134,7 +134,7 @@ int main(void) {
 }
 ```
 
-A versão estruturada é mais curta e o fluxo é visível na indentação. O `return 0` dentro do laço é uma "saída de alarme" — o tipo de desvio que, segundo o artigo, Hoare recomendava como único uso aceitável do `go to`.
+A versão estruturada é mais curta e o fluxo é visível na indentação. O `return 0` dentro do laço é uma "saída de alarme" — o tipo de desvio a que, segundo o artigo, alguém — presumivelmente C. A. R. Hoare — recomendou restringir o uso do `go to`.
 
 ## E10 — Perguntas sobre o artigo de Dijkstra
 

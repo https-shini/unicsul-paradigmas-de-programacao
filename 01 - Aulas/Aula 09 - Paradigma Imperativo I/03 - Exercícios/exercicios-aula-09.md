@@ -29,9 +29,10 @@ a) `=`  b) `==`  c) `:=`  d) `<-`
 
 ## Avançado
 
-**E7 — Atividade 1 (original, p.21).** Descreva o que faz o programa e reescreva-o sem `goto`. A versão com `while` é exatamente equivalente? Em que situação as duas dariam resultados diferentes?
+**E7 — Atividade 1 (original, p.21).** Descreva o que faz o programa e reescreva-o sem `goto`. *Acréscimo autoral:* a versão com `while` é exatamente equivalente? Em que situação as duas dariam resultados diferentes?
 
 ```c
+#include <stdio.h>   /* acrescentado: o slide omite o cabeçalho */
 int main() {
     int x = 0;
 repete: printf("%d\n", x);
@@ -49,9 +50,9 @@ repete: printf("%d\n", x);
 ## Aprofundamento
 
 **E10 — Sobre o artigo de Dijkstra.**
-a) O que é um índice textual? E um índice dinâmico?
-b) Por que não podemos usar os valores das variáveis como coordenadas do progresso?
-c) O que o exemplo da contagem de pessoas na sala demonstra?
+a) O que é um índice textual? E um índice dinâmico?\
+b) Por que não podemos usar os valores das variáveis como coordenadas do progresso?\
+c) O que o exemplo da contagem de pessoas na sala demonstra?\
 d) Qual é a diferença entre a contribuição de Böhm e Jacopini e a de Dijkstra?
 
 **E11.** O slide resume que Dijkstra mostrou que "o uso excessivo de `goto` era prejudicial". Compare essa frase com o que o artigo realmente afirma.

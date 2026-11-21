@@ -21,7 +21,7 @@ Facilitam a **legibilidade** do código e **reduzem a chance de erro** (p.4), po
 
 ## E4
 
-**Registro:** agrupa campos de tipos diferentes, sem comportamento. **Classe:** agrupa campos **e** funções (métodos), com controle de acesso, herança e polimorfismo (p.6 e p.9). Java "não suporta estruturas diretamente" porque não tem a palavra `struct` nem um tipo registro separado: o que seria um registro é escrito como uma classe só com atributos. A Aula 12 (p.22) confirma: em Java e Smalltalk, "todas as abstrações devem ser construídas como classes".
+**Registro:** agrupa campos de tipos diferentes, sem comportamento. **Classe:** agrupa campos **e** funções (métodos), com controle de acesso, herança e polimorfismo (p.6 e p.9). Java "não suporta estruturas diretamente" porque não tem a palavra `struct` nem um tipo registro separado: o que seria um registro é escrito como uma classe só com atributos. A Aula 12 (p.22) confirma: em Java e Smalltalk, "todas as abstrações devem ser construídas como classes". **[Complemento]** Desde o Java 16 existe `record`, que é uma classe restrita (imutável e `final`), e não um tipo registro à parte.
 
 ## E5
 

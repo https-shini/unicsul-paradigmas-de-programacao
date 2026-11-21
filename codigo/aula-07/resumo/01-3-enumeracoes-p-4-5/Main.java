@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/02 - Resumo Teórico/resumo-aula-07.md (linha 32).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/02 - Resumo Teórico/resumo-aula-07.md (linha 34).
 // Seção: 3. Enumerações (p.4–5)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-07/resumo/01-3-enumeracoes-p-4-5/Main.java

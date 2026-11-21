@@ -89,7 +89,9 @@ verifica_dobro :-
 | `( C -> A ; B )` | Se C, então A; senão, B. |
 | `Num1`, `Dobro` | Variáveis começam com **maiúscula** em Prolog. |
 
-**[Material original] — conclusão do professor (p.8):** as diferenças entre os códigos vêm da **sintaxe** de linguagens do mesmo paradigma (Pascal × Java) e/ou das **características gerais de paradigmas diferentes** (Pascal/Java × Prolog).
+**[Material original] — conclusão do professor (p.8):** as diferenças entre os códigos vêm da **sintaxe** de linguagens de um mesmo paradigma e/ou das **características gerais de paradigmas diferentes**.
+
+**[Explicação elaborada]** O slide não diz quais pares ilustram cada caso. Java é classificado como OO (p.11), mas neste exemplo o corpo do `main` é puramente imperativo; por isso, Pascal × Java ilustra sobretudo a diferença de sintaxe, e Pascal/Java × Prolog, a diferença de paradigma.
 
 **[Explicação elaborada]** Compare:
 
@@ -174,13 +176,13 @@ Esses critérios reaparecem ao longo do curso: o escopo dinâmico prejudica a **
 
 **Figura 4 — linha do tempo 1950–2000 (p.22):** colunas *Imperative*, *Object Oriented*, *Functional* e *Logical*. Vai de A-0, FORTRAN, COBOL, ALGOL, LISP e PROLOG (anos 1950–70) até Java, Python, Haskell 98 e Visual Basic (anos 1990).
 
-> **[Atenção] — as classificações divergem.** As três primeiras figuras **não concordam** sobre a 4ª e a 5ª gerações. A árvore põe a OO na 4ª; a Figura 2 põe Java e C# na 3ª e LISP na 5ª; o mapa mental põe na 4ª linguagens de propósito específico (SQL), e não a OO. O ponto de consenso: 1ª = máquina, 2ª = Assembly, 3ª = alto nível procedimental, 5ª = lógica/declarativa. Numa prova, **diga qual classificação está usando**.
+> **[Atenção] — as classificações divergem.** As três primeiras figuras **não concordam** sobre a 4ª geração e só em parte sobre a 5ª. A árvore põe a OO na 4ª; a Figura 2 põe Java e C# na 3ª e LISP na 5ª; o mapa mental põe na 4ª linguagens de propósito específico (SQL), e não a OO. As figuras concordam na 1ª (máquina), na 2ª (Assembly) e, em linhas gerais, na 3ª (alto nível). Na 5ª, todas trazem a programação lógica (Prolog), mas a p.20 inclui também LISP. Numa prova, **diga qual classificação está usando**.
 
 **[Explicação elaborada] — a lógica da evolução:**
 
 1. **Máquina (anos 1940):** instruções em binário, específicas de cada computador.
 2. **Assembly:** mnemônicos (`ADD`, `MOV`) traduzidos 1:1 para binário por um montador.
-3. **Alto nível (Fortran, 1957):** uma instrução da linguagem vira várias de máquina; surge o compilador.
+3. **Alto nível (Fortran, 1957):** uma instrução da linguagem vira várias de máquina, e o compilador otimizador se consolida. Já existiam tradutores anteriores, como o A-0 de Grace Hopper (1952), que abre a linha do tempo da p.22.
 4. **Estruturação e abstração:** Algol, Pascal e C (estruturas de controle e procedimentos); depois Simula, Smalltalk, C++ e Java (objetos).
 5. **Ramos não von Neumann:** LISP (1958) dá origem aos funcionais; Prolog (1972), aos lógicos.
 

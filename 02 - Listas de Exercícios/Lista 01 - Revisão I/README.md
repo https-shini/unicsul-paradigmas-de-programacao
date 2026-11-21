@@ -5,7 +5,7 @@
 
 ## Assuntos e aulas relacionadas
 
-A lista é quase toda sobre os paradigmas **funcional** e **lógico**. As 11 questões são **discursivas**; duas pedem código (Clojure) e uma pede consultas (Prolog).
+A lista é quase toda sobre os paradigmas **funcional** e **lógico**. As 11 questões são **discursivas**; uma pede código Clojure (Q7), uma pede a análise de expressões Clojure (Q6) e uma pede consultas Prolog (Q11).
 
 | Questão | Assunto | Aulas |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ A lista é quase toda sobre os paradigmas **funcional** e **lógico**. As 11 que
 **Questão 5.** De acordo com a teoria do paradigma funcional, quais são os quatro componentes essenciais que uma linguagem funcional pura deve fornecer?
 
 **Questão 6.** Analise a sintaxe prefixada e as funções primitivas da linguagem Clojure. Explique o comportamento e o resultado esperado para as seguintes expressões:
-a) `(/ 10 3)` versus `(quot 10 3)` e `(rem 10 3)`
+a) `(/ 10 3)` versus `(quot 10 3)` e `(rem 10 3)`\
 b) `(not (= x 0))` e o motivo de sua utilização em Clojure.
 
 **Questão 7.** Escreva um trecho de código em Clojure que leia dois valores numéricos informados pelo usuário, vincule-os aos símbolos x e y utilizando o comando `def`, e calcule e exiba na tela (em linhas separadas) o resultado das expressões matemáticas ((x + 2) \* y) / (10 \* (x + 8)) e (3 \* y)^2 - (x + y). Explique a vantagem de usar o comando `def` nesse cenário.
@@ -56,7 +56,7 @@ pai(joao, carlos).
 pai(carlos, renata).
 ```
 
-Escreva as consultas atômicas em Prolog necessárias para responder às seguintes perguntas e indique o retorno esperado do interpretador para cada uma:
-a) João é pai de Renata?
-b) Quem é o pai de Ana?
+Escreva as consultas atômicas em Prolog necessárias para responder às seguintes perguntas e indique o retorno esperado do interpretador para cada uma:\
+a) João é pai de Renata?\
+b) Quem é o pai de Ana?\
 c) Quem são os filhos de João?

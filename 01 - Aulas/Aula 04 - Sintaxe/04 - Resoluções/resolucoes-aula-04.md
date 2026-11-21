@@ -29,7 +29,7 @@ Sintaxe é a **forma** das expressões, sentenças e unidades de programa; semâ
 | `"%d"` | string |
 | `,` | símbolo especial (separador; não aparece na lista do slide, mas pertence ao grupo) |
 
-> **[Atenção]** O slide coloca `=` entre os símbolos especiais e `==` entre os operadores. Siga essa classificação nas questões da disciplina.
+> **[Atenção]** O slide coloca `=` entre os símbolos especiais e `==` entre os operadores. Siga essa classificação nas questões da disciplina. Pela norma de C (e pelas seis classes de K&R), `=` e `&` são operadores; a divisão do slide é uma simplificação.
 
 ## E5
 
@@ -63,13 +63,13 @@ A **palavra reservada** nunca pode ser usada como identificador (`int`, `for` em
 ## E8
 
 - **1ª linha:** `2147483647`, sempre igual — é o **valor** (r-value) de `x`, o maior `int` de 32 bits.
-- **2ª linha:** um número grande (o **endereço** de `x`, l-value), que **muda** a cada execução.
+- **2ª linha:** um número grande (o **endereço** de `x`, l-value), que **muda** a cada execução. No Windows de 64 bits, `%ld` pode truncar o endereço (ver o resumo); o especificador correto é `%p`.
 - **Por que muda:** o sistema operacional sorteia a posição da pilha a cada execução (ASLR, **[Complemento]**). A variável `x` é uma abstração de células de memória (p.19): o nome é fixo, mas as células podem ser outras.
 - **Observação técnica:** o formato correto para endereços é `%p` (ver a [Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)).
 
 ## E9
 
-Em Perl, o símbolo inicial (*sigil*) indica o **tipo do valor obtido**, não o tipo da variável declarada. Um elemento de um vetor é um **escalar**, então usa `$`: `$cidades[0]`. Já `@cidades` denota o vetor inteiro. Isso mostra que, em Perl, o nome carrega informação de tipo — uma regra léxica que ajuda o leitor, mas exige aprender a convenção.
+Em Perl, o símbolo inicial (*sigil*) indica o **tipo do valor obtido**, não o tipo da variável declarada. Um elemento de um vetor é um **escalar**, então usa `$`: `$cidades[0]`. Já `@cidades` denota o vetor inteiro. `@cidades[0]` não é erro: é uma **fatia** (*slice*) de um elemento, que devolve uma lista; com `use warnings`, o Perl avisa "Scalar value @cidades[0] better written as $cidades[0]". Isso mostra que, em Perl, o nome carrega informação de tipo — uma regra léxica que ajuda o leitor, mas exige aprender a convenção.
 
 ## E10
 
@@ -79,12 +79,13 @@ import re
 
 RESERVADAS = {"int", "float", "char", "double", "if", "else", "for", "while", "return", "void"}
 
-# Ordem importa: padrões mais longos primeiro (== antes de =, ++ antes de +).
+# Ordem importa: padrões mais longos primeiro (== antes de =, ++ antes de +, += antes de +).
 PADROES = [
     ("string",            r'"[^"]*"'),
+    ("constante",         r"'(?:\\.|[^'\\])'"),   # literal de caractere: 'c', '\n'
     ("constante",         r'\d+\.\d+|\d+'),
     ("nome",              r'[A-Za-z_]\w*'),
-    ("operador",          r'\+\+|--|==|!=|<=|>=|[+\-*/%<>]'),
+    ("operador",          r'->|\+\+|--|&&|\|\||<<=|>>=|<<|>>|[-+*/%&|^]=|==|!=|<=|>=|[-+*/%<>!~^|.?:]'),
     ("simbolo especial",  r'[=&()\[\]{};,]'),
     ("espaco",            r'\s+'),
 ]
@@ -112,7 +113,8 @@ analisar(input())
 - Cada grupo de token vira um **padrão** (expressão regular).
 - O laço tenta casar um padrão na posição atual: o trecho casado é o **lexema** e o nome do padrão é o **token**.
 - Identificadores e palavras reservadas têm o **mesmo padrão**; a distinção é feita consultando a tabela `RESERVADAS` — é assim que analisadores reais fazem.
-- Um caractere que não casa com nada (como `@`) gera **erro léxico**, que é o caso 3 do E5.
+- Um caractere que não casa com nada (como `@` ou `$`) gera **erro léxico**, que é o caso 3 do E5.
+- O analisador cobre um **subconjunto** de C: reconhece `!x`, `+=`, `&&`, `->` e literais de caractere como `'c'`, mas não trata comentários, diretivas `#include` nem números como `1e10` ou `0x1F`.
 
 Saída para `soma = x + 10;`:
 
@@ -128,10 +130,10 @@ x -> identificador
 ## E11
 
 ```text
-<atrib> ::= <id> = <expr> ;
+<atrib> ::= id = <expr> ;
 <expr>  ::= <expr> + <termo> | <termo>
 <termo> ::= <termo> * <fator> | <fator>
-<fator> ::= ( <expr> ) | <id> | <num>
+<fator> ::= ( <expr> ) | id | num
 ```
 
 **Por que `*` tem precedência:** para chegar a um `+`, a derivação passa por `<expr>`; os `*` são gerados mais abaixo, em `<termo>`. Assim, em `a + b * c`, o `b * c` vira uma subárvore de `<termo>` que é filha do `+`, e portanto é avaliada antes. A recursão à esquerda (`<expr> ::= <expr> + ...`) dá associatividade à esquerda: `a + b + c` = `(a + b) + c`.

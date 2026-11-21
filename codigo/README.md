@@ -30,16 +30,16 @@ Também é possível usar cada ferramenta diretamente:
 
 | Linguagem | Programas |
 | --- | :-: |
-| C | 39 |
+| C | 45 |
 | C++ | 12 |
-| Java | 25 |
+| Java | 28 |
 | C# | 2 |
 | Python | 6 |
 | PHP | 2 |
-| Perl | 2 |
-| Clojure | 9 |
-| Prolog | 13 |
-| **Total** | **110** |
+| Perl | 3 |
+| Clojure | 11 |
+| Prolog | 16 |
+| **Total** | **125** |
 
 ## Índice
 
@@ -56,6 +56,7 @@ Também é possível usar cada ferramenta diretamente:
 | [`aula-03/resolucoes/01-c-grupo-1-compilada.c`](aula-03/resolucoes/01-c-grupo-1-compilada.c) | C | [resolucoes-aula-03.md — C (Grupo 1, compilada)](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/04%20-%20Resoluções/resolucoes-aula-03.md#c-grupo-1-compilada) |
 | [`aula-03/resolucoes/02-python-grupo-1-interpretada.py`](aula-03/resolucoes/02-python-grupo-1-interpretada.py) | Python | [resolucoes-aula-03.md — Python (Grupo 1, interpretada)](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/04%20-%20Resoluções/resolucoes-aula-03.md#python-grupo-1-interpretada) |
 | [`aula-03/resolucoes/03-java-referencia-para-a-comparacao-hibrida/Main.java`](aula-03/resolucoes/03-java-referencia-para-a-comparacao-hibrida/Main.java) | Java | [resolucoes-aula-03.md — Java (referência para a comparação, híbrida)](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/04%20-%20Resoluções/resolucoes-aula-03.md#java-referência-para-a-comparação-híbrida) |
+| [`aula-03/resolucoes/04-perl-grupo-2-interpretada.pl`](aula-03/resolucoes/04-perl-grupo-2-interpretada.pl) | Perl | [resolucoes-aula-03.md — Perl (Grupo 2, interpretada)](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/04%20-%20Resoluções/resolucoes-aula-03.md#perl-grupo-2-interpretada) |
 
 ### aula-04
 
@@ -218,13 +219,27 @@ Também é possível usar cada ferramenta diretamente:
 
 | Programa | Linguagem | Origem |
 | --- | --- | --- |
-| [`simulados/resolucao/01-parte-a-comentarios.c`](simulados/resolucao/01-parte-a-comentarios.c) | C | [resolucao-simulado-01.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#parte-a--comentários) |
-| [`simulados/resolucao/02-parte-a-comentarios.c`](simulados/resolucao/02-parte-a-comentarios.c) | C | [resolucao-simulado-01.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#parte-a--comentários) |
-| [`simulados/resolucao/03-parte-a-comentarios.pl`](simulados/resolucao/03-parte-a-comentarios.pl) | Prolog | [resolucao-simulado-01.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#parte-a--comentários) |
-| [`simulados/resolucao/04-13.c`](simulados/resolucao/04-13.c) | C | [resolucao-simulado-01.md — 13](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#13) |
-| [`simulados/resolucao/05-14.clj`](simulados/resolucao/05-14.clj) | Clojure | [resolucao-simulado-01.md — 14](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#14) |
-| [`simulados/resolucao/06-15.pl`](simulados/resolucao/06-15.pl) | Prolog | [resolucao-simulado-01.md — 15](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#15) |
+| [`simulados/resolucao-01/01-parte-a-comentarios.c`](simulados/resolucao-01/01-parte-a-comentarios.c) | C | [resolucao-simulado-01.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#parte-a--comentários) |
+| [`simulados/resolucao-01/02-parte-a-comentarios.c`](simulados/resolucao-01/02-parte-a-comentarios.c) | C | [resolucao-simulado-01.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#parte-a--comentários) |
+| [`simulados/resolucao-01/03-parte-a-comentarios.pl`](simulados/resolucao-01/03-parte-a-comentarios.pl) | Prolog | [resolucao-simulado-01.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#parte-a--comentários) |
+| [`simulados/resolucao-01/04-13.c`](simulados/resolucao-01/04-13.c) | C | [resolucao-simulado-01.md — 13](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#13) |
+| [`simulados/resolucao-01/05-14.clj`](simulados/resolucao-01/05-14.clj) | Clojure | [resolucao-simulado-01.md — 14](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#14) |
+| [`simulados/resolucao-01/06-15.pl`](simulados/resolucao-01/06-15.pl) | Prolog | [resolucao-simulado-01.md — 15](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md#15) |
+| [`simulados/resolucao-02/01-parte-a-comentarios.c`](simulados/resolucao-02/01-parte-a-comentarios.c) | C | [resolucao-simulado-02.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md#parte-a--comentários) |
+| [`simulados/resolucao-02/02-12.c`](simulados/resolucao-02/02-12.c) | C | [resolucao-simulado-02.md — 12](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md#12) |
+| [`simulados/resolucao-02/03-13.c`](simulados/resolucao-02/03-13.c) | C | [resolucao-simulado-02.md — 13](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md#13) |
+| [`simulados/resolucao-02/04-14.c`](simulados/resolucao-02/04-14.c) | C | [resolucao-simulado-02.md — 14](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md#14) |
+| [`simulados/resolucao-02/05-15.c`](simulados/resolucao-02/05-15.c) | C | [resolucao-simulado-02.md — 15](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md#15) |
+| [`simulados/resolucao-03/01-parte-a-comentarios.pl`](simulados/resolucao-03/01-parte-a-comentarios.pl) | Prolog | [resolucao-simulado-03.md — Parte A — comentários](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#parte-a--comentários) |
+| [`simulados/resolucao-03/02-11/Main.java`](simulados/resolucao-03/02-11/Main.java) | Java | [resolucao-simulado-03.md — 11](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#11) |
+| [`simulados/resolucao-03/03-12/Main.java`](simulados/resolucao-03/03-12/Main.java) | Java | [resolucao-simulado-03.md — 12](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#12) |
+| [`simulados/resolucao-03/04-13.clj`](simulados/resolucao-03/04-13.clj) | Clojure | [resolucao-simulado-03.md — 13](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#13) |
+| [`simulados/resolucao-03/05-14.pl`](simulados/resolucao-03/05-14.pl) | Prolog | [resolucao-simulado-03.md — 14](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#14) |
+| [`simulados/resolucao-03/06-15/Main.java`](simulados/resolucao-03/06-15/Main.java) | Java | [resolucao-simulado-03.md — 15](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#15) |
+| [`simulados/resolucao-03/07-15.clj`](simulados/resolucao-03/07-15.clj) | Clojure | [resolucao-simulado-03.md — 15](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#15) |
+| [`simulados/resolucao-03/08-15.pl`](simulados/resolucao-03/08-15.pl) | Prolog | [resolucao-simulado-03.md — 15](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md#15) |
 | [`simulados/simulado-01/01-parte-a-questoes-objetivas-1-ponto-cada.c`](simulados/simulado-01/01-parte-a-questoes-objetivas-1-ponto-cada.c) | C | [simulado-01.md — Parte A — Questões objetivas (1 ponto cada)](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-01.md#parte-a--questões-objetivas-1-ponto-cada) |
+| [`simulados/simulado-02/01-parte-b-questoes-discursivas-e-de-programacao-2.c`](simulados/simulado-02/01-parte-b-questoes-discursivas-e-de-programacao-2.c) | C | [simulado-02.md — Parte B — Questões discursivas e de programação (2 pontos cada)](../04%20-%20Provas%20e%20Avaliações/Simulados/simulado-02.md#parte-b--questões-discursivas-e-de-programação-2-pontos-cada) |
 
 ### revisoes
 

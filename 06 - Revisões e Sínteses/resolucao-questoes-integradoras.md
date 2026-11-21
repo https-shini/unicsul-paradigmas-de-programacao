@@ -181,7 +181,7 @@ Resultado:
 - `+` com `int`, `double` e `String` é **sobrecarga** de operador, ou seja, **polimorfismo estático**: o mesmo símbolo tem significados diferentes conforme os **tipos dos operandos**, e o compilador escolhe o significado na compilação.
 - **Não é sobrescrita:** não há herança nem redefinição em subclasse.
 - Em `"Total: " + 5` há **sobrecarga + conversão implícita**: como um operando é `String`, o compilador escolhe a concatenação e converte o `5` para `"5"`.
-- **[Complemento]** É uma das poucas coerções que Java permite. Ela é segura, porque não perde informação. Por isso não contradiz a classificação de Java como fortemente tipada.
+- **[Complemento]** Java também faz coerções implícitas de alargamento (em `2.5 + 3`, o `3` vira `double`; `int` → `float` pode até perder precisão). O que Java recusa são as conversões implícitas de estreitamento, como `double` → `int`, que exigem *cast*. Por isso a conversão para `String` em `"Total: " + 5` não contradiz a classificação de Java como fortemente tipada.
 
 ## QI7
 

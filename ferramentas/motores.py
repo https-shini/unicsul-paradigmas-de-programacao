@@ -68,8 +68,8 @@ roda :-
     term_string(G, {consulta!r}, [variable_names(Vs)]),
     forall(call(G), mostra(Vs)),
     write('false.'), nl.
-mostra([]) :- !, nl, write(true), nl.
-mostra(Vs) :- nl, mostra_vars(Vs), nl.
+mostra([]) :- !, write(true), nl.
+mostra(Vs) :- mostra_vars(Vs), nl.
 mostra_vars([N=V]) :- !, format('~w = ~q', [N, V]).
 mostra_vars([N=V|R]) :- format('~w = ~q, ', [N, V]), mostra_vars(R).
 """)
@@ -82,7 +82,7 @@ def preparar(linguagem, codigo, d, params=None, nome=None):
     if linguagem in ("c", "cpp"):
         src = os.path.join(d, "programa" + EXT[linguagem])
         open(src, "w", encoding="utf-8").write(codigo)
-        comp = ["gcc", "-std=c11"] if linguagem == "c" else ["g++", "-std=c++17"]
+        comp = (["gcc", "-std=c11", "-Werror=implicit-function-declaration"] if linguagem == "c" else ["g++", "-std=c++17"])
         rc, o, e = _run(comp + ["-w", "-o", os.path.join(d, "programa"), src, "-lm"])
         return [os.path.join(d, "programa")], Resultado(rc == 0, o, e, rc, "compilação")
     if linguagem == "java":

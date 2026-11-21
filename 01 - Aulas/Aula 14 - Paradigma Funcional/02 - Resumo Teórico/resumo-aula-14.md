@@ -170,7 +170,7 @@
 - Sem `def`, cada `(read)` lê um valor **novo**. Para usar x em duas expressões, seria preciso digitá-lo duas vezes.
 - `def` cria um **vínculo** nome → valor. Não é uma "variável" no sentido imperativo: o valor não é reatribuído ao longo do cálculo. **[Complemento]** Tecnicamente, `def` cria uma *var* global, que pode ser redefinida, mas o estilo funcional evita isso.
 
-**Atividade 2 (p.20):** ler x e y e mostrar, um por linha: x + y − 10; x + 2·y; (x + 2)·y; (x + 2)·y / [10·(x + 8)]; (3·y)² − (x + y). Solução testada na [resolução](../04%20-%20Resoluções/resolucoes-aula-14.md#e8--atividade-2-original-p20). Na p.20, "(3 * y)2" significa (3y)², com o sobrescrito perdido.
+**Atividade 2 (p.20):** ler x e y e mostrar, um por linha: x + y − 10; x + 2·y; (x + 2)·y; (x + 2)·y / [10·(x + 8)]; (3·y)² − (x + y). Solução testada na [resolução](../04%20-%20Resoluções/resolucoes-aula-14.md#e8--atividade-2-original-p20). Na p.20, "(3 * y)2" significa (3y)²: o expoente aparece formatado como subscrito.
 
 ### 7.4 Predicados numéricos (p.21, 23)
 

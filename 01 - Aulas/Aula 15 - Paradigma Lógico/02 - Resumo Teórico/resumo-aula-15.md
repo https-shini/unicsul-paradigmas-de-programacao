@@ -136,6 +136,8 @@ Variáveis só aparecem nas proposições **precedidas por quantificadores** (p.
 | **Fato** | Proposição **assumida como verdadeira** | `homem(joao).` — João é homem; `pai(joao, maria).` — João é pai de Maria |
 | **Consulta** (objetivo) | Proposição cuja **verdade deve ser verificada** | `homem(joao).` → true/false; `pai(joao, maria).` → true/false; `pai(X, maria).` → **por unificação**, encontra X que torna a proposição verdadeira |
 
+> **[Atenção]** Nos slides (p.16–17), alguns fatos aparecem com espaço entre o nome e o parêntese, como `pai (joao, maria).`. Em Prolog isso é **erro de sintaxe**: o functor deve vir colado ao `(`. Escreva `pai(joao, maria).`
+
 **Interação (p.18):** depois de definir fatos e regras, pode-se interagir com o programa **digitando consultas no prompt** do interpretador ou **criando um programa** que faz consultas pré-determinadas.
 
 **[Explicação elaborada] — unificação:** é o processo de tornar dois termos **iguais** atribuindo valores às variáveis. Para responder `pai(X, maria)`, o Prolog percorre os fatos **na ordem** e tenta casar `pai(X, maria)` com cada um. `pai(joao, maria)` casa se **X = joao**, então essa é a resposta. Se o usuário pedir mais soluções (`;`), o Prolog **volta** e continua procurando — é o *backtracking*. **[Complemento]** O mecanismo completo de execução de Prolog combina unificação, **resolução** (a regra de inferência) e **backtracking** (busca em profundidade com retrocesso). O material cita só a unificação.
@@ -235,7 +237,7 @@ Jose gosta de quem? []
 | `:- initialization(main).` | Diretiva: ao carregar o programa, executar `main` |
 | `main :- ... .` | **Regra**: "`main` é verdadeiro se todos os objetivos do corpo forem satisfeitos" |
 | `,` | Conjunção ("e"): objetivos em sequência |
-| `( C -> A ; B )` | Se C é provável, executa A; senão, B |
+| `( C -> A ; B )` | Se C pode ser provado (tem solução), executa A; senão, B |
 | `findall(X, Objetivo, Lista)` | Reúne **todas** as soluções de X numa lista — `[]` se não houver nenhuma |
 | `write/1`, `nl/0` | Escreve um termo; pula linha |
 

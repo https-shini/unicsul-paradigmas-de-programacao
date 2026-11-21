@@ -66,7 +66,7 @@ int main(void) {
 - **Por valor:** o valor do parâmetro real é passado ao formal (entrada). É feita uma **cópia**, o que exige mais espaço.
 - **Por referência:** em vez de copiar, o parâmetro formal oferece um **caminho (ponteiro)** de acesso ao dado existente no parâmetro real.
 
-Os modelos são aprofundados na [Aula 11](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md#5-os-quatro-modelos-semânticos-de-passagem-p1318).
+Os modelos são aprofundados na [Aula 11](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md#5-modelos-de-passagem-de-parâmetros-semânticos-e-de-implementação-p1318).
 
 ### Exemplo 1 — C#, `ref` (p.9)
 
@@ -182,6 +182,9 @@ class Pessoa {
 - Outro fator, que também define **onde** a variável fica na memória, é a forma de **alocação**:
   - **Estática:** realizada em **tempo de compilação**; o tamanho **não pode ser alterado**.
   - **Dinâmica:** realizada em **tempo de execução**; o tamanho **pode ser alterado**.
+
+> **[Atenção]** A Aula 07 (p.11) diz que, depois de criado, o vetor "não pode" mudar de tamanho; aqui (p.13), a alocação dinâmica tem tamanho que "pode ser alterado". As duas frases se conciliam assim: a alocação dinâmica permite **escolher** o tamanho em execução; para "alterá-lo", reserva-se um novo bloco e copiam-se os dados (é o que `realloc` faz em C, podendo mover o bloco; ver E10). Um `new int[n]` em C++ ou um array Java não mudam de tamanho.
+
 - **Regiões da memória (figura da p.13, de cima para baixo):** **Código**, **Estático**, **Heap**, **Memória livre**, **Pilha**. Heap e pilha crescem em direção à memória livre.
 
 **[Explicação elaborada] — o que vai em cada região:**
@@ -204,11 +207,11 @@ flowchart TB
 
 O heap só é acessível **por ponteiros**: `new` devolve um endereço, guardado numa variável ponteiro, que pode estar na pilha.
 
-> **[Complemento]** A "alocação estática" do slide inclui, na prática, duas coisas: o segmento estático (globais) e a pilha (locais), ambos com tamanho conhecido em compilação. Sebesta (seção 5.4.3) separa as variáveis em estáticas, dinâmicas na pilha, dinâmicas no heap explícitas e implícitas.
+> **[Complemento]** Em textos introdutórios, a "alocação estática" costuma abranger tudo o que não é criado com `new`/`malloc`: globais e `static` (segmento estático) e locais (pilha), porque o **tamanho** de ambas é conhecido em compilação. Rigorosamente, só as globais e `static` são alocadas antes da execução; as locais são alocadas **em execução**, a cada chamada, quando o frame é empilhado. Por isso Sebesta (seção 5.4.3) separa as variáveis em estáticas, dinâmicas da pilha e dinâmicas do heap (explícitas e implícitas).
 
 ### Exemplo 4 — C++, onde cada variável mora (p.14)
 
-**[Material original]** "Execute o código e verifique os endereços de cada uma das variáveis. Analise quais estão armazenadas no mesmo espaço de memória e quais estão separadas." Código do slide:
+**[Material original]** "Execute o código e verifique os endereços de cada uma das variáveis. Analise quais estão armazenadas no mesmo espaço de memória e quais estão separadas." Código do slide (os comentários à direita foram acrescentados pelo repositório):
 
 ```cpp
 #include <iostream>

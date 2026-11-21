@@ -4,7 +4,9 @@
 
 ## Indicados pelo professor
 
-**[Material original]** A aula não traz slide de bibliografia. As referências da Aula 12 cobrem o tema: Sebesta (9ª ed.), **cap. 12** — suporte à programação orientada a objetos, com herança, vinculação dinâmica e herança múltipla —, e Tucker & Noonan, **cap. 13**.
+**[Material original]** A aula não traz slide de bibliografia.
+
+**[Explicação elaborada]** As referências da Aula 12 (p.31) cobrem o tema: Sebesta (9ª ed.), **cap. 12** — suporte à programação orientada a objetos, com herança, vinculação dinâmica e herança múltipla —, e Tucker & Noonan, **cap. 13**.
 
 ## Selecionados para estudo
 

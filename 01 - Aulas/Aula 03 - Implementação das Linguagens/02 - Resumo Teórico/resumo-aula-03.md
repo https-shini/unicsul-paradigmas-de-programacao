@@ -7,7 +7,7 @@
 
 ## 1. Revisão (p.2–6)
 
-**[Material original]** A aula abre com "Na aula passada…" e repete as quatro figuras de gerações e a linha do tempo da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#8-evolução-das-linguagens-p1822).
+**[Material original]** A aula abre com "Na aula passada…" e repete as três figuras de gerações e a linha do tempo (as quatro figuras das p.19–22 da Aula 02) da [Aula 02](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md#8-evolução-das-linguagens-p1822).
 
 ## 2. A tese da aula (p.7)
 
@@ -46,7 +46,7 @@ flowchart TD
 
 | Fase | Entrada → saída | Exemplo com `soma = x + 10;` | Aula |
 | --- | --- | --- | --- |
-| Léxica | Caracteres → tokens | `soma` (identificador), `=` (operador), `x`, `+`, `10` (constante), `;` | 04 |
+| Léxica | Caracteres → tokens | `soma` (identificador), `=` (símbolo especial na classificação da Aula 04, p.9; em C é o operador de atribuição), `x`, `+` (operador), `10` (constante), `;` | 04 |
 | Sintática | Tokens → árvore sintática | Atribuição cujo lado direito é a soma de `x` e `10` | 04 |
 | Semântica / código intermediário | Árvore → código intermediário verificado | Verifica se `soma` e `x` foram declaradas e se os tipos são compatíveis; gera `t1 = x + 10; soma = t1` | 05, 06 |
 | Otimização (opcional) | Intermediário → intermediário melhor | Remove temporários desnecessários | — |
@@ -113,7 +113,7 @@ Soluções comentadas em C, Python e Java estão em [resolucoes-aula-03.md](../0
 | C, C++, Fortran, Pascal, Go, Rust | Compilada | Gera executável nativo |
 | Java, Kotlin, Scala, C#, F#, VB.NET | Híbrida | Bytecode/CIL + VM com JIT |
 | Python | Interpretada (slide) | O CPython compila internamente para bytecode `.pyc`, o que é tecnicamente híbrido |
-| PHP, JavaScript, Ruby, Perl, Lua | Interpretadas | Motores modernos (V8) usam JIT |
+| PHP, JavaScript, Ruby, Perl, Lua | Interpretadas (classificação usual) | Como o CPython, as implementações de referência compilam internamente para bytecode/opcodes; motores modernos (V8) usam JIT |
 | Erlang, Elixir | Híbridas | Bytecode para a máquina virtual BEAM |
 | LISP, Prolog, Haskell | Interpretadas ou compiladas | Haskell (GHC) é normalmente compilado |
 
