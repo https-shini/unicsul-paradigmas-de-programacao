@@ -1,4 +1,4 @@
-;; Gerado automaticamente a partir de 01 - Aulas/Aula 14 - Paradigma Funcional/02 - Resumo Teórico/resumo-aula-14.md (linha 186).
+;; Gerado automaticamente a partir de 01 - Aulas/Aula 14 - Paradigma Funcional/02 - Resumo Teórico/resumo-aula-14.md (linha 190).
 ;; Seção: 7.4 Predicados numéricos (p.21, 23)
 ;; Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 ;; Como executar:  python3 ferramentas/rodar.py codigo/aula-14/resumo/04-7-4-predicados-numericos-p-21-23.clj

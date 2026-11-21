@@ -1,0 +1,61 @@
+name: Atualizar navegação
+
+# Depois de cada envio para a main — inclusive uma nota criada ou uma foto enviada pelo navegador —,
+# regenera as partes automáticas da base de conhecimento e faz o commit delas:
+# galerias de PDFs novos, codigo/, trilhas, índices de pasta, backlinks, links de página e MAPA.md.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.md"
+      - "**.pdf"
+      - "**.PDF"
+      - "**.png"
+      - "**.jpg"
+      - "**.jpeg"
+      - "**.webp"
+      - "**.gif"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: navegacao
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependências (poppler e Pillow, para as galerias)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          pip install -q pillow
+      - name: Galerias dos PDFs novos
+        run: python3 ferramentas/geradores/gerar_galerias.py --novos
+      - name: Pasta codigo/
+        run: python3 ferramentas/gerar_codigo.py
+      - name: Navegação
+        run: python3 ferramentas/geradores/gerar_navegacao.py
+      - name: Commit das atualizações
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada a atualizar."
+          else
+            git commit -m "Atualiza navegação, índices e galerias (automático)"
+            git push
+          fi
+      - name: Conferir links (aviso, não bloqueia)
+        continue-on-error: true
+        run: python3 ferramentas/verificar_links.py

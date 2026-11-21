@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › **04 - Provas e Avaliações** · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # 04 — Provas e Avaliações
 
 > **[Atenção]** O material fornecido **não contém provas** nem gabaritos do professor. Nada aqui é prova oficial ou antecipa o conteúdo das avaliações.
@@ -29,3 +33,14 @@ Detalhes e exemplos de cálculo: [ementa](../00%20-%20Planejamento%20e%20Organiz
 > **[Atenção]** Os simulados foram elaborados para este repositório. O formato discursivo segue as listas do professor; as questões objetivas foram incluídas para treino rápido. Não indicam o formato real da prova.
 
 **Autocorreção:** as questões de programação dos simulados podem ser conferidas com `python3 ferramentas/verificar.py simulado-02 13 minha_solucao.c` (troque o simulado, a questão e o arquivo). Use `--listar` para ver tudo o que tem correção automática.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [03 — Trabalhos e Projetos](../03%20-%20Trabalhos%20e%20Projetos/README.md) · [05 — Materiais Complementares](../05%20-%20Materiais%20Complementares/README.md) →
+
+**Links para esta página (2):** [Inventário dos materiais originais](../00%20-%20Planejamento%20e%20Organização/inventario-dos-materiais.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

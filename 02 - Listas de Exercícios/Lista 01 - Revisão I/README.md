@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [02 - Listas de Exercícios](../README.md) › **Lista 01** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Lista 01 — Revisão I ("Exercícios para treinar")
 
 > **Original:** [`Aula16a_ExRevisao1.pdf`](01%20-%20Enunciado%20Original/Aula16a_ExRevisao1.pdf) (2 páginas). Lista de revisão disponibilizada pelo professor.
@@ -60,3 +64,14 @@ Escreva as consultas atômicas em Prolog necessárias para responder às seguint
 a) João é pai de Renata?\
 b) Quem é o pai de Ana?\
 c) Quem são os filhos de João?
+
+
+<!-- nav:rodape -->
+
+---
+
+[Lista 02](../Lista%2002%20-%20Revisão%20II/README.md) →
+
+**Links para esta página (8):** [Cronograma](../../00%20-%20Planejamento%20e%20Organização/cronograma.md) · [Aula 15 · Resumo](../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Lista 01 · Resolução](02%20-%20Resolução/resolucao-lista-01.md) · [02 — Listas de Exercícios](../README.md) · [04 — Provas e Avaliações](../../04%20-%20Provas%20e%20Avaliações/README.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas…](../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../README.md)
+
+<!-- /nav:rodape -->

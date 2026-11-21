@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 12](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 12 — Paradigma Orientado a Objetos I · Resumo teórico
 
-> **Fonte:** [`Aula12_ParadigmaOrientadoObjetos1.pdf`](../01%20-%20Slides%20Originais/Aula12_ParadigmaOrientadoObjetos1.pdf) (31 páginas). Título interno: "Aula 13 – Paradigma Orientado a Objetos – Parte 1". Apoio indicado: Tucker & Noonan, cap. 13; Sebesta (9ª ed.), caps. 11 e 12 (p.31).
+> **Fonte:** [`Aula12_ParadigmaOrientadoObjetos1.pdf`](../01%20-%20Slides%20Originais/Aula12_ParadigmaOrientadoObjetos1.pdf) (31 páginas). Título interno: "Aula 13 – Paradigma Orientado a Objetos – Parte 1". Apoio indicado: Tucker & Noonan, cap. 13; Sebesta (9ª ed.), caps. 11 e 12 ([p.31](../01%20-%20Slides%20Originais/README.md#página-31)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF. Os códigos Java e C++ foram compilados e executados; nos testes, a pilha recebeu 5, 10 e 15 (ou 1 a 5).
 
 ---
@@ -17,19 +21,19 @@
 - Necessidade de aumentar a **produtividade** dos programadores por meio de **reusabilidade**, **manutenibilidade** e **extensibilidade**.
 - Os recursos dos paradigmas **imperativo, funcional e lógico** dificultavam essas tarefas.
 
-| Qualidade | Definição (p.4) |
+| Qualidade | Definição ([p.4](../01%20-%20Slides%20Originais/README.md#página-4)) |
 | --- | --- |
 | **Reusabilidade** | Utilizar conceitos ou soluções previamente elaborados para criar um novo software |
 | **Extensibilidade** | Facilidade de **estender** o software: adicionar novas funcionalidades |
 | **Manutenibilidade** | Facilidade de **alterar** o software: corrigir bugs, alterar funcionalidades |
 
-**Histórico (p.5):**
+**Histórico ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)):**
 
 - O modelo de abstração por **decomposição funcional** (abstração de processos) não era adequado para determinados problemas.
 - Os **pacotes** — tipos de dados abstratos dos anos 1980 — tinham problemas, como a **inexistência de mecanismos automáticos de inicialização e finalização** de valores.
 - As primeiras ideias surgiram no **SIMULA 67** e evoluíram até o **Smalltalk 80**, considerado uma linguagem **OO pura**.
 
-**Os três recursos principais da POO (p.6):**
+**Os três recursos principais da POO ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)):**
 
 1. **Tipos de dados abstratos** (classes).
 2. **Herança**.
@@ -39,11 +43,14 @@
 
 ## 3. O exemplo progressivo da pilha (p.7–16)
 
-**[Material original]** Pilha é uma estrutura de dados que **só permite inserir e retirar elementos no seu topo** (LIFO). A figura da p.7 mostra: empilhar 10 (topo = 0), empilhar 5 (topo = 1), empilhar 15 (topo = 2), desempilhar (topo = 1), empilhar 25 (topo = 2), desempilhar (topo = 1).
+**[Material original]** Pilha é uma estrutura de dados que **só permite inserir e retirar elementos no seu topo** (LIFO). A figura da [p.7](../01%20-%20Slides%20Originais/README.md#página-7) mostra: empilhar 10 (topo = 0), empilhar 5 (topo = 1), empilhar 15 (topo = 2), desempilhar (topo = 1), empilhar 25 (topo = 2), desempilhar (topo = 1).
+
+<!-- figura: aula12 página 7 -->
+<p align="center"><a href="../01%20-%20Slides%20Originais/README.md#página-7"><img src="../01%20-%20Slides%20Originais/paginas/aula12-p07.webp" width="640" alt="Slide da página 7: operações de empilhar e desempilhar"></a><br><sub>Slide original, página 7: operações de empilhar e desempilhar. Clique para abrir na galeria.</sub></p>
 
 O professor mostra **quatro versões** do mesmo programa em Java, que empilha números lidos do teclado e depois os desempilha e imprime. Cada versão acrescenta um nível de abstração.
 
-> **[Atenção]** O enunciado (p.8) fala em "empilhar **três** números", mas os laços de todas as versões Java vão de 0 a 4 (**cinco** números). Só a versão C++ da p.30 usa 3.
+> **[Atenção]** O enunciado ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)) fala em "empilhar **três** números", mas os laços de todas as versões Java vão de 0 a 4 (**cinco** números). Só a versão C++ da [p.30](../01%20-%20Slides%20Originais/README.md#página-30) usa 3.
 
 ### Versão 1a — tudo no `main` (p.8–9)
 
@@ -194,7 +201,7 @@ public class Main {
 }
 ```
 
-> **[Atenção]** No slide (p.13), o "construtor" está escrito `public void Pilha() { topo = 0; }`. Com o tipo de retorno `void`, isso **não é um construtor**, e sim um método comum chamado `Pilha`, que `new Pilha()` não executa. O programa funciona mesmo assim porque o Java inicializa `topo` com 0 por padrão. O mesmo acontece na versão 1d (p.15 e p.29, `public void Pilha() { this.topo = null; }`). Construtor não tem tipo de retorno: `public Pilha() { ... }`, como no código acima.
+> **[Atenção]** No slide ([p.13](../01%20-%20Slides%20Originais/README.md#página-13)), o "construtor" está escrito `public void Pilha() { topo = 0; }`. Com o tipo de retorno `void`, isso **não é um construtor**, e sim um método comum chamado `Pilha`, que `new Pilha()` não executa. O programa funciona mesmo assim porque o Java inicializa `topo` com 0 por padrão. O mesmo acontece na versão 1d ([p.15](../01%20-%20Slides%20Originais/README.md#página-15) e [p.29](../01%20-%20Slides%20Originais/README.md#página-29), `public void Pilha() { this.topo = null; }`). Construtor não tem tipo de retorno: `public Pilha() { ... }`, como no código acima.
 
 **Resposta:** **não é possível** acessar `vetPilha`, que é `private` — `pilha.vetPilha[0] = 9` não compila. E **não** seria preciso mudar o `main` se a representação mudasse: ele só depende de `push` e `pop`. É a **abstração de dados** com **encapsulamento**, um TDA.
 
@@ -262,7 +269,7 @@ public class Main {                     // main IDÊNTICO ao da versão com veto
 }
 ```
 
-**Resposta:** **nenhuma mudança** no `main` — a p.16 põe os dois `main` lado a lado e eles são idênticos. A interface (`push`/`pop`) **não depende da representação** (vetor ou lista).
+**Resposta:** **nenhuma mudança** no `main` — a [p.16](../01%20-%20Slides%20Originais/README.md#página-16) põe os dois `main` lado a lado e eles são idênticos. A interface (`push`/`pop`) **não depende da representação** (vetor ou lista).
 
 **[Explicação elaborada] — resumo da progressão:**
 
@@ -293,7 +300,7 @@ public class Main {                     // main IDÊNTICO ao da versão com veto
   - As funções são chamadas de **funções membros** ou **métodos**.
   - **Todas as instâncias compartilham o mesmo conjunto de métodos, mas cada instância tem seu próprio conjunto de atributos.**
 
-**Tipos de dados abstratos (p.20):**
+**Tipos de dados abstratos ([p.20](../01%20-%20Slides%20Originais/README.md#página-20)):**
 
 - permitem declarar variáveis do tipo;
 - ocultam a representação interna — as operações são a única forma de acesso;
@@ -301,13 +308,13 @@ public class Main {                     // main IDÊNTICO ao da versão com veto
 - têm uma **interface que não depende** da representação nem da implementação das operações;
 - permitem que outras unidades do programa, os **clientes**, usem seus serviços.
 
-**Vantagens — confiabilidade e legibilidade (p.21):**
+**Vantagens — confiabilidade e legibilidade ([p.21](../01%20-%20Slides%20Originais/README.md#página-21)):**
 
 1. Clientes **não podem alterar os atributos diretamente**, nem de propósito nem por acidente.
 2. Reduz a quantidade de código e de variáveis que o programador precisa acompanhar num trecho.
 3. Reduz **conflitos de nomes**, por gerar escopos menores.
 
-**Implementação de TDAs (p.22):**
+**Implementação de TDAs ([p.22](../01%20-%20Slides%20Originais/README.md#página-22)):**
 
 - As primeiras linguagens usavam **pacotes**.
 - **C++, C# e Object Pascal (Delphi)** permitem abstração por **classes** e por **registros** (`struct`/`record`).
@@ -321,7 +328,7 @@ public class Main {                     // main IDÊNTICO ao da versão com veto
 - Suas variáveis — **atributos** ou **variáveis de instância** — podem ser **inicializadas por construtores** e **finalizadas por destrutores**. As demais funções são **métodos**.
 - **Cliente** de uma classe X é qualquer outra classe ou método que declara e usa um objeto de X.
 
-**Modificadores de acesso (p.25):**
+**Modificadores de acesso ([p.25](../01%20-%20Slides%20Originais/README.md#página-25)):**
 
 | Modificador | Quem acessa |
 | --- | --- |
@@ -331,14 +338,14 @@ public class Main {                     // main IDÊNTICO ao da versão com veto
 
 Em geral, **métodos são públicos** e **atributos são privados ou protegidos**, acessados por métodos **get** e **set**.
 
-**Classe em C++ × Java (p.26–27):** em C++, a classe pode ser criada de duas maneiras:
+**Classe em C++ × Java ([p.26–27](../01%20-%20Slides%20Originais/README.md#página-26)):** em C++, a classe pode ser criada de duas maneiras:
 
 1. **Definição completa na própria classe** (interface e implementação no mesmo arquivo) — "ideal para a programação de sistemas de tempo real".
 2. **Interface e implementação em arquivos separados** (`.h` e `.cpp`) — melhora a legibilidade e facilita a manutenção.
 
 Em Java, a classe é sempre definida inteira num único arquivo `.java`.
 
-**Pilha com vetor em C++, separada (p.27):**
+**Pilha com vetor em C++, separada ([p.27](../01%20-%20Slides%20Originais/README.md#página-27)):**
 
 ```cpp
 // Arquivo pilha.h — INTERFACE
@@ -400,11 +407,11 @@ int Pilha::pop() {
 - Em algumas linguagens, é **dever do programador** prever a liberação desses recursos e da memória durante a destruição do objeto.
 - Algumas linguagens fazem **coleta de lixo automática** (Java).
 
-A p.29 reúne numa só tela as três classes Java da versão 1d (`Nodo`, `Pilha`, `Main`).
+A [p.29](../01%20-%20Slides%20Originais/README.md#página-29) reúne numa só tela as três classes Java da versão 1d (`Nodo`, `Pilha`, `Main`).
 
-**Pilha encadeada em C++ (p.30):** `main` com `Pilha *p1 = new Pilha();`, que empilha 3 números, desempilha e termina com `delete p1;`; `Pilha` com destrutor que percorre a lista e libera cada nó; `Nodo` com construtor, destrutor vazio, `getValor` e `getProximo`.
+**Pilha encadeada em C++ ([p.30](../01%20-%20Slides%20Originais/README.md#página-30)):** `main` com `Pilha *p1 = new Pilha();`, que empilha 3 números, desempilha e termina com `delete p1;`; `Pilha` com destrutor que percorre a lista e libera cada nó; `Nodo` com construtor, destrutor vazio, `getValor` e `getProximo`.
 
-> **[Atenção]** O corpo de `Pilha::pop()` está **cortado na borda do slide** (p.30); só aparecem `int x = topo->getValor();` e `Nodo* temp = topo->getProximo();`. A versão abaixo completa o método e acrescenta uma quebra de linha entre os dois laços do `main` **[Complemento]**, de forma compatível com o restante.
+> **[Atenção]** O corpo de `Pilha::pop()` está **cortado na borda do slide** ([p.30](../01%20-%20Slides%20Originais/README.md#página-30)); só aparecem `int x = topo->getValor();` e `Nodo* temp = topo->getProximo();`. A versão abaixo completa o método e acrescenta uma quebra de linha entre os dois laços do `main` **[Complemento]**, de forma compatível com o restante.
 
 <!-- teste: entrada="5 10 15" saida-contem="15\n10\n5" -->
 ```cpp
@@ -474,7 +481,7 @@ int main() {
 
 - Em C++, cada `new` precisa de um `delete` correspondente; caso contrário, há **vazamento de memória**. O **destrutor** `~Pilha()` é chamado automaticamente pelo `delete p1` e libera os nós que ainda estiverem na pilha. `pop` também precisa dar `delete` no nó que remove.
 - Em Java, a versão 1d nunca libera nada explicitamente: quando um `Nodo` deixa de ser referenciado (após `topo = topo.getProximo()`), o **coletor de lixo** o recolhe.
-- Esse é o "mecanismo automático de finalização" que faltava aos pacotes (p.5).
+- Esse é o "mecanismo automático de finalização" que faltava aos pacotes ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)).
 
 ## 8. Conexões e pontos para a prova
 
@@ -485,3 +492,16 @@ int main() {
 ---
 
 **Anterior:** [Aula 11](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md) · **Próxima:** [Aula 13 — Paradigma Orientado a Objetos II](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 12:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-12.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-12.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 11 · Resumo](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md) · [Aula 13 · Resumo](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) →
+
+**Links para esta página (19):** [Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Aula 02 · Resoluções](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/04%20-%20Resoluções/resolucoes-aula-02.md) · [Aula 07 · Resumo](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md) · [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Aula 10 · Resumo](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/02%20-%20Resumo%20Teórico/resumo-aula-10.md) · [Aula 10 · Resoluções](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/04%20-%20Resoluções/resolucoes-aula-10.md) · [Aula 11 · Resumo](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md) · [Aula 12 · visão geral](../README.md) · [Aula 13 · Resumo](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [Simulado 03 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md) · [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-3-orientacao-a-objetos.md) · [Erratas e inconsistências do material](../../../06%20-%20Revisões%20e%20Sínteses/erratas-e-inconsistencias.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P2 — Estruturas encadeadas em C++: pilha e fila](../../../09%20-%20Projetos%20Práticos/P2%20-%20Estruturas%20Encadeadas%20em%20C++/README.md) · [P3 — Acervo da biblioteca em Java](../../../09%20-%20Projetos%20Práticos/P3%20-%20Acervo%20da%20Biblioteca%20em%20Java/README.md) · [Exemplo de anotação: pilha encadeada × pilha em vetor](../../../10%20-%20Caderno%20de%20Anotações/exemplo-de-anotacao.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

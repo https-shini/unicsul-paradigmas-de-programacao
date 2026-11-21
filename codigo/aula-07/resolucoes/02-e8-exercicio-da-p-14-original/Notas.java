@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/04 - Resoluções/resolucoes-aula-07.md (linha 68).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 07 - Tipos Compostos/04 - Resoluções/resolucoes-aula-07.md (linha 72).
 // Seção: E8 — Exercício da p.14 (original)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-07/resolucoes/02-e8-exercicio-da-p-14-original/Notas.java

@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [06 - Revisões e Sínteses](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Resumo geral da disciplina
 
 > **[Explicação elaborada]** Visão integrada das 15 aulas, escrita para ser lida de uma vez antes das avaliações. Cada parágrafo aponta para o resumo detalhado da aula, onde estão as fontes (`AulaXX p.N`). Legenda: [Convenções](../README.md#convenções-de-marcação).
@@ -147,3 +151,12 @@ Tipos compostos:
 | **Procedural × declarativo** | Classificação dos paradigmas (02, 15) |
 
 Para revisar por unidade, use as [revisões por unidade](Revisões%20por%20Unidade/). Para treinar, use as [questões integradoras](questoes-integradoras.md) e as [listas do professor](../02%20-%20Listas%20de%20Exercícios/README.md).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (4):** [06 — Revisões e Sínteses](README.md) · [Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas…](Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) · [Guia de estudo para as avaliações](guia-de-estudo-para-provas.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

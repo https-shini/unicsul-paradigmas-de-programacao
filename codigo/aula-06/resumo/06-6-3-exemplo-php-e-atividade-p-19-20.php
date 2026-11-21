@@ -1,5 +1,5 @@
 <?php
-// Gerado automaticamente a partir de 01 - Aulas/Aula 06 - Sistema de Tipos/02 - Resumo Teórico/resumo-aula-06.md (linha 189).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 06 - Sistema de Tipos/02 - Resumo Teórico/resumo-aula-06.md (linha 193).
 // Seção: 6.3 Exemplo PHP e atividade (p.19–20)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-06/resumo/06-6-3-exemplo-php-e-atividade-p-19-20.php

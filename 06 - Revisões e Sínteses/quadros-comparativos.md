@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [06 - Revisões e Sínteses](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Quadros comparativos
 
 > **[Explicação elaborada]** Tabelas de síntese construídas a partir dos resumos das aulas. Cada quadro indica as fontes (`AulaXX p.N`). As listas de revisão do professor pedem sobretudo para **diferenciar** e **comparar**: estes quadros são o material mais direto para isso.
@@ -23,7 +27,7 @@
 
 ## 1. Os quatro paradigmas
 
-**Fontes:** Aula02 p.9–13; Aula09; Aula12; Aula14; Aula15 p.3–5.
+**Fontes:** Aula02 [p.9–13](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-9); Aula09; Aula12; Aula14; Aula15 [p.3–5](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3).
 
 | Aspecto | Imperativo | Orientado a objetos | Funcional | Lógico |
 | --- | --- | --- | --- | --- |
@@ -37,7 +41,7 @@
 | Linguagens nas aulas | C, Pascal, C# | Java, C++ | Clojure | Prolog |
 | Construto típico | `x = x + 1;` | `pilha.push(5);` | `(+ x (* 2 y))` | `avo(X, Z) :- pai(X, Y), pai(Y, Z).` |
 
-> **[Atenção]** A classificação do funcional como **procedural** é a da Aula15 p.3–5. Grande parte da literatura o classifica como **declarativo**. Ver [erratas](erratas-e-inconsistencias.md).
+> **[Atenção]** A classificação do funcional como **procedural** é a da Aula15 [p.3–5](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3). Grande parte da literatura o classifica como **declarativo**. Ver [erratas](erratas-e-inconsistencias.md).
 
 ## 2. Um mesmo problema nos quatro paradigmas
 
@@ -97,7 +101,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 3. Implementação das linguagens
 
-**Fonte:** Aula03 p.8–14.
+**Fonte:** Aula03 [p.8–14](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-8).
 
 | | Compilação | Interpretação pura | Híbrida |
 | --- | --- | --- | --- |
@@ -110,7 +114,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 4. Níveis de sintaxe
 
-**Fonte:** Aula04 p.5–10.
+**Fonte:** Aula04 [p.5–10](../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/01%20-%20Slides%20Originais/README.md#página-5).
 
 | Nível | Trata de | Unidade | Formalismo | Erro típico |
 | --- | --- | --- | --- | --- |
@@ -120,7 +124,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 5. Escopo e tempo de vida
 
-**Fonte:** Aula05 p.5–13 (escopo e tempo de vida são atributos da variável).
+**Fonte:** Aula05 [p.5–13](../01%20-%20Aulas/Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-5) (escopo e tempo de vida são atributos da variável).
 
 | | Escopo estático (léxico) | Escopo dinâmico |
 | --- | --- | --- |
@@ -136,7 +140,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 6. Sistemas de tipos
 
-**Fonte:** Aula06 p.9–21.
+**Fonte:** Aula06 [p.9–21](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-9).
 
 | | Tipagem **forte** (exigente) | Tipagem **fraca** (permissiva, coerção) |
 | --- | --- | --- |
@@ -152,7 +156,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 7. Regiões de memória e alocação
 
-**Fonte:** Aula08 p.12–14.
+**Fonte:** Aula08 [p.12–14](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-12).
 
 | Região | O que guarda | Alocação | Liberação |
 | --- | --- | --- | --- |
@@ -163,7 +167,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 8. Passagem de parâmetros
 
-**Fontes:** Aula11 p.13–19; Aula08 p.7–11.
+**Fontes:** Aula11 [p.13–19](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-13); Aula08 [p.7–11](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-7).
 
 | Modelo | Semântica | Mecanismo | Altera o argumento? | Exemplo |
 | --- | --- | --- | --- | --- |
@@ -181,7 +185,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 9. Programação não estruturada × estruturada
 
-**Fontes:** Aula09 p.16–22; artigo de Dijkstra.
+**Fontes:** Aula09 [p.16–22](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-16); artigo de Dijkstra.
 
 | | Não estruturada | Estruturada |
 | --- | --- | --- |
@@ -193,7 +197,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 10. Abstração procedural × abstração de dados
 
-**Fontes:** Aula10; Aula12 p.17–22.
+**Fontes:** Aula10; Aula12 [p.17–22](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-17).
 
 | | Abstração procedural (processos) | Abstração de dados (TDA) |
 | --- | --- | --- |
@@ -205,7 +209,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 11. Herança, interfaces e polimorfismo
 
-**Fonte:** Aula13 p.3–13.
+**Fonte:** Aula13 [p.3–13](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-3).
 
 | | Herança simples | Herança múltipla | Interfaces (Java) |
 | --- | --- | --- | --- |
@@ -229,7 +233,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 12. Gerenciamento de objetos: C++ × Java
 
-**Fonte:** Aula12 p.28–30.
+**Fonte:** Aula12 [p.28–30](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-28).
 
 | | C++ | Java |
 | --- | --- | --- |
@@ -240,7 +244,7 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 
 ## 13. Funcional × imperativo × lógico
 
-**Fontes:** Aula14 p.7–12; Aula15 p.3–5 e p.11–18.
+**Fontes:** Aula14 [p.7–12](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-7); Aula15 [p.3–5](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3) e [p.11–18](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-11).
 
 | | Imperativo | Funcional | Lógico |
 | --- | --- | --- | --- |
@@ -251,3 +255,12 @@ fatorial(N, F) :- N > 0, N1 is N - 1, fatorial(N1, F1), F is N * F1.
 | Efeitos colaterais | Comuns | Ausentes (puro) | Restritos (E/S) |
 | O programador diz | **Como** fazer | **Que** funções compor | **O que** é verdade |
 | Base teórica | Máquina de von Neumann | Funções matemáticas (cálculo lambda) | Lógica de predicados |
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (9):** [Objetivos da disciplina](../00%20-%20Planejamento%20e%20Organização/objetivos-da-disciplina.md) · [Lista 02 · Resolução](../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/02%20-%20Resolução/resolucao-lista-02.md) · [Flashcards (Anki)](Flashcards/README.md) · [06 — Revisões e Sínteses](README.md) · [Guia de estudo para as avaliações](guia-de-estudo-para-provas.md) · [P4 — Estatísticas de texto em Clojure](../09%20-%20Projetos%20Práticos/P4%20-%20Estatísticas%20de%20Texto%20em%20Clojure/README.md) · [P5 — Grade curricular em Prolog](../09%20-%20Projetos%20Práticos/P5%20-%20Grade%20Curricular%20em%20Prolog/README.md) · [Exemplo de anotação: pilha encadeada × pilha em vetor](../10%20-%20Caderno%20de%20Anotações/exemplo-de-anotacao.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [04 - Provas e Avaliações](../README.md) › [Simulados](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Simulado 02 · Resolução comentada
 
 > **[Resolução elaborada]** Resolução do [simulado autoral](simulado-02.md). **Não é gabarito oficial do professor.** Os trechos de código foram compilados e executados.
@@ -31,7 +35,7 @@ void conta(void) {
 int main(void) { conta(); conta(); conta(); return 0; }
 ```
 
-**5 — b.** `my` cria variável de escopo **estático (léxico)**; `local` salva o valor de uma global e o substitui durante a execução do bloco, visível pelas funções chamadas — escopo **dinâmico**. **[Complemento]** A Aula05 (p.9–12) só diz que Perl permite declarar variáveis com escopo dinâmico; as palavras `my` e `local` são a sintaxe da linguagem para os dois casos.
+**5 — b.** `my` cria variável de escopo **estático (léxico)**; `local` salva o valor de uma global e o substitui durante a execução do bloco, visível pelas funções chamadas — escopo **dinâmico**. **[Complemento]** A Aula05 ([p.9–12](../../01%20-%20Aulas/Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-9)) só diz que Perl permite declarar variáveis com escopo dinâmico; as palavras `my` e `local` são a sintaxe da linguagem para os dois casos.
 
 **6 — b.** Coerção é a conversão **implícita**. A conversão explícita (`(int) x`) é um *cast* ([Aula 06](../../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md)).
 
@@ -49,7 +53,7 @@ int main(void) { conta(); conta(); conta(); return 0; }
 
 ## 11
 
-**Conceitos:** implementação (Aula03 p.8–14); tipagem estática × dinâmica (Aula06 p.9–14).
+**Conceitos:** implementação (Aula03 [p.8–14](../../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-8)); tipagem estática × dinâmica (Aula06 [p.9–14](../../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-9)).
 
 - O conceito **decisivo** é a **tipagem**. Em Java (tipagem **estática**), o tipo de cada variável é conhecido na compilação, e o compilador verifica **todas** as operações do programa, inclusive as de ramos que raramente executam.
 - Em Python (tipagem **dinâmica**), o tipo só é conhecido quando o valor existe, em execução. O erro só aparece quando aquela linha roda — no último dia do mês.
@@ -58,7 +62,7 @@ int main(void) { conta(); conta(); conta(); return 0; }
 
 ## 12
 
-**Conceitos:** escopo estático × dinâmico (Aula05 p.9–12).
+**Conceitos:** escopo estático × dinâmico (Aula05 [p.9–12](../../01%20-%20Aulas/Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-9)).
 
 **(a)** Em C (escopo **estático**), `mostra` foi definida no nível global; seu `x` não local é sempre o **global**:
 
@@ -85,7 +89,7 @@ Imprimiria **2** e **1**. A mesma função `mostra` exibe valores diferentes con
 
 ## 13
 
-**Conceitos:** alocação dinâmica, ponteiros, regiões de memória (Aula08 p.12–14).
+**Conceitos:** alocação dinâmica, ponteiros, regiões de memória (Aula08 [p.12–14](../../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-12)).
 
 <!-- teste: entrada="5" saida-contem="0 1 4 9 16" -->
 ```c
@@ -119,7 +123,7 @@ int main(void) {
 
 ## 14
 
-**Conceitos:** programação não estruturada × estruturada (Aula09 p.16–22); artigo de Dijkstra.
+**Conceitos:** programação não estruturada × estruturada (Aula09 [p.16–22](../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-16)); artigo de Dijkstra.
 
 <!-- teste: entrada="10" saida-contem="55" -->
 ```c
@@ -138,7 +142,7 @@ int main(void) {
 
 ## 15
 
-**Conceitos:** abstração procedural, acoplamento e coesão (Aula10 p.4–16).
+**Conceitos:** abstração procedural, acoplamento e coesão (Aula10 [p.4–16](../../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-4)).
 
 <!-- teste: entrada="7 8 9" saida-contem="8.0|Aprovado" -->
 ```c
@@ -166,3 +170,14 @@ int main(void) {
 - **Abstração procedural:** quem chama `situacao` não precisa saber os limites (6 e 4), só a interface: recebe uma média e devolve um texto. Mudar a regra (por exemplo, exame a partir de 5) altera só essa função.
 - **Coesão alta:** cada função faz uma única coisa.
 - **Com notas globais:** `media` e `situacao` passariam a ler e escrever variáveis compartilhadas, em vez de receber parâmetros. Isso cria **acoplamento por dados globais** (*common coupling*, na classificação de Stevens, Myers e Constantine): qualquer função pode alterar as notas, e entender ou testar uma função exige conhecer todas as outras que usam as mesmas variáveis.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Simulado 01 · Resolução comentada](resolucao-simulado-01.md) · [Simulado 03 · Resolução comentada](resolucao-simulado-03.md) →
+
+**Links para esta página (2):** [04 — Provas e Avaliações](../README.md) · [Simulado 02 — Fundamentos e paradigma imperativo (Aulas 02–…](simulado-02.md)
+
+<!-- /nav:rodape -->

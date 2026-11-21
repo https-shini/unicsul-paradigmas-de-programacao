@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 13 - Paradigma Orientado a Objetos II/04 - Resoluções/resolucoes-aula-13.md (linha 25).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 13 - Paradigma Orientado a Objetos II/04 - Resoluções/resolucoes-aula-13.md (linha 29).
 // Seção: E4
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-13/resolucoes/01-e4/Main.java

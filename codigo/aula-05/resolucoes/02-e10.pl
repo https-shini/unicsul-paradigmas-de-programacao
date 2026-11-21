@@ -1,4 +1,4 @@
-# Gerado automaticamente a partir de 01 - Aulas/Aula 05 - Semântica/04 - Resoluções/resolucoes-aula-05.md (linha 104).
+# Gerado automaticamente a partir de 01 - Aulas/Aula 05 - Semântica/04 - Resoluções/resolucoes-aula-05.md (linha 108).
 # Seção: E10
 # Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 # Como executar:  python3 ferramentas/rodar.py codigo/aula-05/resolucoes/02-e10.pl

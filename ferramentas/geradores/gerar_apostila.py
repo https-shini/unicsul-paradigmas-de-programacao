@@ -100,9 +100,27 @@ def reescrever_links(md, arquivo, ids):
     return LINK.sub(troca, md)
 
 
+def reescrever_html(md, arquivo):
+    """Figuras em HTML (<img src>, <a href>) com caminhos relativos: imagem do arquivo local, link para o GitHub."""
+    pasta = os.path.dirname(arquivo)
+
+    def src(m):
+        alvo = m.group(2)
+        if re.match(r"^[a-z]+:", alvo):
+            return m.group(0)
+        if m.group(1) == "src":
+            return f'src="file://{urllib.parse.quote(os.path.normpath(os.path.join(pasta, urllib.parse.unquote(alvo))))}"'
+        caminho, _, ancora = alvo.partition("#")
+        relp = os.path.relpath(os.path.normpath(os.path.join(pasta, urllib.parse.unquote(caminho))), RAIZ)
+        return f'href="{GITHUB}{urllib.parse.quote(relp)}' + (f"#{ancora}" if ancora else "") + '"'
+    return re.sub(r'\b(src|href)="([^"]+)"', src, md)
+
+
 def md_para_html(arquivo, prefixo, ids):
     md = open(arquivo, encoding="utf-8").read()
+    md = re.sub(r"<!-- nav:(topo|rodape) -->.*?<!-- /nav:\1 -->\n?", "", md, flags=re.S)   # navegação do GitHub
     md = re.sub(r"<!--.*?-->\n?", "", md, flags=re.S)          # marcadores de teste
+    md = reescrever_html(md, arquivo)
     md = reescrever_links(md, arquivo, ids)
     out = subprocess.run(
         ["pandoc", "-f", "gfm+tex_math_dollars", "-t", "html5", "--shift-heading-level-by=1",
@@ -146,7 +164,7 @@ table { border-collapse: collapse; width: 100%; font-size: 9pt; margin: 8pt 0; b
 th, td { border: 1px solid #c8ccd1; padding: 3pt 5pt; vertical-align: top; text-align: left; }
 th { background: #e8eef5; } tr { break-inside: avoid; }
 blockquote { margin: 8pt 0; padding: 4pt 10pt; border-left: 4px solid #d29922; background: #fff8e6; color: #333; }
-img { max-width: 100%; }
+img { max-width: 100%; } p[align="center"] { text-align: center; } p[align="center"] img { max-width: 80%; height: auto; }
 .capa { height: 250mm; display: flex; flex-direction: column; justify-content: center; text-align: center; break-after: page; }
 .capa h1 { font-size: 30pt; margin: 0 0 8pt; } .capa .sub { font: 14pt "DejaVu Sans", sans-serif; color: #1d4e89; }
 .capa .desc { margin: 24pt auto; max-width: 140mm; color: #444; } .capa .aviso { font-size: 9pt; color: #666; max-width: 140mm; margin: 0 auto; }

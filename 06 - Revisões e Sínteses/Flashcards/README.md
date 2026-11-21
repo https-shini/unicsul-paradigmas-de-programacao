@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [06 - Revisões e Sínteses](../README.md) › **Flashcards** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Flashcards (Anki)
 
 > **[Explicação elaborada]** Baralho de repetição espaçada gerado a partir do [glossário](../../07%20-%20Glossário/glossario.md) e dos [quadros comparativos](../quadros-comparativos.md). Não é material do professor.
@@ -20,3 +24,12 @@ Cada cartão tem etiquetas `aula-NN`, `glossario`, `comparacao` ou `codigo`. No 
 **Sem Anki?** O arquivo [`plp-flashcards.tsv`](plp-flashcards.tsv) pode ser importado em outros aplicativos de flashcards (Quizlet, RemNote, Mochi) ou aberto numa planilha.
 
 **Para atualizar:** edite os termos em `ferramentas/geradores/gerar_glossario.py` ou as listas `COMPARACOES` e `CODIGO` em `ferramentas/geradores/gerar_flashcards.py` e rode `python3 ferramentas/geradores/gerar_flashcards.py`. Reimportar o `.apkg` atualiza os cartões sem duplicar e sem perder o seu histórico.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (3):** [04 — Provas e Avaliações](../../04%20-%20Provas%20e%20Avaliações/README.md) · [06 — Revisões e Sínteses](../README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../README.md)
+
+<!-- /nav:rodape -->

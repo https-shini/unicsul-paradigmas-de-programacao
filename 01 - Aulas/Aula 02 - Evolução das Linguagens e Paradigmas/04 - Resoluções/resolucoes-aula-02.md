@@ -1,12 +1,16 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 02](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 02 — Evolução das Linguagens e Paradigmas · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-02.md`](../03%20-%20Exercícios/exercicios-aula-02.md). Base: [`Aula02_Evolução_LinguagensDeProgramacao.pdf`](../01%20-%20Slides%20Originais/Aula02_Evolução_LinguagensDeProgramacao.pdf).
 
 ## E1
 
-- **(a)** Conjunto de termos e regras sintáticas e semânticas que permitem a construção de instruções processáveis por um computador (p.3).
-- **(b)** Modelo ou padrão que orienta uma determinada atividade (p.8).
-- **(c)** Padrão para resolução de problemas e para a representação computacional dessa solução (p.8).
+- **(a)** Conjunto de termos e regras sintáticas e semânticas que permitem a construção de instruções processáveis por um computador ([p.3](../01%20-%20Slides%20Originais/README.md#página-3)).
+- **(b)** Modelo ou padrão que orienta uma determinada atividade ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)).
+- **(c)** Padrão para resolução de problemas e para a representação computacional dessa solução ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)).
 
 **Erro comum:** confundir "paradigma" com "linguagem". Uma linguagem pertence a (ou suporta) um ou mais paradigmas.
 
@@ -24,7 +28,7 @@
 
 ## E3
 
-**Resposta: b.** O slide (p.10) afirma que a abstração procedural é a principal característica do imperativo. As demais alternativas são, respectivamente, de OO (a), funcional (c) e lógico (d).
+**Resposta: b.** O slide ([p.10](../01%20-%20Slides%20Originais/README.md#página-10)) afirma que a abstração procedural é a principal característica do imperativo. As demais alternativas são, respectivamente, de OO (a), funcional (c) e lógico (d).
 
 ## E4
 
@@ -45,9 +49,9 @@
 
 ## E6
 
-**Fontes (p.8):** (1) a **sintaxe** de linguagens do mesmo paradigma e (2) as **características gerais** de paradigmas diferentes.
+**Fontes ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)):** (1) a **sintaxe** de linguagens do mesmo paradigma e (2) as **características gerais** de paradigmas diferentes.
 
-- **Sintaxe, mesmo paradigma (Pascal × Java)** — interpretação do repositório; o slide não diz quais pares ilustram cada caso, e Java é classificado como OO na p.11, mas aqui o corpo do `main` é puramente imperativo: atribuição `:=` × `=`; comparação `=` × `==`; blocos `begin/end` × `{ }`; `readln` × `Scanner`.
+- **Sintaxe, mesmo paradigma (Pascal × Java)** — interpretação do repositório; o slide não diz quais pares ilustram cada caso, e Java é classificado como OO na [p.11](../01%20-%20Slides%20Originais/README.md#página-11), mas aqui o corpo do `main` é puramente imperativo: atribuição `:=` × `=`; comparação `=` × `==`; blocos `begin/end` × `{ }`; `readln` × `Scanner`.
 - **Paradigma diferente (Pascal/Java × Prolog):** o Prolog não tem declaração de variáveis nem atribuição — o programa é uma **regra** (`:-`) com objetivos em conjunção, e `Dobro is Num1 * 2` vincula, não atribui.
 
 ## E7
@@ -60,7 +64,7 @@
 
 **Correção:** `dobro := 2 * n1;`. As versões em Java e Prolog já fazem isso.
 
-**Lição:** um programa sintaticamente correto pode conter um **erro de lógica**: compila e executa, mas não faz o que o enunciado pede. O significado de `n1 * n2` é bem definido (é o produto); o erro está na especificação. Erros de **semântica** no sentido da Aula 05 (p.17) seriam, por exemplo, usar variável não declarada (semântica estática) ou dividir por zero (semântica dinâmica).
+**Lição:** um programa sintaticamente correto pode conter um **erro de lógica**: compila e executa, mas não faz o que o enunciado pede. O significado de `n1 * n2` é bem definido (é o produto); o erro está na especificação. Erros de **semântica** no sentido da Aula 05 ([p.17](../../Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-17)) seriam, por exemplo, usar variável não declarada (semântica estática) ou dividir por zero (semântica dinâmica).
 
 ## E8
 
@@ -79,9 +83,9 @@
 
 **Por que divergem:** "geração" não é um conceito padronizado. Cada autor usa um critério diferente — época, nível de abstração, paradigma ou domínio de aplicação — e as figuras misturam esses critérios.
 
-| Linguagem | Árvore (p.19) | "Generation…" (p.20) | Mapa mental (p.21) |
+| Linguagem | Árvore ([p.19](../01%20-%20Slides%20Originais/README.md#página-19)) | "Generation…" ([p.20](../01%20-%20Slides%20Originais/README.md#página-20)) | Mapa mental ([p.21](../01%20-%20Slides%20Originais/README.md#página-21)) |
 | --- | --- | --- | --- |
-| LISP | Não é citada. Como a Aula 14 (p.10) diz que "aplicativa" é sinônimo de funcional, ficaria na **4ª** ("OO ou aplicativas") | 5ª | 3ª |
+| LISP | Não é citada. Como a Aula 14 ([p.10](../../Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-10)) diz que "aplicativa" é sinônimo de funcional, ficaria na **4ª** ("OO ou aplicativas") | 5ª | 3ª |
 | Java | Não é citada; por ser OO, ficaria na 4ª | 3ª | 3ª |
 | SQL | Não é citada | 4ª | 4ª (aplicações específicas) |
 
@@ -100,3 +104,16 @@
 | Python | Alta: indentação obrigatória, sintaxe enxuta | Muito alta | Média: tipagem dinâmica e forte; erros de tipo só aparecem em execução |
 
 O importante é **ligar cada nota a um recurso da linguagem**, como faz Sebesta.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 02:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-02.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 01 · Resoluções](../../Aula%2001%20-%20Apresentação%20da%20Disciplina/04%20-%20Resoluções/resolucoes-aula-01.md) · [Aula 03 · Resoluções](../../Aula%2003%20-%20Implementação%20das%20Linguagens/04%20-%20Resoluções/resolucoes-aula-03.md) →
+
+**Links para esta página (3):** [Aula 02 · Exercícios](../03%20-%20Exercícios/exercicios-aula-02.md) · [Aula 02 · visão geral](../README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

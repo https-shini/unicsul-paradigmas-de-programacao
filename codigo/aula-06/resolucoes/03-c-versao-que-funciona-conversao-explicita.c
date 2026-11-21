@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 06 - Sistema de Tipos/04 - Resoluções/resolucoes-aula-06.md (linha 100).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 06 - Sistema de Tipos/04 - Resoluções/resolucoes-aula-06.md (linha 104).
 // Seção: C — versão que funciona (conversão explícita)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-06/resolucoes/03-c-versao-que-funciona-conversao-explicita.c

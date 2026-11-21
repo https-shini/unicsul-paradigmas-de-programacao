@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [04 - Provas e Avaliações](../README.md) › [Simulados](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Simulado 01 — Paradigmas de Linguagens de Programação
 
 > **[Exercício autoral]** Simulado elaborado para este repositório. **Não é prova do professor** e não antecipa o conteúdo das avaliações. Cobre as Aulas 02–15.
@@ -107,3 +111,14 @@ Diga o que é impresso se a passagem for (a) por valor; (b) por referência; (c)
 **14.** (Aula 14) Escreva em Clojure uma expressão que calcule `(a + b) · (a − b) / 2` com `a = 7` e `b = 3`, e diga o valor resultante. Depois, explique por que `(/ 7 2)` em Clojure não resulta em `3`.
 
 **15.** (Aulas 12, 14 e 15) Um sistema de controle de acesso precisa decidir se uma pessoa pode entrar em uma sala, com base em regras como "gerentes acessam qualquer sala do seu andar" e "visitantes só acessam a recepção". Compare como esse problema seria modelado nos paradigmas orientado a objetos e lógico. Qual você escolheria para o **motor de regras**? Justifique.
+
+
+<!-- nav:rodape -->
+
+---
+
+[Simulado 02 — Fundamentos e paradigma imperativo (Aulas 02–…](simulado-02.md) →
+
+**Links para esta página (6):** [02 — Listas de Exercícios](../../02%20-%20Listas%20de%20Exercícios/README.md) · [04 — Provas e Avaliações](../README.md) · [Simulado 01 · Resolução comentada](resolucao-simulado-01.md) · [06 — Revisões e Sínteses](../../06%20-%20Revisões%20e%20Sínteses/README.md) · [Guia de estudo para as avaliações](../../06%20-%20Revisões%20e%20Sínteses/guia-de-estudo-para-provas.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../README.md)
+
+<!-- /nav:rodape -->

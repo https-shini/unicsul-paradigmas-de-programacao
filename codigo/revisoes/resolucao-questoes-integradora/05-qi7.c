@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 06 - Revisões e Sínteses/resolucao-questoes-integradoras.md (linha 193).
+// Gerado automaticamente a partir de 06 - Revisões e Sínteses/resolucao-questoes-integradoras.md (linha 197).
 // Seção: QI7
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/revisoes/resolucao-questoes-integradora/05-qi7.c

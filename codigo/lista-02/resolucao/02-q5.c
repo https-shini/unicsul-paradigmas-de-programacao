@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 02 - Listas de Exercícios/Lista 02 - Revisão II/02 - Resolução/resolucao-lista-02.md (linha 80).
+// Gerado automaticamente a partir de 02 - Listas de Exercícios/Lista 02 - Revisão II/02 - Resolução/resolucao-lista-02.md (linha 84).
 // Seção: Q5
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/lista-02/resolucao/02-q5.c

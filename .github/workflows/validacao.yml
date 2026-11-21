@@ -62,8 +62,14 @@ jobs:
         run: node ferramentas/verificar_mermaid.mjs
       - name: BibTeX × catálogo de referências
         run: python3 ferramentas/verificar_bib.py
+      # Na main, o workflow "Atualizar navegação" regenera estes arquivos sozinho depois de cada envio
+      # (por exemplo, quando uma nota é criada pelo navegador). Nos demais casos, eles precisam estar em dia.
       - name: Pasta codigo/ sincronizada com os Markdown
+        if: github.ref != 'refs/heads/main'
         run: python3 ferramentas/gerar_codigo.py --verificar
+      - name: Navegação em dia (trilhas, índices, backlinks, links de página, MAPA.md)
+        if: github.ref != 'refs/heads/main'
+        run: python3 ferramentas/geradores/gerar_navegacao.py --verificar
       - name: Testes do P6 sincronizados com casos.csv
         run: |
           python3 "09 - Projetos Práticos/P6 - Situação Acadêmica em Quatro Paradigmas/testes/gerar_testes.py"

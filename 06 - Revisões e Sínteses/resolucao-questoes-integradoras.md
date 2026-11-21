@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [06 - Revisões e Sínteses](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Questões integradoras · Resolução comentada
 
 > **[Resolução elaborada]** Resolução das [questões integradoras](questoes-integradoras.md). **Não é gabarito oficial do professor.** Os trechos de código foram compilados e executados.
@@ -6,7 +10,7 @@
 
 ## QI1
 
-**Conceitos:** verificação de tipos (Aula06 p.9–14) × método de implementação (Aula03 p.8–14).
+**Conceitos:** verificação de tipos (Aula06 [p.9–14](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-9)) × método de implementação (Aula03 [p.8–14](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-8)).
 
 - **Tipagem estática ou dinâmica** responde **quando** o tipo é vinculado à variável: na compilação ou na execução.
 - **Implementação** responde **como** o programa é traduzido e executado.
@@ -21,7 +25,7 @@ As duas escolhas costumam andar juntas: um compilador é o lugar natural para ve
 
 ## QI2
 
-**Conceitos:** escopo e tempo de vida (Aula05); regiões de memória (Aula08 p.12–14).
+**Conceitos:** escopo e tempo de vida (Aula05); regiões de memória (Aula08 [p.12–14](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-12)).
 
 | Variável | Escopo | Tempo de vida | Região |
 | --- | --- | --- | --- |
@@ -57,7 +61,7 @@ int main(void) {
 
 ## QI3
 
-**Conceitos:** ponteiros (Aula08 p.7–11); modelos de passagem (Aula11 p.13–18).
+**Conceitos:** ponteiros (Aula08 [p.7–11](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-7)); modelos de passagem (Aula11 [p.13–18](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-13)).
 
 <!-- teste: saida-contem="menor = 1, maior = 10" -->
 ```c
@@ -87,7 +91,7 @@ int main(void) {
 
 ## QI4
 
-**Conceitos:** `goto` e programação estruturada (Aula09 p.16–22); artigo de Dijkstra.
+**Conceitos:** `goto` e programação estruturada (Aula09 [p.16–22](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-16)); artigo de Dijkstra.
 
 **(a)** Soma os números **pares de 1 a 10**: 2 + 4 + 6 + 8 + 10 = **30**.
 
@@ -117,7 +121,7 @@ Na versão com `goto`, a mesma lógica existe, mas está **implícita** nos salt
 
 ## QI5
 
-**Conceitos:** acoplamento, coesão, TDA (Aula10 p.16–18); classes e encapsulamento (Aula12 p.18–27).
+**Conceitos:** acoplamento, coesão, TDA (Aula10 [p.16–18](../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-16)); classes e encapsulamento (Aula12 [p.18–27](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-18)).
 
 **Diagnóstico:**
 
@@ -176,7 +180,7 @@ Resultado:
 
 ## QI6
 
-**Conceitos:** sobrecarga de operadores (Aula06 p.25); polimorfismo estático (Aula13 p.12); coerção (Aula06 p.15–21).
+**Conceitos:** sobrecarga de operadores (Aula06 [p.25](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-25)); polimorfismo estático (Aula13 [p.12](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-12)); coerção (Aula06 [p.15–21](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-15)).
 
 - `+` com `int`, `double` e `String` é **sobrecarga** de operador, ou seja, **polimorfismo estático**: o mesmo símbolo tem significados diferentes conforme os **tipos dos operandos**, e o compilador escolhe o significado na compilação.
 - **Não é sobrescrita:** não há herança nem redefinição em subclasse.
@@ -227,7 +231,7 @@ soma_quadrados(N, S) :- N > 0, N1 is N - 1, soma_quadrados(N1, S1), S is S1 + N 
 
 ## QI8
 
-**Conceitos:** critérios de avaliação (Aula02 p.17); von Neumann (Aula09); funcional (Aula14); lógico (Aula15).
+**Conceitos:** critérios de avaliação (Aula02 [p.17](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-17)); von Neumann (Aula09); funcional (Aula14); lógico (Aula15).
 
 **Onde a afirmação está certa:**
 
@@ -251,4 +255,13 @@ soma_quadrados(N, S) :- N > 0, N1 is N - 1, soma_quadrados(N1, S1), S is S1 + N 
 | Funcional | Processamento de grandes volumes de dados, transformações em *pipeline*, sistemas concorrentes | Funções puras são fáceis de compor, testar e paralelizar |
 | Lógico | Sistemas especialistas, regras de negócio, verificação de configurações, consultas sobre relações | O conhecimento é declarado como fatos e regras, e a inferência responde perguntas em várias direções |
 
-**Conclusão:** nenhum paradigma é "o mais natural" em absoluto. A adequação depende do problema. É exatamente o objetivo atitudinal da disciplina: decidir o paradigma mais adequado a cada aplicação (Aula01 p.4).
+**Conclusão:** nenhum paradigma é "o mais natural" em absoluto. A adequação depende do problema. É exatamente o objetivo atitudinal da disciplina: decidir o paradigma mais adequado a cada aplicação (Aula01 [p.4](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-4)).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (2):** [06 — Revisões e Sínteses](README.md) · [Questões integradoras](questoes-integradoras.md)
+
+<!-- /nav:rodape -->

@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [06 - Revisões e Sínteses](../README.md) › [Revisões por Unidade](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01–08)
 
 > **[Explicação elaborada]** Agrupamento organizacional deste repositório, **não** uma divisão oficial do professor. Legenda: [Convenções](../../README.md#convenções-de-marcação).
@@ -55,3 +59,14 @@ Responda sem consultar; depois confira na seção indicada.
 **Questões do professor sobre esta unidade:** [Lista 02, Q1–Q6](../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md).
 
 **Próxima unidade:** [Unidade 2 — Imperativo](unidade-2-imperativo.md).
+
+
+<!-- nav:rodape -->
+
+---
+
+[Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](unidade-2-imperativo.md) →
+
+**Links para esta página (4):** [Cronograma](../../00%20-%20Planejamento%20e%20Organização/cronograma.md) · [06 — Revisões e Sínteses](../README.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](unidade-2-imperativo.md) · [Guia de estudo para as avaliações](../guia-de-estudo-para-provas.md)
+
+<!-- /nav:rodape -->

@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 10 - Paradigma Imperativo II/02 - Resumo Teórico/resumo-aula-10.md (linha 69).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 10 - Paradigma Imperativo II/02 - Resumo Teórico/resumo-aula-10.md (linha 73).
 // Seção: 4. Exemplo guiado: ordenar dez números (p.8–14)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-10/resumo/01-4-exemplo-guiado-ordenar-dez-numeros-p-8-14.c

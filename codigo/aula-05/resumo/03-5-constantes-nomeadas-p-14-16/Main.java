@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 05 - Semântica/02 - Resumo Teórico/resumo-aula-05.md (linha 186).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 05 - Semântica/02 - Resumo Teórico/resumo-aula-05.md (linha 190).
 // Seção: 5. Constantes nomeadas (p.14–16)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-05/resumo/03-5-constantes-nomeadas-p-14-16/Main.java

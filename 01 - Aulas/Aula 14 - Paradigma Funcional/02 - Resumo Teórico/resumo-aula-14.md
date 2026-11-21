@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 14](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 14 — Paradigma Funcional · Resumo teórico
 
-> **Fonte:** [`Aula14_ParadigmaFuncional.pdf`](../01%20-%20Slides%20Originais/Aula14_ParadigmaFuncional.pdf) (24 páginas). Título interno: "Aula 15 – Paradigma Funcional". Apoio indicado: Sebesta (9ª ed.), seções 15.1 a 15.5 e 15.9 a 15.10; Tucker & Noonan, cap. 14 (p.24).
+> **Fonte:** [`Aula14_ParadigmaFuncional.pdf`](../01%20-%20Slides%20Originais/Aula14_ParadigmaFuncional.pdf) (24 páginas). Título interno: "Aula 15 – Paradigma Funcional". Apoio indicado: Sebesta (9ª ed.), seções 15.1 a 15.5 e 15.9 a 15.10; Tucker & Noonan, cap. 14 ([p.24](../01%20-%20Slides%20Originais/README.md#página-24)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF.
 > **Validação:** não há Clojure (JVM) no ambiente usado para montar este repositório. Os trechos marcados foram executados com o **nbb** (ClojureScript sobre Node.js), que usa a mesma sintaxe. **Diferenças de representação:** no Clojure da JVM, `(/ 10 3)` dá a razão `10/3` e `(Math/sqrt 9)` imprime `3.0`; no ClojureScript, dão `3.3333333333333335` e `3`. Os resultados do Clojure da JVM indicados abaixo seguem a especificação da linguagem.
 
@@ -132,7 +136,7 @@
 | `(quot 10 3)` | `3` | **Quociente** inteiro |
 | `(rem 10 3)` | `1` | **Resto** |
 
-**Funções da biblioteca `Math` do Java (p.16)** — Clojure roda na JVM e acessa classes Java com `Classe/metodo`:
+**Funções da biblioteca `Math` do Java ([p.16](../01%20-%20Slides%20Originais/README.md#página-16))** — Clojure roda na JVM e acessa classes Java com `Classe/metodo`:
 
 | Expressão | Resultado (JVM) |
 | --- | --- |
@@ -145,7 +149,7 @@
 | `(max 10 3 7)` | `10` (função do Clojure) |
 | `(min 10 3 7)` | `3` (função do Clojure) |
 
-**Atividade 1 (p.17):** calcular e depois programar no OneCompiler, um valor por linha. Respostas na [resolução](../04%20-%20Resoluções/resolucoes-aula-14.md#e7--atividade-1-original-p17).
+**Atividade 1 ([p.17](../01%20-%20Slides%20Originais/README.md#página-17)):** calcular e depois programar no OneCompiler, um valor por linha. Respostas na [resolução](../04%20-%20Resoluções/resolucoes-aula-14.md#e7--atividade-1-original-p17).
 
 ### 7.3 Leitura de valores e `def` (p.18–19)
 
@@ -162,7 +166,7 @@
 - "Essa abordagem, embora facilite a legibilidade, **dificulta a utilização do mesmo valor em diferentes pontos** do programa."
 - O comando **`def`** permite **vincular um nome a um valor**: `(def nome valor)`, `(def pi 3.14159)`, `(def x (read))`.
 
-> **[Atenção]** O slide da p.18 escreve `(- (+ x y) 10))`, com um parêntese **a mais** no final.
+> **[Atenção]** O slide da [p.18](../01%20-%20Slides%20Originais/README.md#página-18) escreve `(- (+ x y) 10))`, com um parêntese **a mais** no final.
 
 **[Explicação elaborada]**
 
@@ -170,7 +174,7 @@
 - Sem `def`, cada `(read)` lê um valor **novo**. Para usar x em duas expressões, seria preciso digitá-lo duas vezes.
 - `def` cria um **vínculo** nome → valor. Não é uma "variável" no sentido imperativo: o valor não é reatribuído ao longo do cálculo. **[Complemento]** Tecnicamente, `def` cria uma *var* global, que pode ser redefinida, mas o estilo funcional evita isso.
 
-**Atividade 2 (p.20):** ler x e y e mostrar, um por linha: x + y − 10; x + 2·y; (x + 2)·y; (x + 2)·y / [10·(x + 8)]; (3·y)² − (x + y). Solução testada na [resolução](../04%20-%20Resoluções/resolucoes-aula-14.md#e8--atividade-2-original-p20). Na p.20, "(3 * y)2" significa (3y)²: o expoente aparece formatado como subscrito.
+**Atividade 2 ([p.20](../01%20-%20Slides%20Originais/README.md#página-20)):** ler x e y e mostrar, um por linha: x + y − 10; x + 2·y; (x + 2)·y; (x + 2)·y / [10·(x + 8)]; (3·y)² − (x + y). Solução testada na [resolução](../04%20-%20Resoluções/resolucoes-aula-14.md#e8--atividade-2-original-p20). Na [p.20](../01%20-%20Slides%20Originais/README.md#página-20), "(3 * y)2" significa (3y)²: o expoente aparece formatado como subscrito.
 
 ### 7.4 Predicados numéricos (p.21, 23)
 
@@ -180,7 +184,7 @@
 - "Não existe o comparador diferente; deve-se usar o `=` negado (`not`)."
 - `even?` (é par?), `odd?` (é ímpar?), `zero?` (é zero?).
 
-**Exemplo (p.23):**
+**Exemplo ([p.23](../01%20-%20Slides%20Originais/README.md#página-23)):**
 
 <!-- teste: entrada="4" saida-contem="Maior que zero:  true|Diferente de zero:  true|Par:  true" -->
 ```clojure
@@ -212,10 +216,23 @@
 ## 9. Conexões e pontos para a prova
 
 - Von Neumann ([Aula 09](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md)) é o contraponto; o [lógico](../../Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) é o outro paradigma fora desse modelo.
-- **Atenção à classificação do professor:** na Aula 15 (p.5), o funcional aparece como **procedural**, e não declarativo.
+- **Atenção à classificação do professor:** na Aula 15 ([p.5](../../Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-5)), o funcional aparece como **procedural**, e não declarativo.
 - Cobrado na [Lista 01, Q2–Q7](../../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/02%20-%20Resolução/resolucao-lista-01.md#q3) e na [Lista 02, Q12](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/02%20-%20Resolução/resolucao-lista-02.md#q12).
 - **Decorar:** puras (Haskell, Miranda) × impuras (LISP, Scheme, Clojure, Elixir, Erlang); os 4 componentes; o contexto histórico (anos 1960, IA, LISP); Clojure (2005, dialeto de LISP, JVM, Walmart/Nubank); `/` × `quot` × `rem`; `def`.
 
 ---
 
 **Anterior:** [Aula 13](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) · **Próxima:** [Aula 15 — Paradigma Lógico](../../Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 14:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-14.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-14.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 13 · Resumo](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Aula 15 · Resumo](../../Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) →
+
+**Links para esta página (14):** [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 11 · Resoluções](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/04%20-%20Resoluções/resolucoes-aula-11.md) · [Aula 13 · Resumo](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Aula 14 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-14.md) · [Aula 14 · visão geral](../README.md) · [Aula 15 · Resumo](../../Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Lista 01](../../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P4 — Estatísticas de texto em Clojure](../../../09%20-%20Projetos%20Práticos/P4%20-%20Estatísticas%20de%20Texto%20em%20Clojure/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

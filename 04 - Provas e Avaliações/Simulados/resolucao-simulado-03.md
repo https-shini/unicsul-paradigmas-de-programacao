@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [04 - Provas e Avaliações](../README.md) › [Simulados](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Simulado 03 · Resolução comentada
 
 > **[Resolução elaborada]** Resolução do [simulado autoral](simulado-03.md). **Não é gabarito oficial do professor.** Os trechos de código foram compilados e executados.
@@ -14,17 +18,17 @@
 
 **1 — c.** `private` restringe o acesso à própria classe; `protected` estende o acesso às subclasses (e, em Java, ao pacote). O encapsulamento da pilha da [Aula 12](../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) depende disso: `vetPilha` e `topo` são `private`.
 
-**2 — b.** Java faz **coleta de lixo automática**: um objeto sem referências *pode* ser liberado, mas o momento não é garantido. Quem tem destrutor chamado explicitamente com `delete` é o C++ (Aula12 p.28–30).
+**2 — b.** Java faz **coleta de lixo automática**: um objeto sem referências *pode* ser liberado, mas o momento não é garantido. Quem tem destrutor chamado explicitamente com `delete` é o C++ (Aula12 [p.28–30](../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-28)).
 
 **3 — c.** Java permite herdar de **uma** classe e implementar **várias** interfaces, nessa ordem: `extends` antes de `implements`. A alternativa (a) seria herança múltipla de classes, que Java não tem; (d) é a sintaxe de C++ ([Aula 13](../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md)).
 
-**4 — b.** Uma classe com método abstrato **precisa** ser declarada `abstract` e não pode ser instanciada; as subclasses **concretas** devem implementar o método (Aula13 p.13). **[Complemento]** Uma subclasse que também seja `abstract` pode deixar a implementação para as suas filhas.
+**4 — b.** Uma classe com método abstrato **precisa** ser declarada `abstract` e não pode ser instanciada; as subclasses **concretas** devem implementar o método (Aula13 [p.13](../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-13)). **[Complemento]** Uma subclasse que também seja `abstract` pode deixar a implementação para as suas filhas.
 
 **5 — b.** Mesmo nome, **listas de parâmetros diferentes**, na mesma classe: sobrecarga, resolvida em tempo de **compilação**. A sobrescrita redefine, na subclasse, um método com a mesma assinatura e é resolvida em execução.
 
-**6 — a.** Em Clojure, `+` aceita qualquer número de argumentos: `(+ 1 2 3 4)` = 10. É uma vantagem da notação prefixa sobre a infixa (Aula14 p.13–14).
+**6 — a.** Em Clojure, `+` aceita qualquer número de argumentos: `(+ 1 2 3 4)` = 10. É uma vantagem da notação prefixa sobre a infixa (Aula14 [p.13–14](../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-13)).
 
-**7 — b.** Haskell é **pura** (sem efeitos colaterais fora de construções controladas); LISP, Scheme e Clojure são **impuras**, porque permitem atribuição e E/S diretas (Aula14 p.9).
+**7 — b.** Haskell é **pura** (sem efeitos colaterais fora de construções controladas); LISP, Scheme e Clojure são **impuras**, porque permitem atribuição e E/S diretas (Aula14 [p.9](../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-9)).
 
 **8 — b.** Função pura: o resultado depende **só dos argumentos**, e a chamada não altera nada fora dela. **[Complemento]** O termo não aparece nos slides com esse nome; ver o [glossário](../../07%20-%20Glossário/glossario.md).
 
@@ -43,7 +47,7 @@
 
 ## 11
 
-**Conceitos:** TDA, encapsulamento, modificadores de acesso (Aula12 p.10–16).
+**Conceitos:** TDA, encapsulamento, modificadores de acesso (Aula12 [p.10–16](../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-10)).
 
 <!-- teste: saida-contem="10\n20\n30\n40" -->
 ```java
@@ -95,7 +99,7 @@ public class Main {
 
 ## 12
 
-**Conceitos:** classe abstrata, herança, polimorfismo e vinculação dinâmica (Aula13 p.12–14).
+**Conceitos:** classe abstrata, herança, polimorfismo e vinculação dinâmica (Aula13 [p.12–14](../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-12)).
 
 <!-- teste: saida-contem="Retangulo: area 6.00\nCirculo: area 3.14" -->
 ```java
@@ -134,13 +138,13 @@ public class Main {
 }
 ```
 
-- **Onde está o polimorfismo dinâmico:** em `descricao()`, a chamada `area()` é feita sobre um objeto do tipo declarado `Forma`. Qual `area()` executa — a do retângulo ou a do círculo — só é decidido **em execução**, pelo tipo real do objeto (vinculação tardia, Aula13 p.12). O mesmo vale para `f.descricao()` no laço.
+- **Onde está o polimorfismo dinâmico:** em `descricao()`, a chamada `area()` é feita sobre um objeto do tipo declarado `Forma`. Qual `area()` executa — a do retângulo ou a do círculo — só é decidido **em execução**, pelo tipo real do objeto (vinculação tardia, Aula13 [p.12](../../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-12)). O mesmo vale para `f.descricao()` no laço.
 - `new Forma("x")` não compila: a classe é abstrata.
 - `Locale.ROOT` garante o ponto decimal; com a localidade `pt-BR`, `%.2f` escreveria `6,00`.
 
 ## 13
 
-**Conceitos:** recursão, funções de ordem superior, ausência de efeitos colaterais (Aula14 p.10–20).
+**Conceitos:** recursão, funções de ordem superior, ausência de efeitos colaterais (Aula14 [p.10–20](../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-10)).
 
 <!-- teste: saida-contem="10\n220" -->
 ```clojure
@@ -161,7 +165,7 @@ public class Main {
 
 ## 14
 
-**Conceitos:** fatos, regras, conjunção, negação por falha, recursão (Aula15 p.14–23).
+**Conceitos:** fatos, regras, conjunção, negação por falha, recursão (Aula15 [p.14–23](../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-14)).
 
 <!-- teste: consulta="(pode_cursar(ana, compiladores) -> A = sim ; A = nao), (pode_cursar(bruno, plp) -> B = sim ; B = nao), (depende(compiladores, algoritmos) -> C = sim ; C = nao)." saida-contem="A = nao|B = sim|C = sim" -->
 ```prolog
@@ -187,7 +191,7 @@ depende(D, P) :- prerequisito(D, X), depende(X, P).
 
 ## 15
 
-**Conceitos:** comparação de paradigmas (Aulas 12, 14 e 15; Aula15 p.3–5).
+**Conceitos:** comparação de paradigmas (Aulas 12, 14 e 15; Aula15 [p.3–5](../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3)).
 
 **Orientado a objetos (Java)** — o dado e o comportamento ficam juntos na classe; o programador escreve **como** percorrer a turma:
 
@@ -242,4 +246,15 @@ aprovado(Nome) :- aluno(Nome, Media), Media >= 6.
 | **Funcional** | `filter` + `map` compostos, sem variáveis alteradas | Mais próximo do **o quê**: descreve a transformação, e o laço fica dentro de `filter` |
 | **Lógico** | Uma regra que **define** aprovado; `findall` reúne as soluções | **O quê**: o mecanismo de busca do Prolog decide como encontrar as respostas |
 
-> **[Atenção]** A Aula15 (p.3–5) classifica o funcional como **procedural**, junto com o imperativo e a OO, e reserva o termo **declarativo** para o lógico. Boa parte da literatura põe o funcional entre os declarativos (ver a errata 31). Na prova, use a classificação do professor e, se houver espaço, cite a divergência.
+> **[Atenção]** A Aula15 ([p.3–5](../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3)) classifica o funcional como **procedural**, junto com o imperativo e a OO, e reserva o termo **declarativo** para o lógico. Boa parte da literatura põe o funcional entre os declarativos (ver a errata 31). Na prova, use a classificação do professor e, se houver espaço, cite a divergência.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Simulado 02 · Resolução comentada](resolucao-simulado-02.md)
+
+**Links para esta página (2):** [04 — Provas e Avaliações](../README.md) · [Simulado 03 — Orientação a objetos, funcional e lógico (Aul…](simulado-03.md)
+
+<!-- /nav:rodape -->

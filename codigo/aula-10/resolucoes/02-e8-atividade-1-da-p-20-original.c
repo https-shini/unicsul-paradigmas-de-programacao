@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 10 - Paradigma Imperativo II/04 - Resoluções/resolucoes-aula-10.md (linha 96).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 10 - Paradigma Imperativo II/04 - Resoluções/resolucoes-aula-10.md (linha 100).
 // Seção: E8 — Atividade 1 da p.20 (original)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-10/resolucoes/02-e8-atividade-1-da-p-20-original.c

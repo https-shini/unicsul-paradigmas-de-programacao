@@ -1,4 +1,4 @@
-% Gerado automaticamente a partir de 04 - Provas e Avaliações/Simulados/resolucao-simulado-01.md (linha 140).
+% Gerado automaticamente a partir de 04 - Provas e Avaliações/Simulados/resolucao-simulado-01.md (linha 144).
 % Seção: 15
 % Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 % Como executar:  python3 ferramentas/rodar.py codigo/simulados/resolucao-01/06-15.pl

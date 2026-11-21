@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 11 - Paradigma Imperativo III/04 - Resoluções/resolucoes-aula-11.md (linha 63).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 11 - Paradigma Imperativo III/04 - Resoluções/resolucoes-aula-11.md (linha 67).
 // Seção: E7
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-11/resolucoes/01-e7.cpp

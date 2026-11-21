@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [02 - Listas de Exercícios](../../README.md) › [Lista 01](../README.md) › [02 - Resolução](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Lista 01 — Revisão I · Resolução comentada
 
 > **[Resolução elaborada]** Resolução produzida para estudo. **Não é gabarito oficial do professor.** Enunciados: [README da lista](../README.md) · original: [`Aula16a_ExRevisao1.pdf`](../01%20-%20Enunciado%20Original/Aula16a_ExRevisao1.pdf).
@@ -7,7 +11,7 @@
 
 ## Q1
 
-**Assunto:** abordagens de programação. **Conceitos:** procedural, declarativo, os quatro paradigmas. **Fonte:** Aula15 p.3–5.
+**Assunto:** abordagens de programação. **Conceitos:** procedural, declarativo, os quatro paradigmas. **Fonte:** Aula15 [p.3–5](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3).
 
 **Resposta-modelo:** a diferença fundamental está **no que o programador especifica**.
 
@@ -20,7 +24,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q2
 
-**Assunto:** von Neumann e paradigmas. **Conceitos:** programa armazenado, atribuição, execução sequencial. **Fontes:** Aula02 p.10, p.15; Aula09 p.3–7; Aula11 p.20; Aula14 p.3–8.
+**Assunto:** von Neumann e paradigmas. **Conceitos:** programa armazenado, atribuição, execução sequencial. **Fontes:** Aula02 [p.10](../../../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-10), [p.15](../../../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-15); Aula09 [p.3–7](../../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-3); Aula11 [p.20](../../../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-20); Aula14 [p.3–8](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-3).
 
 **Resposta-modelo:**
 
@@ -30,11 +34,11 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
   - O **funcional** modela a computação como **funções matemáticas** que mapeiam entradas em saídas. No modelo puro, não há variável (estado), atribuição nem laço — justamente os elementos que espelham a memória de von Neumann.
   - O **lógico** baseia-se no **cálculo de predicados**: o programa é um conjunto de proposições, e o resultado vem de **inferência lógica**, não de uma sequência de alterações de memória.
 
-**[Material original]** Segundo a Aula02 (p.15), as linguagens são projetadas para a arquitetura de von Neumann, e as tentativas inversas (LISP e PROLOG) não deram certo. Por isso, essas linguagens rodam sobre hardware von Neumann, por meio de interpretadores ou compiladores.
+**[Material original]** Segundo a Aula02 ([p.15](../../../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-15)), as linguagens são projetadas para a arquitetura de von Neumann, e as tentativas inversas (LISP e PROLOG) não deram certo. Por isso, essas linguagens rodam sobre hardware von Neumann, por meio de interpretadores ou compiladores.
 
 ## Q3
 
-**Assunto:** funcionais puras e impuras. **Conceitos:** efeito colateral, estado. **Fonte:** Aula14 p.8–9.
+**Assunto:** funcionais puras e impuras. **Conceitos:** efeito colateral, estado. **Fonte:** Aula14 [p.8–9](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-8).
 
 **Resposta-modelo:**
 
@@ -46,7 +50,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q4
 
-**Assunto:** história do funcional e Clojure. **Fonte:** Aula14 p.7, p.11.
+**Assunto:** história do funcional e Clojure. **Fonte:** Aula14 [p.7](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-7), [p.11](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-11).
 
 **Resposta-modelo:**
 
@@ -59,7 +63,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q5
 
-**Assunto:** componentes de uma funcional pura. **Fonte:** Aula14 p.12 e p.22.
+**Assunto:** componentes de uma funcional pura. **Fonte:** Aula14 [p.12](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-12) e [p.22](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-22).
 
 **Resposta-modelo:**
 
@@ -72,7 +76,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q6
 
-**Assunto:** sintaxe prefixada e primitivas. **Fonte:** Aula14 p.13–16, p.21, p.23.
+**Assunto:** sintaxe prefixada e primitivas. **Fonte:** Aula14 [p.13–16](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-13), [p.21](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-21), [p.23](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-23).
 
 **Sintaxe prefixada:** toda expressão tem a forma `(operador arg1 arg2 ...)` — o operador vem antes dos operandos, e os parênteses delimitam a aplicação. As expressões aninhadas são avaliadas de dentro para fora, e os operadores aceitam vários argumentos: `(* 5 2 3)` = 30.
 
@@ -90,7 +94,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q7
 
-**Assunto:** programa Clojure com `def`. **Fonte:** Aula14 p.16, p.18–20.
+**Assunto:** programa Clojure com `def`. **Fonte:** Aula14 [p.16](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-16), [p.18–20](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-18).
 
 <!-- teste: entrada="2 3" saida-contem="3/25\n76.0" saida-contem-cljs="0.12\n76" -->
 ```clojure
@@ -109,7 +113,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q8
 
-**Assunto:** estrutura do programa lógico. **Fonte:** Aula15 p.6–7, p.14–18.
+**Assunto:** estrutura do programa lógico. **Fonte:** Aula15 [p.6–7](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-6), [p.14–18](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-14).
 
 **Resposta-modelo:**
 
@@ -122,7 +126,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q9
 
-**Assunto:** proposicional × primeira ordem. **Fonte:** Aula15 p.7–12.
+**Assunto:** proposicional × primeira ordem. **Fonte:** Aula15 [p.7–12](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-7).
 
 **Resposta-modelo:**
 
@@ -137,7 +141,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q10
 
-**Assunto:** termos e proposições em Prolog. **Fonte:** Aula15 p.14–17.
+**Assunto:** termos e proposições em Prolog. **Fonte:** Aula15 [p.14–17](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-14).
 
 **Resposta-modelo:**
 
@@ -148,7 +152,7 @@ Pela classificação da disciplina, **imperativo, orientado a objetos e funciona
 
 ## Q11
 
-**Assunto:** consultas Prolog. **Fonte:** Aula15 p.17, p.19–20.
+**Assunto:** consultas Prolog. **Fonte:** Aula15 [p.17](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-17), [p.19–20](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-19).
 
 <!-- teste: consulta="pai(joao, X)." saida-contem="X = ana\nX = maria\nX = carlos" -->
 ```prolog
@@ -166,4 +170,15 @@ pai(carlos, renata).
 
 **Explicação:** em (b) e (c), a variável ocupa posições diferentes: no 1º argumento, pergunta-se o **pai**; no 2º, o **filho**. O mesmo fato responde às duas perguntas por **unificação**, e as respostas sucessivas de (c) vêm do **retrocesso** (*backtracking*) sobre os fatos.
 
-**[Explicação elaborada]** Para obter todos os filhos de uma vez, como lista, use `findall`, que aparece no Exemplo 2 da Aula15 (p.21): `?- findall(X, pai(joao, X), L).` → `L = [ana, maria, carlos]` (Aula15 p.21).
+**[Explicação elaborada]** Para obter todos os filhos de uma vez, como lista, use `findall`, que aparece no Exemplo 2 da Aula15 ([p.21](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-21)): `?- findall(X, pai(joao, X), L).` → `L = [ana, maria, carlos]` (Aula15 [p.21](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-21)).
+
+
+<!-- nav:rodape -->
+
+---
+
+[Lista 02 · Resolução](../../Lista%2002%20-%20Revisão%20II/02%20-%20Resolução/resolucao-lista-02.md) →
+
+**Links para esta página (5):** [Aula 09 · Resumo](../../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 14 · Resumo](../../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Aula 15 · Resumo](../../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Lista 01](../README.md) · [02 — Listas de Exercícios](../../README.md)
+
+<!-- /nav:rodape -->

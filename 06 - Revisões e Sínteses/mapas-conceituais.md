@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [06 - Revisões e Sínteses](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Mapas conceituais
 
 > **[Explicação elaborada]** Mapas em [Mermaid](https://mermaid.js.org/), renderizados automaticamente pelo GitHub. Cada mapa resume as relações entre os conceitos de uma parte da disciplina; os detalhes estão nos resumos das aulas indicadas. Legenda: [Convenções](../README.md#convenções-de-marcação).
@@ -41,7 +45,7 @@ flowchart TB
     PON -. "objetos no heap" .-> OO
 ```
 
-\* Classificação do professor (Aula15 p.3–5). Boa parte da literatura classifica o funcional como declarativo.
+\* Classificação do professor (Aula15 [p.3–5](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3)). Boa parte da literatura classifica o funcional como declarativo.
 
 ## 2. Da linguagem à execução (Aulas 03–04)
 
@@ -149,3 +153,12 @@ flowchart TB
     VN2["Crítica ao modelo de von Neumann"] -.-> F
     VN2 -.-> L
 ```
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (2):** [06 — Revisões e Sínteses](README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

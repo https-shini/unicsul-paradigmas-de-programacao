@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 06](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 06 — Sistema de Tipos · Resumo teórico
 
-> **Fonte:** [`Aula06_Tipos.pdf`](../01%20-%20Slides%20Originais/Aula06_Tipos.pdf) (26 páginas). Apoio indicado: Tucker & Noonan, seções 5.1 e 5.2; Sebesta (9ª ed.), cap. 5 (p.26).
+> **Fonte:** [`Aula06_Tipos.pdf`](../01%20-%20Slides%20Originais/Aula06_Tipos.pdf) (26 páginas). Apoio indicado: Tucker & Noonan, seções 5.1 e 5.2; Sebesta (9ª ed.), cap. 5 ([p.26](../01%20-%20Slides%20Originais/README.md#página-26)).
 > **Legenda:** ver [Convenções](../../../README.md#convenções-de-marcação). `p.N` = página do PDF. Os códigos marcados como testados foram executados (gcc, javac, php, python3).
 
 ---
@@ -51,7 +55,7 @@
 > - O `char` de Java ocupa 2 bytes porque representa uma unidade UTF-16 (Unicode).
 > - O tamanho de `boolean` em Java não é fixado pela especificação da linguagem; o "1" do slide é a representação usual.
 
-**Estouro — overflow (p.8):** "Algumas linguagens geram uma **interrupção** e outras não, apenas **armazenam o resultado errado**." O problema se agrava em ponto flutuante, armazenado em notação científica (1432 = 1,432 × 10³). Os detalhes ficam para Cálculo Numérico.
+**Estouro — overflow ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)):** "Algumas linguagens geram uma **interrupção** e outras não, apenas **armazenam o resultado errado**." O problema se agrava em ponto flutuante, armazenado em notação científica (1432 = 1,432 × 10³). Os detalhes ficam para Cálculo Numérico.
 
 > **[Atenção]** O slide começa sem dizer qual é o problema: é o *overflow*, quando o valor extrapola a faixa do tipo.
 
@@ -82,7 +86,7 @@ C não interrompe a execução e simplesmente guarda o valor que "deu a volta" �
 | Quando o tipo é definido | Na **declaração**, em tempo de compilação; **não muda** durante a execução | Em **tempo de execução**, conforme o **valor atribuído** |
 | Exemplos (slides) | C/C++, Java, Ada | Perl, Python, PHP, JavaScript |
 
-**Exemplo em PHP (p.12):**
+**Exemplo em PHP ([p.12](../01%20-%20Slides%20Originais/README.md#página-12)):**
 
 <!-- teste: saida-contem="x eh integer|x eh double|x eh string|z eh string" -->
 ```php
@@ -99,7 +103,7 @@ echo "z eh " . gettype($z) . PHP_EOL;     // string
 ?>
 ```
 
-**O mesmo em Python (p.13):**
+**O mesmo em Python ([p.13](../01%20-%20Slides%20Originais/README.md#página-13)):**
 
 <!-- teste: saida-contem="x eh <class 'int'>|x eh <class 'float'>|x eh <class 'str'>" -->
 ```python
@@ -118,7 +122,7 @@ print("z eh", type(x))     # [Atenção] no slide está type(x); o esperado seri
 
 **[Explicação elaborada]** Nas duas linguagens, a **mesma variável** `x` assume três tipos ao longo da execução. Na tipagem dinâmica, o tipo é um atributo do **valor**, não da variável. Em C ou Java, `x` declarada como `int` seria `int` para sempre.
 
-**Quadro comparativo do professor (p.14):**
+**Quadro comparativo do professor ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)):**
 
 | Quesito | Tipagem estática | Tipagem dinâmica |
 | --- | --- | --- |
@@ -142,8 +146,8 @@ print("z eh", type(x))     # [Atenção] no slide está type(x); o esperado seri
 - **Fortemente tipada:** o sistema de tipos possibilita que **todos os erros de tipo sejam detectados**, em compilação ou em execução. Exemplos do slide: **Ada, Java e Perl**.
 - **A coerção enfraquece a tipagem.**
 - **C/C++ não são tão fortemente tipadas** por possuírem o tipo `union` e realizarem diversas conversões implícitas.
-- **Os dois critérios principais de tipagem fraca (p.21):** **conversão implícita** e **exposição de ponteiros como valores numéricos**.
-- Não há 100% de consenso entre autores ao comparar linguagens (p.21).
+- **Os dois critérios principais de tipagem fraca ([p.21](../01%20-%20Slides%20Originais/README.md#página-21)):** **conversão implícita** e **exposição de ponteiros como valores numéricos**.
+- Não há 100% de consenso entre autores ao comparar linguagens ([p.21](../01%20-%20Slides%20Originais/README.md#página-21)).
 
 ### 6.1 Java ou C? (p.16)
 
@@ -199,7 +203,7 @@ echo "Resultado(x+y+w): $z" . PHP_EOL;     // 40.2
 ?>
 ```
 
-A atividade da p.20 pede o mesmo em C e em Python e uma comparação. Soluções testadas em [resolucoes-aula-06.md](../04%20-%20Resoluções/resolucoes-aula-06.md#e9--atividade-da-p20). Resumo:
+A atividade da [p.20](../01%20-%20Slides%20Originais/README.md#página-20) pede o mesmo em C e em Python e uma comparação. Soluções testadas em [resolucoes-aula-06.md](../04%20-%20Resoluções/resolucoes-aula-06.md#e9--atividade-da-p20). Resumo:
 
 | Linguagem | O que acontece com `10 + "20" + 10.2` | Conclusão |
 | --- | --- | --- |
@@ -207,7 +211,7 @@ A atividade da p.20 pede o mesmo em C e em Python e uma comparação. Soluções
 | C | `"20"` é um `char*`; somar ponteiro com `double` **não compila** | Intermediária: exige conversão manual (`atoi`) |
 | Python | `TypeError` em execução | **Mais forte** (e dinâmica!) |
 
-> **[Atenção] — Perl na lista de fortemente tipadas (p.17).** Perl, como o PHP, faz conversão implícita entre string e número (`"20" + 10` vale 30), o que, pelo critério da própria p.21, a tornaria **mais fraca**. É um exemplo da falta de consenso que o slide menciona. Em prova, cite a lista do professor e, se houver espaço, a ressalva.
+> **[Atenção] — Perl na lista de fortemente tipadas ([p.17](../01%20-%20Slides%20Originais/README.md#página-17)).** Perl, como o PHP, faz conversão implícita entre string e número (`"20" + 10` vale 30), o que, pelo critério da própria [p.21](../01%20-%20Slides%20Originais/README.md#página-21), a tornaria **mais fraca**. É um exemplo da falta de consenso que o slide menciona. Em prova, cite a lista do professor e, se houver espaço, a ressalva.
 
 ### 6.4 Os dois eixos são independentes
 
@@ -235,7 +239,7 @@ Erro clássico de prova: achar que "dinâmica" significa "fraca". Python é din�
 | --- | --- | --- |
 | `int a;` `float b, c;` `c = a + b;` | `t1 = float(a)` <br> `c = t1 + b;` | `ldr R0, a` <br> `cvtdq2ps R0, R0` <br> `ldr R1, b` <br> `add R2, R0, R1` <br> `str c, R2` |
 
-**[Explicação elaborada]** O compilador insere a conversão `float(a)` no código intermediário, que vira a instrução `cvtdq2ps` (*convert doubleword integers to packed single-precision floats*). Só depois a soma é feita entre dois reais. Essa conversão **implícita** é uma coerção. Esta em particular, de alargamento (`int` → `float`), também é feita por Java. O que torna C mais fraca na seção 6 são as conversões implícitas que **perdem informação** (`double` → `int`, p.16 e p.18), o `union` e a exposição de ponteiros como números (p.17 e p.21).
+**[Explicação elaborada]** O compilador insere a conversão `float(a)` no código intermediário, que vira a instrução `cvtdq2ps` (*convert doubleword integers to packed single-precision floats*). Só depois a soma é feita entre dois reais. Essa conversão **implícita** é uma coerção. Esta em particular, de alargamento (`int` → `float`), também é feita por Java. O que torna C mais fraca na seção 6 são as conversões implícitas que **perdem informação** (`double` → `int`, [p.16](../01%20-%20Slides%20Originais/README.md#página-16) e [p.18](../01%20-%20Slides%20Originais/README.md#página-18)), o `union` e a exposição de ponteiros como números ([p.17](../01%20-%20Slides%20Originais/README.md#página-17) e [p.21](../01%20-%20Slides%20Originais/README.md#página-21)).
 
 > **[Atenção]** O assembly do slide é ilustrativo: mistura mnemônicos estilo ARM (`ldr`, `str`, `add`) com uma instrução SSE de x86 (`cvtdq2ps`). Numa máquina real, a soma de dois `float` usaria uma instrução de ponto flutuante (`fadd`/`vadd.f32` no ARM, `addss` no x86), e não o `add` inteiro.
 
@@ -255,3 +259,16 @@ Erro clássico de prova: achar que "dinâmica" significa "fraca". Python é din�
 ---
 
 **Anterior:** [Aula 05](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · **Próxima:** [Aula 07 — Tipos Compostos](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 06:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-06.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-06.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 05 · Resumo](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [Aula 07 · Resumo](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md) →
+
+**Links para esta página (15):** [Aula 05 · Resumo](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [Aula 06 · visão geral](../README.md) · [Aula 07 · Resumo](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md) · [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Aula 10 · Resoluções](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/04%20-%20Resoluções/resolucoes-aula-10.md) · [Aula 13 · Resumo](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 01 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P1 — Interpretador de expressões](../../../09%20-%20Projetos%20Práticos/P1%20-%20Interpretador%20de%20Expressões/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

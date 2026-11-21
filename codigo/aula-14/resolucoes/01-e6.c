@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 14 - Paradigma Funcional/04 - Resoluções/resolucoes-aula-14.md (linha 44).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 14 - Paradigma Funcional/04 - Resoluções/resolucoes-aula-14.md (linha 48).
 // Seção: E6
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-14/resolucoes/01-e6.c

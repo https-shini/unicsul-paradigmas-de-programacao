@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [06 - Revisões e Sínteses](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Erratas e inconsistências do material
 
 > **[Atenção]** Consolidação dos pontos em que os slides têm erro de digitação, código incorreto ou afirmação divergente da literatura. Cada item foi conferido no PDF original (`AulaXX p.N`) e é discutido, em geral, no resumo da aula. **Os originais não foram alterados.**
@@ -7,49 +11,58 @@
 
 | # | Local | O que diz o material | Problema | Forma correta | Impacto |
 | --- | --- | --- | --- | --- | :-: |
-| 1 | Aula01 p.3 | "doaradigma" | Digitação | "do paradigma" | ⚪ |
-| 2 | Aula01 p.6 | Horários 08h30–11h10 sob o rótulo "Noite" | Horário matutino | Confirmar o horário da turma | ⚪ |
-| 3 | Aula02 p.5 | Pascal: `dobro := n1 * n2;` | Calcula o **produto**; as versões em Java e Prolog usam `2 * n1` | `dobro := 2 * n1;` | 🔴 |
-| 4 | Aula02 p.19–21 | Três figuras classificam a 4ª e 5ª gerações | As figuras **não concordam** entre si | As figuras concordam na 1ª (máquina), na 2ª (Assembly) e, em linhas gerais, na 3ª (alto nível). Divergem na 4ª. Na 5ª, todas trazem a programação lógica (Prolog), mas a p.20 inclui também LISP. Citar a figura usada na pergunta | 🟡 |
-| 5 | Aula03 p.10 | Python classificado como interpretado | Simplificação: CPython compila para bytecode (`.pyc`) | Aceitar "interpretado" na disciplina; citar o bytecode como complemento | 🟡 |
-| 6 | Aula04 p.9 | `-5` listado como constante | Na análise léxica, são dois tokens: `-` e `5` | Tratar `-5` como operador unário + constante | 🟡 |
-| 7 | Aula04 p.9 | `=` entre símbolos especiais; `==` entre operadores | Classificação própria do slide | Seguir o slide nas questões da disciplina | ⚪ |
-| 8 | Aula06 p.6–7 | Tamanhos de tipos (`byte` em C/C++; `boolean` = 1 em Java) | C/C++ não têm `byte`; o tamanho de `boolean` não é fixado pela especificação | `char` em C/C++; `boolean` com representação dependente da JVM; em C/C++, `long` não tem tamanho fixo (8 bytes no Linux 64 bits, 4 no Windows) | 🟡 |
-| 9 | Aula06 p.8 | Slide de overflow sem nomear o problema | O conceito não é nomeado | *Overflow* (o valor extrapola a faixa do tipo) | ⚪ |
-| 10 | Aula06 p.13 | `print("z eh", type(x))` | Testa `x` em vez de `z` | `type(z)` | 🟡 |
-| 11 | Aula06 p.17 | Perl entre as linguagens fortemente tipadas | Perl faz coerção string ↔ número, o que pela p.21 a tornaria mais fraca | Mencionar a falta de consenso que o próprio slide reconhece | 🟡 |
-| 12 | Aula07 p.14–16 | Exercício cita o **8º** semestre; desafio cita **4º e 5º** | Enunciados inconsistentes | Não afeta a lógica | ⚪ |
-| 13 | Aula07 p.15 | Saída de exemplo do exercício em Java | Gerada com `make` (C/C++) e com médias **truncadas** | Exibir médias `float` com casas decimais | 🟡 |
-| 14 | Aula08 p.14 | `int* vetor = new int(4);` | Aloca **um** `int` com valor 4; o laço escreve fora da área alocada | `new int[n]` + `delete[] vetor;` | 🔴 |
-| 15 | Aula09–Aula15, p.1 | Arquivos `Aula09`–`Aula15` com títulos "Aula 10"–"Aula 16" | Numeração deslocada em +1 | Este repositório usa o nome do arquivo | ⚪ |
-| 16 | Aula09 p.11 | `int x = x + 20;` | Usa `x` antes de inicializar | `int x = 10; x = x + 20;` | 🔴 |
-| 17 | Aula09 p.18 | Dijkstra mostrou que o "uso excessivo" de `goto` é prejudicial e que qualquer programa com `goto` pode ser reescrito com laços | O artigo pede **abolir** o `goto`; a prova de dispensabilidade é de **Böhm e Jacopini (1966)** | Ver [resumo do artigo](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md) | 🟡 |
-| 18 | Aula09 p.23–24 | Bibliografia (p.23) antes da Atividade 2 (p.24) | Ordem dos slides | — | ⚪ |
-| 19 | Aula09 p.20–22 | Programas sem `#include <stdio.h>` | Não compila sem aviso em C moderno | Incluir o cabeçalho | ⚪ |
-| 20 | Aula10 p.13 | "atualizar a variável **menor** com este **valor**" | O código guarda a **posição** (`posMenor = j`) | O código está certo: a posição é necessária para a troca | 🟡 |
-| 21 | Aula10 p.16 | "não favorece a **baixa** coesão" | Inverte o conceito: o desejável é **alta** coesão | "não favorece a **alta** coesão" | 🔴 |
-| 22 | Aula12 p.8 | "empilhar **três** números" | Os laços Java vão de 0 a 4 (**cinco** números) | Só a versão C++ (p.30) usa 3 | ⚪ |
-| 23 | Aula12 p.27 | `if (topo == tamanho-1)` | `tamanho` não está declarado em `pilha.h` | Declarar `const int tamanho = …;` | 🔴 |
-| 24 | Aula12 p.30 | Corpo de `Pilha::pop()` | **Cortado** na borda do slide | Versão completada no [resumo da Aula 12](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) | 🟡 |
-| 25 | Aula13 p.7 e p.9 | Atributos Resolução, Colorido, Modelo | Não aparecem no código C++ | — | ⚪ |
-| 26 | Aula13 p.13 | Interfaces só têm assinaturas e constantes | Definição clássica, anterior ao Java 8 (`default`, `static`) e ao Java 9 (`private`) | Usar a definição do slide e citar a evolução | 🟡 |
-| 27 | Aula14 p.8 | Prêmio "pelo seu trabalho como Fortran" | Redação truncada | "pelo trabalho com o Fortran" (e a BNF) | ⚪ |
-| 28 | Aula14 p.18 | `(- (+ x y) 10))` | Parêntese **a mais** | `(- (+ x y) 10)` | 🔴 |
-| 29 | Aula14 p.21 (uso na p.23) | "Não existe o comparador diferente, deve-se usar o = negado (not)" | Falso: Clojure tem `not=` | `(not= x 0)` equivale a `(not (= x 0))`. Na Lista 01 Q6b, dar a forma do slide e citar `not=` | 🟡 |
-| 30 | Aula14 p.20 | "(3 * y)2" | Expoente formatado como subscrito | (3y)² | ⚪ |
-| 31 | Aula15 p.3–5 | Funcional classificado como **procedural** | Boa parte da literatura classifica o funcional como **declarativo** | Seguir o professor; mencionar a divergência | 🟡 |
-| 32 | Aula15 p.25 | Repete o slide de objetivos | Página solta após a bibliografia | — | ⚪ |
-| 33 | Aula12 p.13, p.15, p.29 | `public void Pilha() { … }` | Com `void`, é um método, não um construtor; `new Pilha()` não o executa (funciona só porque o valor padrão de `topo` já é 0/`null`) | `public Pilha() { … }` | 🟡 |
-| 34 | Aula05 p.17 | "Por definição, não há verificação estática em linguagens interpretadas" | Vale para o interpretador puro; CPython e Perl verificam a sintaxe (e, com `use strict`, as declarações) antes de executar | Usar a forma do professor e citar a ressalva | 🟡 |
-| 35 | Aula07 p.11 × Aula08 p.13 | Vetor "não pode" mudar de tamanho × alocação dinâmica com tamanho que "pode ser alterado" | As frases parecem contraditórias | A dinâmica permite **escolher** o tamanho em execução; para "alterar", aloca-se um novo bloco e copia-se (ver o [resumo da Aula 08](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)) | 🟡 |
-| 36 | Aula11 p.14 | "Java suporta apenas passagem por valor para tipos primitivos" | Sugere outro modelo para objetos | Java passa **sempre** por valor; para objetos, o valor copiado é a referência | 🟡 |
-| 37 | Aula01 p.9; Aula09a (cabeçalho) | "DIJKSTRA, Edgar"; "ENDRISS, Ule" | Grafia dos prenomes | "Edsger"; "Ulle" | ⚪ |
-| 38 | Aula09 p.15 | Figura põe o Prolog na faixa dos anos 1960 | A Aula15 p.13 situa o início do Prolog em 1972 | Anos 1970 | ⚪ |
-| 39 | Aula14 p.11 | "Wallmart" | Digitação | "Walmart" | ⚪ |
-| 40 | Aula15 p.16–17 | `pai (joao, maria)` | Espaço entre o functor e o parêntese é **erro de sintaxe** em Prolog | `pai(joao, maria)` | 🔴 |
+| 1 | Aula01 [p.3](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-3) | "doaradigma" | Digitação | "do paradigma" | ⚪ |
+| 2 | Aula01 [p.6](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-6) | Horários 08h30–11h10 sob o rótulo "Noite" | Horário matutino | Confirmar o horário da turma | ⚪ |
+| 3 | Aula02 [p.5](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-5) | Pascal: `dobro := n1 * n2;` | Calcula o **produto**; as versões em Java e Prolog usam `2 * n1` | `dobro := 2 * n1;` | 🔴 |
+| 4 | Aula02 [p.19–21](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-19) | Três figuras classificam a 4ª e 5ª gerações | As figuras **não concordam** entre si | As figuras concordam na 1ª (máquina), na 2ª (Assembly) e, em linhas gerais, na 3ª (alto nível). Divergem na 4ª. Na 5ª, todas trazem a programação lógica (Prolog), mas a [p.20](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-20) inclui também LISP. Citar a figura usada na pergunta | 🟡 |
+| 5 | Aula03 [p.10](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-10) | Python classificado como interpretado | Simplificação: CPython compila para bytecode (`.pyc`) | Aceitar "interpretado" na disciplina; citar o bytecode como complemento | 🟡 |
+| 6 | Aula04 [p.9](../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/01%20-%20Slides%20Originais/README.md#página-9) | `-5` listado como constante | Na análise léxica, são dois tokens: `-` e `5` | Tratar `-5` como operador unário + constante | 🟡 |
+| 7 | Aula04 [p.9](../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/01%20-%20Slides%20Originais/README.md#página-9) | `=` entre símbolos especiais; `==` entre operadores | Classificação própria do slide | Seguir o slide nas questões da disciplina | ⚪ |
+| 8 | Aula06 [p.6–7](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-6) | Tamanhos de tipos (`byte` em C/C++; `boolean` = 1 em Java) | C/C++ não têm `byte`; o tamanho de `boolean` não é fixado pela especificação | `char` em C/C++; `boolean` com representação dependente da JVM; em C/C++, `long` não tem tamanho fixo (8 bytes no Linux 64 bits, 4 no Windows) | 🟡 |
+| 9 | Aula06 [p.8](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-8) | Slide de overflow sem nomear o problema | O conceito não é nomeado | *Overflow* (o valor extrapola a faixa do tipo) | ⚪ |
+| 10 | Aula06 [p.13](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-13) | `print("z eh", type(x))` | Testa `x` em vez de `z` | `type(z)` | 🟡 |
+| 11 | Aula06 [p.17](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-17) | Perl entre as linguagens fortemente tipadas | Perl faz coerção string ↔ número, o que pela [p.21](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-21) a tornaria mais fraca | Mencionar a falta de consenso que o próprio slide reconhece | 🟡 |
+| 12 | Aula07 [p.14–16](../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/01%20-%20Slides%20Originais/README.md#página-14) | Exercício cita o **8º** semestre; desafio cita **4º e 5º** | Enunciados inconsistentes | Não afeta a lógica | ⚪ |
+| 13 | Aula07 [p.15](../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/01%20-%20Slides%20Originais/README.md#página-15) | Saída de exemplo do exercício em Java | Gerada com `make` (C/C++) e com médias **truncadas** | Exibir médias `float` com casas decimais | 🟡 |
+| 14 | Aula08 [p.14](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-14) | `int* vetor = new int(4);` | Aloca **um** `int` com valor 4; o laço escreve fora da área alocada | `new int[n]` + `delete[] vetor;` | 🔴 |
+| 15 | Aula09–Aula15, [p.1](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-1) | Arquivos `Aula09`–`Aula15` com títulos "Aula 10"–"Aula 16" | Numeração deslocada em +1 | Este repositório usa o nome do arquivo | ⚪ |
+| 16 | Aula09 [p.11](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-11) | `int x = x + 20;` | Usa `x` antes de inicializar | `int x = 10; x = x + 20;` | 🔴 |
+| 17 | Aula09 [p.18](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-18) | Dijkstra mostrou que o "uso excessivo" de `goto` é prejudicial e que qualquer programa com `goto` pode ser reescrito com laços | O artigo pede **abolir** o `goto`; a prova de dispensabilidade é de **Böhm e Jacopini (1966)** | Ver [resumo do artigo](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md) | 🟡 |
+| 18 | Aula09 [p.23–24](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-23) | Bibliografia ([p.23](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-23)) antes da Atividade 2 ([p.24](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-24)) | Ordem dos slides | — | ⚪ |
+| 19 | Aula09 [p.20–22](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-20) | Programas sem `#include <stdio.h>` | Não compila sem aviso em C moderno | Incluir o cabeçalho | ⚪ |
+| 20 | Aula10 [p.13](../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-13) | "atualizar a variável **menor** com este **valor**" | O código guarda a **posição** (`posMenor = j`) | O código está certo: a posição é necessária para a troca | 🟡 |
+| 21 | Aula10 [p.16](../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-16) | "não favorece a **baixa** coesão" | Inverte o conceito: o desejável é **alta** coesão | "não favorece a **alta** coesão" | 🔴 |
+| 22 | Aula12 [p.8](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-8) | "empilhar **três** números" | Os laços Java vão de 0 a 4 (**cinco** números) | Só a versão C++ ([p.30](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-30)) usa 3 | ⚪ |
+| 23 | Aula12 [p.27](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-27) | `if (topo == tamanho-1)` | `tamanho` não está declarado em `pilha.h` | Declarar `const int tamanho = …;` | 🔴 |
+| 24 | Aula12 [p.30](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-30) | Corpo de `Pilha::pop()` | **Cortado** na borda do slide | Versão completada no [resumo da Aula 12](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) | 🟡 |
+| 25 | Aula13 [p.7](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-7) e [p.9](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-9) | Atributos Resolução, Colorido, Modelo | Não aparecem no código C++ | — | ⚪ |
+| 26 | Aula13 [p.13](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-13) | Interfaces só têm assinaturas e constantes | Definição clássica, anterior ao Java 8 (`default`, `static`) e ao Java 9 (`private`) | Usar a definição do slide e citar a evolução | 🟡 |
+| 27 | Aula14 [p.8](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-8) | Prêmio "pelo seu trabalho como Fortran" | Redação truncada | "pelo trabalho com o Fortran" (e a BNF) | ⚪ |
+| 28 | Aula14 [p.18](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-18) | `(- (+ x y) 10))` | Parêntese **a mais** | `(- (+ x y) 10)` | 🔴 |
+| 29 | Aula14 [p.21](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-21) (uso na [p.23](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-23)) | "Não existe o comparador diferente, deve-se usar o = negado (not)" | Falso: Clojure tem `not=` | `(not= x 0)` equivale a `(not (= x 0))`. Na Lista 01 Q6b, dar a forma do slide e citar `not=` | 🟡 |
+| 30 | Aula14 [p.20](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-20) | "(3 * y)2" | Expoente formatado como subscrito | (3y)² | ⚪ |
+| 31 | Aula15 [p.3–5](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3) | Funcional classificado como **procedural** | Boa parte da literatura classifica o funcional como **declarativo** | Seguir o professor; mencionar a divergência | 🟡 |
+| 32 | Aula15 [p.25](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-25) | Repete o slide de objetivos | Página solta após a bibliografia | — | ⚪ |
+| 33 | Aula12 [p.13](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-13), [p.15](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-15), [p.29](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-29) | `public void Pilha() { … }` | Com `void`, é um método, não um construtor; `new Pilha()` não o executa (funciona só porque o valor padrão de `topo` já é 0/`null`) | `public Pilha() { … }` | 🟡 |
+| 34 | Aula05 [p.17](../01%20-%20Aulas/Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-17) | "Por definição, não há verificação estática em linguagens interpretadas" | Vale para o interpretador puro; CPython e Perl verificam a sintaxe (e, com `use strict`, as declarações) antes de executar | Usar a forma do professor e citar a ressalva | 🟡 |
+| 35 | Aula07 [p.11](../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/01%20-%20Slides%20Originais/README.md#página-11) × Aula08 [p.13](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-13) | Vetor "não pode" mudar de tamanho × alocação dinâmica com tamanho que "pode ser alterado" | As frases parecem contraditórias | A dinâmica permite **escolher** o tamanho em execução; para "alterar", aloca-se um novo bloco e copia-se (ver o [resumo da Aula 08](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)) | 🟡 |
+| 36 | Aula11 [p.14](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-14) | "Java suporta apenas passagem por valor para tipos primitivos" | Sugere outro modelo para objetos | Java passa **sempre** por valor; para objetos, o valor copiado é a referência | 🟡 |
+| 37 | Aula01 [p.9](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-9); Aula09a (cabeçalho) | "DIJKSTRA, Edgar"; "ENDRISS, Ule" | Grafia dos prenomes | "Edsger"; "Ulle" | ⚪ |
+| 38 | Aula09 [p.15](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-15) | Figura põe o Prolog na faixa dos anos 1960 | A Aula15 [p.13](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-13) situa o início do Prolog em 1972 | Anos 1970 | ⚪ |
+| 39 | Aula14 [p.11](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-11) | "Wallmart" | Digitação | "Walmart" | ⚪ |
+| 40 | Aula15 [p.16–17](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-16) | `pai (joao, maria)` | Espaço entre o functor e o parêntese é **erro de sintaxe** em Prolog | `pai(joao, maria)` | 🔴 |
 
 ## Por que isso importa
 
 - Os itens 🔴 aparecem em **código que você pode copiar** para uma atividade: use sempre a versão corrigida dos resumos, que foi compilada e testada.
 - Os itens 🟡 são os que mais rendem em questões discursivas: mostrar que você conhece a nuance (por exemplo, Böhm e Jacopini × Dijkstra) demonstra domínio.
 - Encontrou outro problema? Registre-o aqui com arquivo, página e a forma correta.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (8):** [Inventário dos materiais originais](../00%20-%20Planejamento%20e%20Organização/inventario-dos-materiais.md) · [06 — Revisões e Sínteses](README.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas…](Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) · [Guia de estudo para as avaliações](guia-de-estudo-para-provas.md) · [Quadros comparativos](quadros-comparativos.md) · [Documentação oficial das linguagens](../08%20-%20Referências%20e%20Fontes/documentacao-oficial.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

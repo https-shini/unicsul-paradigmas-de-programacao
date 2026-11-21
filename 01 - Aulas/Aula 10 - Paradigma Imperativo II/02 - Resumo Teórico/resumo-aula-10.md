@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 10](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 10 — Paradigma Imperativo II (Abstração) · Resumo teórico
 
 > **Fonte:** [`Aula10_ParadigmaImperativo2.pdf`](../01%20-%20Slides%20Originais/Aula10_ParadigmaImperativo2.pdf) (20 páginas). Título interno: "Aula 11 – Paradigma Imperativo – Parte 2". A aula não tem slide de bibliografia.
@@ -17,7 +21,7 @@
 - Possibilita compreender os aspectos relevantes de um problema para construir uma solução computacional que o resolva.
 - Resumindo: visa **simplificar o processo de construção** de um programa.
 
-**Abstração em linguagens de programação (p.5):**
+**Abstração em linguagens de programação ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)):**
 
 | Tipo | Mecanismo | Paradigma |
 | --- | --- | --- |
@@ -30,7 +34,7 @@
 
 **[Material original]** "É o processo que permite ao programador se preocupar com a **interface** entre a função e **o que ela calcula**, ignorando os detalhes de **como** o cálculo é realizado."
 
-**Processo de abstração procedural (p.7):**
+**Processo de abstração procedural ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)):**
 
 1. Descrever sucintamente a função calculada, com sua entrada e sua saída.
 2. Dividir a função descrita em um conjunto de funções mais primitivas, com suas respectivas entradas e saídas.
@@ -53,15 +57,15 @@ flowchart TD
 
 | Nível | Função | O que faz (slide) | Código no slide |
 | --- | --- | --- | --- |
-| Abstração 1 (p.9–11) | `main` | Ler os dez valores num vetor; imprimir o original; ordenar; imprimir o ordenado. Ler e imprimir são simples e codificados diretamente. | `int vetor[10]; lerVetor(vetor); mostrarVetor(vetor); ordenarVetor(vetor); mostrarVetor(vetor);` |
-| Abstração 2 (p.12) | `ordenarVetor` | Percorrer o vetor e encontrar o menor; trocar o menor com o primeiro; repetir a partir da posição seguinte até o fim. | `for (i=0;i<10;i++){ posMenor = encontrarMenor(vetor, i); trocarElementos(&vetor[i], &vetor[posMenor]); }` |
-| Abstração 3 (p.13) | `encontrarMenor` | Considerar o primeiro elemento como o menor e guardar sua posição; percorrer e comparar; quando um elemento for menor, atualizar. | `posMenor = inicio; for (j=inicio+1;j<10;j++) if (vetor[j]<vetor[posMenor]) posMenor = j; return posMenor;` |
-| Abstração 3 (p.14) | `trocarElementos` | Salvar um valor em uma temporária; substituir pelo outro; copiar a temporária de volta. | `int temp = *a; *a = *b; *b = temp;` |
+| Abstração 1 ([p.9–11](../01%20-%20Slides%20Originais/README.md#página-9)) | `main` | Ler os dez valores num vetor; imprimir o original; ordenar; imprimir o ordenado. Ler e imprimir são simples e codificados diretamente. | `int vetor[10]; lerVetor(vetor); mostrarVetor(vetor); ordenarVetor(vetor); mostrarVetor(vetor);` |
+| Abstração 2 ([p.12](../01%20-%20Slides%20Originais/README.md#página-12)) | `ordenarVetor` | Percorrer o vetor e encontrar o menor; trocar o menor com o primeiro; repetir a partir da posição seguinte até o fim. | `for (i=0;i<10;i++){ posMenor = encontrarMenor(vetor, i); trocarElementos(&vetor[i], &vetor[posMenor]); }` |
+| Abstração 3 ([p.13](../01%20-%20Slides%20Originais/README.md#página-13)) | `encontrarMenor` | Considerar o primeiro elemento como o menor e guardar sua posição; percorrer e comparar; quando um elemento for menor, atualizar. | `posMenor = inicio; for (j=inicio+1;j<10;j++) if (vetor[j]<vetor[posMenor]) posMenor = j; return posMenor;` |
+| Abstração 3 ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)) | `trocarElementos` | Salvar um valor em uma temporária; substituir pelo outro; copiar a temporária de volta. | `int temp = *a; *a = *b; *b = temp;` |
 
 > **[Atenção]**
-> - O texto da p.13 diz "atualizar a variável **menor** com este **valor**", mas o código guarda a **posição** (`posMenor = j`). O código é o correto: a posição é necessária para fazer a troca depois.
+> - O texto da [p.13](../01%20-%20Slides%20Originais/README.md#página-13) diz "atualizar a variável **menor** com este **valor**", mas o código guarda a **posição** (`posMenor = j`). O código é o correto: a posição é necessária para fazer a troca depois.
 > - `encontrarMenor` e `trocarElementos` aparecem ambos como "Abstração 3" (mesmo nível de refinamento, abaixo de `ordenarVetor`).
-> - O código de `trocarElementos` (p.14) recebe dois ponteiros, `void trocarElementos(int *a, int *b)`, e é compatível com a chamada `trocarElementos(&vetor[i], &vetor[posMenor])`.
+> - O código de `trocarElementos` ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)) recebe dois ponteiros, `void trocarElementos(int *a, int *b)`, e é compatível com a chamada `trocarElementos(&vetor[i], &vetor[posMenor])`.
 
 **Programa completo (versão montada a partir dos trechos do slide):**
 
@@ -166,7 +170,7 @@ As três funções dependem de `total`: mudar o nome ou o tipo de `total` obriga
 - **Encapsulamento (Tucker e Noonan):** "mecanismo que permite que constantes logicamente relacionadas, tipos, variáveis, métodos, entre outros, sejam agrupados em uma nova entidade".
 - Por meio de **mecanismos de controle de acesso**, detalhes desnecessários são **ocultados** das entidades que usam esse invólucro.
 
-**Um TDA (p.18):**
+**Um TDA ([p.18](../01%20-%20Slides%20Originais/README.md#página-18)):**
 
 1. permite declarar variáveis daquele tipo;
 2. **oculta a representação interna**;
@@ -178,12 +182,12 @@ As três funções dependem de `total`: mudar o nome ou o tipo de `total` obriga
 
 ## 8. Exercício e atividade (p.19–20)
 
-**[Material original] — Exercício (p.19):** em C, processar as notas de uma turma: ler 10 notas inteiras (0 a 100) num vetor; exibir; **inverter o próprio vetor** (sem vetor auxiliar); exibir de novo.
+**[Material original] — Exercício ([p.19](../01%20-%20Slides%20Originais/README.md#página-19)):** em C, processar as notas de uma turma: ler 10 notas inteiras (0 a 100) num vetor; exibir; **inverter o próprio vetor** (sem vetor auxiliar); exibir de novo.
 
 - O `main` deve apenas **orquestrar** `lerVetor`, `mostrarVetor` e `inverterVetor`.
 - `inverterVetor` deve **delegar** a troca dos elementos opostos a uma função auxiliar `trocarElementos`.
 
-**[Material original] — Atividade 1 (p.20):** ler o total de elementos de um conjunto e a quantidade agrupada; calcular arranjos e combinações por abstração procedural, em qualquer linguagem **exceto Java** e **sem recursos de OO**.
+**[Material original] — Atividade 1 ([p.20](../01%20-%20Slides%20Originais/README.md#página-20)):** ler o total de elementos de um conjunto e a quantidade agrupada; calcular arranjos e combinações por abstração procedural, em qualquer linguagem **exceto Java** e **sem recursos de OO**.
 
 ```latex
 A_{n,p} = \frac{n!}{(n-p)!} \qquad\qquad C_{n,p} = \frac{n!}{p!\,(n-p)!}
@@ -201,3 +205,16 @@ Soluções testadas em [resolucoes-aula-10.md](../04%20-%20Resoluções/resoluco
 ---
 
 **Anterior:** [Aula 09](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · **Próxima:** [Aula 11 — Paradigma Imperativo III](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 10:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-10.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-10.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 11 · Resumo](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md) →
+
+**Links para esta página (15):** [Aula 03 · Resumo](../../Aula%2003%20-%20Implementação%20das%20Linguagens/02%20-%20Resumo%20Teórico/resumo-aula-03.md) · [Aula 05 · Resumo](../../Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [Aula 08 · Resoluções](../../Aula%2008%20-%20Ponteiros/04%20-%20Resoluções/resolucoes-aula-08.md) · [Aula 09 · Resumo](../../Aula%2009%20-%20Paradigma%20Imperativo%20I/02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Aula 10 · visão geral](../README.md) · [Aula 11 · Resumo](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/02%20-%20Resumo%20Teórico/resumo-aula-11.md) · [Aula 12 · Resumo](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [Aula 13 · Resumo](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

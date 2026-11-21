@@ -1,20 +1,24 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 01](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 01 — Apresentação da Disciplina · Resoluções comentadas
 
 > **[Resolução elaborada]** Soluções produzidas para estudo, não são gabarito oficial. Enunciados: [`exercicios-aula-01.md`](../03%20-%20Exercícios/exercicios-aula-01.md). Base: [`Aula01_Intro.pdf`](../01%20-%20Slides%20Originais/Aula01_Intro.pdf).
 
 ## E1
 
-**Resposta:** imperativo, orientado a objetos, funcional e lógico (p.3 e p.5).
+**Resposta:** imperativo, orientado a objetos, funcional e lógico ([p.3](../01%20-%20Slides%20Originais/README.md#página-3) e [p.5](../01%20-%20Slides%20Originais/README.md#página-5)).
 
 **Raciocínio:** a ementa os cita nominalmente ("paradigma imperativo", "orientação a objetos", "paradigma funcional", "paradigma baseado em lógica"). A Aula 02 confirma a mesma lista de quatro.
 
 ## E2
 
-**Resposta:** A1 = Prova Regimental (5,0). A2 = Avaliação Parcial (3,0) + Exercícios (2,0) = 5,0. Nota final = A1 + A2, máximo 10,0 (p.6).
+**Resposta:** A1 = Prova Regimental (5,0). A2 = Avaliação Parcial (3,0) + Exercícios (2,0) = 5,0. Nota final = A1 + A2, máximo 10,0 ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)).
 
 ## E3
 
-**Resposta:** 75%. Frequência inferior a 75% reprova, independentemente das notas (p.7).
+**Resposta:** 75%. Frequência inferior a 75% reprova, independentemente das notas ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)).
 
 ## E4
 
@@ -28,7 +32,7 @@
 
 ## E5
 
-Regras (p.7): A1 + A2 ≥ 6,0 aprova; menos de 1,0 em A1 **ou** A2 reprova sem AF; nos demais casos, AF.
+Regras ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)): A1 + A2 ≥ 6,0 aprova; menos de 1,0 em A1 **ou** A2 reprova sem AF; nos demais casos, AF.
 
 | Aluno | A1 + A2 | Situação | Por quê |
 | --- | --- | --- | --- |
@@ -68,3 +72,16 @@ A AF substitui a **menor** nota; a aprovação exige AF + maior nota ≥ 6,0.
 | Dybvig, *The Scheme Programming Language* | 14 | Scheme é um dialeto de LISP, como Clojure, usado na aula |
 | Normark, *Functional Programming in Scheme* | 14 | Programação funcional |
 | Endriss, *An Introduction to Prolog Programming* | 15 | Prolog é a linguagem do paradigma lógico |
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 01:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-01.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-01.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+[Aula 02 · Resoluções](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/04%20-%20Resoluções/resolucoes-aula-02.md) →
+
+**Links para esta página (3):** [Aula 01 · Exercícios](../03%20-%20Exercícios/exercicios-aula-01.md) · [Aula 01 · visão geral](../README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

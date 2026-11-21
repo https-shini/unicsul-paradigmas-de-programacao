@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [08 - Referências e Fontes](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Livros e notas de aula
 
 > Legenda: 🎓 indicado pelo professor · ➕ complemento do repositório. Formato das referências: ABNT NBR 6023:2018. Links conferidos em 19/11/2026. Marcações: [Convenções](../README.md#convenções-de-marcação).
@@ -15,7 +19,7 @@
 
 ## 1. Bibliografia básica do plano de ensino
 
-**[Material original]** Aula01 p.8.
+**[Material original]** Aula01 [p.8](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-8).
 
 ### L01 — Ascencio (2007)
 
@@ -73,7 +77,7 @@ TUCKER, Allen B.; NOONAN, Robert E. **Linguagens de programação**: princípios
 
 ## 3. Bibliografia complementar do plano de ensino
 
-**[Material original]** Aula01 p.9. Todos têm versão on-line gratuita.
+**[Material original]** Aula01 [p.9](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-9). Todos têm versão on-line gratuita.
 
 ### L06 — Dybvig (2009)
 
@@ -102,7 +106,7 @@ ENDRISS, Ulle. **An introduction to Prolog programming**. Amsterdam: Institute f
 - **Acesso:** Notas de aula em PDF, de acesso livre. [Abrir](https://staff.science.uva.nl/~ulle/teaching/pss/prolog.pdf)
 - **Aulas:** [01](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/README.md) · [15](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/README.md)
 - **Por que ler:** Introdução prática ao Prolog com exercícios: fatos, regras, unificação, recursão, listas e *backtracking* — aprofunda o que a Aula 15 mostra.
-- **Observação:** Ano conforme o slide (Aula01 p.9). O PDF é revisado periodicamente pelo autor.
+- **Observação:** Ano conforme o slide (Aula01 [p.9](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/01%20-%20Slides%20Originais/README.md#página-9)). O PDF é revisado periodicamente pelo autor.
 
 ### L09 — Nørmark (2003)
 
@@ -282,3 +286,12 @@ BRATKO, Ivan. **Prolog programming for artificial intelligence**. 4. ed. Harlow:
 - **Acesso:** Livro impresso.
 - **Aulas:** [15](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/README.md)
 - **Por que ler:** Prolog aplicado a problemas de IA (busca, planejamento, sistemas especialistas); mostra onde o paradigma lógico é a melhor escolha.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (4):** [Bibliografia](../00%20-%20Planejamento%20e%20Organização/bibliografia.md) · [05 — Materiais Complementares](../05%20-%20Materiais%20Complementares/README.md) · [08 — Referências e Fontes](README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

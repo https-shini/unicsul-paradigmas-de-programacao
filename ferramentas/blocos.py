@@ -27,7 +27,9 @@ MARCADOR = re.compile(r'<!--\s*teste:\s*(.*?)-->', re.S)
 TITULO = re.compile(r'^(#{1,6})\s+(.*?)\s*#*\s*$', re.M)
 LINGUAGENS = {"c": "c", "cpp": "cpp", "java": "java", "python": "python", "php": "php",
               "perl": "perl", "clojure": "clojure", "prolog": "prolog", "csharp": "csharp"}
-IGNORAR_DIRS = {".git", "node_modules", "codigo", "09 - Projetos Práticos", ".devcontainer", ".github"}
+# Modelos e o caderno pessoal não são testados: o código ali é ilustrativo ou rascunho do estudante
+IGNORAR_DIRS = {".git", "node_modules", "codigo", "09 - Projetos Práticos", ".devcontainer", ".github",
+                "Modelos", "10 - Caderno de Anotações"}
 
 
 @dataclass

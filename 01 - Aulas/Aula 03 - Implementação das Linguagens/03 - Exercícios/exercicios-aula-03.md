@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 03](../README.md) › [03 - Exercícios](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 03 — Implementação das Linguagens · Exercícios
 
-> **[Exercício autoral]**, exceto o E9, que é a atividade original da p.17. Base: [`Aula03_Implementacao_LinguagensDeProgramacao.pdf`](../01%20-%20Slides%20Originais/Aula03_Implementacao_LinguagensDeProgramacao.pdf). Resoluções: [`resolucoes-aula-03.md`](../04%20-%20Resoluções/resolucoes-aula-03.md)
+> **[Exercício autoral]**, exceto o E9, que é a atividade original da [p.17](../01%20-%20Slides%20Originais/README.md#página-17). Base: [`Aula03_Implementacao_LinguagensDeProgramacao.pdf`](../01%20-%20Slides%20Originais/Aula03_Implementacao_LinguagensDeProgramacao.pdf). Resoluções: [`resolucoes-aula-03.md`](../04%20-%20Resoluções/resolucoes-aula-03.md)
 
 ## Básico
 
@@ -27,8 +31,21 @@ a) Compilação  b) Interpretação pura  c) Híbrida  d) Montagem
 
 ## Prática
 
-**E9 — Atividade da p.17 (original, ampliada).** Implemente um programa que leia dez números e imprima a média, o maior e o menor. O slide pede **uma** linguagem; aqui, faça em pelo menos duas, de grupos diferentes, compare com Java e classifique cada linguagem quanto à forma de implementação.
+**E9 — Atividade da [p.17](../01%20-%20Slides%20Originais/README.md#página-17) (original, ampliada).** Implemente um programa que leia dez números e imprima a média, o maior e o menor. O slide pede **uma** linguagem; aqui, faça em pelo menos duas, de grupos diferentes, compare com Java e classifique cada linguagem quanto à forma de implementação.
 
 ## Aprofundamento
 
-**E10.** Usando a figura de computadores virtuais em camadas (p.15), explique o que um programador Scheme "enxerga" ao programar e o que de fato acontece até chegar ao hardware.
+**E10.** Usando a figura de computadores virtuais em camadas ([p.15](../01%20-%20Slides%20Originais/README.md#página-15)), explique o que um programador Scheme "enxerga" ao programar e o que de fato acontece até chegar ao hardware.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 03:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-03.md) · **Exercícios** · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-03.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 02 · Exercícios](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/03%20-%20Exercícios/exercicios-aula-02.md) · [Aula 04 · Exercícios](../../Aula%2004%20-%20Sintaxe/03%20-%20Exercícios/exercicios-aula-04.md) →
+
+**Links para esta página (4):** [Aula 03 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-03.md) · [Aula 03 · visão geral](../README.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

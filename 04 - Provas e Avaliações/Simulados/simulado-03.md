@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [04 - Provas e Avaliações](../README.md) › [Simulados](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Simulado 03 — Orientação a objetos, funcional e lógico (Aulas 12–15)
 
 > **[Exercício autoral]** Simulado elaborado para este repositório. **Não é prova do professor** e não antecipa o conteúdo das avaliações. Cobre as Unidades 3 e 4.
@@ -106,3 +110,14 @@ b) Que resposta dá `?- pode_cursar(ana, compiladores).`? E `?- pode_cursar(brun
 c) Escreva a regra `depende(D, P)`: D depende de P **direta ou indiretamente** (recursiva). O que responde `?- depende(compiladores, algoritmos).`?
 
 **15.** (Aulas 12, 14 e 15) Uma turma tem alunos com nome e média. Queremos a lista dos **aprovados** (média ≥ 6). Descreva — e esboce em código — como esse problema é resolvido nos paradigmas **orientado a objetos**, **funcional** e **lógico**. Em qual deles o programador diz "como" e em qual diz "o quê"?
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Simulado 02 — Fundamentos e paradigma imperativo (Aulas 02–…](simulado-02.md)
+
+**Links para esta página (5):** [04 — Provas e Avaliações](../README.md) · [Simulado 03 · Resolução comentada](resolucao-simulado-03.md) · [06 — Revisões e Sínteses](../../06%20-%20Revisões%20e%20Sínteses/README.md) · [P2 — Estruturas encadeadas em C++: pilha e fila](../../09%20-%20Projetos%20Práticos/P2%20-%20Estruturas%20Encadeadas%20em%20C++/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../README.md)
+
+<!-- /nav:rodape -->

@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 11](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 11 — Paradigma Imperativo III · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-11.md`](../03%20-%20Exercícios/exercicios-aula-11.md). C++ e Java foram compilados e executados. O C# (E8) foi analisado sem execução, porque não há compilador C# no ambiente de validação; sua lógica é a mesma da versão C++ testada no E9.
@@ -30,7 +34,7 @@
 ## E5
 
 - **Padrões no fim:** a associação é por posição. Se um parâmetro com padrão viesse antes de um sem padrão, não daria para omitir o primeiro sem ambiguidade. Em `f(int a = 1, int b)`, a chamada `f(5)` não diz se 5 é `a` ou `b`.
-- **Nomeados:** na assinatura da p.12, o `*` depois de `activation` torna todos os parâmetros seguintes **somente nomeados**: a própria biblioteca obriga a escrever `MLPClassifier(max_iter=500)`. Em funções sem esse `*`, a chamada posicional exigiria repetir todos os parâmetros anteriores ao que se quer mudar. Com nomes, basta `MLPClassifier(max_iter=500)`. Além disso, a chamada se autodocumenta.
+- **Nomeados:** na assinatura da [p.12](../01%20-%20Slides%20Originais/README.md#página-12), o `*` depois de `activation` torna todos os parâmetros seguintes **somente nomeados**: a própria biblioteca obriga a escrever `MLPClassifier(max_iter=500)`. Em funções sem esse `*`, a chamada posicional exigiria repetir todos os parâmetros anteriores ao que se quer mudar. Com nomes, basta `MLPClassifier(max_iter=500)`. Além disso, a chamada se autodocumenta.
 
 ## E6
 
@@ -175,7 +179,7 @@ Em C++, a referência não aparece na **chamada** (`inverter(x, y)`). Em C#, `re
 **Indireção** é acessar um dado em **dois passos**: primeiro ler o endereço guardado no parâmetro, depois ir àquele endereço buscar o valor. Na passagem **por valor**, o dado já está no próprio parâmetro, um passo só. Por isso:
 
 - **passar** por referência é rápido: copia-se só um endereço, de tamanho fixo;
-- **usar** o parâmetro dentro da função é um pouco mais lento: cada leitura ou escrita passa pelo endereço (p.17).
+- **usar** o parâmetro dentro da função é um pouco mais lento: cada leitura ou escrita passa pelo endereço ([p.17](../01%20-%20Slides%20Originais/README.md#página-17)).
 
 Para estruturas grandes, a economia na passagem compensa de longe o custo da indireção.
 
@@ -201,3 +205,16 @@ public class Main {
 ```
 
 O método está dentro de uma classe (organização OO), mas o corpo é puramente imperativo: variáveis, atribuição, decisão e repetição. É o que a [Aula 14](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) reforça: a OO muda a organização, não os comandos.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 11:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-11.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-11.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 10 · Resoluções](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/04%20-%20Resoluções/resolucoes-aula-10.md) · [Aula 12 · Resoluções](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/04%20-%20Resoluções/resolucoes-aula-12.md) →
+
+**Links para esta página (5):** [Aula 11 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-11.md) · [Aula 11 · Exercícios](../03%20-%20Exercícios/exercicios-aula-11.md) · [Aula 11 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

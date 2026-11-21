@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [07 - Glossário](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Glossário
 
 > Termos da disciplina em ordem alfabética, com definição, exemplo e as aulas onde aparecem (links para os resumos). Termos marcados com **[Complemento]** não são definidos nos slides, mas aparecem nos enunciados das listas ou ajudam a entendê-los. Legenda: [Convenções](../README.md#convenções-de-marcação).
@@ -179,7 +183,7 @@ Pergunta feita à base de fatos e regras; o Prolog responde com `true`/`false` o
 
 Abordagem em que o programador especifica **o que** deseja obter, e não os passos para obtê-lo.
 
-- **Exemplo:** Paradigma lógico; SQL e HTML são linguagens declarativas que, segundo a Aula15 p.5, não são linguagens de programação.
+- **Exemplo:** Paradigma lógico; SQL e HTML são linguagens declarativas que, segundo a Aula15 [p.5](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-5), não são linguagens de programação.
 - **Aulas:** [02](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [15](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md)
 
 ### Destrutor
@@ -708,3 +712,12 @@ Associação entre uma entidade e um atributo (nome–endereço, variável–tip
 
 - **Exemplo:** Em tempo de compilação (estática) ou de execução (dinâmica).
 - **Aulas:** [05](../01%20-%20Aulas/Aula%2005%20-%20Semântica/02%20-%20Resumo%20Teórico/resumo-aula-05.md) · [13](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/02%20-%20Resumo%20Teórico/resumo-aula-13.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (5):** [Lista 02 · Resolução](../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/02%20-%20Resolução/resolucao-lista-02.md) · [Simulado 03 · Resolução comentada](../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md) · [Flashcards (Anki)](../06%20-%20Revisões%20e%20Sínteses/Flashcards/README.md) · [Guia de estudo para as avaliações](../06%20-%20Revisões%20e%20Sínteses/guia-de-estudo-para-provas.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

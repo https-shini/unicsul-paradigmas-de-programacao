@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [06 - Revisões e Sínteses](../README.md) › [Revisões por Unidade](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)
 
 > **[Explicação elaborada]** Agrupamento organizacional deste repositório, **não** uma divisão oficial do professor. Legenda: [Convenções](../../README.md#convenções-de-marcação).
@@ -43,3 +47,14 @@
 **Questões do professor sobre esta unidade:** [Lista 01, Q2](../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/README.md) · [Lista 02, Q7–Q9](../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md).
 
 **Anterior:** [Unidade 1](unidade-1-fundamentos.md) · **Próxima:** [Unidade 3 — Orientação a objetos](unidade-3-orientacao-a-objetos.md).
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](unidade-1-fundamentos.md) · [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](unidade-3-orientacao-a-objetos.md) →
+
+**Links para esta página (5):** [Cronograma](../../00%20-%20Planejamento%20e%20Organização/cronograma.md) · [06 — Revisões e Sínteses](../README.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](unidade-1-fundamentos.md) · [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](unidade-3-orientacao-a-objetos.md) · [Guia de estudo para as avaliações](../guia-de-estudo-para-provas.md)
+
+<!-- /nav:rodape -->

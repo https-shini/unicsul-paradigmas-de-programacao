@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 13](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 13 — Paradigma Orientado a Objetos II · Resumo teórico
 
 > **Fonte:** [`Aula13_ParadigmaOrientadoObjetos2.pdf`](../01%20-%20Slides%20Originais/Aula13_ParadigmaOrientadoObjetos2.pdf) (17 páginas). Título interno: "Aula 14 – Paradigma Orientado a Objetos – Parte 2". A aula não tem slide de bibliografia; as referências da Aula 12 (Sebesta, cap. 12; Tucker & Noonan, cap. 13) cobrem o tema.
@@ -13,19 +17,19 @@
 
 **[Material original]**
 
-- A POO surgiu da necessidade de aumentar a produtividade: **reusabilidade, manutenibilidade e extensibilidade** (p.3).
+- A POO surgiu da necessidade de aumentar a produtividade: **reusabilidade, manutenibilidade e extensibilidade** ([p.3](../01%20-%20Slides%20Originais/README.md#página-3)).
 - **Herança** possibilita a **reutilização de código**.
 - Uma classe pode ser declarada **subclasse** de outra, a **superclasse** ou **classe mãe**.
 - A subclasse **herda as variáveis e os métodos** da mãe.
 - Normalmente representa uma associação do tipo **"é-um"** ou **"é-uma"**.
 
-**Como a subclasse difere da superclasse (p.5):**
+**Como a subclasse difere da superclasse ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)):**
 
 1. A superclasse pode definir **membros privados**, aos quais a subclasse **não tem acesso**.
 2. A subclasse pode **adicionar membros** aos herdados.
 3. A subclasse pode **modificar o comportamento** de um ou mais métodos herdados.
 
-**Simples × múltipla (p.6):**
+**Simples × múltipla ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)):**
 
 | | Herança simples | Herança múltipla |
 | --- | --- | --- |
@@ -38,7 +42,7 @@
 
 ## 3. Exemplo: impressora multifuncional (p.7–9)
 
-**[Material original]** Diagrama UML (p.7): `Impressora` (atributo Resolução; método `imprimaDocumento()`) e `Scanner` (atributo Colorido; método `digitalizeDocumento()`) são superclasses de `Multifuncional` (atributo Modelo; método `copieDocumento()`).
+**[Material original]** Diagrama UML ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)): `Impressora` (atributo Resolução; método `imprimaDocumento()`) e `Scanner` (atributo Colorido; método `digitalizeDocumento()`) são superclasses de `Multifuncional` (atributo Modelo; método `copieDocumento()`).
 
 ```mermaid
 classDiagram
@@ -58,7 +62,7 @@ classDiagram
     Scanner <|-- Multifuncional
 ```
 
-**Implementação em C++ (p.9):**
+**Implementação em C++ ([p.9](../01%20-%20Slides%20Originais/README.md#página-9)):**
 
 <!-- teste: saida-contem="Estou imprimindo um documento.\nEstou digitalizando um documento.\nEstou copiando um documento\n******\nEstou digitalizando um documento.\nEstou imprimindo um documento.\n******" -->
 ```cpp
@@ -104,7 +108,7 @@ int main() {
 
 **[Explicação elaborada]** `Multifuncional` não escreveu `imprimaDocumento` nem `digitalizeDocumento`: herdou os dois e os **reutilizou** para compor `copieDocumento` — o máximo de reuso com o mínimo de código.
 
-**Pergunta do professor (p.8): "Que problemas podem ocorrer com o uso da herança múltipla?"** O slide só cita "complexidade e eficiência". **[Complemento]** Os problemas clássicos:
+**Pergunta do professor ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)): "Que problemas podem ocorrer com o uso da herança múltipla?"** O slide só cita "complexidade e eficiência". **[Complemento]** Os problemas clássicos:
 
 1. **Conflito de nomes:** se `Impressora` e `Scanner` tivessem, por exemplo, um método `ligar()`, `hp3000.ligar()` seria **ambíguo**. O compilador C++ recusa a chamada, e é preciso escrever `hp3000.Impressora::ligar()`.
 2. **Problema do diamante:** se `Impressora` e `Scanner` herdassem de uma mesma classe `Equipamento`, `Multifuncional` teria **duas cópias** dos atributos de `Equipamento`. C++ resolve com herança `virtual`.
@@ -114,7 +118,7 @@ int main() {
 
 ## 4. Atividade: o mesmo em Java (p.10–11)
 
-**[Material original]** "Em um programa em Java que apresente o mesmo comportamento do exemplo em C++, que alterações na estrutura do programa devem ser feitas?" Resposta do professor (p.11):
+**[Material original]** "Em um programa em Java que apresente o mesmo comportamento do exemplo em C++, que alterações na estrutura do programa devem ser feitas?" Resposta do professor ([p.11](../01%20-%20Slides%20Originais/README.md#página-11)):
 
 ```java
 public interface Impressora {
@@ -251,8 +255,8 @@ public class Main {
 }
 ```
 
-- `c.efetueSaque(150)` é **um único comando** escrito para o tipo `Conta`. Para a `ContaSimples`, roda a versão da base (negado: 150 > 100). Para a `ContaEspecial`, roda a versão **sobrescrita** (aceito: 150 ≤ 100 + 200). Essa é a "ligação tardia" da p.12.
-- `ContaPoupanca` **adiciona** um método; `ContaEspecial` **adiciona** um atributo e **modifica** um método — as diferenças da p.5.
+- `c.efetueSaque(150)` é **um único comando** escrito para o tipo `Conta`. Para a `ContaSimples`, roda a versão da base (negado: 150 > 100). Para a `ContaEspecial`, roda a versão **sobrescrita** (aceito: 150 ≤ 100 + 200). Essa é a "ligação tardia" da [p.12](../01%20-%20Slides%20Originais/README.md#página-12).
+- `ContaPoupanca` **adiciona** um método; `ContaEspecial` **adiciona** um atributo e **modifica** um método — as diferenças da [p.5](../01%20-%20Slides%20Originais/README.md#página-5).
 - `Conta` é **abstrata** (não faz sentido uma conta "genérica") e obriga cada subclasse a implementar `tipo()`.
 
 ## 8. Fechamento (p.15–17)
@@ -268,7 +272,7 @@ public class Main {
 
 ## 9. Conexões e pontos para a prova
 
-- Os três recursos da POO (Aula 12, p.6): TDA (Aula 12), **herança** e **polimorfismo** (esta aula).
+- Os três recursos da POO (Aula 12, [p.6](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-6)): TDA (Aula 12), **herança** e **polimorfismo** (esta aula).
 - A sobrecarga de operadores da [Aula 06](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md#8-sobrecarga-de-operadores-p25) é polimorfismo **estático**.
 - Cobrado na [Lista 02, Q11](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/02%20-%20Resolução/resolucao-lista-02.md#q11).
 - **Decorar:** as 3 diferenças entre subclasse e superclasse; simples × múltipla (linguagens, vantagem, desvantagem); a solução Java por interfaces; sobrecarga × sobrescrita; classe abstrata × interface.
@@ -276,3 +280,16 @@ public class Main {
 ---
 
 **Anterior:** [Aula 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · **Próxima:** [Aula 14 — Paradigma Funcional](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 13:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-13.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-13.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 12 · Resumo](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [Aula 14 · Resumo](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) →
+
+**Links para esta página (14):** [Aula 06 · Resumo](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [Aula 07 · Resumo](../../Aula%2007%20-%20Tipos%20Compostos/02%20-%20Resumo%20Teórico/resumo-aula-07.md) · [Aula 12 · Resumo](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [Aula 13 · visão geral](../README.md) · [Aula 14 · Resumo](../../Aula%2014%20-%20Paradigma%20Funcional/02%20-%20Resumo%20Teórico/resumo-aula-14.md) · [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 01 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-01.md) · [Simulado 03 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-03.md) · [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-3-orientacao-a-objetos.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P3 — Acervo da biblioteca em Java](../../../09%20-%20Projetos%20Práticos/P3%20-%20Acervo%20da%20Biblioteca%20em%20Java/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

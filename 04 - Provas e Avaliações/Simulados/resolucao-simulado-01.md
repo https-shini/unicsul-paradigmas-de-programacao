@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [04 - Provas e Avaliações](../README.md) › [Simulados](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Simulado 01 · Resolução comentada
 
 > **[Resolução elaborada]** Resolução do [simulado autoral](simulado-01.md). **Não é gabarito oficial do professor.** Os trechos de código foram compilados e executados.
@@ -65,7 +69,7 @@ pai(carlos, renata).
 
 ### 11
 
-**Conceitos:** arquitetura de von Neumann, modelo imperativo. **Fontes:** Aula02; Aula09 p.3–7.
+**Conceitos:** arquitetura de von Neumann, modelo imperativo. **Fontes:** Aula02; Aula09 [p.3–7](../../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-3).
 
 Na arquitetura de von Neumann, **dados e instruções ficam na mesma memória**, separada da **CPU**, e as instruções são buscadas e executadas em sequência (ciclo busca–decodifica–executa), com tráfego constante entre memória e processador. As linguagens imperativas são **abstrações diretas** dessa máquina:
 
@@ -77,7 +81,7 @@ Por isso o estado do programa é o conteúdo da memória num instante, e a compu
 
 ### 12
 
-**Conceitos:** abstração de dados, TDA, encapsulamento. **Fontes:** Aula10 p.15–18; Aula12.
+**Conceitos:** abstração de dados, TDA, encapsulamento. **Fontes:** Aula10 [p.15–18](../../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-15); Aula12.
 
 O conceito é o **tipo abstrato de dados** com **encapsulamento**. O `main` só conhece a **interface** da pilha (`push`, `pop`, `vazia`), e a **representação** (vetor ou lista encadeada) fica oculta, inacessível aos clientes. Trocar a representação não muda a interface, logo não afeta quem a usa.
 
@@ -88,7 +92,7 @@ O conceito é o **tipo abstrato de dados** com **encapsulamento**. O `main` só 
 
 ### 13
 
-**Conceitos:** modelos de passagem. **Fonte:** Aula11 p.13–19.
+**Conceitos:** modelos de passagem. **Fonte:** Aula11 [p.13–19](../../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-13).
 
 | Modo | Impresso | Justificativa |
 | --- | --- | --- |
@@ -115,7 +119,7 @@ int main(void) {
 
 ### 14
 
-**Conceitos:** notação prefixa, aninhamento, tipo `Ratio`. **Fonte:** Aula14 p.13–20.
+**Conceitos:** notação prefixa, aninhamento, tipo `Ratio`. **Fonte:** Aula14 [p.13–20](../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-13).
 
 Expressão: `(/ (* (+ 7 3) (- 7 3)) 2)` → (10 · 4) / 2 = **20**.
 
@@ -147,3 +151,14 @@ pode_acessar(P, recepcao) :- cargo(P, visitante).
 ```
 
 **Escolha:** para o **motor de regras**, o paradigma **lógico**, porque as políticas são justamente fatos e regras, ficam declaradas num só lugar, são fáceis de auditar e alterar, e a mesma base responde perguntas em várias direções. A OO continua adequada para o **restante** do sistema (interface, persistência, integração). Combinar os dois é a ideia de linguagens e sistemas multiparadigma.
+
+
+<!-- nav:rodape -->
+
+---
+
+[Simulado 02 · Resolução comentada](resolucao-simulado-02.md) →
+
+**Links para esta página (2):** [04 — Provas e Avaliações](../README.md) · [Simulado 01 — Paradigmas de Linguagens de Programação](simulado-01.md)
+
+<!-- /nav:rodape -->

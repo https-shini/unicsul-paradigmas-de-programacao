@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 07](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 07 — Tipos Compostos · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-07.md`](../03%20-%20Exercícios/exercicios-aula-07.md). Os programas foram compilados e executados (javac, gcc, g++).
@@ -13,15 +17,15 @@
 
 ## E2
 
-Facilitam a **legibilidade** do código e **reduzem a chance de erro** (p.4), porque restringem os valores possíveis da variável.
+Facilitam a **legibilidade** do código e **reduzem a chance de erro** ([p.4](../01%20-%20Slides%20Originais/README.md#página-4)), porque restringem os valores possíveis da variável.
 
 ## E3
 
-**Resposta: c.** Fortran indexa de 1 a N; C, C++ e Java, de 0 a N−1; em Pascal e Ada, o programador define (p.11).
+**Resposta: c.** Fortran indexa de 1 a N; C, C++ e Java, de 0 a N−1; em Pascal e Ada, o programador define ([p.11](../01%20-%20Slides%20Originais/README.md#página-11)).
 
 ## E4
 
-**Registro:** agrupa campos de tipos diferentes, sem comportamento. **Classe:** agrupa campos **e** funções (métodos), com controle de acesso, herança e polimorfismo (p.6 e p.9). Java "não suporta estruturas diretamente" porque não tem a palavra `struct` nem um tipo registro separado: o que seria um registro é escrito como uma classe só com atributos. A Aula 12 (p.22) confirma: em Java e Smalltalk, "todas as abstrações devem ser construídas como classes". **[Complemento]** Desde o Java 16 existe `record`, que é uma classe restrita (imutável e `final`), e não um tipo registro à parte.
+**Registro:** agrupa campos de tipos diferentes, sem comportamento. **Classe:** agrupa campos **e** funções (métodos), com controle de acesso, herança e polimorfismo ([p.6](../01%20-%20Slides%20Originais/README.md#página-6) e [p.9](../01%20-%20Slides%20Originais/README.md#página-9)). Java "não suporta estruturas diretamente" porque não tem a palavra `struct` nem um tipo registro separado: o que seria um registro é escrito como uma classe só com atributos. A Aula 12 ([p.22](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-22)) confirma: em Java e Smalltalk, "todas as abstrações devem ser construídas como classes". **[Complemento]** Desde o Java 16 existe `record`, que é uma classe restrita (imutável e `final`), e não um tipo registro à parte.
 
 ## E5
 
@@ -113,7 +117,7 @@ public class Notas {
 - Para (b), fixa-se o aluno e a avaliação `0` e soma-se na dimensão das disciplinas — repare que a ordem dos laços muda: o aluno fica do lado de fora.
 - A divisão `soma / AVAL` é `float / int` → `float`, então as casas decimais são preservadas.
 
-**Teste com os dados da p.15:**
+**Teste com os dados da [p.15](../01%20-%20Slides%20Originais/README.md#página-15):**
 
 | Aluno | Média disc. 0 | Média disc. 1 | Média 1ª avaliação |
 | --- | --- | --- | --- |
@@ -175,4 +179,17 @@ Strings em C terminam com o caractere nulo `'\0'`, que marca o fim do texto. Em 
 - **C:** `enum` é só um conjunto de constantes `int`. Uma variável `enum turno t = 42;` compila, sem verificação de que 42 é um turno válido.
 - **Java:** `enum` é um tipo próprio. `Turno t = 42;` **não compila**, e só os valores declarados são aceitos.
 
-A implementação de Java é **mais fortemente tipada**: rejeita operações e atribuições fora do conjunto de valores do tipo, sem conversão implícita a partir de inteiros (critério da Aula 06, p.21).
+A implementação de Java é **mais fortemente tipada**: rejeita operações e atribuições fora do conjunto de valores do tipo, sem conversão implícita a partir de inteiros (critério da Aula 06, [p.21](../../Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-21)).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 07:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-07.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-07.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 06 · Resoluções](../../Aula%2006%20-%20Sistema%20de%20Tipos/04%20-%20Resoluções/resolucoes-aula-06.md) · [Aula 08 · Resoluções](../../Aula%2008%20-%20Ponteiros/04%20-%20Resoluções/resolucoes-aula-08.md) →
+
+**Links para esta página (5):** [Aula 07 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-07.md) · [Aula 07 · Exercícios](../03%20-%20Exercícios/exercicios-aula-07.md) · [Aula 07 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

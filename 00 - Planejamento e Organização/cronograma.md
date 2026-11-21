@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [00 - Planejamento e Organização](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Cronograma
 
 > **Fonte:** sequência dos arquivos fornecidos e títulos internos dos slides. Legenda: [Convenções](../README.md#convenções-de-marcação).
@@ -35,3 +39,12 @@
 | 4. Paradigmas funcional e lógico | 14–15 | [Revisão da Unidade 4](../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) |
 
 > **[Atenção]** A partir do arquivo `Aula09`, o título interno está **uma unidade à frente** do nome do arquivo. O material não explica o motivo. O repositório segue sempre o **nome do arquivo**.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (3):** [00 — Planejamento e Organização](README.md) · [Ementa, conteúdo e avaliação](ementa.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

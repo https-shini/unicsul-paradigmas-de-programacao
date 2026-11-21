@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [02 - Listas de Exercícios](../README.md) › **Lista 02** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Lista 02 — Revisão II ("Exercícios – Revisão II")
 
 > **Original:** [`Aula16b_ExRevisao2.pdf`](01%20-%20Enunciado%20Original/Aula16b_ExRevisao2.pdf) (1 página). Lista de revisão disponibilizada pelo professor.
@@ -38,3 +42,14 @@ A lista percorre **toda a disciplina**, na ordem das aulas. As 12 questões são
 10. Explique o papel do encapsulamento e dos modificadores de acesso (public, private e protected) na proteção do estado dos objetos, comparando também o gerenciamento de memória dinâmico entre C++ (destrutores) e Java (coleta de lixo).
 11. Diferencie herança simples de herança múltipla (bem como o uso de interfaces como alternativa em Java) e explique a distinção entre polimorfismo estático (sobrecarga) e polimorfismo dinâmico (sobrescrita com vinculação tardia).
 12. Compare as características fundamentais do paradigma funcional (imutabilidade, ausência de efeitos colaterais e funções puras versus impuras) com as do paradigma lógico (programação declarativa, cálculo de predicados de primeira ordem, fatos, consultas e unificação).
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Lista 01](../Lista%2001%20-%20Revisão%20I/README.md)
+
+**Links para esta página (11):** [Cronograma](../../00%20-%20Planejamento%20e%20Organização/cronograma.md) · [Aula 15 · Resumo](../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/02%20-%20Resumo%20Teórico/resumo-aula-15.md) · [Lista 02 · Resolução](02%20-%20Resolução/resolucao-lista-02.md) · [02 — Listas de Exercícios](../README.md) · [04 — Provas e Avaliações](../../04%20-%20Provas%20e%20Avaliações/README.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Revisão da Unidade 3 — Paradigma orientado a objetos (Aulas…](../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-3-orientacao-a-objetos.md) · [Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas…](../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) · [P1 — Interpretador de expressões](../../09%20-%20Projetos%20Práticos/P1%20-%20Interpretador%20de%20Expressões/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../README.md)
+
+<!-- /nav:rodape -->

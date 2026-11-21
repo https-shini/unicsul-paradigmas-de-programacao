@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › **05 - Materiais Complementares** · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # 05 — Materiais Complementares
 
 Material de **apoio prático** ao estudo: um roteiro de leitura por unidade, as ferramentas para executar os exemplos e as indicações comentadas de cada aula.
@@ -54,3 +58,14 @@ Cada aula tem um arquivo `05 - Materiais Complementares/materiais-complementares
 | 15 | [materiais-complementares.md](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/05%20-%20Materiais%20Complementares/materiais-complementares.md) |
 
 > **Política de direitos:** o repositório não copia livros ou materiais de terceiros. O único PDF externo é o artigo de Dijkstra, distribuído pelo professor como material da Aula 09.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [04 — Provas e Avaliações](../04%20-%20Provas%20e%20Avaliações/README.md) · [06 — Revisões e Sínteses](../06%20-%20Revisões%20e%20Sínteses/README.md) →
+
+**Links para esta página (3):** [Bibliografia](../00%20-%20Planejamento%20e%20Organização/bibliografia.md) · [08 — Referências e Fontes](../08%20-%20Referências%20e%20Fontes/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

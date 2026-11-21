@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 14](../README.md) › [03 - Exercícios](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 14 — Paradigma Funcional · Exercícios
 
-> **[Exercício autoral]**, exceto o E7 e o E8 (Atividades 1 e 2 originais, p.17 e p.20). Base: [`Aula14_ParadigmaFuncional.pdf`](../01%20-%20Slides%20Originais/Aula14_ParadigmaFuncional.pdf). Resoluções: [`resolucoes-aula-14.md`](../04%20-%20Resoluções/resolucoes-aula-14.md)
+> **[Exercício autoral]**, exceto o E7 e o E8 (Atividades 1 e 2 originais, [p.17](../01%20-%20Slides%20Originais/README.md#página-17) e [p.20](../01%20-%20Slides%20Originais/README.md#página-20)). Base: [`Aula14_ParadigmaFuncional.pdf`](../01%20-%20Slides%20Originais/Aula14_ParadigmaFuncional.pdf). Resoluções: [`resolucoes-aula-14.md`](../04%20-%20Resoluções/resolucoes-aula-14.md)
 
 ## Básico
 
@@ -21,9 +25,9 @@ a) 3.4  b) 3  c) 2  d) 17/5
 
 ## Avançado
 
-**E7 — Atividade 1 (original, p.17).** Calcule o valor de cada expressão e escreva um programa Clojure que mostre os valores, um por linha: `(+ 2 10)`, `(- 20 7 4)`, `(* 5 2 3)`, `(/ 60 6 5)`, `(- 30 (* 3 4))`, `(Math/sqrt 9)`, `(Math/pow 4 2)`.
+**E7 — Atividade 1 (original, [p.17](../01%20-%20Slides%20Originais/README.md#página-17)).** Calcule o valor de cada expressão e escreva um programa Clojure que mostre os valores, um por linha: `(+ 2 10)`, `(- 20 7 4)`, `(* 5 2 3)`, `(/ 60 6 5)`, `(- 30 (* 3 4))`, `(Math/sqrt 9)`, `(Math/pow 4 2)`.
 
-**E8 — Atividade 2 (original, p.20).** Crie um programa Clojure que leia x e y e mostre, um por linha: x + y − 10; x + 2·y; (x + 2)·y; (x + 2)·y / [10·(x + 8)]; (3·y)² − (x + y).
+**E8 — Atividade 2 (original, [p.20](../01%20-%20Slides%20Originais/README.md#página-20)).** Crie um programa Clojure que leia x e y e mostre, um por linha: x + y − 10; x + 2·y; (x + 2)·y; (x + 2)·y / [10·(x + 8)]; (3·y)² − (x + y).
 
 **E9.** (Interpretação de código) Qual é a saída, no Clojure da JVM?
 
@@ -40,3 +44,16 @@ a) 3.4  b) 3  c) 2  d) 17/5
 **E10.** (Programação) Escreva em Clojure, **sem usar `def` dentro de laços nem atribuição**, uma função recursiva `fatorial` e uma versão com `reduce`. Compare com a versão imperativa da Aula 10.
 
 **E11.** O slide diz que a OO "não é muito diferente do imperativo", porque as diferenças estão na organização e não nos comandos. Explique por que o mesmo **não** vale para o funcional.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 14:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-14.md) · **Exercícios** · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-14.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 13 · Exercícios](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/03%20-%20Exercícios/exercicios-aula-13.md) · [Aula 15 · Exercícios](../../Aula%2015%20-%20Paradigma%20Lógico/03%20-%20Exercícios/exercicios-aula-15.md) →
+
+**Links para esta página (4):** [Aula 14 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-14.md) · [Aula 14 · visão geral](../README.md) · [Revisão da Unidade 4 — Paradigmas funcional e lógico (Aulas…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-4-funcional-e-logico.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

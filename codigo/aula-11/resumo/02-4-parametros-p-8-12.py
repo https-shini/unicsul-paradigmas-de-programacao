@@ -1,4 +1,4 @@
-# Gerado automaticamente a partir de 01 - Aulas/Aula 11 - Paradigma Imperativo III/02 - Resumo Teórico/resumo-aula-11.md (linha 92).
+# Gerado automaticamente a partir de 01 - Aulas/Aula 11 - Paradigma Imperativo III/02 - Resumo Teórico/resumo-aula-11.md (linha 96).
 # Seção: 4. Parâmetros (p.8–12)
 # Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 # Como executar:  python3 ferramentas/rodar.py codigo/aula-11/resumo/02-4-parametros-p-8-12.py

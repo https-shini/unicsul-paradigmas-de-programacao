@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [09 - Projetos Práticos](../README.md) › **P1** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # P1 — Interpretador de expressões
 
 > **[Exercício autoral]** Projeto prático elaborado para este repositório. **Não é trabalho do professor** e não vale nota. A pasta `solucao/` é uma **[Resolução elaborada]**, não gabarito oficial.
@@ -125,7 +129,7 @@ Os testes estão em classes `Etapa1Lexico` … `Etapa4Compilador`: no início, f
 ## Extensões
 
 1. **Potência** `^` com precedência maior que `*` e associatividade **à direita** (`2 ^ 3 ^ 2` = 512). Como a gramática muda?
-2. **Verificação estática:** antes de executar, percorra a árvore e acuse uso de variável nunca atribuída. O erro passa de dinâmico para estático — compare com a observação da Aula 05 (p.17) sobre linguagens interpretadas.
+2. **Verificação estática:** antes de executar, percorra a árvore e acuse uso de variável nunca atribuída. O erro passa de dinâmico para estático — compare com a observação da Aula 05 ([p.17](../../01%20-%20Aulas/Aula%2005%20-%20Semântica/01%20-%20Slides%20Originais/README.md#página-17)) sobre linguagens interpretadas.
 3. **Comparações e `while`:** acrescente `<`, `==` e um laço; na VM, isso exige instruções de salto (`JUMP`, `JUMP_IF_FALSE`) — é o `goto` da Aula 09 escondido no bytecode.
 4. **Inteiros de tamanho fixo:** simule `int` de 32 bits (como em C ou Java) e trate o *overflow* da Aula 06.
 
@@ -134,3 +138,14 @@ Os testes estão em classes `Etapa1Lexico` … `Etapa4Compilador`: no início, f
 - Por que o interpretador detecta `print y` só quando a linha executa, e um compilador com tipagem estática poderia detectar antes?
 - Na versão híbrida, o que equivale ao `.class` da JVM? E ao `java` que o executa?
 - Onde a precedência de operadores está definida no seu código? E a associatividade?
+
+
+<!-- nav:rodape -->
+
+---
+
+[P2 — Estruturas encadeadas em C++: pilha e fila](../P2%20-%20Estruturas%20Encadeadas%20em%20C++/README.md) →
+
+**Links para esta página (1):** [09 — Projetos Práticos](../README.md)
+
+<!-- /nav:rodape -->

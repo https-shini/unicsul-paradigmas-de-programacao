@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 01 - Aulas/Aula 03 - Implementação das Linguagens/04 - Resoluções/resolucoes-aula-03.md (linha 63).
+// Gerado automaticamente a partir de 01 - Aulas/Aula 03 - Implementação das Linguagens/04 - Resoluções/resolucoes-aula-03.md (linha 67).
 // Seção: C (Grupo 1, compilada)
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/aula-03/resolucoes/01-c-grupo-1-compilada.c

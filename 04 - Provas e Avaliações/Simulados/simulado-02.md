@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [04 - Provas e Avaliações](../README.md) › [Simulados](README.md) · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # Simulado 02 — Fundamentos e paradigma imperativo (Aulas 02–11)
 
 > **[Exercício autoral]** Simulado elaborado para este repositório. **Não é prova do professor** e não antecipa o conteúdo das avaliações. Cobre as Unidades 1 e 2.
@@ -114,3 +118,14 @@ fim:
 ```
 
 **15.** (Aula 10) Escreva em C um programa que leia três notas, calcule a média e informe a situação: **Aprovado** (média ≥ 6), **Exame** (4 ≤ média < 6) ou **Reprovado**. Use **abstração procedural**: pelo menos uma função para calcular a média e outra para decidir a situação. Depois, explique que tipo de acoplamento haveria se as notas fossem variáveis globais.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [Simulado 01 — Paradigmas de Linguagens de Programação](simulado-01.md) · [Simulado 03 — Orientação a objetos, funcional e lógico (Aul…](simulado-03.md) →
+
+**Links para esta página (5):** [04 — Provas e Avaliações](../README.md) · [Simulado 02 · Resolução comentada](resolucao-simulado-02.md) · [06 — Revisões e Sínteses](../../06%20-%20Revisões%20e%20Sínteses/README.md) · [P1 — Interpretador de expressões](../../09%20-%20Projetos%20Práticos/P1%20-%20Interpretador%20de%20Expressões/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../README.md)
+
+<!-- /nav:rodape -->

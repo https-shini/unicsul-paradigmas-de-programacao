@@ -1,20 +1,24 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 13](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 13 — Paradigma Orientado a Objetos II · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-13.md`](../03%20-%20Exercícios/exercicios-aula-13.md). Os programas C++ e Java foram compilados e executados; o erro de ambiguidade do E9 foi reproduzido.
 
 ## E1
 
-Herança é o mecanismo pelo qual uma classe (subclasse) é declarada a partir de outra (superclasse) e **herda suas variáveis e métodos**, possibilitando a reutilização de código. Normalmente representa uma associação **"é-um/é-uma"** (p.4).
+Herança é o mecanismo pelo qual uma classe (subclasse) é declarada a partir de outra (superclasse) e **herda suas variáveis e métodos**, possibilitando a reutilização de código. Normalmente representa uma associação **"é-um/é-uma"** ([p.4](../01%20-%20Slides%20Originais/README.md#página-4)).
 
 ## E2
 
 1. Não tem acesso aos membros **privados** da superclasse.
 2. Pode **adicionar** membros.
-3. Pode **modificar o comportamento** de métodos herdados (p.5).
+3. Pode **modificar o comportamento** de métodos herdados ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)).
 
 ## E3
 
-**Resposta: c.** Java e C# têm herança simples; C++ e Python, múltipla (p.6).
+**Resposta: c.** Java e C# têm herança simples; C++ e Python, múltipla ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)).
 
 ## E4
 
@@ -245,4 +249,17 @@ public class Main {
 - **Menos responsabilidades = alta coesão.** Cada classe faz uma coisa só, como no princípio da responsabilidade única da Aula 10. Uma classe coesa é mais fácil de **reutilizar** (não traz funções inúteis junto), de **estender** (a subclasse especializa um comportamento bem definido) e de **manter** (mudar uma responsabilidade mexe em um só lugar).
 - **Classes "fracamente acopladas" = baixo acoplamento.** Os clientes dependem da interface, não da representação (pilha 1c/1d), então mudar a implementação não propaga alterações.
 
-A OO oferece mecanismos — encapsulamento, interfaces, herança, polimorfismo — que **favorecem** essas duas propriedades, que a abstração procedural sozinha não favorecia (Aula 10, p.16).
+A OO oferece mecanismos — encapsulamento, interfaces, herança, polimorfismo — que **favorecem** essas duas propriedades, que a abstração procedural sozinha não favorecia (Aula 10, [p.16](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-16)).
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 13:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-13.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 12 · Resoluções](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/04%20-%20Resoluções/resolucoes-aula-12.md) · [Aula 14 · Resoluções](../../Aula%2014%20-%20Paradigma%20Funcional/04%20-%20Resoluções/resolucoes-aula-14.md) →
+
+**Links para esta página (5):** [Aula 13 · Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-13.md) · [Aula 13 · Exercícios](../03%20-%20Exercícios/exercicios-aula-13.md) · [Aula 13 · visão geral](../README.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

@@ -1,4 +1,4 @@
-// Gerado automaticamente a partir de 06 - Revisões e Sínteses/quadros-comparativos.md (linha 49).
+// Gerado automaticamente a partir de 06 - Revisões e Sínteses/quadros-comparativos.md (linha 53).
 // Seção: 2. Um mesmo problema nos quatro paradigmas
 // Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 // Como executar:  python3 ferramentas/rodar.py codigo/revisoes/quadros-comparativos/01-2-um-mesmo-problema-nos-quatro-paradigmas.c

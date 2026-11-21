@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [09 - Projetos Práticos](../README.md) › **P6** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # P6 — Situação acadêmica em quatro paradigmas
 
 > **[Exercício autoral]** Projeto prático elaborado para este repositório. **Não é trabalho do professor** e não vale nota. A pasta `solucao/` é uma **[Resolução elaborada]**, não gabarito oficial.
@@ -88,5 +92,16 @@ Depois de mudar `casos.csv`: `python3 "09 - Projetos Práticos/P6 - Situação A
 ## Para refletir
 
 - Em C e em Java, a **ordem** dos `if` faz parte da regra. Em Prolog, a solução de referência repete condições (`Freq >= 75`, `A1 + A2 < 6`) em várias cláusulas. Por quê? Qual seria a alternativa com corte (`!`) e o que se perde?
-- Qual versão você entregaria a alguém que só conhece a regra, e não programação? Isso tem a ver com "declarativo × procedural" (Aula 15 p.3–5)?
+- Qual versão você entregaria a alguém que só conhece a regra, e não programação? Isso tem a ver com "declarativo × procedural" (Aula 15 [p.3–5](../../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-3))?
 - O `null` do Java e o `nil` do Clojure resolvem o mesmo problema que o `-1` do C. Que erros cada solução permite?
+
+
+<!-- nav:rodape -->
+
+---
+
+← [P5 — Grade curricular em Prolog](../P5%20-%20Grade%20Curricular%20em%20Prolog/README.md)
+
+**Links para esta página (1):** [09 — Projetos Práticos](../README.md)
+
+<!-- /nav:rodape -->

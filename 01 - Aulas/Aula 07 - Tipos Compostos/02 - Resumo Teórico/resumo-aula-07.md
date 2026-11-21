@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 07](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 07 — Tipos Compostos · Resumo teórico
 
 > **Fonte:** [`Aula07_Tipos Compostos.pdf`](../01%20-%20Slides%20Originais/Aula07_Tipos%20Compostos.pdf) (16 páginas). A aula não tem slide de bibliografia.
@@ -28,7 +32,7 @@
 
 **[Material original]** Restringem os valores que podem ser associados a uma variável, **facilitam a legibilidade** e **reduzem a chance de erro**.
 
-**Exemplos em Java (p.5):**
+**Exemplos em Java ([p.5](../01%20-%20Slides%20Originais/README.md#página-5)):**
 
 <!-- teste: entrada="Ciencia da Computacao\nDireito" saida-contem="Turno de oferta: MATUTINO|Turno de oferta: VESPERTINO" -->
 ```java
@@ -84,7 +88,7 @@ class Main {
 - **Java não suporta estruturas diretamente**: elas são tratadas como uma classe.
 - Diferem das classes porque têm **apenas os campos (atributos)**, sem métodos e outras características da POO.
 
-**C++ (p.7):**
+**C++ ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)):**
 
 <!-- teste: entrada="Ana\n20\nF" saida-contem="Ana tem 20 anos e é do sexo F" -->
 ```cpp
@@ -111,7 +115,7 @@ int main() {
 }
 ```
 
-**Pascal (p.8):**
+**Pascal ([p.8](../01%20-%20Slides%20Originais/README.md#página-8)):**
 
 ```pascal
 Program Cadastro(output);
@@ -154,10 +158,10 @@ Aprofundado nas [Aulas 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Obj
 - Conjuntos de **dados homogêneos** armazenados em uma mesma variável, acessados por **índices**.
 - Uma dimensão (**vetores/arrays**) ou várias (matrizes bi, tri ou **n-dimensionais**).
 - **Indexação:** C/C++ e Java vão de **0 a N−1**; Fortran, de **1 a N**; em Pascal e Ada, **o programador define** os limites.
-- Java e C/C++ permitem definir o tamanho em **tempo de execução**, mas, uma vez criado, ele **não pode ser mudado**. (A Aula 08, p.13, diz que na alocação dinâmica o tamanho "pode ser alterado"; ver a conciliação no [resumo da Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#5-alocação-estática--dinâmica-p1213).)
+- Java e C/C++ permitem definir o tamanho em **tempo de execução**, mas, uma vez criado, ele **não pode ser mudado**. (A Aula 08, [p.13](../../Aula%2008%20-%20Ponteiros/01%20-%20Slides%20Originais/README.md#página-13), diz que na alocação dinâmica o tamanho "pode ser alterado"; ver a conciliação no [resumo da Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md#5-alocação-estática--dinâmica-p1213).)
 - Em C/C++, o vetor é acessível por **ponteiros**.
 
-**Declarações (p.12):**
+**Declarações ([p.12](../01%20-%20Slides%20Originais/README.md#página-12)):**
 
 | Declaração | Linguagem | Significado |
 | --- | --- | --- |
@@ -184,15 +188,15 @@ Aprofundado nas [Aulas 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Obj
 
 ## 8. Exercício e desafio (p.14–16)
 
-**[Material original] — Exercício (p.14):** o 8º semestre tem 2 disciplinas, com 4 alunos matriculados; em ambas houve 3 provas. Fazer em Java um programa que leia as 3 notas dos 4 alunos nas 2 disciplinas e as armazene em **uma única variável do tipo matriz de float**. O programa deve mostrar a média final de cada aluno em cada disciplina e a média na primeira avaliação de cada aluno em todas as disciplinas.
+**[Material original] — Exercício ([p.14](../01%20-%20Slides%20Originais/README.md#página-14)):** o 8º semestre tem 2 disciplinas, com 4 alunos matriculados; em ambas houve 3 provas. Fazer em Java um programa que leia as 3 notas dos 4 alunos nas 2 disciplinas e as armazene em **uma única variável do tipo matriz de float**. O programa deve mostrar a média final de cada aluno em cada disciplina e a média na primeira avaliação de cada aluno em todas as disciplinas.
 
-**[Material original] — Saída de exemplo (p.15):** execução com notas inteiras. Por exemplo, aluno 0 na disciplina 0: notas 7, 8 e 9 → "Média do aluno 0 na disciplina 0: 8".
+**[Material original] — Saída de exemplo ([p.15](../01%20-%20Slides%20Originais/README.md#página-15)):** execução com notas inteiras. Por exemplo, aluno 0 na disciplina 0: notas 7, 8 e 9 → "Média do aluno 0 na disciplina 0: 8".
 
 > **[Atenção]**
-> - A saída da p.15 foi gerada por um programa executado com `make` (C/C++), não Java, e mostra as médias **truncadas para inteiro**. Exemplo: aluno 3 na disciplina 0 tem notas 8, 10 e 7 → média 8,33, exibida como "8"; nas primeiras avaliações, (8 + 1)/2 = 4,5, exibida como "4". Como o enunciado pede matriz de **float**, as médias devem ser exibidas com casas decimais.
-> - O exercício fala do **oitavo** semestre e o desafio (p.16) fala do **quarto e quinto**. É uma inconsistência do enunciado; não afeta a lógica.
+> - A saída da [p.15](../01%20-%20Slides%20Originais/README.md#página-15) foi gerada por um programa executado com `make` (C/C++), não Java, e mostra as médias **truncadas para inteiro**. Exemplo: aluno 3 na disciplina 0 tem notas 8, 10 e 7 → média 8,33, exibida como "8"; nas primeiras avaliações, (8 + 1)/2 = 4,5, exibida como "4". Como o enunciado pede matriz de **float**, as médias devem ser exibidas com casas decimais.
+> - O exercício fala do **oitavo** semestre e o desafio ([p.16](../01%20-%20Slides%20Originais/README.md#página-16)) fala do **quarto e quinto**. É uma inconsistência do enunciado; não afeta a lógica.
 
-**[Material original] — Desafio (p.16):** salvar na mesma matriz os dados do 4º e do 5º semestres (ambos com 2 disciplinas, 4 alunos e 3 avaliações).
+**[Material original] — Desafio ([p.16](../01%20-%20Slides%20Originais/README.md#página-16)):** salvar na mesma matriz os dados do 4º e do 5º semestres (ambos com 2 disciplinas, 4 alunos e 3 avaliações).
 
 **[Explicação elaborada] — modelagem:**
 
@@ -205,9 +209,22 @@ Solução completa e testada em [resolucoes-aula-07.md](../04%20-%20Resoluções
 
 - Tipos compostos completam o sistema de tipos da [Aula 06](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md).
 - Vetores em C são acessados por ponteiros ([Aula 08](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)).
-- Registros evoluem para classes ([Aula 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md)). Segundo a Aula 12 (p.22), Java e Smalltalk não têm registros. **[Complemento]** Desde o Java 16 existe `record`, mas ele é uma classe restrita (imutável, implicitamente `final`), o que mantém a ideia do slide de que em Java o registro é tratado como classe.
+- Registros evoluem para classes ([Aula 12](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md)). Segundo a Aula 12 ([p.22](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-22)), Java e Smalltalk não têm registros. **[Complemento]** Desde o Java 16 existe `record`, mas ele é uma classe restrita (imutável, implicitamente `final`), o que mantém a ideia do slide de que em Java o registro é tratado como classe.
 - Saber: registro = **heterogêneo + nome**; matriz = **homogênea + índice**; indexação 0..N−1 × 1..N × definida pelo programador.
 
 ---
 
 **Anterior:** [Aula 06](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · **Próxima:** [Aula 08 — Ponteiros](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 07:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-07.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-07.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 06 · Resumo](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) →
+
+**Links para esta página (12):** [Aula 06 · Resumo](../../Aula%2006%20-%20Sistema%20de%20Tipos/02%20-%20Resumo%20Teórico/resumo-aula-06.md) · [Aula 07 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-07.md) · [Aula 07 · visão geral](../README.md) · [Aula 08 · Resumo](../../Aula%2008%20-%20Ponteiros/02%20-%20Resumo%20Teórico/resumo-aula-08.md) · [Aula 12 · Resumo](../../Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [03 — Trabalhos e Projetos](../../../03%20-%20Trabalhos%20e%20Projetos/README.md) · [Simulado 02 · Resolução comentada](../../../04%20-%20Provas%20e%20Avaliações/Simulados/resolucao-simulado-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Resumo geral da disciplina](../../../06%20-%20Revisões%20e%20Sínteses/resumo-geral-da-disciplina.md) · [Glossário](../../../07%20-%20Glossário/glossario.md) · [P2 — Estruturas encadeadas em C++: pilha e fila](../../../09%20-%20Projetos%20Práticos/P2%20-%20Estruturas%20Encadeadas%20em%20C++/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

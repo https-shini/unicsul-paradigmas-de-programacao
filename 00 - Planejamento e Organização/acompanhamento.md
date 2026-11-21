@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › [00 - Planejamento e Organização](README.md) · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # Acompanhamento de estudo
 
 > **[Explicação elaborada]** Checklist para acompanhar o estudo da disciplina. Marque as caixas editando este arquivo no seu *fork* ou cópia local (`- [ ]` → `- [x]`).
@@ -28,15 +32,15 @@ Para cada aula: **R** = leu o resumo · **E** = fez os exercícios básicos e in
 
 As atividades propostas nos próprios slides costumam compor a nota de **Exercícios** (2,0 pontos da A2, ver [ementa](ementa.md#avaliação)). Confirme com o professor quais serão cobradas e o prazo de entrega.
 
-- [ ] Aula 03 — Atividade (p.17)
-- [ ] Aula 06 — Atividade (p.20)
-- [ ] Aula 07 — Exercício da matriz de notas (p.14) e Desafio (p.16)
-- [ ] Aula 09 — Atividade 1 (p.21–22), Atividade 2 (p.24) e leitura do artigo de Dijkstra
-- [ ] Aula 10 — Exercício (p.19) e Atividade 1 (p.20)
-- [ ] Aula 11 — Atividade (p.21)
-- [ ] Aula 13 — Atividade 1 (p.10–11)
-- [ ] Aula 14 — Atividade 1 (p.17) e Atividade 2 (p.20)
-- [ ] Aula 15 — Atividade 1 (p.20) e Atividade 2 (p.23)
+- [ ] Aula 03 — Atividade ([p.17](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-17))
+- [ ] Aula 06 — Atividade ([p.20](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/01%20-%20Slides%20Originais/README.md#página-20))
+- [ ] Aula 07 — Exercício da matriz de notas ([p.14](../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/01%20-%20Slides%20Originais/README.md#página-14)) e Desafio ([p.16](../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/01%20-%20Slides%20Originais/README.md#página-16))
+- [ ] Aula 09 — Atividade 1 ([p.21–22](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-21)), Atividade 2 ([p.24](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/01%20-%20Slides%20Originais/README.md#página-24)) e leitura do artigo de Dijkstra
+- [ ] Aula 10 — Exercício ([p.19](../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-19)) e Atividade 1 ([p.20](../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/01%20-%20Slides%20Originais/README.md#página-20))
+- [ ] Aula 11 — Atividade ([p.21](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/01%20-%20Slides%20Originais/README.md#página-21))
+- [ ] Aula 13 — Atividade 1 ([p.10–11](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/01%20-%20Slides%20Originais/README.md#página-10))
+- [ ] Aula 14 — Atividade 1 ([p.17](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-17)) e Atividade 2 ([p.20](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-20))
+- [ ] Aula 15 — Atividade 1 ([p.20](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-20)) e Atividade 2 ([p.23](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-23))
 
 Lista com links para enunciados e resoluções: [`03 - Trabalhos e Projetos`](../03%20-%20Trabalhos%20e%20Projetos/README.md#atividades-propostas-nas-aulas).
 
@@ -73,3 +77,12 @@ Projetos autorais de [09 - Projetos Práticos](../09%20-%20Projetos%20Práticos/
 | Avaliação Final (AF), se houver | | | |
 
 Frequência mínima: **75%**.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Links para esta página (3):** [00 — Planejamento e Organização](README.md) · [Aula 01 · Complementos](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

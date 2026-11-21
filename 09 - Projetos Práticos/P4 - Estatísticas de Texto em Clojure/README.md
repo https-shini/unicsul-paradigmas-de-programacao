@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [09 - Projetos Práticos](../README.md) › **P4** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # P4 — Estatísticas de texto em Clojure
 
 > **[Exercício autoral]** Projeto prático elaborado para este repositório. **Não é trabalho do professor** e não vale nota. A pasta `solucao/` é uma **[Resolução elaborada]**, não gabarito oficial.
@@ -90,5 +94,16 @@ Para experimentar no terminal: `clojure -M -i inicial/estatisticas.clj -r` abre 
 ## Para refletir
 
 - Por que `(first p)` foi evitada em `indice-alfabetico`? O que isso revela sobre a diferença entre a JVM e o JavaScript como plataformas?
-- Clojure é classificada como **impura** (Aula 14 p.9). O que, na linguagem, permitiria quebrar a restrição deste projeto?
+- Clojure é classificada como **impura** (Aula 14 [p.9](../../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-9)). O que, na linguagem, permitiria quebrar a restrição deste projeto?
 - `sem-stopwords` passa um **conjunto** para `remove`. Que propriedade das funções de primeira classe torna isso possível?
+
+
+<!-- nav:rodape -->
+
+---
+
+← [P3 — Acervo da biblioteca em Java](../P3%20-%20Acervo%20da%20Biblioteca%20em%20Java/README.md) · [P5 — Grade curricular em Prolog](../P5%20-%20Grade%20Curricular%20em%20Prolog/README.md) →
+
+**Links para esta página (1):** [09 — Projetos Práticos](../README.md)
+
+<!-- /nav:rodape -->

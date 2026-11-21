@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../README.md) › [09 - Projetos Práticos](../README.md) › **P2** · [Mapa](../../MAPA.md)
+<!-- /nav:topo -->
+
 # P2 — Estruturas encadeadas em C++: pilha e fila
 
 > **[Exercício autoral]** Projeto prático elaborado para este repositório. **Não é trabalho do professor** e não vale nota. A pasta `solucao/` é uma **[Resolução elaborada]**, não gabarito oficial.
@@ -11,7 +15,7 @@
 
 ## Objetivo
 
-A Aula 12 termina com uma pilha encadeada em C++ (p.30): `new` para cada nó, destrutor que percorre a lista, `delete p1` no fim do `main`. Neste projeto você escreve essa pilha **sem vazar memória**, uma segunda pilha com **vetor dinâmico** e a mesma interface, e uma **fila** encadeada. Os testes rodam com o *AddressSanitizer*, que acusa vazamento, `delete` duplo e acesso fora do vetor — os erros típicos de quem gerencia memória à mão.
+A Aula 12 termina com uma pilha encadeada em C++ ([p.30](../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-30)): `new` para cada nó, destrutor que percorre a lista, `delete p1` no fim do `main`. Neste projeto você escreve essa pilha **sem vazar memória**, uma segunda pilha com **vetor dinâmico** e a mesma interface, e uma **fila** encadeada. Os testes rodam com o *AddressSanitizer*, que acusa vazamento, `delete` duplo e acesso fora do vetor — os erros típicos de quem gerencia memória à mão.
 
 ## Conceitos da disciplina aplicados
 
@@ -75,5 +79,16 @@ Se os testes passarem mas aparecer `ERROR: LeakSanitizer: detected memory leaks`
 ## Para refletir
 
 - O que aconteceria com a cópia **rasa** padrão do C++ (`Pilha b = a;` copiando só o ponteiro `topo_`) quando `a` e `b` saíssem de escopo?
-- Em Java, a pilha encadeada da Aula 12 não tem destrutor. Quem libera os nós? Quais as vantagens e os custos de cada abordagem (Aula 12 p.28)?
+- Em Java, a pilha encadeada da Aula 12 não tem destrutor. Quem libera os nós? Quais as vantagens e os custos de cada abordagem (Aula 12 [p.28](../../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/01%20-%20Slides%20Originais/README.md#página-28))?
 - Por que `PilhaVetor` dobra a capacidade em vez de somar 1? Pense em quantas cópias são feitas para empilhar *n* elementos.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [P1 — Interpretador de expressões](../P1%20-%20Interpretador%20de%20Expressões/README.md) · [P3 — Acervo da biblioteca em Java](../P3%20-%20Acervo%20da%20Biblioteca%20em%20Java/README.md) →
+
+**Links para esta página (2):** [09 — Projetos Práticos](../README.md) · [Exemplo de anotação: pilha encadeada × pilha em vetor](../../10%20-%20Caderno%20de%20Anotações/exemplo-de-anotacao.md)
+
+<!-- /nav:rodape -->

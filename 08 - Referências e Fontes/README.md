@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../README.md) › **08 - Referências e Fontes** · [Mapa](../MAPA.md)
+<!-- /nav:topo -->
+
 # 08 — Referências e Fontes
 
 Catálogo de **todas as fontes bibliográficas** da disciplina: as obras indicadas pelo professor e as leituras complementares selecionadas para este repositório, com a referência completa (ABNT), a forma de acesso e as aulas em que cada uma ajuda.
@@ -63,3 +67,14 @@ Para cada aula, os livros (`L`) e artigos (`A`) que ajudam a estudá-la. Os iten
 1. Acrescente a entrada em `livros.md` ou `artigos.md`, no grupo adequado, com o próximo identificador livre.
 2. Inclua a mesma obra em `referencias.bib`.
 3. Atualize a tabela **Referências por aula** acima.
+
+
+<!-- nav:rodape -->
+
+---
+
+← [07 - Glossário](../07%20-%20Glossário/README.md) · [09 — Projetos Práticos](../09%20-%20Projetos%20Práticos/README.md) →
+
+**Links para esta página (19):** [Bibliografia](../00%20-%20Planejamento%20e%20Organização/bibliografia.md) · [Guia da base de conhecimento](../00%20-%20Planejamento%20e%20Organização/guia-da-base-de-conhecimento.md) · [Aula 01 · Complementos](../01%20-%20Aulas/Aula%2001%20-%20Apresentação%20da%20Disciplina/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 02 · Complementos](../01%20-%20Aulas/Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 03 · Complementos](../01%20-%20Aulas/Aula%2003%20-%20Implementação%20das%20Linguagens/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 04 · Complementos](../01%20-%20Aulas/Aula%2004%20-%20Sintaxe/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 05 · Complementos](../01%20-%20Aulas/Aula%2005%20-%20Semântica/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 06 · Complementos](../01%20-%20Aulas/Aula%2006%20-%20Sistema%20de%20Tipos/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 07 · Complementos](../01%20-%20Aulas/Aula%2007%20-%20Tipos%20Compostos/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 08 · Complementos](../01%20-%20Aulas/Aula%2008%20-%20Ponteiros/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 09 · Complementos](../01%20-%20Aulas/Aula%2009%20-%20Paradigma%20Imperativo%20I/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 10 · Complementos](../01%20-%20Aulas/Aula%2010%20-%20Paradigma%20Imperativo%20II/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 11 · Complementos](../01%20-%20Aulas/Aula%2011%20-%20Paradigma%20Imperativo%20III/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 12 · Complementos](../01%20-%20Aulas/Aula%2012%20-%20Paradigma%20Orientado%20a%20Objetos%20I/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 13 · Complementos](../01%20-%20Aulas/Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 14 · Complementos](../01%20-%20Aulas/Aula%2014%20-%20Paradigma%20Funcional/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [Aula 15 · Complementos](../01%20-%20Aulas/Aula%2015%20-%20Paradigma%20Lógico/05%20-%20Materiais%20Complementares/materiais-complementares.md) · [05 — Materiais Complementares](../05%20-%20Materiais%20Complementares/README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../README.md)
+
+<!-- /nav:rodape -->

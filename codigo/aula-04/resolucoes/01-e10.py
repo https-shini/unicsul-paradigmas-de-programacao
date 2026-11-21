@@ -1,4 +1,4 @@
-# Gerado automaticamente a partir de 01 - Aulas/Aula 04 - Sintaxe/04 - Resoluções/resolucoes-aula-04.md (linha 77).
+# Gerado automaticamente a partir de 01 - Aulas/Aula 04 - Sintaxe/04 - Resoluções/resolucoes-aula-04.md (linha 81).
 # Seção: E10
 # Não edite aqui: altere o Markdown e rode  python3 ferramentas/gerar_codigo.py
 # Como executar:  python3 ferramentas/rodar.py codigo/aula-04/resolucoes/01-e10.py

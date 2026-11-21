@@ -1,6 +1,10 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 09](../README.md) › [03 - Exercícios](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 09 — Paradigma Imperativo I · Exercícios
 
-> **[Exercício autoral]**, exceto o E7 e o E8 (Atividades 1 e 2 originais, p.21 e p.24). Base: [`Aula09_ParadigmaImperativo1.pdf`](../01%20-%20Slides%20Originais/Aula09_ParadigmaImperativo1.pdf) e [`Aula09a_ArtigoDijkstra68.pdf`](../01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf). Resoluções: [`resolucoes-aula-09.md`](../04%20-%20Resoluções/resolucoes-aula-09.md)
+> **[Exercício autoral]**, exceto o E7 e o E8 (Atividades 1 e 2 originais, [p.21](../01%20-%20Slides%20Originais/README.md#página-21) e [p.24](../01%20-%20Slides%20Originais/README.md#página-24)). Base: [`Aula09_ParadigmaImperativo1.pdf`](../01%20-%20Slides%20Originais/Aula09_ParadigmaImperativo1.pdf) e [`Aula09a_ArtigoDijkstra68.pdf`](../01%20-%20Slides%20Originais/Aula09a_ArtigoDijkstra68.pdf). Resoluções: [`resolucoes-aula-09.md`](../04%20-%20Resoluções/resolucoes-aula-09.md)
 
 ## Básico
 
@@ -29,7 +33,7 @@ a) `=`  b) `==`  c) `:=`  d) `<-`
 
 ## Avançado
 
-**E7 — Atividade 1 (original, p.21).** Descreva o que faz o programa e reescreva-o sem `goto`. *Acréscimo autoral:* a versão com `while` é exatamente equivalente? Em que situação as duas dariam resultados diferentes?
+**E7 — Atividade 1 (original, [p.21](../01%20-%20Slides%20Originais/README.md#página-21)).** Descreva o que faz o programa e reescreva-o sem `goto`. *Acréscimo autoral:* a versão com `while` é exatamente equivalente? Em que situação as duas dariam resultados diferentes?
 
 ```c
 #include <stdio.h>   /* acrescentado: o slide omite o cabeçalho */
@@ -43,7 +47,7 @@ repete: printf("%d\n", x);
 }
 ```
 
-**E8 — Atividade 2 (original, p.24).** Usando o comando `goto`, crie um programa que leia 10 números inteiros e mostre, no final, quantos são positivos e quantos são negativos. Se o usuário digitar 0, o programa deve terminar sem mensagem. Não use estruturas de repetição.
+**E8 — Atividade 2 (original, [p.24](../01%20-%20Slides%20Originais/README.md#página-24)).** Usando o comando `goto`, crie um programa que leia 10 números inteiros e mostre, no final, quantos são positivos e quantos são negativos. Se o usuário digitar 0, o programa deve terminar sem mensagem. Não use estruturas de repetição.
 
 **E9.** Reescreva o programa do E8 de forma estruturada (sem `goto`), em C.
 
@@ -56,3 +60,16 @@ c) O que o exemplo da contagem de pessoas na sala demonstra?\
 d) Qual é a diferença entre a contribuição de Böhm e Jacopini e a de Dijkstra?
 
 **E11.** O slide resume que Dijkstra mostrou que "o uso excessivo de `goto` era prejudicial". Compare essa frase com o que o artigo realmente afirma.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 09:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-09.md) · [Artigo](../02%20-%20Resumo%20Teórico/resumo-artigo-dijkstra-1968.md) · **Exercícios** · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-09.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 08 · Exercícios](../../Aula%2008%20-%20Ponteiros/03%20-%20Exercícios/exercicios-aula-08.md) · [Aula 10 · Exercícios](../../Aula%2010%20-%20Paradigma%20Imperativo%20II/03%20-%20Exercícios/exercicios-aula-10.md) →
+
+**Links para esta página (4):** [Aula 09 · Resoluções](../04%20-%20Resoluções/resolucoes-aula-09.md) · [Aula 09 · visão geral](../README.md) · [Revisão da Unidade 2 — Paradigma imperativo (Aulas 09–11)](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-2-imperativo.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

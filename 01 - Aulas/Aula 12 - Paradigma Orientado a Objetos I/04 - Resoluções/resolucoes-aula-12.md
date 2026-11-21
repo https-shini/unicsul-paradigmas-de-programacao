@@ -1,10 +1,14 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 12](../README.md) › [04 - Resoluções](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 12 — Paradigma Orientado a Objetos I · Resoluções comentadas
 
 > **[Resolução elaborada]** Não é gabarito oficial. Enunciados: [`exercicios-aula-12.md`](../03%20-%20Exercícios/exercicios-aula-12.md). Os programas Java foram compilados e executados.
 
 ## E1
 
-**Crise de Software:** crescimento da demanda e da complexidade dos sistemas, sem aumento proporcional da produtividade dos programadores. Os paradigmas da época dificultavam três qualidades (p.3–4):
+**Crise de Software:** crescimento da demanda e da complexidade dos sistemas, sem aumento proporcional da produtividade dos programadores. Os paradigmas da época dificultavam três qualidades ([p.3–4](../01%20-%20Slides%20Originais/README.md#página-3)):
 
 - **Reusabilidade:** usar soluções já elaboradas em um novo software.
 - **Extensibilidade:** facilidade de adicionar funcionalidades.
@@ -12,7 +16,7 @@
 
 ## E2
 
-Tipos de dados abstratos (classes), herança e vinculação dinâmica de chamadas a métodos (polimorfismo) (p.6).
+Tipos de dados abstratos (classes), herança e vinculação dinâmica de chamadas a métodos (polimorfismo) ([p.6](../01%20-%20Slides%20Originais/README.md#página-6)).
 
 ## E3
 
@@ -49,7 +53,7 @@ b.push(99);
 
 **c) 1c:** **não é possível** acessar `vetPilha`, que é `private`. E **não é preciso mudar o `main`**, que depende só da interface pública (`Pilha()`, `push`, `pop`). Isso é **abstração de dados / encapsulamento**: a representação está oculta, e o cliente só usa as operações.
 
-**d) 1d:** **nenhuma mudança** foi necessária — os dois `main` são idênticos (p.16). Isso mostra que a **interface do TDA independe da representação** (p.20): a implementação pode mudar (vetor → lista encadeada) sem afetar os clientes. Na prática, é **baixo acoplamento** entre o `main` e a `Pilha`.
+**d) 1d:** **nenhuma mudança** foi necessária — os dois `main` são idênticos ([p.16](../01%20-%20Slides%20Originais/README.md#página-16)). Isso mostra que a **interface do TDA independe da representação** ([p.20](../01%20-%20Slides%20Originais/README.md#página-20)): a implementação pode mudar (vetor → lista encadeada) sem afetar os clientes. Na prática, é **baixo acoplamento** entre o `main` e a `Pilha`.
 
 ## E8
 
@@ -112,7 +116,7 @@ public class Main {
 
 - **O destrutor** só roda quando o objeto `Pilha` é destruído (`delete p1`) e libera os nós **que ainda estão** na pilha.
 - **O `pop`** retira um nó da lista. Sem `delete` nesse nó, ele ficaria no heap **sem nenhum ponteiro** para ele: o destrutor não o alcançaria, porque não está mais na lista, e o programa perderia a memória para sempre. Isso é um **vazamento de memória** (*memory leak*).
-- **Em Java**, o nó retirado também fica sem referência, mas o **coletor de lixo** o encontra e libera automaticamente (p.28).
+- **Em Java**, o nó retirado também fica sem referência, mas o **coletor de lixo** o encontra e libera automaticamente ([p.28](../01%20-%20Slides%20Originais/README.md#página-28)).
 
 ## E10
 
@@ -164,3 +168,16 @@ Sem inicialização automática, o programador precisava **lembrar** de chamar a
 - **Coleta de lixo (Java):** cuida da memória.
 
 Em todos os casos, a responsabilidade sai do cliente e vai para a própria classe — mais confiabilidade.
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 12:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · [Resumo](../02%20-%20Resumo%20Teórico/resumo-aula-12.md) · [Exercícios](../03%20-%20Exercícios/exercicios-aula-12.md) · **Resoluções** · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+← [Aula 11 · Resoluções](../../Aula%2011%20-%20Paradigma%20Imperativo%20III/04%20-%20Resoluções/resolucoes-aula-11.md) · [Aula 13 · Resoluções](../../Aula%2013%20-%20Paradigma%20Orientado%20a%20Objetos%20II/04%20-%20Resoluções/resolucoes-aula-13.md) →
+
+**Links para esta página (3):** [Aula 12 · Exercícios](../03%20-%20Exercícios/exercicios-aula-12.md) · [Aula 12 · visão geral](../README.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->

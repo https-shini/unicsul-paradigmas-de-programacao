@@ -1,3 +1,7 @@
+<!-- nav:topo -->
+[Início](../../../README.md) › [01 - Aulas](../../README.md) › [Aula 01](../README.md) › [02 - Resumo Teórico](README.md) · [Mapa](../../../MAPA.md)
+<!-- /nav:topo -->
+
 # Aula 01 — Apresentação da Disciplina · Resumo teórico
 
 > **Fonte:** [`Aula01_Intro.pdf`](../01%20-%20Slides%20Originais/Aula01_Intro.pdf) (9 páginas) — "Apresentação da Disciplina (Plano de ensino)", Prof. Álvaro A. Colombero Prado, 2º semestre de 2026.
@@ -55,7 +59,7 @@ A Aula 01 não traz conteúdo técnico. Ela apresenta o **contrato da disciplina
 | Programação em lógica | [15](../../Aula%2015%20-%20Paradigma%20Lógico/) |
 | Revisão | [Lista 01](../../../02%20-%20Listas%20de%20Exercícios/Lista%2001%20-%20Revisão%20I/), [Lista 02](../../../02%20-%20Listas%20de%20Exercícios/Lista%2002%20-%20Revisão%20II/) |
 
-"Tópicos adicionais" e "linguagens híbridas": Não há aula específica. Linguagens que combinam paradigmas aparecem na Aula 02 (p.12: Java 8 na lista funcional) e na Aula 14 (p.10: Java 8, JavaScript, Python e C# com lambdas). A Aula 15 (p.5) cita linguagens declarativas que não são de programação (HTML, CSS, SQL). **[Atenção]** Na Aula 03 (p.12), "linguagem híbrida" significa **implementação** híbrida (compilação + interpretação), não linguagem multiparadigma.
+"Tópicos adicionais" e "linguagens híbridas": Não há aula específica. Linguagens que combinam paradigmas aparecem na Aula 02 ([p.12](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/01%20-%20Slides%20Originais/README.md#página-12): Java 8 na lista funcional) e na Aula 14 ([p.10](../../Aula%2014%20-%20Paradigma%20Funcional/01%20-%20Slides%20Originais/README.md#página-10): Java 8, JavaScript, Python e C# com lambdas). A Aula 15 ([p.5](../../Aula%2015%20-%20Paradigma%20Lógico/01%20-%20Slides%20Originais/README.md#página-5)) cita linguagens declarativas que não são de programação (HTML, CSS, SQL). **[Atenção]** Na Aula 03 ([p.12](../../Aula%2003%20-%20Implementação%20das%20Linguagens/01%20-%20Slides%20Originais/README.md#página-12)), "linguagem híbrida" significa **implementação** híbrida (compilação + interpretação), não linguagem multiparadigma.
 
 ## 6. Sistema de avaliação (p.6–7)
 
@@ -67,7 +71,7 @@ A Aula 01 não traz conteúdo técnico. Ela apresenta o **contrato da disciplina
 | A2 | 5,0 | Avaliação Parcial (3,0) + Exercícios (2,0) |
 | **Nota final** | **10,0** | **A1 + A2** |
 
-Regras do fluxograma (p.7):
+Regras do fluxograma ([p.7](../01%20-%20Slides%20Originais/README.md#página-7)):
 
 1. Se **A1 + A2 ≥ 6,0** → aprovado.
 2. Quem **não obtiver pelo menos 1 ponto na A1 ou na A2** está reprovado e **não pode** fazer a Avaliação Final (AF).
@@ -81,7 +85,7 @@ Regras do fluxograma (p.7):
 - Tirar menos de 1,0 em qualquer uma das partes elimina a chance de AF — por isso a parte de Exercícios (2,0) da A2 funciona como "seguro".
 - A AF só faz sentido se a maior nota for ≥ 1,0 (pois 1,0 + 5,0 = 6,0).
 
-> **[Atenção]** O slide da p.6 rotula como "Noite" os horários 08h30–09h45 / 09h55–11h10, que são matutinos. Provavelmente é resíduo de outro plano de ensino. O fluxograma da p.7 é creditado a "Slide, Prof. Ledón, 2014".
+> **[Atenção]** O slide da [p.6](../01%20-%20Slides%20Originais/README.md#página-6) rotula como "Noite" os horários 08h30–09h45 / 09h55–11h10, que são matutinos. Provavelmente é resíduo de outro plano de ensino. O fluxograma da [p.7](../01%20-%20Slides%20Originais/README.md#página-7) é creditado a "Slide, Prof. Ledón, 2014".
 
 ## 7. Bibliografia (p.8–9)
 
@@ -101,3 +105,16 @@ Regras do fluxograma (p.7):
 ---
 
 **Próxima aula:** [Aula 02 — Evolução das Linguagens e Paradigmas](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md)
+
+
+<!-- nav:rodape -->
+
+---
+
+**Aula 01:** [Visão geral](../README.md) · [Slides](../01%20-%20Slides%20Originais/README.md) · **Resumo** · [Exercícios](../03%20-%20Exercícios/exercicios-aula-01.md) · [Resoluções](../04%20-%20Resoluções/resolucoes-aula-01.md) · [Complementos](../05%20-%20Materiais%20Complementares/materiais-complementares.md)
+
+[Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) →
+
+**Links para esta página (4):** [Aula 01 · visão geral](../README.md) · [Aula 02 · Resumo](../../Aula%2002%20-%20Evolução%20das%20Linguagens%20e%20Paradigmas/02%20-%20Resumo%20Teórico/resumo-aula-02.md) · [Revisão da Unidade 1 — Fundamentos das linguagens (Aulas 01…](../../../06%20-%20Revisões%20e%20Sínteses/Revisões%20por%20Unidade/unidade-1-fundamentos.md) · [Paradigmas de Linguagens de Programação — UNICSUL](../../../README.md)
+
+<!-- /nav:rodape -->
